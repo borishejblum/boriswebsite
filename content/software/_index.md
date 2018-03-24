@@ -5,6 +5,8 @@ date: '2016-01-26'
 slug: software
 ---
 
+![](/files/Rlogo.png) 
+
   * **kernscr** an R package to perform kernel machine score test for pathway analysis in the presence of semi-competing risks. Available on [CRAN](https://cran.r-project.org/web/packages/kernscr/index.html), development version available on [github](https://github.com/denisagniel/kernscr).
 
 * * *
