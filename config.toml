@@ -253,13 +253,13 @@ defaultContentLanguageInSubdir = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
+  name = "Scientific publications"
   url = "/publications"
   weight = 2
 
 [[menu.main]]
-  name = "Blog"
-  url = "/posts"
+  name = "Software"
+  url = "/software"
   weight = 3
 
 [[menu.main]]
@@ -269,18 +269,33 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Teaching"
-  url = "#teaching"
+  url = "/teaching"
   weight = 5
+
+[[menu.main]]
+  name = "PhD Thesis"
+  url = "/files/hejblum_2015bord0049_oneside_light.pdf"
+  weight = 6
 
 [[menu.main]]
   name = "CV"
   url = "/files/CV_HEJBLUM.pdf"
-  weight = 5
+  weight = 7
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts"
+  weight = 8
+
+[[menu.main]]
+  name = "Careers"
+  url = "/careers"
+  weight = 9
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 7
+  weight = 10
 
 # Taxonomies.
 [taxonomies]
