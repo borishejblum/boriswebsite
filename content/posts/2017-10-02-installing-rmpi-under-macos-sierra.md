@@ -12,8 +12,7 @@ I recently updated my set-up, and because I use a High-Performance cluster from 
 
 But then I had extensive trouble installing the Rmpi package...
 
-After extensive investigation (and google searches), I landed on this  [stackoverflow](https://stackoverflow.com/questions/44573568/mpirun-doesnt-work-and-ask-to-change-tmpdir-variable-to-tmp) thread. It turns out the problem comes from MacOS Sierra, which is generating quite long temporary folder names (by default). The solution is quite simple, simply add the following line in the _openmpi-mca-params.conf_  file (located in _/usr/local/Cellar/open-mpi/2.1.1/etc/_ if you installed openmpi from homebrew):_
-_
+After extensive investigation (and google searches), I landed on this  [stackoverflow](https://stackoverflow.com/questions/44573568/mpirun-doesnt-work-and-ask-to-change-tmpdir-variable-to-tmp) thread. It turns out the problem comes from MacOS Sierra, which is generating quite long temporary folder names (by default). The solution is quite simple, simply add the following line in the *openmpi-mca-params.conf*  file (located in */usr/local/Cellar/open-mpi/2.1.1/etc/* if you installed openmpi from homebrew):
 
 >orte_tmpdir_base = /tmp</blockquote>
 
