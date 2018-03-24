@@ -233,6 +233,10 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/borishejblum"
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//fr.linkedin.com/pub/boris-hejblum/38/34b/879/en"
 
 
 # Navigation Links
