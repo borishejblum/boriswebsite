@@ -65,6 +65,11 @@ defaultContentLanguageInSubdir = false
   phone = ""
   skype = ""
   telegram = ""
+  twitter = "borishej"
+  googlescholar = "xU72YmYAAAAJ"
+  googlescholarname = "Boris P. Hejblum"
+  github = "borishejblum"
+  linkedinlink = "https://fr.linkedin.com/in/boris-hejblum-87934b38/en"
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
@@ -236,7 +241,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "//fr.linkedin.com/pub/boris-hejblum/38/34b/879/en"
+    link = "https://fr.linkedin.com/pub/boris-hejblum/38/34b/879/en"
 
 
 # Navigation Links
