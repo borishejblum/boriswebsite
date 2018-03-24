@@ -58,7 +58,7 @@ defaultContentLanguageInSubdir = false
   #organizations = [ { name = "ISPED", url = "" }, { name = "Université de Bordeaux", url = "" },  { name = "Inserm BPH", url = "" }, { name = "INRIA SISTM", url = "" }, ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "bh.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "boris.hejblum@u-bordeaux.fr"
   address = "Bureau 29 NB, ISPED - Université de Bordeaux, 146 rue Léo Saignat, 33076 Bordeaux"
   office_hours = ""
