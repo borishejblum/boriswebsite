@@ -274,7 +274,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "/cv"
+  url = "/files/CV_HEJBLUM.pdf"
   weight = 5
 
 [[menu.main]]
