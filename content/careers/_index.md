@@ -17,4 +17,4 @@ slug: careers
 
 Voici les différents sujets de recherche pour lesquels je propose actuellement un stage de niveau M2/école d'ingénieur :
 
-  * [Evolution de populations céllulaires dans un essai vaccinal thérapeutique contre le VIH](https://borishejblum.files.wordpress.com/2017/11/stagem2findetude_2018_gatingdalia.pdf)
+  * [Evolution de populations céllulaires dans un essai vaccinal thérapeutique contre le VIH](/files/stagem2findetude_2018_gatingdalia.pdf)
