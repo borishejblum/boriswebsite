@@ -9,15 +9,14 @@ slug: teach
 
 * * *
 
-**2016-2017 & 2017-2018
-**
+# 2016-2017 & 2017-2018
 
-M2 Biostatistique ISPED
+## M2 Biostatistique ISPED
 
   * STA206 Analyse de données multivariées
 
   * STA305 Introduction à l'analyse Bayésienne
 
-M1 ISPED
+## M1 ISPED
 
   * STA101 Tests Statistiques
