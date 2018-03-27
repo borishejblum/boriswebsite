@@ -17,8 +17,8 @@ authors = ["<u>**BP Hejblum**</u>", "J Skinner", "R Thiébaut"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*PLoS Computational Biology*, 11(6): e1004310"
-publication_short = "*PLoS Comput Biol*, 11(6): e1004310"
+publication = "*PLoS Computational Biology*, 11(6):e1004310"
+publication_short = "*PLoS Comput Biol*, 11(6):e1004310"
 
 doi ="10.1371/journal.pcbi.1004310"
 
@@ -60,5 +60,3 @@ image = ""
 caption = ""
 
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

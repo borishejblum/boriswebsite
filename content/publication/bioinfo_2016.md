@@ -17,8 +17,8 @@ authors = ["B Liquet", "P Lafaye de Micheaux", "<u>**BP Hejblum**</u>", "R Thié
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Bioinformatics*, 32(1): 35-42"
-publication_short = "*Bioinformatics*, 32(1): 35-42"
+publication = "*Bioinformatics*, 32(1):35-42"
+publication_short = "*Bioinformatics*, 32(1):35-42"
 
 doi ="10.1093/bioinformatics/btv535"
 
@@ -60,5 +60,3 @@ image = ""
 caption = ""
 
 +++
-
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
