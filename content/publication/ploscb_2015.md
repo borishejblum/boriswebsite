@@ -33,7 +33,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004310&type=printable"
 url_preprint = ""
 url_code = "https://doi.org/10.1371/journal.pcbi.1004310.s007"
 url_dataset = ""
@@ -45,7 +45,7 @@ url_source = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Article", url = "http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004310"}]
+url_custom = [{name = "Article", url = "http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004310"}, {name = "R package", url = "https://CRAN.R-project.org/package=TcGSA"}]
 
 # Does the content use math formatting?
 math = true
