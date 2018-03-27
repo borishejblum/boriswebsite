@@ -14,7 +14,7 @@ slug: publications
   * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, (in press), 2018.
 
   * Neykov M, <u>**Hejblum BP**</u>, Sinnott JA, Kernel Machine Score Test for Pathway Analysis in the Presence of Semi-Competing Risks, *Stat Methods in Med Res*, 27(4):1099-1114, 2018.  
-DOI: [10.1177/0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/0962280216653427)
+DOI: [10.1177/ 0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/0962280216653427)
 
 # **2017**
 
