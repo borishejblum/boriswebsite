@@ -1,6 +1,6 @@
 +++
 # Recent Posts widget.
-# This widget displays recent posts from `content/posts/`.
+# This widget displays recent posts from `content/post/`.
 widget = "posts"
 active = true
 date = "2013-04-20T00:00:00"
@@ -18,7 +18,6 @@ tags_include = []
 tags_exclude = []
 
 # Number of posts to list.
-count = 5
-
+count = 3
 +++
 

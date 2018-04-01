@@ -150,7 +150,7 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
+  highlight_languages = ["r"]
   # highlight_style = "github"
 
   # Enable native social sharing buttons?
@@ -289,7 +289,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Blog"
-  url = "/posts"
+  url = "/post"
   weight = 8
 
 [[menu.main]]
