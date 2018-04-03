@@ -1,0 +1,84 @@
+---
+title: "My R package's worldmap of downloads!"
+author: "Boris Hejblum"
+date: 2013-06-18
+categories: ["Code snippet", "R"]
+tags: ["R"]
+slug: "my-package-worldmap"
+---
+
+
+
+<p>Last week, a <a href="http://robin.genuer.fr/">colleague</a> draw my attention on this new <a href="http://cran-logs.rstudio.com/">log files</a> from the <a href="http://blog.rstudio.org/2013/06/10/rstudio-cran-mirror/">Rstudio cloud CRAN mirror</a>, through a post from <a href="http://www.r-statistics.com/2013/06/answering-how-many-people-use-my-r-package/">Tal Galili</a>. This CRAN mirror is a little different, as it uses Amazon CloudFront to deliver the downloads rapidly from a server near you, wherever that is. But what’s really great about it, is the availability of those log files, that have been recording every package download since October 2012, daily! As R is primarily intended for statisticians, it didn’t take long before we start <a href="http://spatial.ly/2013/06/r_activity/">playing with the data</a>. Below is my bit to this effort, a function to plot the world map of one’s package downloads from the Rstudio “0-Cloud” CRAN mirror. It relies on <a href="https://github.com/talgalili/installr/blob/master/R/RStudio_CRAN_data.r">Tal Galili’s functions</a> for downloading and formating the data. Of course, the Rstudio CRAN mirror is only 1 mirror among all the CRAN mirrors around the world, and is <a href="http://www.r-bloggers.com/on-the-rstudio-download-logs/">not representative</a> due to its link with the Rstudio IDE. However, in research, there is quite a delay between one’s hard work (i.e. implementing a package) and the reward (i.e. publication). Encouragements such as download stats are welcomed!</p>
+<pre class="r"><code>pkgDNLs.worldmapcolor &lt;- function(pkgname, rmvdupips = TRUE, date.start = Sys.Date() - 
+    8, date.stop = Sys.Date() - 1, shp.file.repos) {
+    library(installr)
+    library(ggplot2)
+    library(maptools)
+    
+    if (date.stop &gt;= Sys.Date() | date.start &gt;= Sys.Date()) {
+        stop(&quot;date not available yet&quot;)
+    }
+    
+    cat(&quot;downloading the RStudio CRAN data...\n&quot;)
+    dnldata_folder &lt;- download_RStudio_CRAN_data(START = date.start, END = date.stop)
+    cat(&quot;data downloaded!\n&quot;)
+    dnldata &lt;- read_RStudio_CRAN_data(dnldata_folder)
+    
+    data &lt;- dnldata[which(dnldata$package == pkgname), ]
+    if (rmvdupips) {
+        data &lt;- data[!duplicated(data$ip_id), ]
+    }
+    
+    counts &lt;- cbind.data.frame(table(data$country))
+    names(counts) &lt;- c(&quot;country&quot;, &quot;count&quot;)
+    
+    # you need to download a shapefile of the world map from Natural Earth (for
+    # instance)
+    # http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+    # and unzip it in the &#39;shp.file.repos&#39; repository
+    world &lt;- readShapePoly(fn = paste(shp.file.repos, &quot;ne_110m_admin_0_countries&quot;, 
+        sep = &quot;/&quot;))
+    ISO_full &lt;- as.character(world@data$iso_a2)
+    ISO_full[146] &lt;- &quot;SOM&quot;  # The iso identifier for the Republic of Somaliland is missing
+    ISO_full[89] &lt;- &quot;KV&quot;  # as for the Republic of Kosovo
+    ISO_full[39] &lt;- &quot;CYP&quot;  # as for Cyprus
+    
+    colcode &lt;- numeric(length(ISO_full))
+    names(colcode) &lt;- ISO_full
+    dnl_places &lt;- names(colcode[which(names(colcode) %in% as.character(counts$country))])
+    rownames(counts) &lt;- counts$country
+    colcode[dnl_places] &lt;- counts[dnl_places, &quot;count&quot;]
+    
+    world@data$id &lt;- rownames(world@data)
+    world.points &lt;- fortify(world, by = &quot;id&quot;)
+    names(colcode) &lt;- rownames(world@data)
+    world.points$dnls &lt;- colcode[world.points$id]
+    
+    world.map &lt;- ggplot(data = world.points) + geom_polygon(aes(x = long, y = lat, 
+        group = group, fill = dnls), color = &quot;black&quot;) + coord_equal() + # theme_minimal() +
+    scale_fill_gradient(low = &quot;white&quot;, high = &quot;#56B1F7&quot;, name = &quot;Downloads&quot;) + 
+        labs(title = paste(pkgname, &quot; downloads from the &#39;0-Cloud&#39; CRAN mirror by country\nfrom &quot;, 
+            date.start, &quot; to &quot;, date.stop, &quot;\n(Total downloads: &quot;, sum(counts$count), 
+            &quot;)&quot;, sep = &quot;&quot;))
+    return(world.map)
+}
+
+wm &lt;- pkgDNLs.worldmapcolor(pkgname = &quot;timeROC&quot;, shp.file.rep = &quot;~/shapefileRepository&quot;)
+wm</code></pre>
+<p>Here is an exemple of the result on a <a href="http://www.isped.u-bordeaux2.fr/FR_HTM_annuaire.aspx?CLE_PERSONNE=439">friend</a>’s package: <a href="http://cran.r-project.org/web/packages/timeROC/">timeROC</a></p>
+<div class="figure">
+<img src="/files/timeroc_dnlsworldmap2.png" alt="timeROC worldmap" />
+<p class="caption">timeROC worldmap</p>
+</div>
+<p><strong><em>Update:</em></strong> <em>Thanks to the integration of this function into <a href="https://github.com/talgalili/installr/">Tal’s installr</a> package, an easier way to obtain such a map is now to use the following code:</em></p>
+<pre class="r"><code>install.packages(devtools)
+library(devtools)
+install_github(&quot;talgalili/installr&quot;, username=&quot;talgalili&quot;)
+library(installr)
+RStudio_CRAN_data_folder &lt;- download_RStudio_CRAN_data(START = &#39;2013-06-10&#39;,
+                                                       END = &#39;2013-06-17&#39;)
+my_RStudio_CRAN_data &lt;- read_RStudio_CRAN_data(RStudio_CRAN_data_folder)
+wm &lt;- pkgDNLs_worldmapcolor(pkg_name=&quot;timeROC&quot;,
+                            dataset = my_RStudio_CRAN_data)
+wm</code></pre>
