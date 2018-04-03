@@ -1,5 +1,5 @@
 ---
-title: RcppAramdillo & OS X Mavericks configuration
+title: "RcppAramdillo & OS X Mavericks configuration"
 author: Boris Hejblum
 date: '2014-08-03'
 categories:

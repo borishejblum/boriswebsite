@@ -1,10 +1,12 @@
 ---
-title: Geeks also like wine & surf
+title: "Geeks also like wine & surf"
 author: Boris Hejblum
 date: '2014-06-25'
 categories:
   - Fun
   - miscellaneous
+tags: 
+  - Inria
 slug: geeks-also-like-wine-surf
 ---
 

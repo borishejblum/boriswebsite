@@ -1,7 +1,15 @@
 ---
-title: Installing Rmpi under MacOS Sierra
+title: "Installing Rmpi under MacOS Sierra"
 author: Boris Hejblum
 date: '2017-10-02'
+categories:
+  - miscellaneous
+  - Apple R developper
+  - R
+tags: 
+  - R
+  - parallel computing
+  - Apple
 slug: installing-rmpi-under-macos-sierra
 ---
 

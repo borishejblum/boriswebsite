@@ -1,5 +1,5 @@
 ---
-title: 'CRAN CHECK NOTE   sub-directories of 1Mb or more: libs'
+title: "CRAN CHECK NOTE sub-directories of 1Mb or more: libs"
 author: Boris Hejblum
 date: '2016-04-27'
 categories:

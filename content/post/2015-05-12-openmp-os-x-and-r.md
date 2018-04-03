@@ -1,10 +1,16 @@
 ---
-title: OpenMP, OS-X and R
+title: "OpenMP, OS-X and R"
 author: Boris Hejblum
 date: '2015-05-12'
 categories:
   - miscellaneous
   - R
+  - Apple R developper
+tags:
+  - R
+  - OpenMP
+  - parallel computing
+  - Apple 
 slug: openmp-os-x-and-r
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: What is Statistics ?
+title: "What is Statistics?"
 author: Boris Hejblum
 date: '2014-07-31'
 categories:

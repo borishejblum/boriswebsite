@@ -1,7 +1,7 @@
 ---
-title: Statistics horizons from French statistical community
+title: "Statistics horizons from French statistical community"
 author: Boris Hejblum
-date: '2014-01-22'
+date: 2014-01-22
 categories:
   - miscellaneous
   - Opinions

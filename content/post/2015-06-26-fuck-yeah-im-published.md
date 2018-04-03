@@ -1,9 +1,11 @@
 ---
-title: F*** Yeah, I'm published !
+title: "F*** Yeah, I'm published!"
 author: Boris Hejblum
 date: '2015-06-26'
 categories:
   - Opinions
+tags:
+  - science
 slug: fuck-yeah-im-published
 ---
 
