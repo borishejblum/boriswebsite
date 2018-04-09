@@ -37,7 +37,7 @@ weight = 5
 
 # Hi, I'm Boris !
 
-I am a University teacher and a researcher in biostatistics. This website is both a personal website and a blog !
+I am a University teacher and a researcher in biostatistics. This website is both a personal website and a blog.
 
 Broadly speaking, my main research focus is on the longitudinal analysis of high-dimensional biomedical data. My latest projects include gene set analysis of longitudinal gene expression, Bayesian nonparametric modeling of longitudinal flow-cytometry data and anonymous probabilistic patient record linkage in high-dimension.
 
