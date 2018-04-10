@@ -5,9 +5,12 @@ date: '2016-09-27'
 slug: teach
 ---
 
-<del>_under construction_</del>
+# Formations 
 
-* * *
+[**Formation R avancée :** *outils de développement et de performance*](http://r-dev-perf.borishejblum.science)  
+
+
+
 
 # 2016-2017 & 2017-2018
 
