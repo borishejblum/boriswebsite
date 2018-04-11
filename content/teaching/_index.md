@@ -7,7 +7,8 @@ slug: teach
 
 # Formations 
 
-[**Formation R avancée :** *outils de développement et de performance*](http://r-dev-perf.borishejblum.science)  
+[**Formation R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  
+codes : [mypkgr.tar.gz](/files/mypkgr_0.0.0.9000.tar.gz)
 
 
 
