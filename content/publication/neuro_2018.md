@@ -1,6 +1,6 @@
 +++
 title = "Pattern of polyphenol intake and the long-term risk of dementia in older persons"
-date = "2018-12-31"
+date = "2018-01-01"
 
 
 

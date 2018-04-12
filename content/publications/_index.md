@@ -12,14 +12,14 @@ slug: publications
 # **2018**
 
   * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, (in press), 2018.
+ 
+  * <u>**Hejblum BP**</u>, Cui J, Lahey LJ, Cagan A, Sparks JA, Sokolove J, Cai T, Liao KP, Association between anti-citrullinated fibrinogen antibodies and coronary artery disease in rheumatoid arthritis, *Arthritis Care & Research*, in press, 2018.  
+DOI: [10.1002/acr.23444](http://onlinelibrary.wiley.com/doi/10.1002/acr.23444/full)
 
   * Neykov M, <u>**Hejblum BP**</u>, Sinnott JA, Kernel Machine Score Test for Pathway Analysis in the Presence of Semi-Competing Risks, *Stat Methods in Med Res*, 27(4):1099-1114, 2018.  
 DOI: [10.1177/ 0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/0962280216653427)
 
 # **2017**
-
-  * <u>**Hejblum BP**</u>, Cui J, Lahey LJ, Cagan A, Sparks JA, Sokolove J, Cai T, Liao KP, Association between anti-citrullinated fibrinogen antibodies and coronary artery disease in rheumatoid arthritis, *Arthritis Care & Research*, in press, 2017.  
-DOI: [10.1002/acr.23444](http://onlinelibrary.wiley.com/doi/10.1002/acr.23444/full)
 
   * Agniel D and <u>**Hejblum BP**</u>, Variance component score test for time-course gene set analysis of longitudinal RNA-seq data, *Biostatistics*, 18(4):589–604, 2017.  
 DOI: [10.1093/biostatistics/kxx005](https://academic.oup.com/biostatistics/article/18/4/589/3065599/Variance-component-score-test-for-timecourse-gene?guestAccessKey=70560c57-c362-400f-ab15-b49ca45a8baf)
