@@ -11,7 +11,8 @@ slug: publications
 
 # **2018**
 
-  * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, (in press), 2018.
+  * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, in press, 2018.  
+DOI: [10.1212/WNL.0000000000005607](http://n.neurology.org/content/early/2018/04/27/WNL.0000000000005607)
  
   * <u>**Hejblum BP**</u>, Cui J, Lahey LJ, Cagan A, Sparks JA, Sokolove J, Cai T, Liao KP, Association between anti-citrullinated fibrinogen antibodies and coronary artery disease in rheumatoid arthritis, *Arthritis Care & Research*, in press, 2018.  
 DOI: [10.1002/acr.23444](http://onlinelibrary.wiley.com/doi/10.1002/acr.23444/full)
@@ -37,7 +38,7 @@ DOI: [10.1093/bioinformatics/btv535](http://bioinformatics.oxfordjournals.org/co
 
 # **2015**
 
-  * <u>**Hejblum BP**</u>, Skinner J, Thiébaut R, Time-Course Gene Set Analysis for Longitudinal Gene Expression Data, *PLoS Comput Biol* 11(6): e1004310, 2015.  
+  * <u>**Hejblum BP**</u>, Skinner J, Thiébaut R, Time-Course Gene Set Analysis for Longitudinal Gene Expression Data, *PLoS Comput Biol*, 11(6): e1004310, 2015.  
 DOI: [10.1371/journal.pcbi.1004310](http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004310).
 
 # **2014**
@@ -50,5 +51,5 @@ DOI: [10.1016/j.respe.2013.12.021](http://www.sciencedirect.com/science/article/
 
 # **2013**
 
-  * Commenges D and <u>**Hejblum BP**</u>,  Evidence synthesis through a degradation model applied to myocardial infarction, *Lifetime Data Analysis* 19(1): 1-18, 2013.  
+  * Commenges D and <u>**Hejblum BP**</u>,  Evidence synthesis through a degradation model applied to myocardial infarction, *Lifetime Data Analysis*, 19(1): 1-18, 2013.  
 DOI: [10.1007/s10985-012-9227-3](http://www.springerlink.com/content/r0r3336772314868).

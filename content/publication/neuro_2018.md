@@ -1,6 +1,6 @@
 +++
 title = "Pattern of polyphenol intake and the long-term risk of dementia in older persons"
-date = "2018-01-01"
+date = "2018-04-27"
 
 
 
@@ -21,7 +21,7 @@ publication_types = ["2"]
 publication = "*Neurology*, in press"
 publication_short = "*Neurology*, in press"
 
-doi =""
+doi ="10.1212/WNL.0000000000005607"
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -45,8 +45,8 @@ url_poster = ""
 url_source = ""
 
 # Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Article", url = ""}]
+# Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
+url_custom = [{name = "Article", url = "http://n.neurology.org/content/early/2018/04/27/WNL.0000000000005607"}]
 
 # Does the content use math formatting?
 math = true
