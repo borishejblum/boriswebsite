@@ -238,6 +238,7 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/borishejblum"
+
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
