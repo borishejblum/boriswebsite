@@ -35,7 +35,7 @@ weight = 5
  
 +++
 
-# Hi, I'm Boris !
+# Hi, I'm Boris
 
 I am a University teacher and a researcher in biostatistics. This website is both a personal website and a blog.
 
