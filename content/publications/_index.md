@@ -12,7 +12,7 @@ slug: publications
 # **2018**
 
   * Sinnott JA, Cai F, Yu S, <u>**Hejblum BP**</u>, Huong C, Kohane IS, Liao KP, PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies, *Journal of the American Medical Informatics Association*, in press, 2018.  
-DOI: [10.1093/jamia/ocy056"](https://doi.org/10.1093/jamia/ocy056)
+DOI: [10.1093/jamia/ocy056](https://doi.org/10.1093/jamia/ocy056)
   
   * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, in press, 2018.  
 DOI: [10.1212/WNL.0000000000005607](http://n.neurology.org/content/early/2018/04/27/WNL.0000000000005607)
