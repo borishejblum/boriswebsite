@@ -18,8 +18,8 @@ authors = ["S Lefèvre-Arbogast", "D Gaudout", "J Bensalem", "L Letenneur", "JF 
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Neurology*, in press"
-publication_short = "*Neurology*, in press"
+publication = "*Neurology*, 90(22):e1979-e1988"
+publication_short = "*Neurology*, 90(22):e1979-e1988"
 
 doi ="10.1212/WNL.0000000000005607"
 

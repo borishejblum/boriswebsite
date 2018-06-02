@@ -13,12 +13,12 @@ slug: publications
 
   * Sinnott JA, Cai F, Yu S, <u>**Hejblum BP**</u>, Huong C, Kohane IS, Liao KP, PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies, *Journal of the American Medical Informatics Association*, in press, 2018.  
 DOI: [10.1093/jamia/ocy056](https://doi.org/10.1093/jamia/ocy056)
-  
-  * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, in press, 2018.  
-DOI: [10.1212/WNL.0000000000005607](http://n.neurology.org/content/early/2018/04/27/WNL.0000000000005607)
  
   * <u>**Hejblum BP**</u>, Cui J, Lahey LJ, Cagan A, Sparks JA, Sokolove J, Cai T, Liao KP, Association between anti-citrullinated fibrinogen antibodies and coronary artery disease in rheumatoid arthritis, *Arthritis Care & Research*, in press, 2018.  
 DOI: [10.1002/acr.23444](http://onlinelibrary.wiley.com/doi/10.1002/acr.23444/full)
+  
+  * Lefèvre-Arbogast S, Gaudout D, Bensalem J, Letenneur L, Dartigues JF, <u>**Hejblum BP**</u>, Féart C, Delcourt C, Samieri C, Pattern of polyphenol intake and the long-term risk of dementia in older persons, *Neurology*, 90(22):e1979-e1988, 2018.  
+DOI: [10.1212/WNL.0000000000005607](http://n.neurology.org/content/early/2018/04/27/WNL.0000000000005607)
 
   * Neykov M, <u>**Hejblum BP**</u>, Sinnott JA, Kernel Machine Score Test for Pathway Analysis in the Presence of Semi-Competing Risks, *Stat Methods in Med Res*, 27(4):1099-1114, 2018.  
 DOI: [10.1177/ 0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/0962280216653427)
