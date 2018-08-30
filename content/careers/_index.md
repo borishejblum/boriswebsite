@@ -8,10 +8,9 @@ slug: careers
 ## Postdoc position in the SISTM team:
 
   * Explanation of an HIV vaccine response with high-dimensional dynamical models
-
-## PhD studentship
-
-  * As part of the [SWAGR project](https://team.inria.fr/swagr/), I am actively searching for a PhD student candidate
+  
+## Ingénieur d'étude
+  * [Approche automatique pour l'étude de populations cellulaires dans des essais vaccinaux thérapeutiques contre le VIH](/files/Projet_Cytometree.pdf)
 
 ## Stage/interships
 
