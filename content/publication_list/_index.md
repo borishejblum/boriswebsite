@@ -11,6 +11,8 @@ slug: publications
 
 # **2018**
 
+  *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, (in press), 2018.
+
   * Commenges D, Alkhassim C, Gottardo R, <u>**Hejblum BP**</u>, Thiébaut R, cytometree: a binary tree algorithm for automatic gating in cytometry analysis, *Cytometry Part A*, in press, 2018.  
 
 

@@ -260,7 +260,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Scientific publications"
-  url = "/publications"
+  url = "/publication_list"
   weight = 2
 
 [[menu.main]]
