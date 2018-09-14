@@ -33,7 +33,7 @@ image_preview = ""
 selected = false
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://academic.oup.com/bioinformatics/article-pdf/32/1/35/16919966/btv535.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

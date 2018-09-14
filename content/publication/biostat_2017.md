@@ -33,7 +33,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://academic.oup.com/biostatistics/article-pdf/18/4/589/24331653/kxx005.pdf"
 url_preprint = "https://arxiv.org/abs/1605.02351"
 url_code = ""
 url_dataset = ""
