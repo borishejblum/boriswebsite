@@ -14,7 +14,7 @@ slug: publications
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, (in press), 2018.
 
   * Commenges D, Alkhassim C, Gottardo R, <u>**Hejblum BP**</u>, Thiébaut R, cytometree: a binary tree algorithm for automatic gating in cytometry analysis, *Cytometry Part A*, in press, 2018.  
-
+DOI: [10.1002/cyto.a.23601](https://doi.org/10.1002/cyto.a.23601)
 
   * Sinnott JA, Cai F, Yu S, <u>**Hejblum BP**</u>, Huong C, Kohane IS, Liao KP, PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies, *Journal of the American Medical Informatics Association*, in press, 2018.  
 DOI: [10.1093/jamia/ocy056](https://doi.org/10.1093/jamia/ocy056)

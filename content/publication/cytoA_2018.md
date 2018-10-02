@@ -1,6 +1,6 @@
 +++
 title = "cytometree: a binary tree algorithm for automatic gating in cytometry analysis"
-date = "2018-08-21"
+date = "2018-10-02"
 
 
 
@@ -46,7 +46,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Article", url = "https://onlinelibrary.wiley.com/journal/15524930"}]
+url_custom = [{name = "Article", url = "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cyto.a.23601"}, {name = "R package", url = "https://CRAN.R-project.org/package=cytometree"}]
 
 # Does the content use math formatting?
 math = true
