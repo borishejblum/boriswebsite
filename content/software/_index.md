@@ -7,11 +7,15 @@ slug: software
 
 ![](/files/Rlogo.png) 
 
-  * `kernscr` an **R package** to perform *KERNel machine score test for pathway analysis in the presence of Semi-Competing Risks*. Available on [CRAN](https://cran.r-project.org/web/packages/kernscr/index.html), development version available on [github](https://github.com/denisagniel/kernscr).
+  * `cytometree` an **R package** to perform *Automatic gating and annotation of cytometry data*. Available on [CRAN](https:///CRAN.R-project.org/package=cytometree), development version available on [github](https://github.com/sistm/cytometree).
 
 * * *
 
-  * `ludic` an **R package** to perform *probabilistic record Linkage Using only DIagnosis Codes without direct identifiers*, using C++ code to speed up computations. Available on [CRAN](//CRAN.R-project.org/package=ludic), development version on [github](https://github.com/borishejblum/ludic).
+  * `kernscr` an **R package** to perform *KERNel machine score test for pathway analysis in the presence of Semi-Competing Risks*. Available on [CRAN](https:///CRAN.R-project.org/package=kernscr), development version available on [github](https://github.com/borishejblum/kernscr).
+
+* * *
+
+  * `ludic` an **R package** to perform *probabilistic record Linkage Using only DIagnosis Codes without direct identifiers*, using C++ code to speed up computations. Available on [CRAN](https:///CRAN.R-project.org/package=ludic), development version on [github](https://github.com/borishejblum/ludic).
 
 * * *
 
