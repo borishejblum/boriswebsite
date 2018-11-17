@@ -13,10 +13,10 @@ slug: publications
 
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, (in press), 2018.
 
-  * Commenges D, Alkhassim C, Gottardo R, <u>**Hejblum BP**</u>, Thiébaut R, cytometree: a binary tree algorithm for automatic gating in cytometry analysis, *Cytometry Part A*, in press, 2018.  
+  * Commenges D, Alkhassim C, Gottardo R, <u>**Hejblum BP**</u>, Thiébaut R, cytometree: a binary tree algorithm for automatic gating in cytometry analysis, *Cytometry Part A*, 93(11):1132-1140, 2018.  
 DOI: [10.1002/cyto.a.23601](https://doi.org/10.1002/cyto.a.23601)
 
-  * Sinnott JA, Cai F, Yu S, <u>**Hejblum BP**</u>, Huong C, Kohane IS, Liao KP, PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies, *Journal of the American Medical Informatics Association*, in press, 2018.  
+  * Sinnott JA, Cai F, Yu S, <u>**Hejblum BP**</u>, Huong C, Kohane IS, Liao KP, PheProb: probabilistic phenotyping using diagnosis codes to improve power for genetic association studies, *Journal of the American Medical Informatics Association*, 25(10):1359-1365, 2018.  
 DOI: [10.1093/jamia/ocy056](https://doi.org/10.1093/jamia/ocy056)
  
   * <u>**Hejblum BP**</u>, Cui J, Lahey LJ, Cagan A, Sparks JA, Sokolove J, Cai T, Liao KP, Association between anti-citrullinated fibrinogen antibodies and coronary artery disease in rheumatoid arthritis, *Arthritis Care & Research*, 70(7):1113-1117, 2018.  
@@ -30,13 +30,13 @@ DOI: [10.1177/ 0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/096
 
 # **2017**
 
-  * Agniel D and <u>**Hejblum BP**</u>, Variance component score test for time-course gene set analysis of longitudinal RNA-seq data, *Biostatistics*, 18(4):589–604, 2017.  
+  * Agniel D and <u>**Hejblum BP**</u>, Variance component score test for time-course gene set analysis of longitudinal RNA-seq data, *Biostatistics*, 18(4):589-604, 2017.  
 DOI: [10.1093/biostatistics/kxx005](https://academic.oup.com/biostatistics/article/18/4/589/3065599/Variance-component-score-test-for-timecourse-gene?guestAccessKey=70560c57-c362-400f-ab15-b49ca45a8baf)
 
   * Rechtien A, Richert L, Lorenzo H, Martrus G, <u>**Hejblum BP**</u>, Dahlke C, Kasonta R, Zinser M, Stubbe H, Matschl U, Lohse A, Krähling V, Eickmann M, Becker S, VEBCON Consortium, Thiébaut R, Altfeld M, and Addo M, Systems Vaccinology Identifies an Early Innate Immune Signature as a Correlate of Antibody Responses to the Ebola Vaccine rVSV-ZEBOV, *Cell Reports*, 20(9):2251-2261, 2017.  
 DOI: [10.1016/j.celrep.2017.08.023](http://www.cell.com/cell-reports/fulltext/S2211-1247(17)31115-4)
 
-  * Liao KP&#42;, Sparks JA&#42;, <u>**Hejblum BP**</u>, Kuo IH, Cui J, Lahey LJ, Cagan A, Gainer VS, Liu W,  Cai TT, Sokolove J, Cai T, Phenome-wide association study of autoantibodies to citrullinated and non-citrullinated epitopes in rheumatoid arthritis, *Arthritis & Rheumatology*, 69: 742–749, 2017.  
+  * Liao KP&#42;, Sparks JA&#42;, <u>**Hejblum BP**</u>, Kuo IH, Cui J, Lahey LJ, Cagan A, Gainer VS, Liu W,  Cai TT, Sokolove J, Cai T, Phenome-wide association study of autoantibodies to citrullinated and non-citrullinated epitopes in rheumatoid arthritis, *Arthritis & Rheumatology*, 69(4):742-749, 2017.  
 DOI: [10.1002/art.39974](http://onlinelibrary.wiley.com/doi/10.1002/art.39974/abstract)
 
 # **2016**

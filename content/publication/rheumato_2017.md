@@ -17,8 +17,8 @@ authors = ["KP Liao&#42;", "JA Sparks&#42;", "<u>**BP Hejblum**</u>", "IH Kuo", 
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Arthritis & Rheumatology*, 69:742-749"
-publication_short = "*Arthritis & Rheumatology*, 69:742-749"
+publication = "*Arthritis & Rheumatology*, 69(4):742-749"
+publication_short = "*Arthritis & Rheumatology*, 69(4):742-749"
 
 doi ="10.1002/art.39974"
 

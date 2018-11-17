@@ -18,8 +18,8 @@ authors = ["JA Sinnott", "F Cai", "S Yu", "<u>**BP Hejblum**</u>", "C Huong", "I
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Journal of the American Medical Informatics Association*, in press"
-publication_short = "*JAMIA*, in press"
+publication = "*Journal of the American Medical Informatics Association*, 25(10):1359-1365"
+publication_short = "*JAMIA*, 25(10):1359-1365"
 
 doi ="10.1093/jamia/ocy056"
 

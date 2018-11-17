@@ -18,8 +18,8 @@ authors = ["D Commenges", "C Alkhassim", "R Gottardo", "<u>**BP Hejblum**</u>", 
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Cytometry Part A*, in press"
-publication_short = "*Cytom. A*, in press"
+publication = "*Cytometry Part A*, 93(11):1132-1140"
+publication_short = "*Cytom. A*, 93(11):1132-1140"
 
 doi =""
 
@@ -46,7 +46,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Article", url = "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cyto.a.23601"}, {name = "R package", url = "https://CRAN.R-project.org/package=cytometree"}]
+url_custom = [{name = "Article", url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cyto.a.23601"}, {name = "R package", url = "https://CRAN.R-project.org/package=cytometree"}]
 
 # Does the content use math formatting?
 math = true
