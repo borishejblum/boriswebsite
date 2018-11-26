@@ -5,15 +5,13 @@ date: '2017-11-02'
 slug: careers
 ---
 
-## Postdoc position in the SISTM team:
+## Postdoc position(s) in the SISTM team:
 
+  * Integrative analysis of vaccine response with high-dimensional data
   * Explanation of an HIV vaccine response with high-dimensional dynamical models
   
-## Ingénieur d'étude
-  * [Approche automatique pour l'étude de populations cellulaires dans des essais vaccinaux thérapeutiques contre le VIH](/files/Projet_Cytometree.pdf)
-
 ## Stage/interships
 
 Voici les différents sujets de recherche pour lesquels je propose actuellement un stage de niveau M2/école d'ingénieur :
 
-  * [Évolution de populations cellulaires dans un essai vaccinal thérapeutique contre le VIH](/files/stagem2findetude_2018_gatingdalia.pdf)
+  * [Mise en correspondance de bio-marqueurs cellulaires par transport optimal de mesures pour l’analyse de donnéees de cytomzetrie en flux](/files/StageM2_Cytometry_BigotHejblum.pdf)
