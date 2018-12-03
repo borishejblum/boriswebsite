@@ -11,7 +11,7 @@ slug: publications
 
 # **2018**
 
-  *  <u>**Hejblum BP**</u>, Liao K, Palmer N, Churchill S, Shadick N, Szolovits P, Murphy S, Kohane I, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, (in press), 2018.
+  *  <u>**Hejblum BP**</u>, Weber GM, Liao KP, Palmer NP, Churchill S, Shadick NA, Szolovits P, Murphy S, Kohane IS, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, (in press), 2018.
 
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, (in press), 2018.
 
