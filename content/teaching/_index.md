@@ -5,22 +5,38 @@ date: '2016-09-27'
 slug: teach
 ---
 
-# Formations 
-
-[**Formation R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  
-codes : [mypkgr.tar.gz](/files/mypkgr_0.0.0.9000.tar.gz)
 
 
 
+* * *
 
-# 2016-2017 & 2017-2018
+# **Formations**
+
+## Formations doctorales
+
+ * [**R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  (2018, 2019)  
+      codes disponibles [ici](/files/mypkgr_0.0.0.9000.tar.gz)
+
+## International Summer School - [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)
+  
+  * Statistical analysis of big data linked to immunology systems (2017)
+
+  * Introduction to Bayesian Analysis (2018)
+
+* * *
+
+# **Enseignements**
 
 ## M2 Biostatistique ISPED
 
-  * STA206 Analyse de données multivariées
+  * STA305 Introduction à l'analyse Bayésienne (2016-...)  
+  [poly](/files/STA305cours_etud.pdf) | [Travaux pratiques](/files/STA305_TP_enonce)
+  
+  * STA206 Analyse de données multivariées (2016-...)
 
-  * STA305 Introduction à l'analyse Bayésienne
 
 ## M1 ISPED
 
-  * STA101 Tests Statistiques
+  * STA101 Tests Statistiques (2016-...)
+
+
