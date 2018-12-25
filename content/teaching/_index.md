@@ -17,7 +17,7 @@ slug: teach
  * [**R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  (2018, 2019)  
       codes disponibles [ici](/files/mypkgr_0.0.0.9000.tar.gz)
 
-## International Summer School - [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://bss-publichealth.u-bordeaux.fr/en/Program/Course-n-1-Statistical-analysis-of-big-data-linked-to-immunology-systems/r742.html)
+## International Summer School -- [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://bss-publichealth.u-bordeaux.fr/en/Program/Course-n-1-Statistical-analysis-of-big-data-linked-to-immunology-systems/r742.html)
   
   * Statistical analysis of big data linked to immunology systems (2017)
 
@@ -29,14 +29,14 @@ slug: teach
 
 ## M2 Biostatistique ISPED
 
-  * STA305 Introduction à l'analyse Bayésienne (2016-...)  
-  [poly](/files/STA305cours_etud.pdf) | [Travaux pratiques](/files/STA305_TP_enonce)
+  * STA305 Introduction à l'analyse Bayésienne (2016 -- ...)  
+  <a href="/files/STA305cours_etud.pdf" target="_blank">cours</a> | <a href="/html/STA305_TP_enonce.html" target="_blank">Travaux pratiques</a>
   
-  * STA206 Analyse de données multivariées (2016-...)
+  * STA206 Analyse de données multivariées (2016 -- ...)
 
 
 ## M1 ISPED
 
-  * STA101 Tests Statistiques (2016-...)
+  * STA101 Tests Statistiques (2016 -- ...)
 
 
