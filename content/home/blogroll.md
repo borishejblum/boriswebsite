@@ -17,6 +17,8 @@ weight = 65
 
 - [Simply Statistics](http://simplystatistics.org/)
 
+- [SWAGR Inria associate team](https://team.inria.fr/swagr/)
+
 - [Statisfaction](https://statisfaction.wordpress.com/)
  
 - [xkcd](https://xkcd.com/)

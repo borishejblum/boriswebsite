@@ -15,9 +15,9 @@ weight = 60
 
 +++
 
-- [R packages by Hadley Wickham](http://r-pkgs.had.co.nz/)
+- [R packages](http://r-pkgs.had.co.nz/) by Hadley Wickham
  
-- [Advanced R by Hadley Wickham](http://adv-r.had.co.nz/)
+- [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham
  
 - [R Graphics Cookbook online](http://www.cookbook-r.com/Graphs/)
 
