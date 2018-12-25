@@ -280,12 +280,12 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "PhD Thesis"
-  url = "/files/hejblum_2015bord0049_oneside_light.pdf"
+  url = "https://borishejblum.science/files/hejblum_2015bord0049_oneside_light.pdf"
   weight = 6
 
 [[menu.main]]
   name = "CV"
-  url = "/files/CV_HEJBLUM.pdf"
+  url = "https://borishejblum.science/files/CV_HEJBLUM.pdf"
   weight = 7
 
 [[menu.main]]

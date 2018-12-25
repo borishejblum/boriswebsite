@@ -14,4 +14,4 @@ slug: careers
 
 Voici les différents sujets de recherche pour lesquels je propose actuellement un stage de niveau M2/école d'ingénieur :
 
-  * [Mise en correspondance de bio-marqueurs cellulaires par transport optimal de mesures pour l’analyse de donnéees de cytomzetrie en flux](/files/StageM2_Cytometry_BigotHejblum.pdf)
+  * <a href="/files/StageM2_Cytometry_BigotHejblum.pdf" target="_blank">Mise en correspondance de bio-marqueurs cellulaires par transport optimal de mesures pour l’analyse de donnéees de cytomzetrie en flux</a>
