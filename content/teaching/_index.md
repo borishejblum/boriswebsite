@@ -17,7 +17,7 @@ slug: teach
  * [**R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  (2018, 2019)  
       codes disponibles [ici](/files/mypkgr_0.0.0.9000.tar.gz)
 
-## International Summer School - [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)
+## International Summer School - [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://bss-publichealth.u-bordeaux.fr/en/Program/Course-n-1-Statistical-analysis-of-big-data-linked-to-immunology-systems/r742.html)
   
   * Statistical analysis of big data linked to immunology systems (2017)
 
