@@ -9,12 +9,14 @@ slug: publications
 
 &#42;: equal contribution
 
-# **2018**
+# **2019**
 
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, ([in press](https://www.imstat.org/journals-and-publications/annals-of-applied-statistics/annals-of-applied-statistics-next-issues/)), 2019.
   
   *  <u>**Hejblum BP**</u>, Weber GM, Liao KP, Palmer NP, Churchill S, Shadick NA, Szolovits P, Murphy S, Kohane IS, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, 6:180298, 2018.
 DOI: [10.1038/sdata.2018.298](https://doi.org/10.1038/sdata.2018.298)
+
+# **2018**
 
   * Commenges D, Alkhassim C, Gottardo R, <u>**Hejblum BP**</u>, Thiébaut R, cytometree: a binary tree algorithm for automatic gating in cytometry analysis, *Cytometry Part A*, 93(11):1132-1140, 2018.  
 DOI: [10.1002/cyto.a.23601](https://doi.org/10.1002/cyto.a.23601)
