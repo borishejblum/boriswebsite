@@ -15,9 +15,10 @@ slug: publications
   
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, (in press), 2019.
   
-  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, (in press), 2019.
+  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, (in press), 2019.  
+DOI: [10.1093/bioinformatics/btz135](https://doi.org/10.1093/bioinformatics/btz135)
   
-  *  <u>**Hejblum BP**</u>, Weber GM, Liao KP, Palmer NP, Churchill S, Shadick NA, Szolovits P, Murphy S, Kohane IS, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, 6:180298, 2019.
+  *  <u>**Hejblum BP**</u>, Weber GM, Liao KP, Palmer NP, Churchill S, Shadick NA, Szolovits P, Murphy S, Kohane IS, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, 6:180298, 2019.  
 DOI: [10.1038/sdata.2018.298](https://doi.org/10.1038/sdata.2018.298)
 
 # **2018**
