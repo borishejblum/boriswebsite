@@ -13,9 +13,10 @@ slug: publications
 
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, ([in press](https://www.imstat.org/journals-and-publications/annals-of-applied-statistics/annals-of-applied-statistics-next-issues/)), 2019.
   
-  * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, (in press), 2019.
+  * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, (in press), 2019.  
+DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
   
-  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, (in press), 2019.  
+  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, ([in press](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btz135/5372340)), 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://doi.org/10.1093/bioinformatics/btz135)
   
   *  <u>**Hejblum BP**</u>, Weber GM, Liao KP, Palmer NP, Churchill S, Shadick NA, Szolovits P, Murphy S, Kohane IS, Cai T, Probabilistic record linkage of de-identified research datasets with discrepancies using diagnosis codes, *Scientific Data*, 6:180298, 2019.  

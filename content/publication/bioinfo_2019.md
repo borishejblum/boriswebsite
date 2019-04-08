@@ -34,7 +34,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = "https://doi.org/10.1093/bioinformatics/btz135"
+url_pdf = ""
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -46,7 +46,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "R code", url = "https://github.com/SoufianeAjana/Blisar"}]
+url_custom = [{name = "Article", url = "https://doi.org/10.1093/bioinformatics/btz135"}, {name = "R code", url = "https://github.com/SoufianeAjana/Blisar"}]
 
 
 # Does the content use math formatting?
