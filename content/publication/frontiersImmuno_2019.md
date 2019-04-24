@@ -18,8 +18,8 @@ authors = ["R Thiébaut", "<u>**BP Hejblum**</u>", "H Hocini", "H Bonnabau", "J 
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Frontiers in Immunology*, in press"
-publication_short = "*Front. Immunol.*, in press"
+publication = "*Frontiers in Immunology*, 10:874, 2019"
+publication_short = "*Front. Immunol.*, , 10:874, 2019"
 
 doi ="10.3389/fimmu.2019.00874"
 
@@ -34,7 +34,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://www.frontiersin.org/articles/10.3389/fimmu.2019.00874/pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
