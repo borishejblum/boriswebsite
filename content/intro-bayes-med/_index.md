@@ -14,10 +14,8 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * solutions to exercise 3
     * solutions to exercise 4
     * solutions to exercise 5
-    * solutions to exercise 6
- 
+    * solutions to exercise 6   
   
- 
  - slides: <a href="/files/intro-bayes-med/slidesIntroBayesMed_theory.pdf" target="_blank">Part I</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_mcmc.pdf" target="_blank">Part II</a>
  
  - Scientific articles:
@@ -25,5 +23,5 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * [Crins *et al.*, *Pediatr Transplantation*, 2014](/files/intro-bayes-med/Crins et al. - 2014 - Interleukin-2 receptor antagonists for pediatric l.pdf)
     * [Kaguelidou *et al.*, *PLOS ONE*, 2016](/files/intro-bayes-med/Kaguelidou2016_PlosOne.pdf)
  
- More information on this course can be found here:
+ More information on this course can be found here:  
  https://publicifsv.sund.ku.dk/~tag/Teaching/IntroBayesianAnalysis/course-homepage.html
