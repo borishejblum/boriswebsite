@@ -9,6 +9,14 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
  - <a href="/files/intro-bayes-med/IntroBayesMed_lectureNotes.pdf" target="_blank">Lecture notes</a>
  
  - <a href="/html/IntroBayesMed_practicals_questions.html" target="_blank">Practicals</a>
+    * <a href="/html/piMCestimate_solu.html" target="_blank">solutions to exercise 1</a>
+    * <a href="/html/inverseTransfo_solu.html" target="_blank">solutions to exercise 2</a>
+    * solutions to exercise 3
+    * solutions to exercise 4
+    * solutions to exercise 5
+    * solutions to exercise 6
+ 
+  
  
  - slides: <a href="/files/intro-bayes-med/slidesIntroBayesMed_theory.pdf" target="_blank">Part I</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_mcmc.pdf" target="_blank">Part II</a>
  
