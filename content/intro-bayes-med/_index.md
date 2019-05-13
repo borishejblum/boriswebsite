@@ -14,7 +14,8 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * solutions to exercise 3
     * solutions to exercise 4
     * solutions to exercise 5
-    * solutions to exercise 6   
+    * solutions to exercise 6
+    * solutions to exercise 7   
   
  - slides: <a href="/files/intro-bayes-med/slidesIntroBayesMed_theory.pdf" target="_blank">Part I</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_mcmc.pdf" target="_blank">Part II</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_appli.pdf" target="_blank">Part III</a>
  
