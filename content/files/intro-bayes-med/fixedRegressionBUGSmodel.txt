@@ -1,0 +1,17 @@
+# Example of a regression model
+model{
+
+  # Sampling model/likelihood
+  for (i in 1:N){
+    CD4[i]~dnorm(mu[i],tau)
+    mu[i] <- beta0 + beta1*ViralLoad[i]
+  }
+
+  # Prior
+  beta0~dnorm(0,0.0001) # weakly informative conjugated prior
+  beta1~dnorm(0,0.0001) # weakly informative conjugated prior
+  tau~dgamma(0.0001,0.0001) # weakly informative conjugated prior
+
+  # Reparametrization
+  sigma <- pow(tau, -0.5)
+}

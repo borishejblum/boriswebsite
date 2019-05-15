@@ -16,7 +16,7 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * <a href="/html/GoligherAgain_solu.html" target="_blank">solutions to exercise 5</a>
     * <a href="/html/bayesmetaCrins_solu.html" target="_blank">solutions to exercise 6</a>
     * <a href="/html/CRMKaguelidouDiscuss_solu.html" target="_blank">solutions to exercise 7</a>
-    * <a href="/files/intro-bayes-med/albiBUGSmodel_fixed.txt" target="_blank">example of a BUGS code for a regression</a>
+    * <a href="/files/intro-bayes-med/fixedRegressionBUGSmodel.txt" target="_blank">example of a BUGS code for a regression</a>  
     
  - slides: <a href="/files/intro-bayes-med/slidesIntroBayesMed_theory.pdf" target="_blank">Part I</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_mcmc.pdf" target="_blank">Part II</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_appli.pdf" target="_blank">Part III</a>
  
