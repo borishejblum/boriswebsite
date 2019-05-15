@@ -12,11 +12,11 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * <a href="/html/piMCestimate_solu.html" target="_blank">solutions to exercise 1</a>
     * <a href="/html/inverseTransfo_solu.html" target="_blank">solutions to exercise 2</a>
     * <a href="/html/MetroHast_solu.html" target="_blank">solutions to exercise 3</a>
-    * <a href="/html/JAGSdebut.html" target="_blank">solutions to exercise 4</a>
-    * <a href="/html/GoligherAgain.html" target="_blank">solutions to exercise 5</a>
-    * solutions to exercise 6
-    * solutions to exercise 7   
-  
+    * <a href="/html/JAGSdebut_solu.html" target="_blank">solutions to exercise 4</a>
+    * <a href="/html/GoligherAgain_solu.html" target="_blank">solutions to exercise 5</a>
+    * <a href="/html/bayesmetaCrins_solu.html" target="_blank">solutions to exercise 6</a>
+    * <a href="/html/CRMKaguelidouDiscuss_solu.html" target="_blank">solutions to exercise 7</a>
+    
  - slides: <a href="/files/intro-bayes-med/slidesIntroBayesMed_theory.pdf" target="_blank">Part I</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_mcmc.pdf" target="_blank">Part II</a> | <a href="/files/intro-bayes-med/slidesIntroBayesMed_appli.pdf" target="_blank">Part III</a>
  
  - Scientific articles:
