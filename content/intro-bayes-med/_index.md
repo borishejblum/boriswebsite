@@ -13,7 +13,7 @@ Below are the materials for the *Introduction to Bayesian analysis for medical s
     * <a href="/html/inverseTransfo_solu.html" target="_blank">solutions to exercise 2</a>
     * <a href="/html/MetroHast_solu.html" target="_blank">solutions to exercise 3</a>
     * <a href="/html/JAGSdebut.html" target="_blank">solutions to exercise 4</a>
-    * solutions to exercise 5
+    * <a href="/html/GoligherAgain.html" target="_blank">solutions to exercise 5</a>
     * solutions to exercise 6
     * solutions to exercise 7   
   
