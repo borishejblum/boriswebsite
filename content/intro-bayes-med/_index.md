@@ -1,8 +1,8 @@
 ---
 title: Introduction to Bayesian analysis for medical studies
 author: Boris Hejblum
-date: '2019-05-12'
-active: false
+date: '2019-05-13'
+draft: true
 ---
 
 Below are the materials for the *Introduction to Bayesian analysis for medical studies* PhD course at the **University of Copenhagen** Graduate School of Health and Medical Sciences at University of Copenhagen:

@@ -1,7 +1,7 @@
 ---
 title: BAsics for DAta Science with R
 author: Boris Hejblum
-date: '2019-06-17'
+date: '2019-06-15'
 active: true
 ---
 
