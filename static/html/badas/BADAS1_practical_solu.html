@@ -1636,6 +1636,9 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li><strong>Print function</strong> Let’s start by writing a function that will print its one argument.</li>
 </ol>
+<pre class="r"><code>myprint &lt;- function(x) {
+    print(x)
+}</code></pre>
 <blockquote>
 <p>There are only two <strong>hard</strong> things in Computer Science:</p>
 <ul>
@@ -1647,6 +1650,13 @@ div.tocify {
 <ol start="2" style="list-style-type: decimal">
 <li><strong>Default arguments</strong> Let’s now add a default value to this function’s argument</li>
 </ol>
+<pre class="r"><code>myprint()</code></pre>
+<pre><code>## Error in print(x): argument &quot;x&quot; is missing, with no default</code></pre>
+<pre class="r"><code>myprint_def &lt;- function(x = &quot;no name&quot;) {
+    print(x)
+}
+myprint_def()</code></pre>
+<pre><code>## [1] &quot;no name&quot;</code></pre>
 </div>
 <div id="control-structures" class="section level1">
 <h1>Control structures</h1>
@@ -1684,11 +1694,47 @@ div.tocify {
 </tr>
 </tbody>
 </table>
+<pre class="r"><code>print_last_name &lt;- function(df) {
+    for (i in 1:nrow(df)) {
+        print(as.character(df[i, &quot;last_name&quot;]))
+    }
+}
+print_last_name(df)</code></pre>
+<pre><code>## [1] &quot;Granger&quot;
+## [1] &quot;Weasley&quot;
+## [1] &quot;Potter&quot;</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li><p><strong><code>while</code> statement</strong> Now write the same function using a <code>while</code> statement.</p></li>
-<li><p><strong><code>if</code>/<code>else</code> statetement</strong><br />
-Finally, write a function that will print the last name for females and the first name for males</p></li>
+<li><strong><code>while</code> statement</strong> Now write the same function using a <code>while</code> statement.</li>
 </ol>
+<pre class="r"><code>print_last_name_while &lt;- function(df) {
+    i &lt;- 1
+    while (i &lt;= nrow(df)) {
+        print(as.character(df[i, &quot;last_name&quot;]))
+        i &lt;- i + 1
+    }
+}
+print_last_name_while(df)</code></pre>
+<pre><code>## [1] &quot;Granger&quot;
+## [1] &quot;Weasley&quot;
+## [1] &quot;Potter&quot;</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li><strong><code>if</code>/<code>else</code> statetement</strong><br />
+Finally, write a function that will print the last name for females and the first name for males</li>
+</ol>
+<pre class="r"><code>print_last_name_if &lt;- function(df) {
+    for (i in 1:nrow(df)) {
+        if (df[i, &quot;gender&quot;] == &quot;female&quot;) {
+            print(as.character(df[i, &quot;last_name&quot;]))
+        } else if (df[i, &quot;gender&quot;] == &quot;male&quot;) {
+            print(as.character(df[i, &quot;first_name&quot;]))
+        }
+        
+    }
+}
+print_last_name_if(df)</code></pre>
+<pre><code>## [1] &quot;Granger&quot;
+## [1] &quot;Ron&quot;
+## [1] &quot;Harry&quot;</code></pre>
 </div>
 
 
