@@ -1811,12 +1811,12 @@ head(nais_fus2)</code></pre>
 nais3 &lt;- naissance[desordre, c(1, 7:10)]
 head(nais3)</code></pre>
 <pre><code>##      ID HT UI FVT  BWT
-## 31  117  0  0   1 2920
-## 151  32  0  0   1 2055
-## 108 204  0  0   0 3827
-## 183  77  0  0   0 2466
-## 39  126  0  0   2 3005
-## 158  42  0  1   1 2187</code></pre>
+## 179  69  0  0   0 2424
+## 164  49  0  0   0 2282
+## 165  50  0  0   0 2296
+## 129 225  0  0   1 4593
+## 4    88  0  1   2 2594
+## 72  163  0  0   2 3321</code></pre>
 <pre class="r"><code>nais_fus3 &lt;- merge(nais1, nais3)
 head(nais_fus3)</code></pre>
 <pre><code>##   ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -2309,7 +2309,7 @@ nais</code></pre>
 <div id="exercice-10" class="section level4">
 <h4>Exercice 10</h4>
 <ol style="list-style-type: decimal">
-<li><p>À l’aide des fonctions <code>dplyr::summarize()</code>et <code>dplyr::n()</code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</p></li>
+<li><p>À l’aide des fonctions <code>dplyr::group_by()</code>, <code>dplyr::summarize()</code>, <code>dplyr::n()</code>, <code>dplyr::filter()</code> et <code>dplyr::arrange()</code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</p></li>
 <li><p>Réécrire le code de la réponse précédente à l’aide de l’opérateur <code>%&gt;%</code></p></li>
 </ol>
 </div>

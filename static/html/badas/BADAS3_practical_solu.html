@@ -2406,12 +2406,12 @@ head(nais_fus2)</code></pre>
 nais3 &lt;- naissance[desordre, c(1, 7:10)]
 head(nais3)</code></pre>
 <pre><code>##      ID HT UI FVT  BWT
-## 168  54  0  0   0 2325
-## 3    87  0  0   1 2557
-## 8    93  0  0   1 2637
-## 73  164  0  0   1 3331
-## 59  146  0  0   0 3203
-## 68  159  0  0   6 3303</code></pre>
+## 178  68  0  0   3 2414
+## 26  112  0  0   0 2877
+## 186  81  0  0   2 2495
+## 24  109  0  0   0 2863
+## 42  129  0  0   2 3062
+## 71  162  0  0   0 3317</code></pre>
 <pre class="r"><code>nais_fus3 &lt;- merge(nais1, nais3)
 head(nais_fus3)</code></pre>
 <pre><code>##   ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -2447,76 +2447,76 @@ knitr::kable(head(naissance_perm))</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">190</td>
-<td align="right">29</td>
-<td align="right">135</td>
-<td align="right">1</td>
-<td align="left">Non-Fumeur</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">3651</td>
-</tr>
-<tr class="even">
-<td align="right">65</td>
-<td align="right">30</td>
-<td align="right">142</td>
-<td align="right">1</td>
-<td align="left">Fumeur</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">2410</td>
-</tr>
-<tr class="odd">
-<td align="right">100</td>
-<td align="right">18</td>
-<td align="right">100</td>
-<td align="right">1</td>
-<td align="left">Fumeur</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">2769</td>
-</tr>
-<tr class="even">
-<td align="right">52</td>
-<td align="right">21</td>
-<td align="right">100</td>
-<td align="right">3</td>
-<td align="left">Non-Fumeur</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">2301</td>
-</tr>
-<tr class="odd">
-<td align="right">208</td>
-<td align="right">18</td>
+<td align="right">180</td>
+<td align="right">17</td>
 <td align="right">120</td>
 <td align="right">3</td>
-<td align="left">Non-Fumeur</td>
+<td align="left">Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">1</td>
-<td align="right">3884</td>
+<td align="right">0</td>
+<td align="right">3572</td>
 </tr>
 <tr class="even">
-<td align="right">46</td>
-<td align="right">25</td>
-<td align="right">105</td>
+<td align="right">44</td>
+<td align="right">20</td>
+<td align="right">80</td>
+<td align="right">3</td>
+<td align="left">Fumeur</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">2211</td>
+</tr>
+<tr class="odd">
+<td align="right">117</td>
+<td align="right">17</td>
+<td align="right">113</td>
+<td align="right">2</td>
+<td align="left">Non-Fumeur</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2920</td>
+</tr>
+<tr class="even">
+<td align="right">179</td>
+<td align="right">23</td>
+<td align="right">123</td>
 <td align="right">3</td>
 <td align="left">Non-Fumeur</td>
-<td align="right">1</td>
 <td align="right">0</td>
 <td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3544</td>
+</tr>
+<tr class="odd">
+<td align="right">135</td>
+<td align="right">19</td>
+<td align="right">132</td>
+<td align="right">3</td>
+<td align="left">Non-Fumeur</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3090</td>
+</tr>
+<tr class="even">
+<td align="right">59</td>
+<td align="right">23</td>
+<td align="right">187</td>
+<td align="right">2</td>
+<td align="left">Fumeur</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
 <td align="right">1</td>
-<td align="right">2240</td>
+<td align="right">2367</td>
 </tr>
 </tbody>
 </table>
@@ -2640,9 +2640,9 @@ knitr::kable(head(nais_joined))</code></pre>
 <td align="left">Non-Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
+<td align="right">1</td>
 <td align="right">0</td>
-<td align="right">0</td>
-<td align="right">2500</td>
+<td align="right">2523</td>
 </tr>
 <tr class="even">
 <td align="right">85</td>
@@ -2652,9 +2652,9 @@ knitr::kable(head(nais_joined))</code></pre>
 <td align="left">Non-Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">1</td>
 <td align="right">0</td>
-<td align="right">2523</td>
+<td align="right">0</td>
+<td align="right">2500</td>
 </tr>
 <tr class="odd">
 <td align="right">86</td>
@@ -3373,7 +3373,7 @@ nais</code></pre>
 <div id="exercice-10" class="section level4">
 <h4>Exercice 10</h4>
 <ol style="list-style-type: decimal">
-<li>À l’aide des fonctions <code>dplyr::summarize()</code>et <code>dplyr::n()</code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</li>
+<li>À l’aide des fonctions <code>dplyr::group_by()</code>, <code>dplyr::summarize()</code>, <code>dplyr::n()</code>, <code>dplyr::filter()</code> et <code>dplyr::arrange()</code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</li>
 </ol>
 <pre class="r"><code>naissance_exo10 &lt;- group_by(naissance, AGE, SMOKE)
 naissance_exo10 &lt;- summarise(naissance_exo10, poids_moy = mean(BWT, na.rm = TRUE), 
