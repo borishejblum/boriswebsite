@@ -1634,7 +1634,8 @@ div.tocify {
 <div id="functions" class="section level1">
 <h1>Functions</h1>
 <ol style="list-style-type: decimal">
-<li><strong>Print function</strong> Let’s start by writing a function that will print its one argument.</li>
+<li><strong>Print function</strong><br />
+Let’s start by writing a function that will print its one argument.</li>
 </ol>
 <pre class="r"><code>myprint &lt;- function(x) {
     print(x)
@@ -1661,7 +1662,8 @@ myprint_def()</code></pre>
 <div id="control-structures" class="section level1">
 <h1>Control structures</h1>
 <ol start="3" style="list-style-type: decimal">
-<li><strong><code>for</code> loop</strong> Now consider the following <code>data.frame</code>:</li>
+<li><strong><code>for</code> loop</strong><br />
+Now consider the following <code>data.frame</code>:</li>
 </ol>
 <table>
 <thead>
@@ -1687,13 +1689,9 @@ myprint_def()</code></pre>
 <td align="left">Potter</td>
 <td align="left">male</td>
 </tr>
-<tr class="even">
-<td align="left">Write a funct</td>
-<td align="left">ion that tak</td>
-<td align="left">es such a <code>data.frame</code> as a argument and that will print the last name for each row.</td>
-</tr>
 </tbody>
 </table>
+<p>Write a function that takes such a <code>data.frame</code> as a argument and that will print the last name for each row.</p>
 <pre class="r"><code>print_last_name &lt;- function(df) {
     for (i in 1:nrow(df)) {
         print(as.character(df[i, &quot;last_name&quot;]))
