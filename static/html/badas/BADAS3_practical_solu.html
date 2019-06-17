@@ -1672,8 +1672,8 @@ str(naissance)</code></pre>
 ##  $ UI   : int  1 0 0 1 1 0 0 0 0 0 ...
 ##  $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
 ##  $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
-<div id="exercice" class="section level4">
-<h4>Exercice :</h4>
+<div id="exercice-0" class="section level4">
+<h4>Exercice 0 :</h4>
 <ol style="list-style-type: decimal">
 <li>Charger le fichier de données nommé <code>naissance_na.txt</code>.</li>
 </ol>
@@ -1735,6 +1735,8 @@ str(naissance_na)</code></pre>
 <li><p><code>RAPPORT</code>, contenant le rapport entre le poids de l’enfant et celui de la mère (en grammes tous les deux).</p></li>
 </ul></li>
 </ol>
+<pre class="r"><code>naissance_na &lt;- transform(naissance_na, POIDS = LWT * 453, RAPPORT = BWT/POIDS)</code></pre>
+<pre><code>## Error in eval(substitute(list(...)), `_data`, parent.frame()): object &#39;POIDS&#39; not found</code></pre>
 <pre class="r"><code>naissance_na &lt;- transform(naissance_na, POIDS = LWT * 453)
 naissance_na &lt;- transform(naissance_na, RAPPORT = BWT/POIDS)
 str(naissance_na)</code></pre>
@@ -1807,7 +1809,9 @@ str(naissance)</code></pre>
 <p>On remarque qu’on a pas besoin d’affecter le résultat de <code>load()</code> à un objet. Ceci est dû au fait, qu’on peut sauvegarder plusieurs objets de la session dans un même fichier <code>.Rdata</code>. Et on pourra tous les recharger ensuite :</p>
 <pre class="r"><code>save(naissance, mon_df, file = &quot;naissance_mon_df.Rdata&quot;)
 rm(naissance, mon_df)
-load(&quot;naissance_mon_df.Rdata&quot;)
+class(mon_df)</code></pre>
+<pre><code>## Error in eval(expr, envir, enclos): object &#39;mon_df&#39; not found</code></pre>
+<pre class="r"><code>load(&quot;naissance_mon_df.Rdata&quot;)
 class(mon_df)</code></pre>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
 <p>Ce comportement est pratique, mais peut parfois s’avérer trompeur. Si on a beaucoup d’objets dans notre environnement, et qu’on charge un objet <code>.Rdata</code> avec plusieurs objets (dont on ne se souvient pas, ou dont on ne connaît pas le nom), il est difficile de s’y retrouver. De plus, lors du chargement, <code>R</code> peut écraser des objets déjà présents avec le même nom.</p>
@@ -2402,12 +2406,12 @@ head(nais_fus2)</code></pre>
 nais3 &lt;- naissance[desordre, c(1, 7:10)]
 head(nais3)</code></pre>
 <pre><code>##      ID HT UI FVT  BWT
-## 133  11  1  0   0 1135
-## 104 200  0  0   1 3770
-## 18  103  0  0   3 2782
-## 57  144  0  1   0 3203
-## 1    85  0  1   0 2523
-## 11   96  0  0   0 2722</code></pre>
+## 168  54  0  0   0 2325
+## 3    87  0  0   1 2557
+## 8    93  0  0   1 2637
+## 73  164  0  0   1 3331
+## 59  146  0  0   0 3203
+## 68  159  0  0   6 3303</code></pre>
 <pre class="r"><code>nais_fus3 &lt;- merge(nais1, nais3)
 head(nais_fus3)</code></pre>
 <pre><code>##   ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -2418,7 +2422,7 @@ head(nais_fus3)</code></pre>
 ## 5 15  25  85    3 Non-Fumeur   0  0  1   0 1474
 ## 6 16  27 150    3 Non-Fumeur   0  0  0   0 1588</code></pre>
 <pre class="r"><code>identical(nais_fus1, nais_fus3)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
+<pre><code>## [1] FALSE</code></pre>
 <div id="exercice-7-join" class="section level4">
 <h4>Exercice 7 : join</h4>
 <ol style="list-style-type: decimal">
@@ -2443,76 +2447,76 @@ knitr::kable(head(naissance_perm))</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">87</td>
-<td align="right">20</td>
-<td align="right">105</td>
+<td align="right">190</td>
+<td align="right">29</td>
+<td align="right">135</td>
+<td align="right">1</td>
+<td align="left">Non-Fumeur</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">3651</td>
+</tr>
+<tr class="even">
+<td align="right">65</td>
+<td align="right">30</td>
+<td align="right">142</td>
+<td align="right">1</td>
+<td align="left">Fumeur</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">2410</td>
+</tr>
+<tr class="odd">
+<td align="right">100</td>
+<td align="right">18</td>
+<td align="right">100</td>
 <td align="right">1</td>
 <td align="left">Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">1</td>
-<td align="right">2557</td>
+<td align="right">0</td>
+<td align="right">2769</td>
 </tr>
 <tr class="even">
-<td align="right">184</td>
-<td align="right">22</td>
-<td align="right">125</td>
-<td align="right">1</td>
-<td align="left">Non-Fumeur</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">3614</td>
-</tr>
-<tr class="odd">
-<td align="right">120</td>
-<td align="right">25</td>
-<td align="right">155</td>
-<td align="right">1</td>
-<td align="left">Non-Fumeur</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">2977</td>
-</tr>
-<tr class="even">
-<td align="right">144</td>
+<td align="right">52</td>
 <td align="right">21</td>
-<td align="right">110</td>
+<td align="right">100</td>
 <td align="right">3</td>
-<td align="left">Fumeur</td>
-<td align="right">0</td>
-<td align="right">0</td>
+<td align="left">Non-Fumeur</td>
 <td align="right">1</td>
 <td align="right">0</td>
-<td align="right">3203</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2301</td>
 </tr>
 <tr class="odd">
-<td align="right">56</td>
-<td align="right">31</td>
-<td align="right">102</td>
-<td align="right">1</td>
-<td align="left">Fumeur</td>
-<td align="right">1</td>
+<td align="right">208</td>
+<td align="right">18</td>
+<td align="right">120</td>
+<td align="right">3</td>
+<td align="left">Non-Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
+<td align="right">0</td>
 <td align="right">1</td>
-<td align="right">2353</td>
+<td align="right">3884</td>
 </tr>
 <tr class="even">
-<td align="right">125</td>
-<td align="right">27</td>
-<td align="right">124</td>
+<td align="right">46</td>
+<td align="right">25</td>
+<td align="right">105</td>
+<td align="right">3</td>
+<td align="left">Non-Fumeur</td>
 <td align="right">1</td>
-<td align="left">Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">2992</td>
+<td align="right">1</td>
+<td align="right">2240</td>
 </tr>
 </tbody>
 </table>
@@ -2636,9 +2640,9 @@ knitr::kable(head(nais_joined))</code></pre>
 <td align="left">Non-Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">1</td>
 <td align="right">0</td>
-<td align="right">2523</td>
+<td align="right">0</td>
+<td align="right">2500</td>
 </tr>
 <tr class="even">
 <td align="right">85</td>
@@ -2648,9 +2652,9 @@ knitr::kable(head(nais_joined))</code></pre>
 <td align="left">Non-Fumeur</td>
 <td align="right">0</td>
 <td align="right">0</td>
+<td align="right">1</td>
 <td align="right">0</td>
-<td align="right">0</td>
-<td align="right">2500</td>
+<td align="right">2523</td>
 </tr>
 <tr class="odd">
 <td align="right">86</td>

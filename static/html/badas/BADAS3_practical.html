@@ -1646,8 +1646,8 @@ library(dplyr)</code></pre>
 <p>Importer le fichier <code>naissance.txt</code>, puis regarder la structure du tableau créé via la fonction <code>str()</code>.</p>
 <p><code>R</code> considère toutes les variables comme des suite de nombres entiers (car effectivement il n’y a pas de nombres à virgule), ce qui est correcte pour les variables quantitatives (comme l’âge ou encore le poids de l’enfant <code>BWT</code>). Par contre, certaines variables sont qualitatives (comme <code>SMOKE</code>), donc si on veut des facteurs, il faut le forcer.</p>
 <p>Transformer la variable <code>SMOKE</code> en facteur, et renommer les niveaux en “Non-Fumeur” (0 dans le fichier txt) et “Fumeur” (1 dans le fichier txt).</p>
-<div id="exercice" class="section level4">
-<h4>Exercice :</h4>
+<div id="exercice-0" class="section level4">
+<h4>Exercice 0 :</h4>
 <ol style="list-style-type: decimal">
 <li><p>Charger le fichier de données nommé <code>naissance_na.txt</code>.</p></li>
 <li><p>Consulter la structure de l’objet créé (par exemple nommé <code>naissance_na</code>). Que remarquez-vous pour la variable <code>LWT</code> ?</p></li>
@@ -1696,7 +1696,9 @@ str(naissance)</code></pre>
 <p>On remarque qu’on a pas besoin d’affecter le résultat de <code>load()</code> à un objet. Ceci est dû au fait, qu’on peut sauvegarder plusieurs objets de la session dans un même fichier <code>.Rdata</code>. Et on pourra tous les recharger ensuite :</p>
 <pre class="r"><code>save(naissance, mon_df, file = &quot;naissance_mon_df.Rdata&quot;)
 rm(naissance, mon_df)
-load(&quot;naissance_mon_df.Rdata&quot;)
+class(mon_df)</code></pre>
+<pre><code>## Error in eval(expr, envir, enclos): object &#39;mon_df&#39; not found</code></pre>
+<pre class="r"><code>load(&quot;naissance_mon_df.Rdata&quot;)
 class(mon_df)</code></pre>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
 <p>Ce comportement est pratique, mais peut parfois s’avérer trompeur. Si on a beaucoup d’objets dans notre environnement, et qu’on charge un objet <code>.Rdata</code> avec plusieurs objets (dont on ne se souvient pas, ou dont on ne connaît pas le nom), il est difficile de s’y retrouver. De plus, lors du chargement, <code>R</code> peut écraser des objets déjà présents avec le même nom.</p>
@@ -1809,12 +1811,12 @@ head(nais_fus2)</code></pre>
 nais3 &lt;- naissance[desordre, c(1, 7:10)]
 head(nais3)</code></pre>
 <pre><code>##      ID HT UI FVT  BWT
-## 80  173  0  0   0 3459
-## 75  167  0  0   0 3374
-## 169  56  0  0   1 2353
-## 125 221  0  0   2 4153
-## 22  107  0  1   3 2835
-## 2    86  0  0   3 2551</code></pre>
+## 31  117  0  0   1 2920
+## 151  32  0  0   1 2055
+## 108 204  0  0   0 3827
+## 183  77  0  0   0 2466
+## 39  126  0  0   2 3005
+## 158  42  0  1   1 2187</code></pre>
 <pre class="r"><code>nais_fus3 &lt;- merge(nais1, nais3)
 head(nais_fus3)</code></pre>
 <pre><code>##   ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -1825,7 +1827,7 @@ head(nais_fus3)</code></pre>
 ## 5 15  25  85    3 Non-Fumeur   0  0  1   0 1474
 ## 6 16  27 150    3 Non-Fumeur   0  0  0   0 1588</code></pre>
 <pre class="r"><code>identical(nais_fus1, nais_fus3)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
+<pre><code>## [1] FALSE</code></pre>
 <div id="exercice-7-join" class="section level4">
 <h4>Exercice 7 : join</h4>
 <ol style="list-style-type: decimal">
