@@ -19,7 +19,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Frontiers in Immunology*, 10:874, 2019"
-publication_short = "*Front. Immunol.*, , 10:874, 2019"
+publication_short = "*Front. Immunol.*, 10:874, 2019"
 
 doi ="10.3389/fimmu.2019.00874"
 
