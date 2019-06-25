@@ -33,7 +33,7 @@ weight = 65
 
 - [R-bloggers](https://www.r-bloggers.com/)
 
-
+- [Teach Data Science - ASA blog](https://teachdatascience.com/)
 
 **Podcasts:**
 
