@@ -269,8 +269,8 @@ defaultContentLanguageInSubdir = false
   weight = 3
 
 [[menu.main]]
-  name = "Careers"
-  url = "/careers"
+  name = "Jobs"
+  url = "/jobs"
   weight = 4
 
 [[menu.main]]
@@ -294,8 +294,8 @@ defaultContentLanguageInSubdir = false
   weight = 8
 
 [[menu.main]]
-  name = "Careers"
-  url = "/careers"
+  name = "Jobs"
+  url = "/jobs"
   weight = 9
 
 [[menu.main]]
