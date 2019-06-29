@@ -15,7 +15,7 @@ slug: publications
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
   
   * Low DY&#42;, Lefèvre‐Arbogast S&#42;, González‐Domínguez R, Urpi‐Sarda M, Micheau P, Petera M, Centeno D, Durand S, Pujos‐Guillot E, Korosi A, Lucassen PJ, Aigner L, Proust‐Lima C, <u>**Hejblum BP**</u>, Helmer C, Andres‐Lacueva C, Thuret S, Samieri C&#42;, Manach C&#42;, Diet‐Related Metabolites Associated with Cognitive Decline Revealed by Untargeted Metabolomics in a Prospective Cohort, *Molecular Nutrition & Food Research*, ([in press](https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201900177)), 2019.  
-DOI: [10.1002/mnfr.201900177](https://10.1002/mnfr.201900177)
+DOI: [10.1002/mnfr.201900177](https://doi.org/10.1002/mnfr.201900177)
   
   * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, ([in press](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btz135/5372340)), 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://doi.org/10.1093/bioinformatics/btz135)
