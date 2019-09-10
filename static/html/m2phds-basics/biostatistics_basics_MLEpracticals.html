@@ -1687,13 +1687,11 @@ newton.method(FUN = function(x) (x - 2)^2 - 1, init = 9.5,
 <li><p>use all three functions to compute the MLE of the low birthweight prevalence</p></li>
 </ol>
 </div>
-<div id="clever-numerical-optimization" class="section level2">
-<h2><span class="header-section-number">5.3</span> Clever numerical optimization</h2>
-<ol style="list-style-type: decimal">
-<li><p>Does it work ? Why not ? Try parametrizing your likelihood with <span class="math inline">\(\beta_0 = logit(\pi) = \log\left(\frac{\pi}{1-\pi}\right)\)</span> ( and inversely <span class="math inline">\(\pi = expit(\beta_0) =\frac{e^{\beta_0}}{1+e^{\beta_0}}\)</span>) instead.</p></li>
-<li><p>Try several initial values and experiment with different stopping rules – i.e. convergence criterion – (you can combine them). Compare the results.<br />
-</p></li>
-<li><p>Compute the p-value from the Wald test and the Likelihood Ratio Test respectively.</p></li>
+<div id="robustness-and-statistical-inference" class="section level2">
+<h2><span class="header-section-number">5.3</span> ## Robustness and statistical inference</h2>
+<ol start="4" style="list-style-type: decimal">
+<li>Try several initial values, different tolerance, and experiment with different stopping rules – i.e. convergence criterion – (you can combine them). Compare the results. Does it always work ?</li>
+<li>Compute the p-value from the Wald test, the score test and the Likelihood Ratio Test respectively, and compare to the <code>glm</code> function output</li>
 </ol>
 </div>
 <div id="does-the-mothers-smoking-status-impacts-the-probability-of-low-birth-weight" class="section level2">

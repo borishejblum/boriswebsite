@@ -3151,7 +3151,8 @@ background-size: 200px 50px;
           </hgroup>
   </slide>
 
-<!-- ![](logoM2PHDS.png){#id .class width=60% height=60%} -->
+<!--
+![](logoM2PHDS.png){#id .class width=60% height=60%}-->
 
 <slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Motivational example</h2></hgroup><article  id="motivational-example">
 
@@ -3169,14 +3170,14 @@ background-size: 200px 50px;
 <ol>
 <li>launch <code>Rstudio</code></li>
 <li>open a new <code>.Rmd</code> file from the default template</li>
-<li>compile it with the <code>&quot;Knit&quot;</code> button <img id="id" width="6%" height="6%" class="class" src='knitButton.png' title=''/></li>
+<li>compile it with the <code>&quot;Knit&quot;</code> button <img height="6%" width="6%" id="id" class="class" src='knitButton.png' title=''/></li>
 <li>discuss with your neighbor to understand each part of the script</li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2>Importing data</h2></hgroup><article  id="importing-data">
 
 <ol>
-<li>import the dataset in <code>birthweight.txt</code> (you can use the <code>&quot;Import Dataset&quot;</code> button from <code>Rstudio</code> <img id="id" width="16%" height="16%" class="class" src='importButton.png' title=''/> )</li>
+<li>import the dataset in <code>birthweight.txt</code> (you can use the <code>&quot;Import Dataset&quot;</code> button from <code>Rstudio</code> <img height="16%" width="16%" id="id" class="class" src='importButton.png' title=''/> )</li>
 <li>describe the data (use nice table outputs in <code>Rmarkdown</code> and <code>ggplot2</code> graphics)</li>
 </ol>
 
@@ -3296,7 +3297,7 @@ newton.method(FUN = function(x) (x - 2)^2 - 1, init = 9.5,
               col.lp = c(&quot;orange&quot;, &quot;red3&quot;, &quot;dodgerblue1&quot;), 
               lwd=1.5)</pre>
 
-<img id="id" width="40%" height="40%" class="class" src='NewtonAnimate.png' title=''/>
+<img height="40%" width="40%" id="id" class="class" src='NewtonAnimate.png' title=''/>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Practicals</h2></hgroup><article  id="practicals">
 
@@ -3319,12 +3320,11 @@ newton.method(FUN = function(x) (x - 2)^2 - 1, init = 9.5,
 <li><p>use all three functions to compute the MLE of the low birthweight prevalence</p></li>
 </ol>
 
-</article></slide><slide class=""><hgroup><h2>Clever numerical optimization</h2></hgroup><article  id="clever-numerical-optimization">
+</article></slide><slide class=""><hgroup><h2>Robustness and statistical inference</h2></hgroup><article  id="robustness-and-statistical-inference">
 
 <ol>
-<li><p>Does it work ? Why not ? Try parametrizing your likelihood with \(\beta_0 = logit(\pi) = \log\left(\frac{\pi}{1-\pi}\right)\) ( and inversely \(\pi = expit(\beta_0) =\frac{e^{\beta_0}}{1+e^{\beta_0}}\)) instead.</p></li>
-<li><p>Try several initial values and experiment with different stopping rules – i.e. convergence criterion – (you can combine them). Compare the results.<br/></p></li>
-<li><p>Compute the p-value from the Wald test and the Likelihood Ratio Test respectively.</p></li>
+<li><p>Try several initial values, different tolerance, and experiment with different stopping rules – i.e. convergence criterion – (you can combine them). Compare the results. Does it always work ?</p></li>
+<li><p>Compute the p-value from the Wald test, the score test and the Likelihood Ratio Test respectively, and compare to the <code>glm</code> function output</p></li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2><strong><em>Does the mother’s smoking status impacts the probability of low birth weight</em></strong></h2></hgroup><article  id="does-the-mothers-smoking-status-impacts-the-probability-of-low-birth-weight">
