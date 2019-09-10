@@ -27,7 +27,11 @@ slug: teach
 
 * * *
 
-# **Enseignements**
+# **Enseignements/Teaching**
+
+## M2 Public Health Data Science
+  * BASICS (2019 -- ...)  
+  <a href="/html/m2phds-basics/biostatistics_basics_MLEslides.html" target="_blank">MLE slides</a> | <a href="/html/m2phds-basics/biostatistics_basics_MLEpracticals.html" target="_blank">MLE practicals</a>
 
 ## M2 Biostatistique ISPED
 
