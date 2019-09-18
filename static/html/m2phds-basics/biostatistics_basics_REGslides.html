@@ -4476,9 +4476,9 @@ background-size: 200px 50px;
 <p>Those quantities are estimated over a sample \((x_1, \dots, x_n)\) by:</p>
 
 <ul>
-<li>\(\bar{x} = \sum_{i=1}^n x_i\)</li>
+<li>\(\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i\)</li>
 <li>\(s^2_x = \dfrac{\sum_{i=1}^n (x_i-\bar{x})^2}{n-1}\)</li>
-<li>\(s_{xy} = \sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})\)</li>
+<li>\(s_{xy} = \dfrac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{n-1}\)</li>
 <li>\(r=\frac{s_{xy}}{\sqrt{s^2_{x}s^2_{y}}}\)</li>
 </ul>
 
@@ -4487,13 +4487,6 @@ background-size: 200px 50px;
 </article></slide><slide class=""><hgroup><h2>Correlation between the mother’s age and the birth weight</h2></hgroup><article  id="correlation-between-the-mothers-age-and-the-birth-weight">
 
 <p>Here, the correlation between the mother’s age and the birth weight is \(0.09\)</p>
-
-</article></slide><slide class=""><hgroup><h2>Average birth weight by mother’s age</h2></hgroup><article  id="average-birth-weight-by-mothers-age">
-
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["age"],"name":[1],"type":["int"],"align":["right"]},{"label":["n"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bwt_mean"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bwt_se"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"14","2":"3","3":"2967.333","4":"843.3447"},{"1":"15","2":"3","3":"2504.000","4":"237.7036"},{"1":"16","2":"7","3":"3331.714","4":"695.1493"},{"1":"17","2":"12","3":"2758.500","4":"443.3844"},{"1":"18","2":"10","3":"2998.200","4":"573.6156"},{"1":"19","2":"16","3":"3051.875","4":"681.9460"},{"1":"20","2":"18","3":"2860.167","4":"694.1185"},{"1":"21","2":"12","3":"2724.167","4":"698.4330"},{"1":"22","2":"13","3":"3150.231","4":"551.7235"},{"1":"23","2":"13","3":"2951.692","4":"640.3095"},{"1":"24","2":"13","3":"2930.462","4":"901.0396"},{"1":"25","2":"15","3":"2767.467","4":"914.7245"},{"1":"26","2":"8","3":"2777.000","4":"631.3828"},{"1":"27","2":"3","3":"2232.333","4":"668.1544"},{"1":"28","2":"9","3":"2909.222","4":"968.0275"},{"1":"29","2":"7","3":"2966.714","4":"971.1026"},{"1":"30","2":"7","3":"3221.714","4":"508.6347"},{"1":"31","2":"5","3":"3136.200","4":"674.1730"},{"1":"32","2":"6","3":"3082.667","4":"712.4571"},{"1":"33","2":"3","3":"3165.333","4":"690.0828"},{"1":"34","2":"1","3":"1135.000","4":"0.0000"},{"1":"35","2":"2","3":"3561.000","4":"866.9129"},{"1":"36","2":"2","3":"3218.000","4":"540.2296"},{"1":"45","2":"1","3":"4990.000","4":"0.0000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script></div>
 
 </article></slide><slide class=""><hgroup><h2>Other correlations and associations measure</h2></hgroup><article  id="other-correlations-and-associations-measure">
 
@@ -4511,6 +4504,13 @@ background-size: 200px 50px;
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Simple linear Regression</h2></hgroup><article  id="simple-linear-regression">
 
 <p>Also quantifies the relationship between 2 continuous variables \(X\) and \(Y\)</p>
+
+</article></slide><slide class=""><hgroup><h2>Average birth weight by mother’s age</h2></hgroup><article  id="average-birth-weight-by-mothers-age">
+
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["age"],"name":[1],"type":["int"],"align":["right"]},{"label":["n"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bwt_mean"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["bwt_se"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"14","2":"3","3":"2967.333","4":"843.3447"},{"1":"15","2":"3","3":"2504.000","4":"237.7036"},{"1":"16","2":"7","3":"3331.714","4":"695.1493"},{"1":"17","2":"12","3":"2758.500","4":"443.3844"},{"1":"18","2":"10","3":"2998.200","4":"573.6156"},{"1":"19","2":"16","3":"3051.875","4":"681.9460"},{"1":"20","2":"18","3":"2860.167","4":"694.1185"},{"1":"21","2":"12","3":"2724.167","4":"698.4330"},{"1":"22","2":"13","3":"3150.231","4":"551.7235"},{"1":"23","2":"13","3":"2951.692","4":"640.3095"},{"1":"24","2":"13","3":"2930.462","4":"901.0396"},{"1":"25","2":"15","3":"2767.467","4":"914.7245"},{"1":"26","2":"8","3":"2777.000","4":"631.3828"},{"1":"27","2":"3","3":"2232.333","4":"668.1544"},{"1":"28","2":"9","3":"2909.222","4":"968.0275"},{"1":"29","2":"7","3":"2966.714","4":"971.1026"},{"1":"30","2":"7","3":"3221.714","4":"508.6347"},{"1":"31","2":"5","3":"3136.200","4":"674.1730"},{"1":"32","2":"6","3":"3082.667","4":"712.4571"},{"1":"33","2":"3","3":"3165.333","4":"690.0828"},{"1":"34","2":"1","3":"1135.000","4":"0.0000"},{"1":"35","2":"2","3":"3561.000","4":"866.9129"},{"1":"36","2":"2","3":"3218.000","4":"540.2296"},{"1":"45","2":"1","3":"4990.000","4":"0.0000"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script></div>
 
 </article></slide><slide class=""><hgroup><h2>Linear Model</h2></hgroup><article  id="linear-model-1">
 
@@ -4532,14 +4532,14 @@ background-size: 200px 50px;
 
 <p>\[y = a + bx\]</p>
 
-<p>We can write such an eqyuation for reltating \(y_i\) values to \(x_i\) values:</p>
+<p>We can write such an equation for relating \(y_i\) values to \(x_i\) values:</p>
 
 <p>\[y_i = \beta_0 + \color{blue}{\beta_1} x_i + \color{red}{\varepsilon_i}\]</p>
 
 <ul>
-<li>\(\beta_0\) is interpreted as the average value of \(Y\)</li>
+<li>\(\beta_0\) is interpreted as the average value of \(Y\) when \(x_i\) is 0</li>
 <li>\(\beta_1\) represents the slope of the regression line</li>
-<li>\(\epsilon_i\) is the randomerror separating the regression line from the observed value</li>
+<li>\(\varepsilon_i\) is the random error separating the regression line from the observed value</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Conditional distribution</h2></hgroup><article  id="conditional-distribution">
@@ -4577,7 +4577,7 @@ background-size: 200px 50px;
 
 <p>When X increases by 1 unit, Y increases <strong>on average</strong> by \(\beta_1\) units<br/><strong>regardless of the inital value of X</strong></p>
 
-<p>\(E(Y_i|X_i=a+1) - E(Y_i|X_i=a)=[\beta_0 +\beta_1(a+1)]-[\beta_0 +\beta_1a]\) \(\qquad\qquad\qquad\qquad\qquad\quad\,=\beta_1\)</p>
+<p>\(\begin{align*} E(Y_i|X_i=a+1) - E(Y_i|X_i=a) &amp;= [\beta_0 +\beta_1(a+1)]\\&amp;\quad-[\beta_0 +\beta_1a]\\ &amp;=\beta_1 \end{align*}\)</p>
 
 </article></slide><slide class=""><hgroup><h2>Homoskedasticity hypothesis</h2></hgroup><article  id="homoskedasticity-hypothesis">
 
@@ -4589,7 +4589,7 @@ background-size: 200px 50px;
 
 </article></slide><slide class=""><hgroup><h2>Normality hypothesis</h2></hgroup><article  id="normality-hypothesis">
 
-<p>\(Var(Y_i|x_i) \sim \mathcal{N}\) for all \(x_i\)<br/><em>usually not enough data to assess – instead a graphical assessment can be performed on the marginal histogram of \(Y\) (instead of \(Y|x\))</em></p>
+<p>\(Y_i|x_i \sim \mathcal{N}\) for all \(x_i\)<br/><em>usually not enough data to assess – instead a graphical assessment can be performed on the marginal histogram of \(Y\) (instead of \(Y|x\))</em></p>
 
 <p><em>Ex</em>: for any mother’s age (\(x\)), the conditional birth weight (\(Y|x\)) must have a Gaussian distribution</p>
 
@@ -4604,29 +4604,29 @@ background-size: 200px 50px;
 </article></slide><slide class=""><hgroup><h2>Random errors &amp; residuals</h2></hgroup><article  id="random-errors-residuals">
 
 <ul>
-<li>\(E(Yi|xi) = \beta_0 + \beta_1 xi \quad (i = 1, \dots, n)\)</li>
-<li>\(Yi = \beta_0 + \beta_1 xi + \varepsilon_i \quad (i = 1, \dots, n)\)</li>
+<li>\(E(Y_i|x_i) = \beta_0 + \beta_1 x_i \quad (i = 1, \dots, n)\)</li>
+<li>\(Y_i = \beta_0 + \beta_1 x_i + \varepsilon_i \quad (i = 1, \dots, n)\)</li>
 </ul>
 
-<p>where \(\beta_0+\beta_1x_i\) is the determinist part<br/>and \(\varepsilon_i\) is the random part: \[\varepsilon_i=Y_i-E(Y_i|x_i)=Y_i-(\beta_0+\beta_1x_i) \enspace\]</p>
+<p>where \(\beta_0 + \beta_1 x_i\) is the determinist part<br/>and \(\varepsilon_i\) is the random part: \[\varepsilon_i=Y_i-E(Y_i|x_i)=Y_i-(\beta_0 + \beta_1 x_i) \enspace\]</p>
 
-<p>\(varepsilon_i\) are called the <strong>random errors</strong>, or the <strong>residuals</strong></p>
+<p>\(\varepsilon_i\) are called the <strong>random errors</strong>, or the <strong>residuals</strong></p>
 
 </article></slide><slide class=""><hgroup><h2>Random errors hypothesis</h2></hgroup><article  id="random-errors-hypothesis">
 
 <p>The 4 hypothesis from the linear model can be expressed with respect to the random errors:</p>
 
 <ul>
-<li>l’independence of the \(\varepsilon_i\) \(\Rightarrow\) independence of \(Y_i\)</li>
-<li>\(E(\varepsilon_i)=0\) \(\Rightarrow\) linearity hypothesis</li>
-<li>\(Var(\varepsilon_i)=\sigma^2\) \(\Rightarrow\) \(Var(Y_i|x_i)=\sigma^2\)</li>
-<li>normality of the \(\varepsilon_i\) \(\Rightarrow\) normality of the \(Y_i|x_i\).</li>
+<li><strong>independence</strong> of the \(\varepsilon_i\) \(\Rightarrow\) independence of \(Y_i\)</li>
+<li>\(E(\varepsilon_i)=0\) \(\Rightarrow\) <strong>linearity</strong> hypothesis</li>
+<li>\(Var(\varepsilon_i)=\sigma^2\) \(\Rightarrow\) \(Var(Y_i|x_i)=\sigma^2\) (<strong>homoskedasticity</strong>)</li>
+<li><strong>normality</strong> of the \(\varepsilon_i\) \(\Rightarrow\) normality of the \(Y_i|x_i\).</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Summary on the hypothesis</h2></hgroup><article  id="summary-on-the-hypothesis">
 
 <ul>
-<li><p><strong>Linearity</strong>: \(E(Y_i|X_i=x_i) = E(Y_i|x_i) = \beta0 + \beta_1 x_i\) or \(E(\varepsilon_i)=0\) \((i = 1, \dots, n)\)<br/>✅ <em>check</em>: \(X \times Y\) scaterplot + post-fit residuals</p></li>
+<li><p><strong>Linearity</strong>: \(E(Y_i|X_i=x_i) = E(Y_i|x_i) = \beta_0 + \beta_1 x_i\) or \(E(\varepsilon_i)=0\) \((i = 1, \dots, n)\)<br/>✅ <em>check</em>: \(X \times Y\) scaterplot + post-fit residuals</p></li>
 <li><p><strong>Homoskedasticity</strong>: \(Var(Y_i|x_i) = \sigma^2\) or \(Var(\varepsilon_i)=\sigma^2\) for all \(i\)<br/>✅ <em>check</em>: \(X \times Y\) scaterplot + post-fit residuals</p></li>
 <li><p><strong>Normality</strong>: \(Y_i|x_i \sim \mathcal{N}\) for any \(x_i\) or \(\varepsilon_i \sim \mathcal{N}\) for all \(i\)<br/>✅ <em>check</em>: histogram of \(Y\) before estimation + post-fit residuals</p></li>
 <li><p><strong>Independence</strong>: \(cov(Y_i, Y_j) = 0\) or \(cov(\varepsilon_i, \varepsilon_j) = 0\) for all pairs \(i \neq j\)<br/>✅ <em>check</em>: context</p></li>
@@ -4658,7 +4658,7 @@ background-size: 200px 50px;
 <li><p>\(\hat{\beta_1} \sim \mathcal{N}\left(\beta_1, \sigma^2_{\hat{\beta_1}}\right)\) \(\Rightarrow\) \(\dfrac{\hat{\beta_1}-\beta_1}{s(\hat{\beta_1})}\sim Student(n-2)\)</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Confidence Intervals</h2></hgroup><article  id="confidence-intervals">
+</article></slide><slide class=""><hgroup><h2>Confidence Intervals (CI)</h2></hgroup><article  id="confidence-intervals-ci">
 
 <p>It follows that</p>
 
@@ -4678,20 +4678,22 @@ background-size: 200px 50px;
 
 <p>\(\Rightarrow\) <em>test statistics:</em> \(T=\frac{\hat{\beta}_1}{s(\hat{\beta}_1)}\underset{H_0}{\sim} Student(n-2)\)</p>
 
-</article></slide><slide class=""><hgroup><h2>Link between Tests and IC</h2></hgroup><article  id="link-between-tests-and-ic">
+</article></slide><slide class=""><hgroup><h2>Link between Tests and CI</h2></hgroup><article  id="link-between-tests-and-ci">
 
 <ul>
-<li>\(IC_{1-\alpha\%}(\beta_1)\) contains 0 \(\Leftrightarrow\) non-rejection of \(H_0\) at the significance level \(\alpha\)</li>
-<li>\(IC_{1-\alpha\%}(\beta_1)\) does <strong>NOT</strong> contain 0 \(\Leftrightarrow\) rejection of \(H_0\) at the significance level \(\alpha\)</li>
+<li>\(CI_{1-\alpha\%}(\beta_1)\) contains 0 \(\Leftrightarrow\) non-rejection of \(H_0\) at the significance level \(\alpha\)</li>
+<li>\(CI_{1-\alpha\%}(\beta_1)\) does <strong>NOT</strong> contain 0 \(\Leftrightarrow\) rejection of \(H_0\) at the significance level \(\alpha\)</li>
 </ul>
 
-<p>IC gives a idea of the precision around the estimation of \(\beta_1\), but not its significance level (p-value)…<br/>One can only know if the p-value is below or above \(\alpha\) from the IC</p>
+<p>CI gives a idea of the precision around the estimation of \(\beta_1\), but not its significance level (p-value)…<br/>One can only know if the p-value is below or above \(\alpha\) from the CI</p>
 
 </article></slide><slide class=""><hgroup><h2>Link between correlation and simple linear regression</h2></hgroup><article  id="link-between-correlation-and-simple-linear-regression">
 
+<p>\(R^2\) coefficient is the square of the correlation and is related to \(\beta_1\)</p>
+
 <p>\[R^2 = \beta_1^2\frac{\sigma_X^2}{\sigma_Y^2}\]</p>
 
-<p>\[r = \hat{\beta_1}\frac{s_X}{s_Y}\]</p>
+<p>The correlation estimator can then be written as: \[r = \hat{\beta_1}\frac{s_X}{s_Y}\]</p>
 
 </article></slide><slide class=""><hgroup><h2>Likelihood approach</h2></hgroup><article  id="likelihood-approach">
 
