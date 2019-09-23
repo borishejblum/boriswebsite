@@ -14,9 +14,7 @@ slug: publications
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, ([in press](https://journals.sagepub.com/doi/10.1177/0962280219837676)), 2019.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
   
-  * Low DY&#42;, Lefèvre‐Arbogast S&#42;, González‐Domínguez R, Urpi‐Sarda M, Micheau P, Petera M, Centeno D, Durand S, Pujos‐Guillot E, Korosi A, Lucassen PJ, Aigner L, Proust‐Lima C, <u>**Hejblum BP**</u>, Helmer C, Andres‐Lacueva C, Thuret S, Samieri C&#42;, Manach C&#42;, Diet‐Related Metabolites Associated with Cognitive Decline Revealed by Untargeted Metabolomics in a Prospective Cohort, *Molecular Nutrition & Food Research*, ([in press](https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201900177)), 2019.  
-DOI: [10.1002/mnfr.201900177](https://doi.org/10.1002/mnfr.201900177)
-  
+
   * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, ([in press](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btz135/5372340)), 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://doi.org/10.1093/bioinformatics/btz135)
 
@@ -29,6 +27,9 @@ DOI: [10.1038/sdata.2018.298](https://doi.org/10.1038/sdata.2018.298)
   * Thiébaut R, <u>**Hejblum BP**</u>, Hocini H, Bonnabau H, Skinner J, Montes M, Lacabaratz C, Richert L, Palucka K, Banchereau J, Levy Y, Gene expression signatures associated with immune and virological responses to therapeutic vaccination with Dendritic Cells in HIV-infected individuals, *Frontiers in Immunology*, 10:874, 2019.  
 DOI: [10.3389/fimmu.2019.00874](https://doi.org/10.3389/fimmu.2019.00874)
  
+  * Low DY&#42;, Lefèvre‐Arbogast S&#42;, González‐Domínguez R, Urpi‐Sarda M, Micheau P, Petera M, Centeno D, Durand S, Pujos‐Guillot E, Korosi A, Lucassen PJ, Aigner L, Proust‐Lima C, <u>**Hejblum BP**</u>, Helmer C, Andres‐Lacueva C, Thuret S, Samieri C&#42;, Manach C&#42;, Diet‐Related Metabolites Associated with Cognitive Decline Revealed by Untargeted Metabolomics in a Prospective Cohort, *Molecular Nutrition & Food Research*, 63(18):1900177, 2019.  
+DOI: [10.1002/mnfr.201900177](https://doi.org/10.1002/mnfr.201900177)
+  
 
 # **2018**
 
