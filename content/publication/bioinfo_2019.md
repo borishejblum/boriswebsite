@@ -1,6 +1,6 @@
 +++
 title = "Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size"
-date = "2019-01-09"
+date = "2019-09-20"
 
 
 
