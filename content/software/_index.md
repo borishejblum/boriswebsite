@@ -20,6 +20,10 @@ slug: software
 
 * * *
 
+  * `foodingraph` an **R package** to perform *Food Network Inference and Visualization* developped by Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [github](https://github.com/victorgasque/foodingraph).
+
+* * *
+
   * `ludic` an **R package** to perform *probabilistic record Linkage Using only DIagnosis Codes without direct identifiers*, using C++ code to speed up computations. Available on [CRAN](https://CRAN.R-project.org/package=ludic), development version on [github](https://github.com/borishejblum/ludic).
 
 * * *
