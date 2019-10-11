@@ -34,7 +34,7 @@ slug: teach
   <a href="/html/m2phds-basics/biostatistics_basics_MLEslides.html" target="_blank">MLE slides</a> | <a href="/html/m2phds-basics/biostatistics_basics_MLEpracticals.html" target="_blank">MLE practicals</a> | [data](/files/birthweight_data.txt) | <a href="/html/m2phds-basics/biostatistics_basics_MLEpracticals_solutions.html" target="_blank">solutions</a>  
   <a href="/html/m2phds-basics/biostatistics_basics_REGslides.html" target="_blank">Regression slides</a> 
   * OMICS (2019 -- ...)  
-   [Transcriptomics slides](/files/transcriptomics-eur/TranscriptomicsData.pdf) | <a href="/html/m2phds-omics/transcriptomics_M2PHDS_OMICS_practicals.html" target="_blank">Transcriptomics practicals </a> | [data](/files/transcriptomics-eur/SinghaniaTB_data.Rdata) | <a href="/html/m2phds-omics/transcriptomics_M2PHDS_OMICS_practicals_solutions.html" target="_blank">solutions </a> |
+   [Transcriptomics slides](/files/transcriptomics-eur/TranscriptomicsData.pdf) | <a href="/html/m2phds-omics/transcriptomics_M2PHDS_OMICS_practicals.html" target="_blank">Transcriptomics practicals </a> | [data](/files/transcriptomics-eur/SinghaniaTB_data.Rdata) | <a href="/html/m2phds-omics/transcriptomics_M2PHDS_OMICS_practicals_solutions.html" target="_blank">solutions </a>
 
 ## M2 Biostatistique ISPED
 
