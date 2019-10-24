@@ -12,7 +12,7 @@ slug: jobs
 
 Please contact me if you would be interested by these research topics: `boris [dot] hejblum [at] u-bordeaux [dot] fr`
 
-## Stage/interships
+## Sujets de stage proposés (*interships offered*) :
 
 Voici les différents sujets de recherche pour lesquels je propose actuellement un stage de niveau M2/école d'ingénieur :  
 
