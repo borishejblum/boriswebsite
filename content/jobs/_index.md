@@ -7,7 +7,8 @@ slug: jobs
 
 ## Postdoctoral position(s) in the SISTM team:
 
-  * High-dimensional surrogate applied to gene expression data to predict EBOLA vaccine response 
+  * High-dimensional surrogate applied to gene expression data to predict EBOLA vaccine response
+  * Computationnal Bayes: scaling-up inference for Dirichlet process mixture models using Hamiltonina Monte Carlo 
   * Integrative modeling of vaccine response from high-dimensional data
 
 Please contact me if you would be interested by these research topics: `boris [dot] hejblum [at] u-bordeaux [dot] fr`
