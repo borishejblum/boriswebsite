@@ -16,11 +16,13 @@ draft: false
 
  1. install the jags software: https://sourceforge.net/projects/mcmc-jags/files/
  2. install the rjags package in R by running the following command:
-``` r
+ 
+```{r}
 install.packages("rjags”)
 ```
 make sure it works by successfully running the following command:
-``` r
+
+```{r}
 library(rjags)
 ```
 
