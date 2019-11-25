@@ -5,6 +5,26 @@ date: '2019-05-13'
 draft: false
 ---
 
+
+## Technical requirements
+### R and R studio
+
+ - latest version of R (>= 3.6.1) https://cran.r-project.org/ https://vimeo.com/203516510
+ - latest version of RStudio (>= 1.2.1335) https://www.rstudio.com/products/rstudio/download/#download
+
+### JAGS software
+
+ 1. install the jags software: https://sourceforge.net/projects/mcmc-jags/files/
+ 2. install the rjags package in R by running the following command:
+``` r
+install.packages("rjags”)
+```
+make sure it works by successfully running the following command:
+``` r
+library(rjags)
+```
+
+## Materials
 Below are the materials for the *Introduction to Bayesian analysis for medical studies* PhD course at the **University of Copenhagen** Graduate School of Health and Medical Sciences at University of Copenhagen:
 
  - <a href="/files/intro-bayes-med/IntroBayesMed_lectureNotes.pdf" target="_blank">Lecture notes</a>
