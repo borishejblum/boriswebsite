@@ -57,10 +57,9 @@ slug: "my-package-worldmap"
     
     world.map &lt;- ggplot(data = world.points) + geom_polygon(aes(x = long, y = lat, 
         group = group, fill = dnls), color = &quot;black&quot;) + coord_equal() + # theme_minimal() +
-    scale_fill_gradient(low = &quot;white&quot;, high = &quot;#56B1F7&quot;, name = &quot;Downloads&quot;) + 
-        labs(title = paste(pkgname, &quot; downloads from the &#39;0-Cloud&#39; CRAN mirror by country\nfrom &quot;, 
-            date.start, &quot; to &quot;, date.stop, &quot;\n(Total downloads: &quot;, sum(counts$count), 
-            &quot;)&quot;, sep = &quot;&quot;))
+    scale_fill_gradient(low = &quot;white&quot;, high = &quot;#56B1F7&quot;, name = &quot;Downloads&quot;) + labs(title = paste(pkgname, 
+        &quot; downloads from the &#39;0-Cloud&#39; CRAN mirror by country\nfrom &quot;, date.start, 
+        &quot; to &quot;, date.stop, &quot;\n(Total downloads: &quot;, sum(counts$count), &quot;)&quot;, sep = &quot;&quot;))
     return(world.map)
 }
 
