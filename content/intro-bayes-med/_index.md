@@ -18,12 +18,13 @@ draft: false
  2. install the rjags package in R by running the following command:
  
 ```{r}
-install.packages("rjags”)
+ install.packages("rjags")
 ```
-make sure it works by successfully running the following command:
+
+ 3. make sure it works by successfully running the following command:
 
 ```{r}
-library(rjags)
+ library(rjags)
 ```
 
 ## Materials
