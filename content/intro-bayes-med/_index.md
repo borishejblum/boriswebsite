@@ -20,7 +20,6 @@ draft: false
 ```{r}
  install.packages("rjags")
 ```
-
  3. make sure it works by successfully running the following command:
 
 ```{r}
