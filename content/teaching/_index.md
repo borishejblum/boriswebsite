@@ -20,7 +20,7 @@ slug: teach
 
 ## Formations doctorales/PhD courses
 
- * [Introduction to Bayesian analysis for medical studies](/intro-bayes-med)
+ * Introduction to Bayesian analysis for medical studies <!--](/intro-bayes-med)-->
 
  * [**R avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)  (2018, 2019)  
     + codes disponibles [ici](/files/mypkgr_0.0.0.9000.tar.gz)
