@@ -7,10 +7,7 @@ baseurl = "/"
 
 # Title of your site
 title = "Research Side Effects"
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
 copyright = "&copy; 2019"
