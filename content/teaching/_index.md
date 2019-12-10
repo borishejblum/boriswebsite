@@ -40,7 +40,7 @@ slug: teach
 ## M2 Biostatistique ISPED
 
   * STA305 Approche bayésienne et méthodes numériques pour la statistique (2016 -- ...)  
-  <a href="/files/STA305cours_etud.pdf" target="_blank">cours</a> | <a href="/files/STA305slides_Bayes.pdf" target="_blank">Diapos Bayes</a> | <a href="/files/STA305slides_MCMC.pdf" target="_blank">Diapos MCMC</a> | <a href="/html/STA305/STA305_TP_enonce.html" target="_blank">Travaux pratiques</a>
+  <a href="/files/STA305cours_etud.pdf" target="_blank">cours</a> | <a href="/files/STA305slides_Bayes.pdf" target="_blank">Diapos Bayes</a> | <a href="/files/STA305slides_MCMC.pdf" target="_blank">Diapos MCMC</a> | <a href="/html/STA305/STA305_TP_enonce.html" target="_blank">Travaux pratiques</a> - <a href="/files/CorrectionTPBayes.R" target="_blank">correction intermédaire .Rmd</a>
   
   * STA206 Analyse de données multivariées (2016 -- ...)
 
