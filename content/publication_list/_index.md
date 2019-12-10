@@ -11,12 +11,15 @@ slug: publications
 
 # **2019**
 
+  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L (2019). Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 112711 ([in press](https://www.sciencedirect.com/science/article/pii/S0022175919303151)), 2019.
+DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
+
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, ([in press](https://journals.sagepub.com/doi/10.1177/0962280219837676)), 2019.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
   
 
-  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, btz135, ([in press](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btz135/5372340)), 2019.  
-DOI: [10.1093/bioinformatics/btz135](https://doi.org/10.1093/bioinformatics/btz135)
+  * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, 35(19):3628-3634, 2019.  
+DOI: [10.1093/bioinformatics/btz135](https://academic.oup.com/bioinformatics/article/35/19/3628/5372340)
 
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, 13(1):638-660, 2019.  
 DOI: [10.1214/ 18-AOAS1209](http://dx.doi.org/10.1214/18-AOAS1209) 

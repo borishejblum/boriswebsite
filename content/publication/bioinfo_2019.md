@@ -1,6 +1,6 @@
 +++
 title = "Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size"
-date = "2019-09-20"
+date = "2019-10-01"
 
 
 
@@ -18,8 +18,8 @@ authors = ["S Ajana", "A Niyazi", "L Bretillon", "<u>**BP Hejblum**</u>", "H Jac
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Bioinformatics*, btz135, in press"
-publication_short = "*Bioinformatics*, btz135, in press"
+publication = "*Bioinformatics*, 35(19):3628-3634"
+publication_short = "*Bioinformatics*, 35(19):3628-3634"
 
 doi ="10.1093/bioinformatics/btz135"
 
@@ -34,7 +34,7 @@ image_preview = ""
 selected = false
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://academic.oup.com/bioinformatics/article-pdf/35/19/3628/30061712/btz135.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -46,7 +46,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Article", url = "https://doi.org/10.1093/bioinformatics/btz135"}, {name = "R code", url = "https://github.com/SoufianeAjana/Blisar"}]
+url_custom = [{name = "Article", url = "https://academic.oup.com/bioinformatics/article/35/19/3628/5372340"}, {name = "R code", url = "https://github.com/SoufianeAjana/Blisar"}]
 
 
 # Does the content use math formatting?
