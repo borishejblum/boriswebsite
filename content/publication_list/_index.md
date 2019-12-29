@@ -80,7 +80,7 @@ DOI: [10.1371/journal.pcbi.1004310](http://journals.plos.org/ploscompbiol/articl
 
 # **2014**
 
-  * Furman D&#42;, <u>**Hejblum BP&#42;**</u>, Simon N, Jojic V, Dekker CL, Thiébaut R, Tibshirani RJ, Davis MM, A systems analysis of sex differences reveals an immunosuppressive role for testosterone in the response to influenza vaccination, *Proc Natl Acad Sci USA*, 111(2):869-874, 2014.  
+  * Furman D&#42;, <u>**Hejblum BP**&#42;</u>  , Simon N, Jojic V, Dekker CL, Thiébaut R, Tibshirani RJ, Davis MM, A systems analysis of sex differences reveals an immunosuppressive role for testosterone in the response to influenza vaccination, *Proc Natl Acad Sci USA*, 111(2):869-874, 2014.  
 DOI: [10.1073/pnas.1321060111](http://www.pnas.org/content/111/2/869.full)
 
   * Thiébaut R, <u>**Hejblum B**</u>, Richert L, The analysis of "Big Data" in clinical research, *Rev Epidemiol Sante Publique*, 62(1):1-4, 2014.  
