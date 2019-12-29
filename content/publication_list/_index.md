@@ -21,6 +21,9 @@ DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
   * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, 35(19):3628-3634, 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://academic.oup.com/bioinformatics/article/35/19/3628/5372340)
 
+  * Desquilbet L, Granger S, <u>**Hejblum BP**</u>, Legrand A, Pernot P, Rougier NP, *Vers une recherche reproductible : Faire évoluer ses pratiques*, 2019.  
+ISBN: [979-10-97595-05-0](https://hal.archives-ouvertes.fr/hal-02144142v3/document)
+
   *  <u>**Hejblum BP**</u>, Alkhassim C, Gottardo R, Caron F, Thiébaut R, Sequential Dirichlet process mixture of skew t-distributions for model-based clustering of flow cytometry data, *Annals of Applied Statistics*, 13(1):638-660, 2019.  
 DOI: [10.1214/ 18-AOAS1209](http://dx.doi.org/10.1214/18-AOAS1209) 
     
