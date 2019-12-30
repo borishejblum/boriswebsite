@@ -12,6 +12,10 @@ slug: software
 
 ![](/files/Rlogo.png) 
 
+  * `dearseq` an **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Development version available on [github](https://github.com/borishejblum/dearseq).
+
+* * *
+
   * `cytometree` an **R package** to perform *Automatic gating and annotation of cytometry data*. Available on [CRAN](https://CRAN.R-project.org/package=cytometree), development version available on [github](https://github.com/sistm/cytometree).
 
 * * *
