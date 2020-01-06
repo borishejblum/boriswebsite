@@ -32,6 +32,10 @@ slug: software
 
 * * *
 
+  * `marqLevAlg` an **R package** to perform (parallelized) optimization of convex multiparametric functions. Available on [CRAN](https://CRAN.R-project.org/package=marqLevAlg), development version on [github](https://github.com/VivianePhilipps/marqLevAlgParallel).
+
+* * *
+
   * `NPflow` an **R package** to perform *Dirichlet process mixture of multivariate normal, skew-normal or skew $t$-distributions modeling* oriented towards flow-cytometry data preprocessing applications, using C++ code to speed up computations. Available on [CRAN](https://CRAN.R-project.org/package=NPflow), development version on [github](https://github.com/borishejblum/NPflow).
 
 * * *
