@@ -11,11 +11,13 @@ slug: publications
 
 # **2019**
 
+  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.
+DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
+
+
   * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *bioRxiv* 635714, 2019.  
 DOI: [10.1101/635714](https://doi.org/10.1101/635714)
 
-  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 112711 ([in press](https://www.sciencedirect.com/science/article/pii/S0022175919303151)), 2019.
-DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
 
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, ([in press](https://journals.sagepub.com/doi/10.1177/0962280219837676)), 2019.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
