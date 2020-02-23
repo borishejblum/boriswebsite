@@ -9,19 +9,19 @@ slug: publications
 
 &#42;: equal contribution
 
-# **2019**
+# **2020**
 
   * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.
 DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
 
+  * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, 29(2):455-465, 2020.  
+DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
+
+
+# **2019**
 
   * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *bioRxiv* 635714, 2019.  
 DOI: [10.1101/635714](https://doi.org/10.1101/635714)
-
-
-  * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, ([in press](https://journals.sagepub.com/doi/10.1177/0962280219837676)), 2019.  
-DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
-  
 
   * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, 35(19):3628-3634, 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://academic.oup.com/bioinformatics/article/35/19/3628/5372340)
@@ -59,6 +59,7 @@ DOI: [10.1212/WNL.0000000000005607](http://n.neurology.org/content/early/2018/04
   * Neykov M, <u>**Hejblum BP**</u>, Sinnott JA, Kernel Machine Score Test for Pathway Analysis in the Presence of Semi-Competing Risks, *Stat Methods in Med Res*, 27(4):1099-1114, 2018.  
 DOI: [10.1177/ 0962280216653427](http://journals.sagepub.com/doi/abs/10.1177/0962280216653427)
 
+
 # **2017**
 
   * Agniel D and <u>**Hejblum BP**</u>, Variance component score test for time-course gene set analysis of longitudinal RNA-seq data, *Biostatistics*, 18(4):589-604, 2017.  
@@ -70,15 +71,18 @@ DOI: [10.1016/j.celrep.2017.08.023](http://www.cell.com/cell-reports/fulltext/S2
   * Liao KP&#42;, Sparks JA&#42;, <u>**Hejblum BP**</u>, Kuo IH, Cui J, Lahey LJ, Cagan A, Gainer VS, Liu W,  Cai TT, Sokolove J, Cai T, Phenome-wide association study of autoantibodies to citrullinated and non-citrullinated epitopes in rheumatoid arthritis, *Arthritis & Rheumatology*, 69(4):742-749, 2017.  
 DOI: [10.1002/art.39974](http://onlinelibrary.wiley.com/doi/10.1002/art.39974/abstract)
 
+
 # **2016**
 
   * Liquet B, Lafaye de Micheaux P, <u>**Hejblum BP**</u>, Thiébaut R, Group and Sparse Group Partial Least Square Approaches Applied in Genomics Context, *Bioinformatics*, 32(1): 35-42, 2016.  
 DOI: [10.1093/bioinformatics/btv535](http://bioinformatics.oxfordjournals.org/content/32/1/35)
 
+
 # **2015**
 
   * <u>**Hejblum BP**</u>, Skinner J, Thiébaut R, Time-Course Gene Set Analysis for Longitudinal Gene Expression Data, *PLoS Comput Biol*, 11(6): e1004310, 2015.  
 DOI: [10.1371/journal.pcbi.1004310](http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004310)
+
 
 # **2014**
 
