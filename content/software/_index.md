@@ -5,32 +5,38 @@ date: '2016-01-26'
 slug: software
 ---
 
-![](/files/shinyhex_small.png) 
 
+<img width="120" src='/files/shinyhex_small.png'>
 
-# `VICI` <a><img src='/files/hexstickers/vici.svg' align="right" width="150" /></a>   
+## `VICI` <img src='/files/hexstickers/vici.svg' align="right" width="150" /> 
   
 * * *
 
 A **Shiny app** to perform *for accurate estimation of vaccine induced cellular immunogenicity with bivariate linear modeling*. Available at [https://shiny-vici.apps.math.cnrs.fr/](https://shiny-vici.apps.math.cnrs.fr/), or locally through the `vici` [R package](https://CRAN.R-project.org/package=vici).  
 
-![](/files/Rlogo.png)
+
 
 <br />
 <br />
+<br />
 
- # `dearseq` <a><img src='/files/hexstickers/dearseq.svg' align="right" width="150" /></a> 
-  
+
+  <img width="120" src='/files/Rlogo.png'>
+
+## `dearseq` <img src='/files/hexstickers/dearseq.svg' align="right" width="150" />
+
 * * *
   
-  An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Development version available on [github](https://github.com/borishejblum/dearseq).  
+An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Development version available on [github](https://github.com/borishejblum/dearseq).
 
 
 <br />
 <br />
+<br />
+<br />
 
- # `cytometree` <a><img src='/files/hexstickers/cytometree.svg' align="right" width="150" /></a> 
-  
+## `cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="150" />
+
 * * *
 
 An **R package** to perform *Automatic gating and annotation of cytometry data*. Available on [CRAN](https://CRAN.R-project.org/package=cytometree), development version available on [github](https://github.com/sistm/cytometree). 
@@ -38,9 +44,11 @@ An **R package** to perform *Automatic gating and annotation of cytometry data*.
 
 <br />
 <br />
+<br />
+<br />
 
- # `kernscr` 
-  
+## `kernscr`
+
 * * *
 
 An **R package** to perform *KERNel machine score test for pathway analysis in the presence of Semi-Competing Risks*. Available on [CRAN](https://CRAN.R-project.org/package=kernscr), development version available on [github](https://github.com/borishejblum/kernscr).
@@ -48,8 +56,10 @@ An **R package** to perform *KERNel machine score test for pathway analysis in t
 
 <br />
 <br />
+<br />
+<br />
 
- # `foodingraph` 
+## `foodingraph` 
  
 * * *
 
@@ -58,8 +68,10 @@ An **R package** to perform *Food Network Inference and Visualization* developpe
 
 <br />
 <br />
+<br />
+<br />
 
- # `ludic` <a><img src='/files/hexstickers/ludic.svg' align="right" width="150" /></a> 
+## `ludic` <a><img src='/files/hexstickers/ludic.svg' align="right" width="150" /></a> 
 
 * * *
  
@@ -68,8 +80,10 @@ An **R package** to perform *probabilistic record Linkage Using only DIagnosis C
 
 <br />
 <br />
+<br />
+<br />
 
- # `marqLevAlg` 
+## `marqLevAlg` 
 
 * * *
 
@@ -78,8 +92,10 @@ An **R package** to perform (parallelized) optimization of convex multiparametri
 
 <br />
 <br />
+<br />
+<br />
 
- # `NPflow` <a><img src='/files/hexstickers/NPflow.svg' align="right" width="150" /></a> 
+## `NPflow` <a><img src='/files/hexstickers/NPflow.svg' align="right" width="150" /></a> 
 
 * * *
 
@@ -88,8 +104,10 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 
 <br />
 <br />
+<br />
+<br />
 
- # `TcGSA` 
+## `TcGSA` 
 
 * * *
 
@@ -98,8 +116,10 @@ An **R package** to *analyze longitudinal gene-expression data at the gene set l
 
 <br />
 <br />
+<br />
+<br />
 
- # `tcgsaseq` 
+## `tcgsaseq` 
 
 * * *
 
@@ -108,8 +128,10 @@ An **R package** to perform *gene set analysis of longitudinal RNA-seq data with
   
 <br />
 <br />
+<br />
+<br />
 
- # `vici` <a><img src='/files/hexstickers/VICI.svg' align="right" width="150" /></a> 
+## `vici` <a><img src='/files/hexstickers/VICI.svg' align="right" width="150" /></a> 
 
 * * *
 
