@@ -5,6 +5,11 @@ date: '2016-09-27'
 slug: teach
 ---
 
+* * *
+
+# **Books**
+
+  * [*Vers une recherche reproductible*](https://rr-france.github.io/bookrr/), Desquilbet, Granger, Hejblum, Legrand, Pernot & Rougier, 2019.
 
 * * *
 
