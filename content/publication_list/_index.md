@@ -11,7 +11,16 @@ slug: publications
 
 # **2020**
 
-  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.
+  * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *arXiv*:2006.09003, 2020.  
+[arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
+
+  * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
+DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
+
+  * <u>**Hejblum BP**&#42;</u>, Kunzmann K&#42;, Lavagnini E, Hutchinson A, Robertson DS, Jones SC, Eckes-Shephard AH. Realistic and Robust Reproducible Research for Biostatistics. *Preprints* 2020060002, 2020.  
+DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
+
+  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.  
 DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
 
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, 29(2):455-465, 2020.  
