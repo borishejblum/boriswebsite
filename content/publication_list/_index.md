@@ -14,6 +14,9 @@ slug: publications
   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *arXiv*:2006.09003, 2020.  
 [arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
 
+  * Ferte T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V, <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *medRxiv* 2020.06.15.20131458, 2020.  
+DOI: [10.1101/2020.06.15.20131458](https://doi.org/10.1101/2020.06.15.20131458)
+
   * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
 DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
 

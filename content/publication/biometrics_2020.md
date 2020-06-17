@@ -32,7 +32,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://www.medrxiv.org/content/10.1101/2020.04.21.20073536v1.full.pdf"
 url_preprint = "https://www.medrxiv.org/content/10.1101/2020.04.21.20073536v1"
 url_code = ""
 url_dataset = ""
