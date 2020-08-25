@@ -4,7 +4,7 @@ date = "2020-08-25"
 
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["S Ajana", "A Cougnard-Grégoire", "JM Colijn", "BMJ Merle", "T Verzijden", "PTVM de Jong", "A Hofman", "EYE-RISK Consortium"", "JR Vingerling", <u>**BP Hejblum**</u>", "J-F Korobelnik", "MA Meester-Smoor", "H Jacqmin-Gadda", "CCW Klaver", "C Delcourt"]
+authors = ["S Ajana", "A Cougnard-Grégoire", "JM Colijn", "BMJ Merle", "T Verzijden", "PTVM de Jong", "A Hofman", "EYE-RISK Consortium", "JR Vingerling", "<u>**BP Hejblum**</u>", "J-F Korobelnik", "MA Meester-Smoor", "H Jacqmin-Gadda", "CCW Klaver", "C Delcourt"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized
