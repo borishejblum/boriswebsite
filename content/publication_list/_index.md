@@ -26,7 +26,7 @@ DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006
   * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group (2020). Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11, 3730.  
 DOI: [10.1038/s41467-020-17489-7](https://doi.org/10.1038/s41467-020-17489-7)
 
- * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations* in press, 2020.
+ * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations* in press, 2020.  
 DOI: [10.1007/s10875-020-00839-x](https://doi.org/10.1007/s10875-020-00839-x)
 
   * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.  
@@ -35,7 +35,7 @@ DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, 29(2):455-465, 2020.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
 
- * Ajana S, Cougnard-Grégoire A, Colijn JM, Merle BMJ, Verzijden T, de Jong PTVM, Hofman A, EYE-RISK Consortium, Vingerling JR, <u>**Hejblum BP**</u>, Korobelnik J-F, Meester-Smoor MA, Jacqmin-Gadda H, Klaver CCW, Delcourt C, Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning, *Ophthalmology*, in press, 2020.
+ * Ajana S, Cougnard-Grégoire A, Colijn JM, Merle BMJ, Verzijden T, de Jong PTVM, Hofman A, EYE-RISK Consortium, Vingerling JR, <u>**Hejblum BP**</u>, Korobelnik J-F, Meester-Smoor MA, Jacqmin-Gadda H, Klaver CCW, Delcourt C, Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning, *Ophthalmology*, in press, 2020.  
 
 
 # **2019**
