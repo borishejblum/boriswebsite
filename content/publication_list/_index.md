@@ -35,6 +35,8 @@ DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, 29(2):455-465, 2020.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
 
+ * Ajana S, Cougnard-Grégoire A, Colijn JM, Merle BMJ, Verzijden T, de Jong PTVM, Hofman A, EYE-RISK Consortium, Vingerling JR, <u>**Hejblum BP**</u>, Korobelnik J-F, Meester-Smoor MA, Jacqmin-Gadda H, Klaver CCW, Delcourt C, Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning, *Ophthalmology*, in press, 2020.
+
 
 # **2019**
 
