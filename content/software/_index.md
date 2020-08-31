@@ -27,7 +27,7 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
 * * *
   
-An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Development version available on [GitHub](https://github.com/borishejblum/dearseq).
+An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Available on [Bioconductor](https://bioconductor.org/packages/dearseq/), development version available on [GitHub](https://github.com/borishejblum/dearseq).
 
 
 <br />
@@ -63,7 +63,7 @@ An **R package** to perform *KERNel machine score test for pathway analysis in t
  
 * * *
 
-An **R package** to perform *Food Network Inference and Visualization* developped by Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [GitHub](https://github.com/victorgasque/foodingraph).
+An **R package** to perform *Food Network Inference and Visualization* developed with Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [GitHub](https://github.com/victorgasque/foodingraph).
 
 
 <br />
@@ -87,7 +87,7 @@ An **R package** to perform *probabilistic record Linkage Using only DIagnosis C
 
 * * *
 
-An **R package** to perform (parallelized) optimization of convex multiparametric functions. Available on [CRAN](https://CRAN.R-project.org/package=marqLevAlg), development version on [GitHub](https://github.com/VivianePhilipps/marqLevAlgParallel).
+An **R package** to perform *(parallelized) optimization of convex multiparametric functions* developed with Viviane Philips, Mélanie Prague & Cécile Proust-Lima. Available on [CRAN](https://CRAN.R-project.org/package=marqLevAlg), development version on [GitHub](https://github.com/VivianePhilipps/marqLevAlgParallel).
 
 
 <br />
@@ -107,11 +107,11 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 <br />
 <br />
 
-## `PheVis` an automatic instant phenotyping from EHR data at the visit resolution
+## `PheVis`
 
 * * *
 
-An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions. Development version available on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
+An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions, developed with Thomas Ferte. Development version available on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
 
 
 <br />
