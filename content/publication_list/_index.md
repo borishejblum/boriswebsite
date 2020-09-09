@@ -23,6 +23,9 @@ DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
   * <u>**Hejblum BP**&#42;</u>, Kunzmann K&#42;, Lavagnini E, Hutchinson A, Robertson DS, Jones SC, Eckes-Shephard AH. Realistic and Robust Reproducible Research for Biostatistics. *Preprints* 2020060002, 2020.  
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
 
+  * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.  
+[arXiv:2006.09003](https://arxiv.org/abs/2009.03840)
+
   * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group (2020). Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11, 3730.  
 DOI: [10.1038/s41467-020-17489-7](https://doi.org/10.1038/s41467-020-17489-7)
 
