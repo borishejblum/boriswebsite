@@ -11,6 +11,8 @@ slug: publications
 
 # **2020**
 
+ * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* in press, 2020.  
+
   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *arXiv*:2006.09003, 2020.  
 [arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
 

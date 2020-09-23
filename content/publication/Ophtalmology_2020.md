@@ -1,5 +1,5 @@
 +++
-title = "Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning,"
+title = "Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning"
 date = "2020-08-25"
 
 
