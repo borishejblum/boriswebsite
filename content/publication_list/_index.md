@@ -22,6 +22,9 @@ DOI: [10.1101/2020.06.15.20131458](https://doi.org/10.1101/2020.06.15.20131458)
   * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
 DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
 
+  * Colas C, <u>**Hejblum B**</u>, Rouillon S, Thiébaut R, Oudeyer PY, Moulin-Frier C&#42;, Prague M&#42;. EpidemiOptim: A Toolbox for the Optimization of Control Policies in Epidemiological Models. *arXiv*:2010.04452, 2020.  
+[arXiv:2010.04452](https://arxiv.org/abs/2010.04452)
+
   * <u>**Hejblum BP**&#42;</u>, Kunzmann K&#42;, Lavagnini E, Hutchinson A, Robertson DS, Jones SC, Eckes-Shephard AH. Realistic and Robust Reproducible Research for Biostatistics. *Preprints* 2020060002, 2020.  
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
 
