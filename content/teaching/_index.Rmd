@@ -25,7 +25,7 @@ slug: teach
 
 ## Formations doctorales/PhD courses
 
- * [Introduction to Bayesian analysis for medical studies](https://introbayesmed20.borishejblum.science) – *University of Copenhagen* (2019, 2020)
+ * Introduction to Bayesian analysis for medical studies <!--] (https://introbayesmed20.borishejblum.science) -->– *University of Copenhagen* (2019, 2020)
 
  * [`r icon::fa_r_project(size=1)` **avancée :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science) – *Université de Bordeaux* (2018)  
     + codes `r icon::fa_r_project(size=1)` disponibles [ici](/files/mypkgr_0.0.0.9000.tar.gz)
