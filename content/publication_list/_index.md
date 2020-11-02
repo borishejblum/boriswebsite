@@ -11,6 +11,9 @@ slug: publications
 
 # **2020**
 
+* Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* in press, 2020.  
+DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
+
  * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020.  
 DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
 
@@ -49,9 +52,6 @@ DOI: [10.1016/j.ophtha.2020.08.031](https://doi.org/10.1016/j.ophtha.2020.08.031
 
 
 # **2019**
-
-  * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *bioRxiv* 635714, 2019.  
-DOI: [10.1101/635714](https://doi.org/10.1101/635714)
 
   * Ajana S, Niyazi A, Bretillon L, <u>**Hejblum BP**</u>, Jacqmin-Gadda H, Delcourt C, Benefits of dimension reduction in penalized regression methods for high dimensional grouped data: a case study in low sample size, *Bioinformatics*, 35(19):3628-3634, 2019.  
 DOI: [10.1093/bioinformatics/btz135](https://academic.oup.com/bioinformatics/article/35/19/3628/5372340)
