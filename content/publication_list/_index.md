@@ -11,7 +11,7 @@ slug: publications
 
 # **2020**
 
-* Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* in press, 2020.  
+* Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
 DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
 
  * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020.  
@@ -35,7 +35,7 @@ DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006
   * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.  
 [arXiv:2006.09003](https://arxiv.org/abs/2009.03840)
 
-  * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group (2020). Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11, 3730.  
+  * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group. Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11:3730, 2020.  
 DOI: [10.1038/s41467-020-17489-7](https://doi.org/10.1038/s41467-020-17489-7)
 
  * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations* in press, 2020.  

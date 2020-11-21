@@ -16,8 +16,8 @@ authors = ["M Gauthier", "D Agniel", "R Thiébaut", "<u>**BP Hejblum**</u>"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*NAR Genomics and Bioinformatics*, *in press*"
-publication_short = "*NAR Genomics and Bioinformatics*, *in press*"
+publication = "*NAR Genomics and Bioinformatics*, 2(4):lqaa093"
+publication_short = "*NAR Genomics and Bioinformatics*, 2(4):lqaa093"
 
 doi ="10.1093/nargab/lqaa093"
 
@@ -32,7 +32,7 @@ image_preview = ""
 selected = true
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://academic.oup.com/nargab/article-pdf/2/4/lqaa093/34399994/lqaa093.pdf"
 url_preprint = "https://www.biorxiv.org/content/10.1101/635714v1"
 url_code = ""
 url_dataset = ""
