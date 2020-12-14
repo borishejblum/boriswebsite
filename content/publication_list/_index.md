@@ -11,7 +11,10 @@ slug: publications
 
 # **2020**
 
-* Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
+ * Agniel D, Parast L, <u>**Hejblum B**</u>. Doubly-robust evaluation of high-dimensional surrogate markers. *arXiv*:2012.01236, 2020.  
+[arXiv:2012.01236](https://arxiv.org/abs/2012.01236) 
+
+ * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
 DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
 
  * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020.  
