@@ -11,14 +11,17 @@ slug: publications
 
 # **2020**
 
- * Agniel D, Parast L, <u>**Hejblum B**</u>. Doubly-robust evaluation of high-dimensional surrogate markers. *arXiv*:2012.01236, 2020.  
-[arXiv:2012.01236](https://arxiv.org/abs/2012.01236) 
-
  * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
 DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
 
  * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020.  
 DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
+
+ * Lévy Y, Wiedemann A&#42;, <u>**Hejblum BP**&#42;</u>, Durand M, Lefebvre C, Surénaud M, Lacabaratz C, Perreau M, Foucat E, Déchenaud M, Tisserand P, Blengio F, Hivert B, Gautier M, Cervantes-Gonzalez M, Bachelet D, Laouénan C, Bouadma L, Timsit JF, Yazdanpanah Y, Pantaleo G, Hocini H, Thiébaut R, for the French COVID cohort study group. CD177, a specific marker of neutrophil activation, is a hallmark of COVID-19 severity and death. *medRxiv* 2020.12.12.20246934, 2020.  
+DOI: [10.1101/2020.12.12.20246934](https://doi.org/10.1101/2020.12.12.20246934)
+
+ * Agniel D, Parast L, <u>**Hejblum B**</u>. Doubly-robust evaluation of high-dimensional surrogate markers. *arXiv*:2012.01236, 2020.  
+[arXiv:2012.01236](https://arxiv.org/abs/2012.01236) 
 
   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *arXiv*:2006.09003, 2020.  
 [arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
@@ -36,16 +39,16 @@ DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
 
   * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.  
-[arXiv:2006.09003](https://arxiv.org/abs/2009.03840)
+[arXiv:2006.03840](https://arxiv.org/abs/2009.03840)
+
+  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.  
+DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
 
   * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group. Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11:3730, 2020.  
 DOI: [10.1038/s41467-020-17489-7](https://doi.org/10.1038/s41467-020-17489-7)
 
- * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations* in press, 2020.  
+ * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations*, 40:1082-1092, 2020.  
 DOI: [10.1007/s10875-020-00839-x](https://doi.org/10.1007/s10875-020-00839-x)
-
-  * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.  
-DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
 
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data, *Statistical Methods in Medical Research*, 29(2):455-465, 2020.  
 DOI: [10.1177/ 0962280219837676](https://doi.org/10.1177/0962280219837676)
