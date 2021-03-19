@@ -12,10 +12,10 @@ weight = 5
   interests = [
     "Bayesian nonparametrics",
     "High-dimensional biomedical data",
-    "High-dimensional surrogate markers",
     "Longitudinal analysis",
     "RNAseq data analysis",
     "Single-cell data analysis",
+    "Surrogate markers",
     "Vaccine studies"
   ]
 
