@@ -31,7 +31,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = "https://www.frontiersin.org/articles/10.3389/fimmu.2019.00874/pdf"

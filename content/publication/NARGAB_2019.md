@@ -44,7 +44,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{article = "article", url = "https://doi.org/10.1093/nargab/lqaa093"}, {name = "R package", url = "https://bioconductor.org/packages/dearseq/"}]
+url_custom = [{name = "Article", url = "https://doi.org/10.1093/nargab/lqaa093"}, {name = "R package", url = "https://bioconductor.org/packages/dearseq/"}]
 
 
 # Does the content use math formatting?

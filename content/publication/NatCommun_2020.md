@@ -29,7 +29,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = "https://www.nature.com/articles/s41467-020-17489-7.pdf"

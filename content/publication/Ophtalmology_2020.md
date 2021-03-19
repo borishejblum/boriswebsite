@@ -1,6 +1,6 @@
 +++
 title = "Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning"
-date = "2020-08-25"
+date = "2021-04-21"
 
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -17,8 +17,8 @@ authors = ["S Ajana", "A Cougnard-Grégoire", "JM Colijn", "BMJ Merle", "T Verzi
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Ophthalmology* in press, 2020"
-publication_short = "*Ophthalmology* in press, 2020"
+publication = "*Ophthalmology* 128(4):587-597, 2021"
+publication_short = "*Ophthalmology* 128(4):587-597, 2021"
 
 doi ="10.1016/j.ophtha.2020.08.031"
 
@@ -30,7 +30,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = ""
