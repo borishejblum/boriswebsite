@@ -111,7 +111,7 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 
 * * *
 
-An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions, developed with Thomas Ferte. Development version available on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
+An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions, developed with Thomas Ferte. Available on [CRAN](https://CRAN.R-project.org/package=PheVis), development version on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
 
 
 <br />

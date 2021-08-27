@@ -11,22 +11,37 @@ slug: publications
 
 # **2021**
 
-  * Ferte T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V, <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *Journal of Biomedical Informatics*, 103746, in press 2021.  
+ * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *medRxiv* 2021.07.09.21260259, 2021.  
+DOI: [10.1101/2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
+
+ * Ferte T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V, <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *Journal of Biomedical Informatics*, 117:103746, 2021.  
 DOI: [10.1016/j.jbi.2021.103746](https://doi.org/10.1016/j.jbi.2021.103746)
+
+ * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021.  
+DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
+
+ * Zhang&#42; HG, <u>**Hejblum BP**&#42;</u>, Weber G, Palmer N, Churchill S, Szolovitz P, Murphy S, Liao K, Kohane I, Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association*, in press, 2021.  
+DOI: [10.1101/2021.05.02.21256490](https://10.1101/2021.05.02.21256490)
+
+  * Colas C, <u>**Hejblum B**</u>, Rouillon S, Thiébaut R, Oudeyer PY, Moulin-Frier C&#42;, Prague M&#42;. EpidemiOptim: A Toolbox for the Optimization of Control Policies in Epidemiological Models. *Journal of Artificial Intelligence Research*, 71:479-519, 2021.  
+DOI: [10.1613/jair.1.12588](https://doi.org/10.1613/jair.1.12588) 
+
+ * Lévy Y, Wiedemann A&#42;, <u>**Hejblum BP**&#42;</u>, Durand M, Lefebvre C, Surénaud M, Lacabaratz C, Perreau M, Foucat E, Déchenaud M, Tisserand P, Blengio F, Hivert B, Gauthier M, Cervantes-Gonzalez M, Bachelet D, Laouénan C, Bouadma L, Timsit JF, Yazdanpanah Y, Pantaleo G, Hocini H, Thiébaut R, for the French COVID cohort study group. CD177, a specific marker of neutrophil activation, is a hallmark of COVID-19 severity and death. *iScience*, 24(7):102711, 2021.  
+DOI: [10.1016/j.isci.2021.102711](https://doi.org/10.1016/j.isci.2021.102711)
+
+ * Acar N, Merle BMJ, Ajana S, He Z, Grégoire S, <u>**Hejblum BP**</u>, Martine L, Buaud B, Bron AM, Creuzot-Garcher CP, Korobelnik J-F, Berdeaux O, Jacqmin-Gadda H, Bretillon L, Delcourt C, for the Biomarkers of Lipid Status And metabolism in Retinal ageing (BLISAR) Study Group. Predicting the retinal content in omega-3 fatty acids for age-related macular-degeneration. *Clin. Transl. Med.*, 11:e404, 2021.  
+DOI: [10.1002/ctm2.404](https://doi.org/10.1002/ctm2.404) 
 
  * Ajana S, Cougnard-Grégoire A, Colijn JM, Merle BMJ, Verzijden T, de Jong PTVM, Hofman A, EYE-RISK Consortium, Vingerling JR, <u>**Hejblum BP**</u>, Korobelnik J-F, Meester-Smoor MA, Jacqmin-Gadda H, Klaver CCW, Delcourt C, Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning. *Ophthalmology*, 128(4):587-597, 2021.  
 DOI: [10.1016/j.ophtha.2020.08.031](https://doi.org/10.1016/j.ophtha.2020.08.031)
+
+ * Lefèvre-Arbogast S, <u>**Hejblum BP**</u>, Helmer C, Klose C, Manach C, Low DY, Urpi-Sarda M, Andres-Lacueva C, González-Domínguez R, Aigner L, Altendorfer B, Lucassen PJ, Ruigrok SR, De Lucia C, Du Preez A, Proust-Lima C, Thuret S, Korosi A, Samieri C. Early signature in the blood lipidome associated with subsequent cognitive decline in the elderly: A case-control analysis nested within the Three-City cohort study, *EBioMedicine*, 64:103216, 2021.  
+DOI: [10.1016/j.ebiom.2021.103216](https://doi.org/10.1016/j.ebiom.2021.103216)
 
 # **2020**
 
  * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
 DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
-
- * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020.  
-DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
-
- * Lévy Y, Wiedemann A&#42;, <u>**Hejblum BP**&#42;</u>, Durand M, Lefebvre C, Surénaud M, Lacabaratz C, Perreau M, Foucat E, Déchenaud M, Tisserand P, Blengio F, Hivert B, Gautier M, Cervantes-Gonzalez M, Bachelet D, Laouénan C, Bouadma L, Timsit JF, Yazdanpanah Y, Pantaleo G, Hocini H, Thiébaut R, for the French COVID cohort study group. CD177, a specific marker of neutrophil activation, is a hallmark of COVID-19 severity and death. *medRxiv* 2020.12.12.20246934, 2020.  
-DOI: [10.1101/2020.12.12.20246934](https://doi.org/10.1101/2020.12.12.20246934)
 
  * Agniel D, Parast L, <u>**Hejblum B**</u>. Doubly-robust evaluation of high-dimensional surrogate markers. *arXiv*:2012.01236, 2020.  
 [arXiv:2012.01236](https://arxiv.org/abs/2012.01236) 
@@ -37,14 +52,11 @@ DOI: [10.1101/2020.12.12.20246934](https://doi.org/10.1101/2020.12.12.20246934)
   * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
 DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
 
-  * Colas C, <u>**Hejblum B**</u>, Rouillon S, Thiébaut R, Oudeyer PY, Moulin-Frier C&#42;, Prague M&#42;. EpidemiOptim: A Toolbox for the Optimization of Control Policies in Epidemiological Models. *arXiv*:2010.04452, 2020.  
-[arXiv:2010.04452](https://arxiv.org/abs/2010.04452)
+  * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.
+[arXiv:2006.03840](https://arxiv.org/abs/2009.03840)
 
   * <u>**Hejblum BP**&#42;</u>, Kunzmann K&#42;, Lavagnini E, Hutchinson A, Robertson DS, Jones SC, Eckes-Shephard AH. Realistic and Robust Reproducible Research for Biostatistics. *Preprints* 2020060002, 2020.  
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
-
-  * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.  
-[arXiv:2006.03840](https://arxiv.org/abs/2009.03840)
 
   * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre JD, Lévy Y, Thiébaut R, Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: a new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods*, 477:112711, 2020.  
 DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
@@ -52,7 +64,7 @@ DOI: [10.1016/j.jim.2019.112711](https://doi.org/10.1016/j.jim.2019.112711)
   * Wiedemann A, Foucat E, Hocini H, Lefebvre C, <u>**Hejblum BP**</u>, Durand M, Krüger M, Keita AK, Ayouba A, Mély S, Fernandez J-C, Touré A, Fourati S, Lévy-Marchal C, Raoul H, Delaporte E, Koivogui L, Thiébaut R, Lacabaratz C, Lévy Y, PostEboGui Study Group. Long-lasting severe immune dysfunction in Ebola virus disease survivors. *Nat Commun* 11:3730, 2020.  
 DOI: [10.1038/s41467-020-17489-7](https://doi.org/10.1038/s41467-020-17489-7)
 
- * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations*, 40:1082-1092, 2020.  
+ * Bouadma L, Wiedemann A, Patrier J, Surénaud M, Wicky PH, Foucat E, Diehl JL, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J-F, Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Investigations*, 40:1082-1092, 2020.  
 DOI: [10.1007/s10875-020-00839-x](https://doi.org/10.1007/s10875-020-00839-x)
 
   * Chan SF, <u>**Hejblum BP**</u>, Chakrabortty A, Cai T, Semi-Supervised Estimation of Covariance with Application to Phenome-wide Association Studies with Electronic Medical Records Data. *Statistical Methods in Medical Research* 29(2):455-465, 2020.  

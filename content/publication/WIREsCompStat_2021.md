@@ -1,6 +1,6 @@
 +++
 title = "Bayesian Mixture Models for Cytometry Data Analysis"
-date = "2020-10-16"
+date = "2021-07-01"
 
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -17,8 +17,8 @@ authors = ["L Lin", "<u>**BP Hejblum**</u>"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020"
-publication_short = "*Wiley Interdisciplinary Reviews: Computational Statistics* e1535, 2020"
+publication = "*Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021"
+publication_short = "*Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021"
 
 doi ="10.1002/wics.1535"
 
