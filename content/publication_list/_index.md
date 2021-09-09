@@ -11,6 +11,9 @@ slug: publications
 
 # **2021**
 
+ * Villain L, Ferté T, Thiébaut R, <u>**Hejblum BP**</u>. Gene Set Analysis for time-to-event outcome with the Generalized Berk–Jones statistic. *bioRxiv* 2021.09.07.459329, 2021.  
+DOI: [10.1101/2021.09.07.459329](https://doi.org/10.1101/2021.09.07.459329)
+
  * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *medRxiv* 2021.07.09.21260259, 2021.  
 DOI: [10.1101/2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
 
