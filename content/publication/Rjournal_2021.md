@@ -16,8 +16,8 @@ authors = ["V Philipps", "<u>**BP Hejblum**</u>", "M Prague", "D Commenges", "C 
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*arxiv* 2009.03840"
-publication_short = "*arxiv* 2009.03840"
+publication = "*R journal* in press"
+publication_short = "*R journal* in press"
 
 doi =""
 

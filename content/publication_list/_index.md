@@ -26,6 +26,9 @@ DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
  * Zhang&#42; HG, <u>**Hejblum BP**&#42;</u>, Weber G, Palmer N, Churchill S, Szolovitz P, Murphy S, Liao K, Kohane I, Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association*, in press, 2021.  
 DOI: [10.1101/2021.05.02.21256490](https://10.1101/2021.05.02.21256490)
 
+ * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *R journal*, in press, 2021.  
+[arXiv:2009.03840](https://arxiv.org/abs/2009.03840)
+
   * Colas C, <u>**Hejblum B**</u>, Rouillon S, Thiébaut R, Oudeyer PY, Moulin-Frier C&#42;, Prague M&#42;. EpidemiOptim: A Toolbox for the Optimization of Control Policies in Epidemiological Models. *Journal of Artificial Intelligence Research*, 71:479-519, 2021.  
 DOI: [10.1613/jair.1.12588](https://doi.org/10.1613/jair.1.12588) 
 
@@ -54,9 +57,6 @@ DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
 
   * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
 DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
-
-  * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *arXiv*:2009.03840, 2020.
-[arXiv:2006.03840](https://arxiv.org/abs/2009.03840)
 
   * <u>**Hejblum BP**&#42;</u>, Kunzmann K&#42;, Lavagnini E, Hutchinson A, Robertson DS, Jones SC, Eckes-Shephard AH. Realistic and Robust Reproducible Research for Biostatistics. *Preprints* 2020060002, 2020.  
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)
