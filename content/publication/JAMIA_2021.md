@@ -16,8 +16,8 @@ authors = ["HG Zhang&#42;", "<u>**BP Hejblum**&#42;</u>", "G Weber", "N Palmer",
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Journal of the American Medical Informatics Association*, in press, 2021"
-publication_short = "*Journal of the American Medical Informatics Association*, in press, 2021"
+publication = "*Journal of the American Medical Informatics Association*, in press"
+publication_short = "*JAMIA*, in press"
 
 doi ="10.1101/2021.05.02.21256490"
 

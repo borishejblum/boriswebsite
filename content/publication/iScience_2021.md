@@ -17,8 +17,8 @@ authors = ["Y Lévy", "A Wiedemann", "<u>**BP Hejblum**</u>", "M Durand", "C Lef
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*iScience*, 24(7):102711, 2021"
-publication_short = "*iScience*, 24(7):102711, 2021"
+publication = "*iScience*, 24(7):102711"
+publication_short = "*iScience*, 24(7):102711"
 
 doi = "10.1016/j.isci.2021.102711"
 

@@ -17,8 +17,8 @@ authors = ["S Ajana", "A Cougnard-Grégoire", "JM Colijn", "BMJ Merle", "T Verzi
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Ophthalmology* 128(4):587-597, 2021"
-publication_short = "*Ophthalmology* 128(4):587-597, 2021"
+publication = "*Ophthalmology* 128(4):587-597"
+publication_short = "*Ophthalmology* 128(4):587-597"
 
 doi ="10.1016/j.ophtha.2020.08.031"
 

@@ -17,8 +17,8 @@ authors = ["L Lin", "<u>**BP Hejblum**</u>"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021"
-publication_short = "*Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021"
+publication = "*Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535"
+publication_short = "*WIREs Comp. Stat.* 13(4):e1535"
 
 doi ="10.1002/wics.1535"
 
