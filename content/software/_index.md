@@ -23,12 +23,11 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
   <img width="120" src='/files/Rlogo.png'>
 
-## `dearseq` <img src='/files/hexstickers/dearseq.svg' align="right" width="150" />
+## `ccdf`
 
 * * *
-  
-An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Available on [Bioconductor](https://bioconductor.org/packages/dearseq/), development version available on [GitHub](https://github.com/borishejblum/dearseq).
 
+An **R package** to perform *single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing*. Available on [CRAN](https://CRAN.R-project.org/package=ccdf), development version available on [GitHub](https://github.com/Mgauth/ccdf).
 
 <br />
 <br />
@@ -47,24 +46,11 @@ An **R package** to perform *Automatic gating and annotation of cytometry data*.
 <br />
 <br />
 
-## `ccdf`
+## `dearseq` <img src='/files/hexstickers/dearseq.svg' align="right" width="150" />
 
 * * *
-
-An **R package** to perform *single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing*. Available on [CRAN](https://CRAN.R-project.org/package=ccdf), development version available on [GitHub](https://github.com/Mgauth/ccdf).
-
-
-<br />
-<br />
-<br />
-<br />
-
-
-## `sGBJ`
-
-* * *
-
-An **R package** to perform Gene Set Analysis for time-to-event outcomes using a *Survival Extension of the Generalized Berk-Jones Test*. Available on [CRAN](https://CRAN.R-project.org/package=sGBJ), development version available on [GitHub](https://github.com/lauravillain/sGBJ).
+  
+An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **R**NA-**seq** data through a robust variance component test*. Available on [Bioconductor](https://bioconductor.org/packages/dearseq/), development version available on [GitHub](https://github.com/borishejblum/dearseq).
 
 
 <br />
@@ -137,6 +123,18 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 * * *
 
 An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions, developed with Thomas Ferte. Available on [CRAN](https://CRAN.R-project.org/package=PheVis), development version on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
+
+
+<br />
+<br />
+<br />
+<br />
+
+## `sGBJ`
+
+* * *
+
+An **R package** to perform Gene Set Analysis for time-to-event outcomes using a *Survival Extension of the Generalized Berk-Jones Test*. Available on [CRAN](https://CRAN.R-project.org/package=sGBJ), development version available on [GitHub](https://github.com/lauravillain/sGBJ).
 
 
 <br />
