@@ -47,6 +47,31 @@ An **R package** to perform *Automatic gating and annotation of cytometry data*.
 <br />
 <br />
 
+## `ccdf`
+
+* * *
+
+An **R package** to perform *single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing*. Available on [CRAN](https://CRAN.R-project.org/package=ccdf), development version available on [GitHub](https://github.com/Mgauth/ccdf).
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+## `sGBJ`
+
+* * *
+
+An **R package** to perform Gene Set Analysis for time-to-event outcomes using a *Survival Extension of the Generalized Berk-Jones Test*. Available on [CRAN](https://CRAN.R-project.org/package=sGBJ), development version available on [GitHub](https://github.com/lauravillain/sGBJ).
+
+
+<br />
+<br />
+<br />
+<br />
+
 ## `kernscr`
 
 * * *
