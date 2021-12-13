@@ -1,6 +1,6 @@
 +++
 title = "ATLAS: An automated association test using probabilistically linked health records with application to genetic studies"
-date = "2021-07-23"
+date = "2021-12-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["HG Zhang&#42;", "<u>**BP Hejblum**&#42;</u>", "G Weber", "N Palmer", "S Churchill", "P Szolovitz", "S Murphy", "K Liao", "I Kohane", "T Cai"]
@@ -16,8 +16,8 @@ authors = ["HG Zhang&#42;", "<u>**BP Hejblum**&#42;</u>", "G Weber", "N Palmer",
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Journal of the American Medical Informatics Association*, in press"
-publication_short = "*JAMIA*, in press"
+publication = "*Journal of the American Medical Informatics Association*, 28(12):2582-2592"
+publication_short = "*JAMIA*, 28(12):2582-2592"
 
 doi ="10.1101/2021.05.02.21256490"
 
@@ -44,7 +44,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "R package", url = "https://CRAN.R-project.org/package=ludic"}#, {name = "Article", url = "https://doi.org/10.1613/jair.1.12588"}
+url_custom = [{name = "R package", url = "https://CRAN.R-project.org/package=ludic"}#, {name = "Article", url = "https://doi.org/10.1093/jamia/ocab187"}
 ]
 
 
