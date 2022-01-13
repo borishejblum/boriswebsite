@@ -13,7 +13,8 @@ authors = ["A Collin", "<u>**BP Hejblum**</u>", "C Vignals", "L Lehot", "R Thié
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+# 7 = Preprint
+publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
 publication = "*medRxiv* 2021.07.09.21260259"

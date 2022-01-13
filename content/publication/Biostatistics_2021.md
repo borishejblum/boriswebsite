@@ -13,7 +13,8 @@ authors = ["M Gauthier", "D Agniel", "R Thiébaut", "<u>**BP Hejblum**</u>"]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+# 7 = Preprint
+publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
 publication = "*bioRxiv* 2021.05.21.445165"

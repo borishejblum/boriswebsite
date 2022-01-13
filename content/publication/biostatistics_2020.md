@@ -13,7 +13,8 @@ authors = ["<u>**BP Hejblum**&#42;</u>", "K Kunzmann&#42;", "E Lavagnini", "A Hu
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+# 7 = Preprint
+publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
 publication = "*Preprints* 2020060002"

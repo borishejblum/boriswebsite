@@ -13,7 +13,8 @@ authors = ["M Prague", "L Wittkop", "Q Clairon", "D Dutartre", "R Thiébaut", "<
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+# 7 = Preprint
+publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
 publication = "*medRxiv* 2020.04.21.20073536"
