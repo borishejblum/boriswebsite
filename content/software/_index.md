@@ -34,6 +34,18 @@ An **R package** to perform *single-cell RNA-seq differential expression analysi
 <br />
 <br />
 
+## `CytOpT`<img src='/files/hexstickers/CytOpT.png' align="right" width="150" />
+
+* * *
+
+An **R package** to perform *Optimal transport for gating transfer in cytometry data with domain adaptation*. Available on [CRAN](https://CRAN.R-project.org/package=CytOpT), development version available on [GitHub](https://github.com/sistm/CytOpT-R). 
+
+
+<br />
+<br />
+<br />
+<br />
+
 ## `cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="150" />
 
 * * *
