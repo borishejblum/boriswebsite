@@ -29,7 +29,7 @@ DOI: [10.1016/j.jbi.2021.103746](https://doi.org/10.1016/j.jbi.2021.103746)
  * Lin L, <u>**Hejblum BP**</u>. Bayesian Mixture Models for Cytometry Data Analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* 13(4):e1535, 2021.  
 DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
 
- * Zhang&#42; HG, <u>**Hejblum BP**&#42;</u>, Weber G, Palmer N, Churchill S, Szolovitz P, Murphy S, Liao K, Kohane I, Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association*, 28(12):2582-2592, 2021.  
+ * Zhang HG&#42;, <u>**Hejblum BP**&#42;</u>, Weber G, Palmer N, Churchill S, Szolovitz P, Murphy S, Liao K, Kohane I, Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association*, 28(12):2582-2592, 2021.  
 DOI: [10.1093/jamia/ocab187](https://doi.org/10.1093/jamia/ocab187)
 
  * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *R journal*, in press, 2021.  
