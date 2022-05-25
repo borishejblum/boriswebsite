@@ -9,6 +9,14 @@ slug: publications
 
 &#42;: equal contribution
 
+# **2022** 
+ * <u>**Hejblum BP**</u>, Ba K, Thiébaut R, Agniel D. Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives. *bioRxiv* 2022.05.10.490529, 2022.  
+DOI: [2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
+ 
+ * Ferté T, Jouhet V, Griffier R, <u>**Hejblum BP**</u>, Thiébaut R. The Benefit of Augmenting Open Data with Clinical Data-Warehouse EHR for Forecasting SARS-CoV-2 Hospitalizations in Bordeaux Area, France. *SSRN* 4071506, 2022.   DOI: [10.2139/ssrn.4071506](http://dx.doi.org/10.2139/ssrn.4071506) 
+ 
+ * Richert L, Lelièvre JD, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase I/II ANRS VRI01 trial. *Journal of Immunology*, in press, 2022.
+
 # **2021**
 
  * Villain L, Ferté T, Thiébaut R, <u>**Hejblum BP**</u>. Gene Set Analysis for time-to-event outcome with the Generalized Berk–Jones statistic. *bioRxiv* 2021.09.07.459329, 2021.  
