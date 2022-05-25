@@ -234,6 +234,11 @@ defaultContentLanguageInSubdir = false
     icon = "google-scholar"
     icon_pack = "ai"
     link = "https://scholar.google.com/citations?sortby=pubdate&hl=fr&user=xU72YmYAAAAJ&view_op=list_works"
+    
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = " https://orcid.org/0000-0003-0646-452X"
 
   [[params.social]]
     icon = "github"
