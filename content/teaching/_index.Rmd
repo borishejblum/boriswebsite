@@ -28,7 +28,7 @@ slug: teach
  * [Bayesian methods in medical research](https://bayesbiomed.borishejblum.science) --- *University of Copenhagen* (2019 -- 2022)
 
  * [HeavyR -- Advanced `r fontawesome::fa("r-project")` course: *Tools for software development and performance*](https://heavyr.borishejblum.science) – *Université de Bordeaux* (2018, 2022)  
-    + [`r fontawesome::fa("r-project")` codes](/files/mypkgr_0.0.0.9000.tar.gz)
+    + [`r fontawesome::fa("r-project")` codes](https://github.com/borishejblum/mypkgr/archive/refs/tags/v2022.tar.gz)
     + [French version `r fontawesome::fa("r-project")` **avancé :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)
 
 * * *
