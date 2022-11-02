@@ -10,15 +10,21 @@ slug: publications
 &#42;: equal contribution
 
 # **2022** 
+   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *Annals of Applied Statistics*, in press, 2022.  
+[arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
+
  * <u>**Hejblum BP**</u>, Ba K, Thiébaut R, Agniel D. Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives. *bioRxiv* 2022.05.10.490529, 2022.  
 DOI: [2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
  
- * Ferté T, Jouhet V, Griffier R, <u>**Hejblum BP**</u>, Thiébaut R. The Benefit of Augmenting Open Data with Clinical Data-Warehouse EHR for Forecasting SARS-CoV-2 Hospitalizations in Bordeaux Area, France. *SSRN* 4071506, 2022.   DOI: [10.2139/ssrn.4071506](http://dx.doi.org/10.2139/ssrn.4071506) 
+ * Ferté T, Jouhet V, Griffier R, <u>**Hejblum BP**</u>, Thiébaut R. The Benefit of Augmenting Open Data with Clinical Data-Warehouse EHR for Forecasting SARS-CoV-2 Hospitalizations in Bordeaux Area, France. *JAMIA Open*, ooac086, 2022.   DOI: [10.1093/jamiaopen/ooac086](http://doi.org/10.1093/jamiaopen/ooac086) 
  
   * Agniel D, <u>**Hejblum B**</u>, Thiébaut R, Parast L. Doubly-robust evaluation of high-dimensional surrogate markers. *Biostatistics*, kxac020, in press, 2022.  
 DOI: [10.1093/biostatistics/kxac020](https://doi.org/10.1093/biostatistics/kxac020)
  
  * Richert L, Lelièvre JD, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase I/II ANRS VRI01 trial. *Journal of Immunology*, in press, 2022.
+ 
+  * Bigot J, Freulon P, <u>**Hejblum BP**</u>, Leclaire A. On the potential benefits of entropic regularization for smoothing Wasserstein estimators. *arxiv*:2210.06934, 2022.  
+[arXiv:2210.06934](https://arxiv.org/abs/2210.06934)
 
 # **2021**
 
@@ -65,9 +71,6 @@ DOI: [10.1016/j.ebiom.2021.103216](https://doi.org/10.1016/j.ebiom.2021.103216)
 
  * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. dearseq: a variance component score test for RNA-Seq differential analysis that effectively controls the false discovery rate. *NAR Genomics and Bioinformatics* 2(4):lqaa093, 2020.  
 DOI: [10.1093/nargab/lqaa093](https://doi.org/10.1093/nargab/lqaa093)
-
-  * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *arXiv*:2006.09003, 2020.  
-[arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
 
   * Prague M, Wittkop L, Clairon Q, Dutartre D, Thiébaut R, <u>**Hejblum BP**</u>. Population modeling of early COVID-19 epidemic dynamics in French regions and estimation of the lockdown impact on infection rate. *medRxiv* 2020.04.21.20073536, 2020.  
 DOI: [10.1101/2020.04.21.20073536](https://doi.org/10.1101/2020.04.21.20073536)
