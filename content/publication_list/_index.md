@@ -49,8 +49,8 @@ DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
  * Zhang HG&#42;, <u>**Hejblum BP**&#42;</u>, Weber G, Palmer N, Churchill S, Szolovitz P, Murphy S, Liao K, Kohane I, Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association*, 28(12):2582-2592, 2021.  
 DOI: [10.1093/jamia/ocab187](https://doi.org/10.1093/jamia/ocab187)
 
- * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *R journal*, in press, 2021.  
-[arXiv:2009.03840](https://arxiv.org/abs/2009.03840)
+ * Philipps V, <u>**Hejblum BP**</u>, M Prague, D Commenges, C Proust-Lima. Robust and Efficient Optimization Using a Marquardt-Levenberg Algorithm with R Package `marqLevAlg`. *The R journal*, 13(2):365-379, 2021.  
+DOI: [10.32614/RJ-2021-089](https://doi.org/10.32614/RJ-2021-089)
 
   * Colas C, <u>**Hejblum B**</u>, Rouillon S, Thiébaut R, Oudeyer PY, Moulin-Frier C&#42;, Prague M&#42;. EpidemiOptim: A Toolbox for the Optimization of Control Policies in Epidemiological Models. *Journal of Artificial Intelligence Research*, 71:479-519, 2021.  
 DOI: [10.1613/jair.1.12588](https://doi.org/10.1613/jair.1.12588) 
