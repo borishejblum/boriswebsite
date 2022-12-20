@@ -19,8 +19,8 @@ authors = ["Rinchai D", "Deola S", "Zoppoli G", "Kabeer BS", "Taleb SA", "Pavlov
 publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
-publication = "*Science Advances*, 8(45): eabp9961, 2022"
-publication_short = "*Science Advances*, 8(45): eabp9961, 2022"
+publication = "*Science Advances*, 8(45): eabp9961"
+publication_short = "*Science Advances*, 8(45): eabp9961"
 
 doi ="10.1126/sciadv.abp9961"
 

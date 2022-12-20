@@ -20,8 +20,15 @@ DOI: [2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
  
   * Agniel D, <u>**Hejblum B**</u>, Thiébaut R, Parast L. Doubly-robust evaluation of high-dimensional surrogate markers. *Biostatistics*, kxac020, in press, 2022.  
 DOI: [10.1093/biostatistics/kxac020](https://doi.org/10.1093/biostatistics/kxac020)
+
+  * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *International Journal of Biostatistics* in press, 2022.  
+[*medRxiv* 2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
  
- * Richert L, Lelièvre JD, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase I/II ANRS VRI01 trial. *Journal of Immunology*, in press, 2022.
+ * Richert L, Lelièvre JD, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase I/II ANRS VRI01 trial. *Journal of Immunology*, 208 (12):2663-2674, 2022.
+ 
+ 
+  * Hivert B, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. Post-clustering difference testing: valid inference and practical considerations. *arxiv*:2210.13172, 2022.  
+[arXiv:2210.13172](https://arxiv.org/abs/2210.13172)
  
   * Bigot J, Freulon P, <u>**Hejblum BP**</u>, Leclaire A. On the potential benefits of entropic regularization for smoothing Wasserstein estimators. *arxiv*:2210.06934, 2022.  
 [arXiv:2210.06934](https://arxiv.org/abs/2210.06934)
@@ -33,9 +40,6 @@ DOI: [10.1101/2021.09.07.459329](https://doi.org/10.1101/2021.09.07.459329)
 
  * Gauthier M, Agniel D, Thiébaut R, <u>**Hejblum BP**</u>. Distribution-free complex hypothesis testing for single-cell RNA-seq differential expression analysis. *bioRxiv* 2021.05.21.445165, 2021.  
 DOI: [10.1101/2021.05.21.445165](https://doi.org/10.1101/2021.05.21.445165)
-
- * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *medRxiv* 2021.07.09.21260259, 2021.  
-DOI: [10.1101/2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
 
  * Rinchai D, Deola S, Zoppoli G, Kabeer BS, Taleb SA, Pavlovski I, Maacha S, Gentilcore G, Toufiq M, Matthew L, Liu L, Vempalli FR, Mubarak G, Lorenz S, Sivieri I, Cirmena G, Dentone G, Cuccarolo P, Giacobbe D, Baldi F, Garbarino A, Cigolini B, Cremonesi P, Bedognetti M, Ballestrero A, Bassetti A, <u>**Hejblum BP**</u>, Augustine T, Van Panhuys N, Thiébaut R, Branco R, Chew T, Shojaei M, Short K, Feng C, PREDICT-19 consortium, Zughaier SM, De Maria A, Tang B, Ait Hssain A, Bedognetti D, Grivel J-C, Chaussabel D. High–temporal resolution profiling reveals distinct immune trajectories following the first and second doses of COVID-19 mRNA vaccines. *Science Advances* 8(45): eabp9961, 2022.  
 DOI: [10.1126/sciadv.abp9961](https://doi.org/10.1126/sciadv.abp9961)
