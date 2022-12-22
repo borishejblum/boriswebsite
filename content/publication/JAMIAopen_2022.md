@@ -16,7 +16,7 @@ authors = ["Ferté T", "Jouhet V", "Greffier R", "<u>**Hejblum BP**</u>", "Thié
 # 5 = Book
 # 6 = Book chapter
 # 7 = Preprint
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*JAMIA Open*, ooac086"

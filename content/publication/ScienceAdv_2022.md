@@ -16,7 +16,7 @@ authors = ["Rinchai D", "Deola S", "Zoppoli G", "Kabeer BS", "Taleb SA", "Pavlov
 # 5 = Book
 # 6 = Book chapter
 # 7 = Preprint
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Science Advances*, 8(45): eabp9961"

@@ -14,7 +14,7 @@ authors = ["A Collin", "<u>**BP Hejblum**</u>", "C Vignals", "L Lehot", "R Thié
 # 5 = Book
 # 6 = Book chapter
 # 7 = Preprint
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*International of Biostatistics*, in press"
