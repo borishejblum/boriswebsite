@@ -1,6 +1,6 @@
 +++
 title = "Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI"
-date = "2022-11-08"
+date = "2023-01-06"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["A Collin", "<u>**BP Hejblum**</u>", "C Vignals", "L Lehot", "R Thiébaut", "P Moireau", "M Prague"]
@@ -20,7 +20,7 @@ publication_types = ["2"]
 publication = "*International of Biostatistics*, in press"
 publication_short = "*International of Biostatistics*, in press"
 
-doi =""
+doi ="10.1515/ijb-2022-0087"
 
 # Abstract and optional shortened version.
 abstract = "In response to the ongoing COVID-19 pandemic caused by SARS-CoV-2, governments are taking a wide range of non-pharmaceutical interventions (NPI). These measures include interventions as stringent as strict lockdown but also school closure, bar and restaurant closure, curfews and barrier gestures i.e. social distancing. Disentangling the effectiveness of each NPI is crucial to inform response to future outbreaks. To this end, we first develop a multi-level estimation of the French COVID-19 epidemic over a period of one year. We rely on a global extended Susceptible-Infectious-Recovered (SIR) mechanistic model of the infection including a dynamical (over time) transmission rate containing a Wiener process accounting for modeling error. Random effects are integrated following an innovative population approach based on a Kalman-type filter where the log-likelihood functional couples data across French regions. We then fit the estimated time-varying transmission rate using a regression model depending on NPI, while accounting for vaccination coverage, apparition of variants of concern (VoC) and seasonal weather conditions. We show that all NPI considered have an independent significant effect on the transmission rate. We additionally demonstrate a strong effect from weather conditions which decrease transmission during the summer period, and also estimate increased transmissibility of VoCs."
@@ -45,7 +45,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Article", url = "https://doi.org/10.1101/2021.07.09.21260259"}]
+#url_custom = [{name = "Article", url = "https://doi.org/10.1515/ijb-2022-0087"}]
 
 
 # Does the content use math formatting?

@@ -9,6 +9,13 @@ slug: publications
 
 &#42;: equal contribution
 
+# **2023**
+
+  * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *International Journal of Biostatistics* in press, 2023.  
+DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087). 
+[*medRxiv* 2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
+ 
+
 # **2022** 
    * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *Annals of Applied Statistics*, in press, 2022.  
 [arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
@@ -21,9 +28,7 @@ DOI: [2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
   * Agniel D, <u>**Hejblum B**</u>, Thiébaut R, Parast L. Doubly-robust evaluation of high-dimensional surrogate markers. *Biostatistics*, kxac020, in press, 2022.  
 DOI: [10.1093/biostatistics/kxac020](https://doi.org/10.1093/biostatistics/kxac020)
 
-  * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *International Journal of Biostatistics* in press, 2022.  
-[*medRxiv* 2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
- 
+
  * Richert L, Lelièvre JD, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase I/II ANRS VRI01 trial. *Journal of Immunology*, 208 (12):2663-2674, 2022.
  
  
