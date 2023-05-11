@@ -23,11 +23,11 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
   <img width="120" src='/files/Rlogo.png'>
 
-## `ccdf`
+## `citcdf`
 
 * * *
 
-An **R package** to perform *single-cell RNA-seq differential expression analysis and more generally complex hypothesis testing*. Available on [CRAN](https://CRAN.R-project.org/package=ccdf), development version available on [GitHub](https://github.com/Mgauth/ccdf).
+An **R package** to perform *conditional independence testing using empirical conditional cumulative distribution function estimations for single-cell RNA-seq differential expression analysis*. Available on [GitHub](https://github.com/sistm/citcdf).
 
 <br />
 <br />

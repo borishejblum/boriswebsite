@@ -11,14 +11,15 @@ slug: publications
 
 # **2023**
 
+   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *Annals of Applied Statistics*, 17(2):1086-1104, 2023.  
+DOI: [10.1214/22-AOAS1660](https://doi.org/10.1214/22-AOAS1660)
+
   * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P, Prague M. Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI. *International Journal of Biostatistics* in press, 2023.  
 DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087). 
 [*medRxiv* 2021.07.09.21260259](https://doi.org/10.1101/2021.07.09.21260259)
  
 
 # **2022** 
-   * Freulon P, Bigot J, <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *Annals of Applied Statistics*, in press, 2022.  
-[arXiv:2006.09003](https://arxiv.org/abs/2006.09003)
 
  * <u>**Hejblum BP**</u>, Ba K, Thiébaut R, Agniel D. Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives. *bioRxiv* 2022.05.10.490529, 2022.  
 DOI: [2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
