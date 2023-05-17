@@ -44,7 +44,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "R code", url = "https://CRAN.R-project.org/package=marqLevAlg"}#,{name = "Article", url = "https://rjournal.github.io/archive/2021/RJ-2021-089/RJ-2021-089.pdf"}
+url_custom = [{name = "R code", url = "https://CRAN.R-project.org/package=marqLevAlg"},{name = "Article", url = "https://journal.r-project.org/articles/RJ-2021-089/}
 ]
 
 
