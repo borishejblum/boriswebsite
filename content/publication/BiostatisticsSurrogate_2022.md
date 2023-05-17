@@ -3,7 +3,7 @@ title = "Doubly-robust evaluation of high-dimensional surrogate markers"
 date = "2022-07-06"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["D Agniel", "L Parast", "<u>**BP Hejblum**</u>"]
+authors = ["D Agniel", "<u>**BP Hejblum**</u>", "R Thiébaut", "L Parast"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized
@@ -45,8 +45,8 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [#{name = "Article", url = "https://doi.org/10.1093/biostatistics/kxac020"}, 
-{name = "R package", url = "https://github.com/denisagniel/crossurr"}]
+url_custom = [{name = "Article", url = "https://doi.org/10.1093/biostatistics/kxac020"}, 
+{name = "R package", url = "https://CRAN.R-project.org/package=crossurr"}]
 
 
 # Does the content use math formatting?
