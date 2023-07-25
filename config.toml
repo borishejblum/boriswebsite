@@ -291,7 +291,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "https://borishejblum.science/cv/CV_HEJBLUM.pdf"
+  url = "/cv"
   weight = 7
 
 [[menu.main]]
