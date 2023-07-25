@@ -317,6 +317,14 @@ rbind.data.frame(
 \cvline{}{\textbf{Layla Parast}, \textit{University of Texas at Austin}, Austin (TX, USA), Associate Professor.}
 
 
+# Outreach activities
+
+\cvline{2022}{\textit{Chiche ! 1 Scientifique, 1 Classe} Program by Inria \small \newline 1h presentation \& open discussion about scientific research with high-school students.}
+
+\cvline{2018}{Outreach stand "\textit{Is there more data in a drop of blood than in my smartphone?}" at the 10 year anniversary of Inria Bordeaux Sud-Ouest}
+
+\cvline{2012}{Poster presentation at the Summer University of Sidaction on longitudinal analysis applied to HIV vaccine research}
+
 # Research visits abroad
 
 \cvline{2018-2019 \mbox{(2$\times$3 weeks)}}{\href{https://www.mrc-bsu.cam.ac.uk}{\textbf{MRC Biostatistics Unit, Cambridge University}}, Cambridge (United-Kingdom) \small \newline invited by Sylvia Richardson, Professor.}

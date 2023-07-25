@@ -10,7 +10,7 @@ title = "Research Side Effects"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2019"
+copyright = "&copy; 2023"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -65,7 +65,7 @@ defaultContentLanguageInSubdir = false
   phone = ""
   skype = ""
   telegram = ""
-  twitter = "borishej"
+  #twitter = "borishej"
   googlescholar = "xU72YmYAAAAJ"
   googlescholarname = "Boris P. Hejblum"
   github = "borishejblum"
@@ -225,10 +225,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "mailto:boris.hejblum@u-bordeaux.fr"
 
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/borishej"
+  #[[params.social]]
+  #  icon = "twitter"
+  #  icon_pack = "fa"
+  #  link = "//twitter.com/borishej"
 
   [[params.social]]
     icon = "google-scholar"
@@ -284,9 +284,10 @@ defaultContentLanguageInSubdir = false
   url = "/teaching"
   weight = 5
 
+
 [[menu.main]]
-  name = "PhD Thesis"
-  url = "https://borishejblum.science/files/hejblum_2015bord0049_oneside_light.pdf"
+  name = "Jobs"
+  url = "/jobs"
   weight = 6
 
 [[menu.main]]
@@ -300,8 +301,8 @@ defaultContentLanguageInSubdir = false
   weight = 8
 
 [[menu.main]]
-  name = "Jobs"
-  url = "/jobs"
+  name = "Alumni"
+  url = "alumni"
   weight = 9
 
 [[menu.main]]
