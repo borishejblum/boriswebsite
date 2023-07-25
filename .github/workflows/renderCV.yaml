@@ -5,7 +5,7 @@ on:
     branches: [main, master]
     paths:
     - 'static/files/citations/*.bib'
-    - 'content/cv/*'
+    - 'content/cv/CV_HEJBLUM.Rmd'
     - '.github/workflows/renderCV.yaml'
 
 name: Render CV
