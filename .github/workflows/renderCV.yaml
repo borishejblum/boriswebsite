@@ -3,6 +3,9 @@
 on:
   push:
     branches: [main, master]
+    paths:
+    - '**.bib'
+    - 'content/cv'
 
 name: Render CV
 
@@ -33,7 +36,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Build CV
-        run: rmarkdown::render("BorisHejblum_CV_auto.Rmd")
+        run: rmarkdown::render("CV_HEJBLUM.Rmd")
         shell: Rscript {0}
 
       - name: Commit built CV
