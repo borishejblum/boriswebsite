@@ -6,6 +6,7 @@ on:
     paths:
     - '**.bib'
     - 'content/cv'
+    - '.github/workflows/renderCV.yaml'
 
 name: Render CV
 
