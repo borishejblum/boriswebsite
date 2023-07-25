@@ -1,0 +1,119 @@
+---
+title: Scientific publications
+slug: publications
+---
+
+[***> Interactive publication list here***](/publication)
+
+&#42;: equal contribution
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = TRUE, message = FALSE)
+library(vitae)
+library(dplyr)
+```
+
+```{r pubs.bib, eval=TRUE}
+bibfiles <-list.files("../../static/files/citations/")
+bibfiles <- grep("*.bib$", bibfiles, value = TRUE)
+
+biblist <- list()
+for (f in bibfiles){
+  biblist[[f]] <- readLines(paste0("../../static/files/citations/", f))
+}
+writeLines(unlist(biblist), con="pubs.bib")
+#bib2df::bib2df("CV.bib")
+```
+
+```{r}
+bib_df <- vitae::bibliography_entries("pubs.bib") %>%
+  select(-ISSN, -PMCID, -PMID, -`title-short`, -URL)
+```
+
+```{r helper_functions}
+initials <- function(v){
+  words <- stringr::str_split(v, " ")[[1]]
+  inits <- paste0(sapply(words, substr, start=1, stop=1), collapse = "")
+  return(inits)
+}
+
+author_format <- function(a, contribeq = NULL){
+
+  e <- try(a$family, silent = TRUE)
+  if(inherits(e, "try-error")){
+    last <- sapply(a[[1]], "[[", 1)
+    first <- character(length(last))
+    for (i in 1:length(first)){
+      first[i] <- ifelse(is.na(names(a[[1]][[i]][2])), "", a[[1]][[i]][2])
+    }
+    first <- unlist(first)
+    seplast <- ", "
+  }else{
+    first <- strsplit(a$given, ", ")[[1]]
+    last <- strsplit(a$family, ", ")[[1]]
+    seplast <- " & "
+  }
+  inits <- sapply(first, initials)
+  authors <- paste(last, inits, sep=" ")
+  authors <- gsub(" $", "", authors, fixed=FALSE)
+  authors <- gsub("Hejblum BP", "<u>**Hejblum BP**</u>", authors, fixed=TRUE)
+  authors <- gsub("Hejblum B$", "<u>**Hejblum B**</u>", authors, fixed=FALSE)
+  if(!is.null(contribeq)){
+    authors[contribeq] <- paste0(authors[contribeq], "&#42;")
+  }
+  authors <- paste0(paste0(authors[-length(authors)], collapse=", "),
+                    seplast, authors[length(authors)])
+  return(authors)
+}
+
+bibitem_print <- function(bibrow, contribeq = NULL){
+  authors <- author_format(bibrow$author, contribeq = contribeq)
+  title <- bibrow$title
+  journal <- paste0("*", bibrow$`container-title`, "*")
+  year <- format.Date(as.Date(bibrow$issued), "%Y")
+  res <- paste0("   * ",
+                authors, ". ",
+                title, ". ",
+                journal,
+                ifelse(is.null(bibrow$volume) | is.na(bibrow$volume) | bibrow$volume == "",
+                       "", paste0(" ", bibrow$volume)),
+                ifelse(is.null(bibrow$issue) | is.na(bibrow$issue) | bibrow$issue == "",
+                       ifelse(is.null(bibrow$volume) | is.na(bibrow$volume) | bibrow$volume == "",
+                              "", ":"), paste0("(", bibrow$issue, "):")),
+                ifelse(is.null(bibrow$page)| is.na(bibrow$page) | bibrow$page == "", "",
+                       paste0(ifelse((is.null(bibrow$volume) | is.na(bibrow$volume) | bibrow$volume == "") &
+                                (is.null(bibrow$issue) | is.na(bibrow$issue) | bibrow$issue == ""),
+                              " ", ""), bibrow$page)),
+                ", ", year, ". ",
+                ifelse(is.null(bibrow$DOI)| is.na(bibrow$DOI) | bibrow$DOI == "",
+                       "", paste0("  \nDOI: [", bibrow$DOI, "](https://doi.org/", bibrow$DOI, ")")
+                )
+  )
+
+  return(res)
+}
+```
+
+```{r biblio-years, results='asis'}
+years <- sort(unique(as.numeric(format(as.Date(bib_df$issued), "%Y"))), decreasing=TRUE)
+for(y in years){
+  cat(paste0("# **", y ,"**\n\n"))
+  bib_df_y <- bib_df %>% filter(as.numeric(format(as.Date(issued), "%Y")) == y)
+  biblio <- character(nrow(bib_df_y))
+  o <- order(as.numeric(format(as.Date(bib_df_y$issued), "%Y")), decreasing = TRUE)
+  for(i in 1:nrow(bib_df_y)){
+    ref <- bib_df_y[o[i], ]
+    
+    ce <- NULL
+    if(ref$DOI %in% c("10.1002/art.39974", "10.1073/pnas.1321060111", "10.1093/jamia/ocab187")){
+      ce <- c(1,2)
+    }else if(ref$DOI %in% c("10.1016/j.isci.2021.102711")){
+      ce <- c(2,3)
+    }
+    biblio[i] <- bibitem_print(ref, contribeq = ce)
+    
+  }
+  cat(biblio, sep = "  \n\n")
+  cat("\n")
+}
+```
