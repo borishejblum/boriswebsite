@@ -7,6 +7,8 @@ on:
     - 'static/files/citations/*.bib'
     - 'content/cv/CV_HEJBLUM.Rmd'
     - '.github/workflows/renderCV.yaml'
+    - 'content/cv/AllConferences_Seminar_Presentation_Summary.xlsx'
+    - 'content/cv/CVhelperfunctions.R'
 
 name: Render CV
 
