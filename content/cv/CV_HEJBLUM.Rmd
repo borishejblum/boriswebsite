@@ -216,6 +216,7 @@ $\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
 
 
 \newpage
+
 # Research expertise
 
 \cvline{}{\textbf{Statistical genomics \& high dimensional data}: \small I have a strong interest in models for high dimensional data. I am familiar with the multiple testing issue and potential strategies to face it. I have worked on sparse Partial Least Squares methods, and with other dimension reduction approaches such as the random forests or the LASSO. I have analyzed gene expression data in a clinical trial context and I am familiar with the specificities of this kind of data, such as preprocessing.
@@ -325,7 +326,6 @@ rbind.data.frame(
 
 \cvline{2012}{Poster presentation at the Summer University of Sidaction on longitudinal analysis applied to HIV vaccine research}
 
-
 # Research visits abroad
 
 \cvline{2018-2019 \mbox{(2$\times$3 weeks)}}{\href{https://www.mrc-bsu.cam.ac.uk}{\textbf{MRC Biostatistics Unit, Cambridge University}}, Cambridge (United-Kingdom) \small \newline invited by Sylvia Richardson, Professor.}
@@ -344,6 +344,8 @@ rbind.data.frame(
 \cventry{2021}{Member of the Scientific Committee for the 42\textsuperscript{nd} ISCB conference}{}{}{}{}
 \cventry{2021}{Member of the Pharm. D. defense committee of Blandine Malbos, \textit{Université d'Angers}}{}{}{}{}
 \cventry{2019}{Invited member of the PhD defense committee of Soufiane Ajana, \textit{Université de Bordeaux}}{}{}{}{}
+
+\newpage
 
 # Reviewer for international peer-reviewed scientific journals
 
