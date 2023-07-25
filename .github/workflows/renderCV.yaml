@@ -4,8 +4,8 @@ on:
   push:
     branches: [main, master]
     paths:
-    - 'static/files/citations'
-    - 'content/cv'
+    - 'static/files/citations/*.bib'
+    - 'content/cv/*'
     - '.github/workflows/renderCV.yaml'
 
 name: Render CV
@@ -45,7 +45,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/cv/CV_HEJBLUM.pdf
-          git commit --amend --no-edit
+          git commit -m 'auto CV render'
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
