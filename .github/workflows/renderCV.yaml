@@ -1,0 +1,53 @@
+# Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
+# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
+on:
+  push:
+    branches: [main, master]
+    paths:
+    - '**.bib'
+    - 'content/cv'
+
+name: Render CV
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-tinytex@v2
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: dependencies
+        run: |
+          install.packages(c("curl", "pkgdepends", "pak"))
+          pak::pkg_install(c("any::knitr", "any::rmarkdown", "any::vitae", "any::tibble", "any::dplyr", "any::lubridate", "any::readxl", "any::httr"))
+        shell: Rscript {0}
+
+      - name: Build CV
+        run: rmarkdown::render("BorisHejblum_CV_auto.Rmd")
+        shell: Rscript {0}
+
+      - name: Commit built CV
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add content/cv/CV_HEJBLUM.pdf
+          git commit --amend --no-edit
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          force: true

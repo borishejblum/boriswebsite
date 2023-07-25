@@ -1,0 +1,477 @@
+---
+name: Boris
+surname: Hejblum
+position: |
+    | *Research faculty in Biostatistics* 
+    | *(*Chargé de Recherche*)*
+    |
+address: | 
+    | *Bordeaux Population Health* -- Inserm UMR 1219
+    | Université de Bordeaux
+    | 146 rue Léo Saignat
+    | 33076 Bordeaux cedex
+    | FRANCE \bigskip
+    | French, `r floor(lubridate::time_length(difftime(Sys.Date(), as.Date('1988-11-07')), 'years'))` years old\smallskip
+    | 
+www: "boris.hejblum.science"
+email: "*boris.hejblum@inserm.fr*"
+date: "`r format(Sys.time(), '%B %Y')`"
+extrainfo: "French, `r floor(lubridate::time_length(difftime(Sys.Date(), as.Date('1988-11-07')), 'years'))` years old"
+headcolor: "3873B3"
+papersize: "a4paper"
+fontsize: "11pt"
+lang: "english"
+geometry: "scale=0.875"
+classoption: "sans"
+fontfamilyoptions: "DejaVuSansMono"
+header-includes: "\\usepackage{soul} \\usepackage{breakurl}"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+source("CVhelperfunctions.R")
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(dplyr)
+library(lubridate)
+library(readxl)
+library(httr)
+```
+
+# Research experience
+
+```{r research xp}
+tibble::tribble(
+ ~ Degree,  ~ Year, ~ Institution,
+  "\\textbf{Faculty Researcher (\\textit{Chargé de Recherche})} in Biostatistics, tenured, Inserm U1219 \\textit{Bordeaux Population Health} research center, \\textit{SISTM team}, Bordeaux (France)", "2021--present", "",
+  "\\textbf{Associate Professor (\\textit{Maître de Conférences})} in Biostatistics, tenured, ISPED \\textit{Bordeaux School of Public Health}, Bordeaux University, Bordeaux (France)", "2016--2021", "",
+  "\\textbf{Postdoctoral Research Associate}, Department of Biostatistics, Harvard School of Public Health, Boston (USA)", "2016", "",
+  "\\textbf{Postdoctoral Research Fellow}, Department of Biostatistics, Harvard School of Public Health, Boston (USA)", "2015--2016", "",
+  "\\textbf{Research Assistant} (Ph.D. student), Inserm U897 \\textit{Biostatistics team}, Bordeaux (France)", "2011--2015", "",
+  "\\textbf{Research Assistant} (Masters intern), Inserm U897 \\textit{Biostatistics team}, Bordeaux (France).\\newline \\small{Development of dynamic statistical models applied to the epidemiology of myocardial infarction}", "Apr.--Sept. 2011", "",
+ "\\textbf{Statistician Assistant} (Masters intern), \\textit{AltraBio} (start-up in biotechnologies), Lyon (France).\\newline \\small{Analysis of transcriptomics data of preclinical trials}", "May--Jul. 2011", "",
+ 
+) %>% 
+  vitae::brief_entries(what = Degree, when = Year, with = Institution, .protect = FALSE)
+```
+
+
+# Education
+
+```{r edu}
+tibble::tribble(
+ ~ Degree,  ~ Year, ~ Institution,
+  "\\textbf{Ph.D. in Biostatistics}, \\href{https://www.u-bordeaux.fr/en/about-us/organisation-operations/training-components/college-of-health-sciences/isped}{ISPED \\textit{Bordeaux School of Public Health}}, Bordeaux University", "2011--2015", "\\newline Integrative analysis of high-dimensional data applied to vaccine research.\\newline Advisors: Pr. Rodolphe Thiébaut {(\\href{mailto:rodolphe.thiebaut@u-bordeaux.fr}{\\footnotesize\\texttt{rodolphe.thiebaut@u-bordeaux.fr}})},\\newline\\phantom{Advisors: }François Caron {(\\href{mailto:caron@stats.ox.ac.uk}{\\footnotesize\\texttt{caron@stats.ox.ac.uk}})}",
+   "\\textbf{Master of Science (M.Sc.) in Statistics} (\\textit{diplôme d'ingénieur}), \\href{https://ensai.fr/en/apres-lensai/les-metiers-de-la-data-2/la-biostatistique/}{ENSAI, National School for Statistics and Information Analysis} (\\textit{École Nationale de la Statistique et de l'Analyse de l'Information}), Rennes (France)", "2008--2011", "\\small{Specialization in biostatistics, with high honors.}",
+    "\\textbf{Master of Science (M.Sc.) in Statistics and Econometrics}, Department of Mathematics, University of Rennes 1, Rennes (France)", "2011", "\\small{Dual degree partnership in conjunction with studies at ENSAI (additional education focused on scientific research).}",
+ "\\textbf{Bachelor of Science (B.Sc.) in Mathematics} (\\textit{licence de mathématiques}), Pierre and Marie Curie University -- Paris 6 (UPMC), Paris (France)", "2009", "\\small{In conjunction with studies at ENSAI (dual curriculum, remote learning).}",
+  "\\textbf{Post-Secondary Preparatory Classes} (\\textit{Classes Préparatoires aux Grandes Écoles -- CPGE}), Lycée Hoche, Versailles (France)", "2006--2008", "\\small{University-level courses required in preparation for competitive exams into top universities, engineering, and graduate schools (France's \\textit{Grandes Écoles}). Major in Mathematics and Physics.}",
+   "\\textbf{High school diploma}, Lycée Richelieu, Rueil-Malmaison (France)", "2006", "\\small{With high honors.}"
+) %>% 
+  vitae::brief_entries(what = Degree, when = Year, with = Institution, .protect = FALSE)
+```
+
+\newpage
+
+# Teaching experience
+\cventry{\mbox{2019 \-- present}}{International Ph.D. course}{}{Graduate School of Health and Medical Sciences, University of Copenhaghen, (Danemark)\vspace*{0.4ex}}{}{
+$\circ$~ Bayesian methods in biomedical research (graduate class, 3.5 days per year)}
+
+\cventry{\mbox{2018 \-- present}}{Ph.D. courses}{}{Bordeaux University (France)}{}{
+$\circ$~ R for development \& performance (graduate class, 18h per year)\\
+$\circ$~ Basics for data science using R (graduate class, 12h per year)
+}
+
+\cventry{\mbox{2019 \-- present}}{Master in Public Health}{}{ISPED, Bordeaux University (France)}{}{
+$\circ$~ omics data analysis (graduate class, 20h per year)\\
+$\circ$~ data visualisation (undergraduate class, 4h)
+}
+
+\cventry{\mbox{2021 \-- present}}{Master in numerical sciences \& bio-health}{}{École Centrale Nantes (France)}{}{
+$\circ$~ Statistical learning in high-dimension (graduate class, 2h per year)
+}
+
+
+\cventry{2016 \-- 2021}{Associate Professor}{}{Bordeaux University, France\vspace*{0.5ex}}{}{Ph.D. courses: \\
+	$\circ$~ Introduction to Bayesian analysis for biometric research (graduate class, 18h per year)\smallskip\\
+	Master in Public Health Data Science \& Master in Biostatistics courses: \\
+	$\circ$~ likelihood estimation and multivariate regression (graduate class, 30h per year)\\
+  $\circ$~ factor methods for multivariate data analysis (graduate class, 30h per year)\\
+	$\circ$~ Bayesian analysis and sampling methods (graduate class, 30h per year)\\
+	$\circ$~ omics data analysis (graduate class, 20h per year)\\
+	$\circ$~ sparse Partial Least Squares methods (graduate class, 7h per year)\\
+	$\circ$~ ANOVA regression (gratuate class, 7.5h per year)\\
+	$\circ$~ hypothesis testing (graduate class, 30h per year)\\
+	$\circ$~ advanced R (undergraduate class, 15h per year)\\
+}
+\cventry{2012 \-- 2014}{Teaching Assistant}{}{Bordeaux University, France}{}{Master in Public Health and Master in Biostatistics courses: \\
+$\circ$~ MCMC methods for Bayesian analysis (graduate class, 12h)\\
+$\circ$~ sparse Partial Least Squares methods (graduate class, 5h)\\
+$\circ$~ basic statistics (undergraduate class 16h)\\
+$\circ$~ logistic regression (undegratuate class, 12h)\\
+$\circ$~ R software (undergraduate class 9h)\\
+}
+
+# Scientific supervision
+
+## Postdoctoral researchers
+
+\small
+$\hspace{2.46cm}\circ$ Laura Villain (2019 -- 2021: 100%)
+
+$\hspace{2.46cm}\circ$ Hung Van Tran (2019: 50%)\medskip
+
+\normalsize
+## Ph.D. students 
+
+\small
+$\hspace{2.46cm}\circ$ Kalidou Ba (2022 -- ...: 50%)
+
+$\hspace{2.46cm}\circ$ Benjamin Hivert (2020 -- ...: 50%)
+
+$\hspace{2.46cm}\circ$ Paul Freulon (2019 -- 2022: 50%)
+
+$\hspace{2.46cm}\circ$ Marine Gauthier (2018 -- 2021: 50%)
+
+$\hspace{2.46cm}\circ$ Soufiane Ajana (2017 -- 2019: 15%)
+
+$\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
+\medskip
+
+\normalsize  
+## Interns
+
+  \small
+  $\hspace{2.46cm}\circ$ Arthur Hughes (M2 internship 2023: 100%)
+  
+  $\hspace{2.46cm}\circ$ Maud Perpere (M1 internship 2023: 100%)
+  
+  $\hspace{2.46cm}\circ$ Emma Avisou (M1 internship 2021: 100%)
+  
+  $\hspace{2.46cm}\circ$ Clément Bonnet (M1 internship 2021: 100%)
+  
+  $\hspace{2.46cm}\circ$ Benjamin Hivert (M2 master thesis 2020:  100%)
+  
+  $\hspace{2.46cm}\circ$ Anthony Devaux (M2 master thesis 2019:  100%)
+  
+  $\hspace{2.46cm}\circ$ Aaron Sonabend (PhD research visit 2019:  100%)
+  
+  $\hspace{2.46cm}\circ$ Victor Gasque (M1 internship 2019: 50%)
+  
+  $\hspace{2.46cm}\circ$ Thomas Ferte (M2 master thesis 2019:  100%)
+  
+  $\hspace{2.46cm}\circ$ Marine Gauthier (M2 master thesis 2018: 100%)
+  
+  $\hspace{2.46cm}\circ$ Roxane Coueron (M2 master thesis 2018: 50%)
+  
+  $\hspace{2.46cm}\circ$ Paul Tauzia (M2 master thesis 2017: 50%)
+  
+  $\hspace{2.46cm}\circ$ Chariff Alkhassim (M2 master thesis 2015: 50%)
+  
+  $\hspace{2.46cm}\circ$ Damien Chimits (M2 master thesis 2014: 50%)
+  
+  $\hspace{2.46cm}\circ$ Lise Cahuzac (M1 internship 2013: 50%)
+
+\normalsize
+# Grants & funding
+
+\cvline{2022-2026}{\textbf{Work-Package leader} \textit{Réseau de Recherche Impulsion} "Public Health Data Science", \textit{Université de Bordeaux}.}
+
+\cvline{2016-2024}{\textbf{Participant} ANRS LabEx Programme ``Vaccine Research Institite''~(VRI).}
+
+\cvline{2023-2027}{\textbf{Task leader} PEPR \textit{Santé Numérique}, axis ``Statistical and AI based Methods for Advanced clinical Trials Challenges in digital Health'' (funding 1 PhD student).}
+
+\cvline{2023-2027}{\textbf{Task leader} PEPR \textit{Santé Numérique}, axis ``multiScale AI for SingleCell-based precision MEDicine'' (funding 50\% of 1 PhD student).}
+
+\cvline{2018-2020}{\textbf{Principal Investigator} of the Inria associate-team \href{https://team.inria.fr/destrier/}{DESTRIER: ``DEfining Surrogacy of early Transcriptomics foR vaccInE Response''} (36K€~over 3 years) }
+
+\cvline{2020-2024}{\textbf{Participant} (genomics-statistics referent) in the EU H2020 Framework Programme ``IP-cure-B''~(\textit{Immune profiling to guide host-directed interventions to cure HBV infections}).}
+
+\cvline{2018-2020}{\textbf{Principal Investigator} of the Inria associate-team \href{https://team.inria.fr/swagr/}{SWAGR: ``Statistical Workforce for Advanced Genomics using RNA-seq''} (36K€~over 3 years)}
+
+\cvline{2019-2022}{\textbf{Participant} (computational statistics referent) in the ANR-18-CE36-0004 ``\href{https://anr.fr/Project-ANR-18-CE36-0004}{DyMES''~(\textit{Dynamic Models for Epidemiological Longitudinal Studies of Chronic Diseases})}.}
+
+\cvline{2019-2021}{\textbf{Principal Investigator} of the Technology Development Action from Inria Bordeaux Sud-Ouest ``VASI''~(\textit{Visualization and Analysis Solutions for Immunologists}): 2 year support for a software engineer.}
+
+\cvline{2018-2020}{\textbf{Teaching discharge} for research at Inria Bordeaux Sud-Ouest: 96h per year.}
+
+\cvline{2017-2020}{\textbf{Participant} (RNA-seq anlaysis referent) in the Transcan-2 ERA-NET `` GLIOMA-PRD''~(\textit{Multi-parametric analysis of the evolution and progression of low grade glioma}): support for a post-doctoral researcher for 2 years.}
+
+\cvline{2016-2019}{\textbf{Participant} (référent statistique en grande dimension) au \textit{Research and Innovation Programme} n°634479 de EU H2020 \href{http://www.eyerisk.eu/}{EYE-RISK (\textit{Systems medicine for identifying risk factors, molecular mechanisms and therapeutic approaches for age-related macular degeneration}).}}
+
+\cvline{2016}{\textbf{Recipient} of a travel grant from the Harvard Program in Quantitative Genomics (PQG) to attend the ENAR conference.}
+
+\cvline{2011}{\textbf{Recipient} of a Ph.D. grant from the \href{http://www.ehesp.fr/en/}{EHESP} (\textit{\'Ecole des Hautes \'Etudes en Sant\'e Publique}, Rennes, France) \--- ranked 1$^{\textsf{st}}$.}
+
+
+# Patents
+
+\cvline{2021}{Invention patent EP20306527/WO2022122959A1 (inventor 1/5\textsuperscript{th})\newline \small Use of cd177 as biomarker of worsening in patients suffering from covid-19 }
+
+\cvline{2020}{Invention patent WO2021058914A1/FR1910515 (inventor 1/7\textsuperscript{th})\newline \small Prediction of the content of omega-3 polyunsaturated fatty acids in the retina by measuring 7 cholesterol ester molecules}
+
+
+\newpage
+# Research expertise
+
+\cvline{}{\textbf{Statistical genomics \& high dimensional data}: \small I have a strong interest in models for high dimensional data. I am familiar with the multiple testing issue and potential strategies to face it. I have worked on sparse Partial Least Squares methods, and with other dimension reduction approaches such as the random forests or the LASSO. I have analyzed gene expression data in a clinical trial context and I am familiar with the specificities of this kind of data, such as preprocessing.
+}
+\cvline{}{\textbf{Artificial Intelligence for health}: \small I have developed various artificial intelligence approaches to solve biomedical data analysis bottlenecks. In particular, I am working on machine learning approaches to automate the processing of flow and mass cytometry measurements, and also on automated medical diagnosis from both structured data and free text medical notes in English, French and Chinese through language agnostic algorithms.
+}
+\cvline{}{\textbf{Electronic Health Records}: \small I am currently developing models to perform probabilistic record linkage to match electronic health records without using identifier variables, and to predict disease phenotype from electronic health record data, with application in infection and rheumatoïd arthritis.
+}
+\cvline{}{\textbf{Bayesian nonparametric models}: \small I am interested in statistical learning methods such as nonparametric Bayesian mixture of skew distributions for the clustering of large cell populations.
+}
+\cvline{}{\textbf{Evidence synthesis causal analysis}: \small I studied stochastic modeling of life-course health data. The developed idea was to explore potential causal factors of myocardial infarction by relating the drift of a degradation process with metadata from the literature.
+}
+
+# Software development & maintenance
+
+```{r softs}
+rbind.data.frame(
+
+  GH_Rpackage_display(name = "citcdf", 
+                      desc = "performing Conditional Independence Testing Through Conditional Cumulative Distribution Function Estimation", 
+                      GH_rep = "sistm/citcdf",
+                      year=2023, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "CytOpT", 
+                        desc = " automatic gating transfer in cytometry data using optimal transport with domain adaptation. Uses Python code.", 
+                        GH_rep = "sistm/CytOpT-R",
+                        year=2022, role="Co-creator \\& maintainer"),
+  
+  Bioc_Rpackage_display(name = "dearseq", 
+                        desc = "Differential Expression Analysis for RNA-seq data through a robust variance component test", 
+                        GH_rep = "borishejblum/dearseq",
+                        year=2020, role="Co-creator \\& maintainer"),
+  
+  Shiny_Rpackage_display(name = "vici", 
+                        desc = "accurate estimation of vaccine induced cellular immunogenicity with bivariate linear modeling", 
+                        GH_rep = "borishejblum/vici",
+                        url = "https://shiny-vici.apps.math.cnrs.fr",
+                        year=2019, role="Creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "marqLevAlg", 
+                        desc = "(parallelized) optimization of convex multiparametric functions", 
+                        GH_rep = "VivianePhilipps/marqLevAlgParallel",
+                        year=2019, role="Contributor"),
+  
+  CRAN_Rpackage_display(name = "foodingraph", 
+                        desc = "displaying weighted undirected food networks from adjacency matrices", 
+                        GH_rep = "vgasque/foodingraph",
+                        year=2019, role="Co-creator"),
+  
+  CRAN_Rpackage_display(name = "phenotypr", 
+                        desc = "probabilistic phenotyping patients from electronic health records using both diagnosis codes and natural language processed medical notes", 
+                        GH_rep = "borishejblum/phenotypr",
+                        year=2019, role="Creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "ludic", 
+                        desc = "probabilistic record linkage using diagnosis codes", 
+                        GH_rep = "borishejblum/ludic",
+                        year=2017, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "cytometree", 
+                        desc = "automatic gating and annotation of flow-cytometry data", 
+                        GH_rep = "chariff/cytometree",
+                        year=2017, role="Co-creator \\& maintainer"),
+  
+  GH_Rpackage_display(name = "sslcov", 
+                        desc = "covariance semi-supervised learning", 
+                        GH_rep = "stepcie/sslcov",
+                        year=2017, role="Co-creator"),
+  
+  GH_Rpackage_display(name = "tcgsaseq", 
+                        desc = "longitudinal RNA-seq data analysis at the gene set level", 
+                        GH_rep = "denisagniel/tcgsaseq",
+                        year=2016, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "kernscr", 
+                        desc = "survival analysis by gene sets in presence of competing risks", 
+                        GH_rep = "borishejblum/kernscr",
+                        year=2017, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "NPflow", 
+                        desc = "clustering of large cell populations with Dirichlet process mixture of skew-Normal and skew-t distributions. Uses C++ code to speed up computation.", 
+                        GH_rep = "borishejblum/NPflow",
+                        year=2015, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "TcGSA", 
+                        desc = "longitudinal gene-expression data from microarrays at the gene set level", 
+                        GH_rep = "borishejblum/TcGSA",
+                        year=2014, role="Creator \\& maintainer")
+) %>% 
+  vitae::brief_entries(what = Package, when = Year, .protect = FALSE)
+```
+
+
+
+# Active international research collaborations 
+
+\cvline{}{\textbf{Denis Agniel}, \textit{Rand Corporation, Statistics group}, Santa Monica (CA, USA), Associate Statistician.}
+\cvline{}{\textbf{Tianxi Cai}, \textit{Harvard TH Chan School of Public Health, Department of Biostatistics}, Boston (MA, USA),  Professor.}
+\cvline{}{\textbf{Layla Parast}, \textit{University of Texas at Austin}, Austin (TX, USA), Associate Professor.}
+
+
+# Research visits abroad
+
+\cvline{2018-2019 \mbox{(2$\times$3 weeks)}}{\href{https://www.mrc-bsu.cam.ac.uk}{\textbf{MRC Biostatistics Unit, Cambridge University}}, Cambridge (United-Kingdom) \small \newline invited by Sylvia Richardson, Professor.}
+\cvline{2018 \mbox{(1 week)}}{\href{https://www.rand.org/statistics.html}{\textbf{Rand Corporation, Statistics group}}, Santa Monica (CA, USA) \small \newline invited by Denis Agniel, Associate Statistician.}
+\cvline{2016-2017 \mbox{(2$\times$1 week)}}{\href{https://www.hsph.harvard.edu/biostatistics/}{\textbf{Harvard University, Department of Biostatistics}}, Cambridge (MA, USA) \small \newline invited by Tianxi Cai, Professor.}
+\cvline{2013-2014 \mbox{(3$\times$1 week)}}{\href{http://www.stats.ox.ac.uk/}{\textbf{University of Oxford, Department of Statistics}}, Oxford (United-Kingdom) \small \newline invited by François Caron, Research Fellow.}
+\cvline{2012 \mbox{(1 month)}}{\href{http://www.benaroyaresearch.org/what-is-bri/scientists-and-laboratories/principal-scientist-labs/chaussabel-laboratory}{\textbf{Benaroya Research Institute}, Chaussabel Laboratory}, Seattle (WA, USA) \small \newline invited by Damien Chaussabel, Director of Systems Immunology.}
+\cvline{2011 \mbox{(1 month)}}{\href{http://www.baylorhealth.edu/Research/InstitutesCenters/BIIR/Pages/default.aspx}{\textbf{Baylor Institute for Immunology Research}}, Dallas (TX, USA).}
+
+
+# Scientific evaluation
+
+\cventry{2023}{Member of the Scientific Committee for the 2023 Channel Netwok Conference of the International Biometrics Society}{}{}{}{}
+\cventry{2021}{Member of the PhD defense committee of Shaima Belhechmi, \textit{Université Paris-Saclay}}{}{}{}{}
+\cventry{2021}{Reviewer for the \textit{ANRT}}{(\textit{Association Nationale de la Recherche Technologique})}{}{}{}
+\cventry{2021}{Member of the Scientific Committee for the 42\textsuperscript{nd} ISCB conference}{}{}{}{}
+\cventry{2021}{Member of the Pharm. D. defense committee of Blandine Malbos, \textit{Université d'Angers}}{}{}{}{}
+\cventry{2019}{Invited member of the PhD defense committee of Soufiane Ajana, \textit{Université de Bordeaux}}{}{}{}{}
+
+# Reviewer for international peer-reviewed scientific journals
+
+\cvline{ }{\emph{Annals of Applied Statistics}, 
+	\emph{Bayesian Analysis}, 
+	\emph{BioData Mining}, 
+	\emph{Bioinformatics}, 
+	\emph{Biometrics}, 
+	\emph{Cell Reports Methods},
+	\emph{Cancer Reports},
+	\emph{Computational Statistics Data Analysis}, 
+	\emph{Journal of Open Source Software}, 
+	\emph{Journal of Statistical Computation and Simulation}, 
+	\emph{PLOS Computational Biology}, 
+	\emph{Scientific Reports}, 
+	\emph{STAT}, 
+	\emph{Statistics in Medicine},
+	\emph{Statistical Applications in Genetics and Molecular Biology},
+	\emph{WIREs Applications in Genetics and Molecular Biology}
+}
+
+
+
+# Academic responsibilities
+
+\cventry{2023--present}{Member of the Organizing Comittee for the next annual conferenc of the French Statistical Society (SFdS)}{}{}{}{}
+\cventry{2021--present}{French Biometric Society correspondant to the Channel Network region of the International Biometrics Society}{}{}{}{}
+\cventry{2019--present}{Member of the Bureau of the French Biometric Society \textnormal{\textsf{\textit{(Société Française de Biométrie)}}} \--- webmaster}{}{}{}{}
+\cventry{2019}{Co-organizer of the Bordeaux Statistics Seminar series \textnormal{\textsf{(quarterly)}}}{}{}{}{}
+\cventry{2017--present}{Organizer of the Public Health Department Biostatistics Seminar series \textnormal{\textsf{(biweekly)}}}{}{}{}{}
+\cventry{2018}{Co-organizer of the workshop in honor of Daniel Commenges' 70$^\textbf{\footnotesize th}$ birthday}{}{}{}{}
+\cventry{2012--2014}{Founder of the ISPED Ph.D. students \textnormal{\textsf{(weekly)}} seminar}{}{}{}{}
+\cventry{2009--2010}{President \textnormal{\textsf{(formerly Secretary General)}} of the ENSAI Business Networking Forum}{}{}{}{Responsible for organizing the yearly networking event between companies and ENSAI students}
+\cventry{2009}{Vice President of the ENSAI Student Council}{}{}{}{Organize and coordinate associative activities and social life at the school}
+
+# Publications
+
+```{r CV.bib, eval=TRUE}
+temp <- httr::GET("https://api.github.com/repos/borishejblum/boriswebsite/git/trees/master?recursive=1")
+bibfiles <- unlist(lapply(httr::content(temp)$tree, "[", "path"), use.names = F)
+bibfiles <- grep("^static/files/citations/", bibfiles, value = TRUE)
+bibfiles <- grep("*.bib$", bibfiles, value = TRUE)
+
+biblist <- list()
+for (f in bibfiles){
+  biblist[[f]] <- readLines(paste0("https://raw.githubusercontent.com/borishejblum/boriswebsite/master/", f))
+}
+writeLines(unlist(biblist), con="CV.bib")
+#bib2df::bib2df("CV.bib")
+```
+
+\definecolor{sectiontitlecolor}{rgb}{0.22, 0.45, 0.70}
+\textcolor{sectiontitlecolor}{\large{$\triangleright$ Books:}}\medskip
+
+```{r books, eval=TRUE, results='asis'}
+temp <- bibliography_entries("CV.bib") %>%
+  select(-ISSN, -PMCID, -PMID, -`title-short`, -URL) %>% 
+  filter(type == "book")
+o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
+biblio <- character(nrow(temp))
+for(i in 1:nrow(temp)){biblio[i] <- bookitem_print(temp[o[i], ])}
+cat(biblio, sep = "\n\n")
+```
+
+\bigskip
+
+\textcolor{sectiontitlecolor}{\large{$\triangleright$ Preprints:}}\medskip
+
+
+```{r preprints, eval=TRUE, , results='asis'}
+temp <- bibliography_entries("CV.bib") %>%
+  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) %>% 
+  filter(type == "article-journal" & `container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints"))
+o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
+biblio <- character(nrow(temp))
+for(i in 1:nrow(temp)){biblio[i] <- bibitem_print(temp[o[i], ])}
+cat(biblio, sep = "\n\n")
+```
+
+\bigskip
+
+\textcolor{sectiontitlecolor}{\large{$\triangleright$ Published or in press:}} \textsf{\textcolor{black}{\small (* indicates equal contibution)}}\medskip
+
+
+
+```{r pubs, eval=TRUE, results='asis'}
+temp <- bibliography_entries("CV.bib") %>%
+  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher, -URL) %>% 
+  filter(type == "article-journal" & !(`container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints")))
+o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
+biblio <- character(nrow(temp))
+for(i in 1:nrow(temp)){
+  ref <- temp[o[i], ]
+  
+  ce <- NULL
+  if(ref$DOI %in% c("10.1002/art.39974", "10.1073/pnas.1321060111", "10.1093/jamia/ocab187")){
+    ce <- c(1,2)
+  }else if(ref$DOI %in% c("10.1016/j.isci.2021.102711")){
+    ce <- c(2,3)
+  }
+  biblio[i] <- bibitem_print(ref, contribeq = ce)
+}
+cat(biblio, sep = "\n\n")
+```
+
+
+# Selected communications
+
+
+## $\triangleright$ Oral communications: \textsf{\textcolor{black}{\small (* indicates invited talks)}}
+
+
+```{r talks}
+all_conf <- readxl::read_xlsx("AllConferences_Seminar_Presentation_Summary.xlsx")
+
+all_conf$`author list` <- sapply(all_conf$`author list`, function(x){gsub("Hejblum B", "\\ul{Hejblum B}", x, fixed=TRUE)})
+
+all_conf <- all_conf %>% mutate(when = paste(Country, Year),
+         what = paste0(`author list`, ", ", `talk title`, ", \\textit{", `Conf full title`, "}, ", Location)) 
+
+all_conf[all_conf$Invited==1, "when"] <- sapply(all_conf[all_conf$Invited==1, "when"], function(x){paste0(x, "*")})
+all_conf$when <- sapply(all_conf$when, function(x){paste0("\\mbox{", x, "}")})
+
+all_conf %>% filter(Selected==1 & Poster==0) %>% 
+vitae::brief_entries(what = what,
+                     when = when,
+                     .protect=FALSE)
+```
+
+
+
+## $\triangleright$ Written communications
+
+```{r posters}
+all_conf %>% filter(Selected==1 & Poster==1) %>% 
+vitae::brief_entries(what = what,
+                     when = when,
+                     .protect=FALSE)
+```
+
