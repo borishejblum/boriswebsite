@@ -37,7 +37,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Build CV
-        run: rmarkdown::render("CV_HEJBLUM.Rmd")
+        run: rmarkdown::render("content/cv/CV_HEJBLUM.Rmd")
         shell: Rscript {0}
 
       - name: Commit built CV
