@@ -234,7 +234,7 @@ defaultContentLanguageInSubdir = false
     icon = "google-scholar"
     icon_pack = "ai"
     link = "https://scholar.google.com/citations?sortby=pubdate&hl=fr&user=xU72YmYAAAAJ&view_op=list_works"
-    
+
   [[params.social]]
     icon = "orcid"
     icon_pack = "ai"
@@ -291,7 +291,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "https://borishejblum.science/files/CV_HEJBLUM.pdf"
+  url = "https://borishejblum.science/cv/CV_HEJBLUM.pdf"
   weight = 7
 
 [[menu.main]]
