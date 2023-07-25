@@ -325,6 +325,7 @@ rbind.data.frame(
 
 \cvline{2012}{Poster presentation at the Summer University of Sidaction on longitudinal analysis applied to HIV vaccine research}
 
+
 # Research visits abroad
 
 \cvline{2018-2019 \mbox{(2$\times$3 weeks)}}{\href{https://www.mrc-bsu.cam.ac.uk}{\textbf{MRC Biostatistics Unit, Cambridge University}}, Cambridge (United-Kingdom) \small \newline invited by Sylvia Richardson, Professor.}
