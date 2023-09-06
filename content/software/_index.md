@@ -184,3 +184,14 @@ An **R package** to perform *gene set analysis of longitudinal RNA-seq data with
 
 An **R package** to perform *accurate estimation of vaccine induced cellular immunogenicity with bivariate linear modeling*. Available on [CRAN](https://CRAN.R-project.org/package=vici), development version on [GitHub](https://github.com/borishejblum/vici).
 
+  
+<br />
+<br />
+<br />
+<br />  
+<br />
+<br />
+<br />
+<br />
+
+*All illustrations (except `CytOpt`) by Jérôme Dubois.*
