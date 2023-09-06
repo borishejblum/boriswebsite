@@ -8,7 +8,7 @@ slug: software
 
 <img width="120" src='/files/shinyhex_small.png'>
 
-## `VICI` <img src='/files/hexstickers/vici.svg' align="right" width="150" /> 
+## `VICI` <img src='/files/hexstickers/VICI.svg' align="right" width="150" /> 
   
 * * *
 
@@ -23,7 +23,7 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
   <img width="120" src='/files/Rlogo.png'>
 
-## `citcdf`
+## `citcdf`<img src='/files/hexstickers/citcdf.svg' align="right" width="150" />
 
 * * *
 
@@ -82,7 +82,7 @@ An **R package** to perform *KERNel machine score test for pathway analysis in t
 <br />
 <br />
 
-## `foodingraph` 
+## `foodingraph`<img src='/files/hexstickers/Foodingraph.svg' align="right" width="150" />
  
 * * *
 
@@ -130,7 +130,7 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 <br />
 <br />
 
-## `PheVis`
+## `PheVis`<img src='/files/hexstickers/PheVis.svg' align="right" width="150" />
 
 * * *
 
