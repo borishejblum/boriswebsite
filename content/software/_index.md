@@ -86,7 +86,7 @@ An **R package** to perform *KERNel machine score test for pathway analysis in t
  
 * * *
 
-An **R package** to perform *Food Network Inference and Visualization* developed with Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [GitHub](https://github.com/victorgasque/foodingraph).
+An **R package** to perform *Food Network Inference and Visualization* developed with Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [GitHub](https://github.com/vgasque/foodingraph).
 
 
 <br />
