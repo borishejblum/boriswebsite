@@ -46,8 +46,8 @@ defaultContentLanguageInSubdir = false
   color_theme = "darkperso"
 
   # Font style.
-  #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
+  #   Choose from `default`, `classic`, `playfair`, or `perso`.
+  font = "perso"
 
   # Your details.
   name = "Research Side Effects"
