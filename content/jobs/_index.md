@@ -13,9 +13,9 @@ slug: jobs
 
 Please contact me if you would be interested by these research topics: `boris [dot] hejblum [at] u-bordeaux [dot] fr`
 
-## Sujets de stage proposés (*interships offered*) :
+## Masters interships offered:
 
-Voici les différents sujets de recherche pour lesquels je propose actuellement un stage de niveau M2/école d'ingénieur :  
+Each year I offer internship positions at the Masters/Engineering shool level:  
 
-  * [Méthodes d'analyse de marqueurs de substition appliquées aux vaccins contre la COVID-19](/files/SujetStageM2_surrogate.pdf)
-  * [Méthode d'analyse différentielle par groupe de gène pour les données *single-cell RNA-seq* appliquées dans la recherche vaccinale](/files/SujetStageM2_DEAscRNA.pdf)
+  * [Methods for surrogate marker analysis applied to vaccines against COVID-19](/files/InternshipSubjectM2_surrogate.pdf)
+  * [Unsupervised random forest for clustering](/files/InternshipSubjectM2_UnsupRFClust.pdf)
