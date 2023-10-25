@@ -3,7 +3,7 @@ title = "Doubly-robust evaluation of high-dimensional surrogate markers"
 date = "2023-10-18"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["D Agniel", "<u>**BP Hejblum**</u>", "R Thiébaut", "L Parast"]
+authors = ["Agniel D", "<u>**Hejblum BP**</u>", "Thiébaut R", "Parast L"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized
