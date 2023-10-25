@@ -44,7 +44,7 @@ jobs:
         shell: Rscript {0}
 
       - name: update static publication list
-        run: rmarkdown::render("content/publication_list/_index.Rmd")
+        run: knitr::knit(input = "content/publication_list/_index.Rmd", output = "content/publication_list/_index.md")
         shell: Rscript {0}
 
       - name: Commit built CV and publist
@@ -52,7 +52,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/cv/CV_HEJBLUM.pdf
-          git add content/publication_list/_index.html
+          git add content/publication_list/_index.md
           git commit -m 'auto CV and publist render'
       - name: Push changes
         uses: ad-m/github-push-action@master
