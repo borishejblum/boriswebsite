@@ -5,6 +5,7 @@ on:
     branches: [main, master]
     paths:
     - 'static/files/citations/*.bib'
+    - 'content/publication_list/_index.Rmd'
     - 'content/cv/CV_HEJBLUM.Rmd'
     - '.github/workflows/renderCV.yaml'
     - 'content/cv/AllConferences_Seminar_Presentation_Summary.xlsx'
@@ -42,12 +43,17 @@ jobs:
         run: rmarkdown::render("content/cv/CV_HEJBLUM.Rmd")
         shell: Rscript {0}
 
-      - name: Commit built CV
+      - name: update static publication list
+        run: rmarkdown::render("content/publication_list/_index.Rmd")
+        shell: Rscript {0}
+
+      - name: Commit built CV and publist
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/cv/CV_HEJBLUM.pdf
-          git commit -m 'auto CV render'
+          git add content/publication_list/_index.html
+          git commit -m 'auto CV and publist render'
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
