@@ -1,6 +1,6 @@
 +++
 title = "Doubly-robust evaluation of high-dimensional surrogate markers"
-date = "2022-07-06"
+date = "2023-10-18"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["D Agniel", "<u>**BP Hejblum**</u>", "R Thiébaut", "L Parast"]
@@ -17,10 +17,10 @@ authors = ["D Agniel", "<u>**BP Hejblum**</u>", "R Thiébaut", "L Parast"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Biostatistics* kxac020, in press"
-publication_short = "*Biostatistics*  kxac020, in press"
+publication = "*Biostatistics*, 24(4):985-999"
+publication_short = "*Biostatistics*, 24(4):985-999"
 
-doi =""
+doi ="10.1093/biostatistics/kxac020"
 
 # Abstract and optional shortened version.
 abstract = "When evaluating the effectiveness of a treatment, policy, or intervention, the desired measure of efficacy may be expensive to collect, not routinely available, or may take a long time to occur. In these cases, it is sometimes possible to identify a surrogate outcome that can more easily, quickly, or cheaply capture the effect of interest. Theory and methods for evaluating the strength of surrogate markers have been well studied in the context of a single surrogate marker measured in the course of a randomized clinical study. However, methods are lacking for quantifying the utility of surrogate markers when the dimension of the surrogate grows. We propose a robust and efficient method for evaluating a set of surrogate markers that may be high-dimensional. Our method does not require treatment to be randomized and may be used in observational studies. Our approach draws on a connection between quantifying the utility of a surrogate marker and the most fundamental tools of causal inference—namely, methods for robust estimation of the average treatment effect. This connection facilitates the use of modern methods for estimating treatment effects, using machine learning to estimate nuisance functions and relaxing the dependence on model specification. We demonstrate that our proposed approach performs well, demonstrate connections between our approach and certain mediation effects, and illustrate it by evaluating whether gene expression can be used as a surrogate for immune activation in an Ebola study."
