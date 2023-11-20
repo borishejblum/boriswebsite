@@ -16,7 +16,7 @@ slug: teach
 ### Doctoral training
 
  * [Bayesian methods in medical research](https://bayesbiomed.borishejblum.science) --- *University of Copenhagen* (2019 -- 2022)
- * [endeav`r fontawesome::fa("r-project")`: *code efficiency and software development with* `r fontawesome::fa("r-project")`](https://endaevr.borishejblum.science) -- *Université de Bordeaux* (2018, 2022, 2023)  
+ * [endeav`r fontawesome::fa("r-project")`: *code efficiency and software development with* `r fontawesome::fa("r-project")`](https://endeavr.borishejblum.science) -- *Université de Bordeaux* (2018, 2022, 2023)  
     + [`r fontawesome::fa("r-project")` codes](https://github.com/borishejblum/mypkgr/archive/refs/tags/v2022.tar.gz)
     + French version: [`r fontawesome::fa("r-project")` **avancé :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)
 
