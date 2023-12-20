@@ -3,7 +3,7 @@ title = "Identification of early gene expression profiles associated with long-l
 date = "2023-09-26"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["F Blengio", "H Hocini", "L Richert", "C Lefebvre", "M Durand", "<u>**B Hejblum**</u>", "P Tisserand", "C McLean", "K Luhn", "R Thiébaut", "Y Lévy"]
+authors = ["Blengio F", "Hocini H", "Richert L", "Lefebvre C", "Durand M", "<u>**Hejblum B**</u>", "Tisserand P", "McLean C", "Luhn K", "Thiébaut R", "Lévy Y"]
 
 # Publication type.
 # Legend:
