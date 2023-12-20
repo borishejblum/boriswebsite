@@ -96,9 +96,10 @@ bibitem_print <- function(bibrow, contribeq = NULL){
 
 ```{r biblio-years, results='asis'}
 years <- sort(unique(as.numeric(format(as.Date(bib_df$issued), "%Y"))), decreasing=TRUE)
+bib_df <- bib_df %>% mutate(Year = as.numeric(format(as.Date(issued), "%Y")))
 for(y in years){
   cat(paste0("# **", y ,"**\n\n"))
-  bib_df_y <- bib_df %>% filter(as.numeric(format(as.Date(issued), "%Y")) == y)
+  bib_df_y <-  bib_df[bib_df$Year == y, ]
   biblio <- character(nrow(bib_df_y))
   o <- order(as.numeric(format(as.Date(bib_df_y$issued), "%Y")), decreasing = TRUE)
   for(i in 1:nrow(bib_df_y)){
