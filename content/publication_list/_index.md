@@ -23,8 +23,12 @@ DOI: [10.1214/22-AOAS1660](https://doi.org/10.1214/22-AOAS1660)
    * Agniel D, <u>**Hejblum BP**</u>, Thiébaut R & Parast L. Doubly-robust evaluation of high-dimensional surrogate markers. *Biostatistics* 24(4):985-999, 2023.   
 DOI: [10.1093/biostatistics/kxac020](https://doi.org/10.1093/biostatistics/kxac020)  
 
-   * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P & Prague M. Using population based kalman estimator to model COVID-19 epidemic in france: Estimating the effects of non-pharmaceutical interventions on the dynamics of epidemic. *International Journal of Biostatistics*, 2023.   
+   * Blengio F, Hocini H, Richert L, Lefebvre C, Durand M, <u>**Hejblum B**</u>, Tisserand P, McLean C, Luhn K, Thiebaut R & Lévy Y. Identification of early gene expression profiles associated with long-lasting antibody responses to the Ebola vaccine Ad26. ZEBOV/MVA-BN-Filo. *Cell Reports* 42(9):, 2023.   
+
+   * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P & Prague M. Using population based kalman estimator to model COVID-19 epidemic in france: Estimating the effects of non-pharmaceutical interventions on the dynamics of epidemic. *International Journal of Biostatistics* in press, 2023.   
 DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087)  
+
+   * Vignals C, <u>**Hejblum BP**</u> & Prague M. Modéliser la COVID-19: De la population à l’individu. *Interstices*, 2023.   
 
    * Thiébaut R, <u>**Hejblum B**</u>, Mougin F, Tzourio C & Richert L. ChatGPT and beyond with artificial intelligence (AI) in health: Lessons to be learned. *Joint Bone Spine* 90(5):105607, 2023.   
 DOI: [10.1016/j.jbspin.2023.105607](https://doi.org/10.1016/j.jbspin.2023.105607)
