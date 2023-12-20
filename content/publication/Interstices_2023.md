@@ -1,5 +1,5 @@
 +++
-title = "Modéliser la COVID-19: de la population à l’individu"
+title = "Modéliser la COVID-19: de la population à l'individu"
 date = "2023-06-15"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
