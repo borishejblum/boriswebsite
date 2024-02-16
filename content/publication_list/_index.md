@@ -15,6 +15,11 @@ slug: publications
 
 
 
+# **2024**
+
+   * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Post-clustering difference testing: Valid inference and practical considerations with applications to ecological and biological data. *Computational Statistics & Data Analysis* 107916, 2024.   
+DOI: [10.1016/j.csda.2023.107916](https://doi.org/10.1016/j.csda.2023.107916)
+
 # **2023**
 
    * Freulon P, Bigot J & <u>**Hejblum BP**</u>. CytOpT: Optimal Transport with Domain Adaptation for Interpreting Flow Cytometry data. *Annals of Applied Statistics* 17(2):1086-1104, 2023.   
@@ -44,9 +49,6 @@ DOI: [10.1101/2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)
 
    * Ferté T, Jouhet V, Greffier R, <u>**Hejblum BP**</u> & Thiébaut R. The benefit of augmenting open data with clinical data-warehouse EHR for forecasting SARS-CoV-2 hospitalizations in Bordeaux area, France. *JAMIA open* ooac086, 2022.   
 DOI: [10.1093/jamiaopen/ooac086](https://doi.org/10.1093/jamiaopen/ooac086)  
-
-   * Hivert B, Agniel D, Rodolphe T & <u>**Hejblum BP**</u>. Post-clustering difference testing: Valid inference and practical considerations. *arXiv* 2210.13172, 2022.   
-DOI: [10.48550/arXiv.2210.13172](https://doi.org/10.48550/arXiv.2210.13172)  
 
    * Richert L, Lelièvre J, Lacabaratz C, Hardel L, Hocini H, Wiedemann A, Lucht F, Poizot-Martin I, Bauduin C, Diallo A, Rieux V, Durand M, <u>**Hejblum BP**</u>, Launay O, Thiébaut R, Lévy Y, on behalf of the ANRS VRI01 Study group. T-cell immunogenicity, gene expression profile and safety of four heterologous prime-boost combinations of HIV vaccine candidates in healthy volunteers - results of the randomized multi-arm phase i/II ANRS VRI01 trial. *Journal of Immunology* 208(12):2663-2674, 2022.   
 DOI: [10.4049/jimmunol.2101076](https://doi.org/10.4049/jimmunol.2101076)  
