@@ -339,7 +339,8 @@ rbind.data.frame(
 
 # Scientific evaluation
 
-\cventry{2023}{Member of the Scientific Committee for the 2023 Channel Netwok Conference of the International Biometrics Society}{}{}{}{}
+\cventry{2023}{Reviewer for the 2023 MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
+\cventry{2023}{Member of the Scientific Committee for the CNC23 9\textsuperscript{th} Channel Netwok Conference of the International Biometric Society 2023}{}{}{}{}
 \cventry{2021}{Member of the PhD defense committee of Shaima Belhechmi, \textit{Université Paris-Saclay}}{}{}{}{}
 \cventry{2021}{Reviewer for the \textit{ANRT}}{(\textit{Association Nationale de la Recherche Technologique})}{}{}{}
 \cventry{2021}{Member of the Scientific Committee for the 42\textsuperscript{nd} ISCB conference}{}{}{}{}
@@ -372,7 +373,7 @@ rbind.data.frame(
 
 # Academic responsibilities
 
-\cventry{2023--present}{Member of the Organizing Comittee for the next annual conferenc of the French Statistical Society (SFdS)}{}{}{}{}
+\cventry{2023--present}{Member of the Organizing Comittee for the next annual conference \textit{``Journées de Statistique''} of the French Statistical Society (SFdS)}{}{}{}{}
 \cventry{2021--present}{French Biometric Society correspondant to the Channel Network region of the International Biometrics Society}{}{}{}{}
 \cventry{2019--present}{Member of the Bureau of the French Biometric Society \textnormal{\textsf{\textit{(Société Française de Biométrie)}}} \--- webmaster}{}{}{}{}
 \cventry{2019}{Co-organizer of the Bordeaux Statistics Seminar series \textnormal{\textsf{(quarterly)}}}{}{}{}{}
