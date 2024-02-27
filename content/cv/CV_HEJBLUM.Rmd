@@ -88,7 +88,7 @@ $\circ$~ Basics for data science using R (graduate class, 12h per year)
 
 \cventry{\mbox{2019 \-- present}}{Master in Public Health}{}{ISPED, Bordeaux University (France)}{}{
 $\circ$~ omics data analysis (graduate class, 20h per year)\\
-$\circ$~ data visualisation (undergraduate class, 4h)
+$\circ$~ data visualization (undergraduate class, 4h)
 }
 
 \cventry{\mbox{2021 \-- present}}{Master in numerical sciences \& bio-health}{}{École Centrale Nantes (France)}{}{
@@ -404,7 +404,7 @@ writeLines(unlist(biblist), con="CV.bib")
 
 ```{r books, eval=TRUE, results='asis'}
 temp <- bibliography_entries("CV.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -`title-short`, -URL) %>% 
+  select(-ISSN, -PMCID, -PMID, -`title-short`) %>% 
   filter(type == "book")
 o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
 biblio <- character(nrow(temp))
