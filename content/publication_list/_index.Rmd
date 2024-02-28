@@ -27,7 +27,7 @@ writeLines(unlist(biblist), con="pubs.bib")
 
 ```{r}
 bib_df <- vitae::bibliography_entries("pubs.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -`title-short`, -URL)
+  select(-ISSN, -PMCID, -PMID, -`title-short`)
 ```
 
 ```{r helper_functions}
