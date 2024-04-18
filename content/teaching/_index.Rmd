@@ -22,9 +22,9 @@ slug: teach
 
 ### International Summer School -- [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://bss-publichealth.u-bordeaux.fr/en/Program/Course-n-1-Statistical-analysis-of-big-data-linked-to-immunology-systems/r742.html)
   
-  * [Science des Données avec R : Visualisation, Organisation et Reproductibilité (SAVOR)](/teaching/savor) (2024)
+  * [Science des Données avec R : Visualisation, Organisation et Reproductibilité (SAVOR)](/teaching_subfolders/savor) (2024)
   * Introduction to Bayesian Analysis (2018, 2024)
-  * [BAsics for DAta Science with R](/teaching/badas) (2019)
+  * [BAsics for DAta Science with R](/teaching_subfolders/badas) (2019)
   * Statistical analysis of big data linked to immunology systems (2017, 2019)
 
 
