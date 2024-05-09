@@ -21,6 +21,11 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
+  course = "Accreditation to Supervize Research (H.D.R.)"
+  institution = "Université de Bordeaux"
+  year = 2024
+
+[[education.courses]]
   course = "PhD in Biostatistics"
   institution = "Université de Bordeaux"
   year = 2015
