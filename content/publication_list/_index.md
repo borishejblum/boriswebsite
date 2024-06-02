@@ -18,7 +18,10 @@ slug: publications
 # **2024**
 
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Post-clustering difference testing: Valid inference and practical considerations with applications to ecological and biological data. *Computational Statistics & Data Analysis* 107916, 2024.   
-DOI: [10.1016/j.csda.2023.107916](https://doi.org/10.1016/j.csda.2023.107916)
+DOI: [10.1016/j.csda.2023.107916](https://doi.org/10.1016/j.csda.2023.107916)  
+
+   * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: Is practical application feasible for data fission and data thinning in post-clustering differential analysis?. *arXiv* 2405.13591, 2024.   
+DOI: [10.1101/2021.05.21.445165](https://doi.org/10.1101/2021.05.21.445165)
 
 # **2023**
 
