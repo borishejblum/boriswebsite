@@ -3088,14 +3088,112 @@ vertical-align: -.125em;
 <p>Le plus simple pour importer des données est d’utiliser l’outil graphique de Rstudio “Import Dataset”, présent dans l’onglet “Environnement” ou dans le menu “File”.</p>
 <p>Sinon, on peut bien entendu utiliser la fonction <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code> et ses dérivées (<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv()</a></code>, <code><a href="https://rdrr.io/r/utils/read.table.html">read.delim()</a></code>…).</p>
 <p>Importer le fichier <code>naissance.txt</code>, puis regarder la structure du tableau créé via la fonction <code><a href="https://rdrr.io/r/utils/str.html">str()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.delim</a></span><span class="op">(</span><span class="st">&quot;../Data/naissance.txt&quot;</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  10 variables:
+ $ ID   : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : int  182 155 105 108 107 124 118 103 123 113 ...
+ $ RACE : int  2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  1 0 0 1 1 0 0 0 0 0 ...
+ $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
+</div>
+</div>
 <p><svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg> considère toutes les variables comme des suite de nombres entiers (car effectivement il n’y a pas de nombres à virgule), ce qui est correcte pour les variables quantitatives (comme l’âge ou encore le poids de l’enfant <code>BWT</code>). Par contre, certaines variables sont qualitatives (comme <code>SMOKE</code>), donc si on veut des facteurs, il faut le forcer.</p>
 <p>Transformer la variable <code>SMOKE</code> en facteur, et renommer les niveaux en “Non-Fumeur” (0 dans le fichier txt) et “Fumeur” (1 dans le fichier txt).</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;Non-Fumeur&quot;</span>, <span class="st">&quot;Fumeur&quot;</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  10 variables:
+ $ ID   : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : int  182 155 105 108 107 124 118 103 123 113 ...
+ $ RACE : int  2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: Factor w/ 2 levels &quot;Non-Fumeur&quot;,&quot;Fumeur&quot;: 1 1 2 2 2 1 1 1 2 2 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  1 0 0 1 1 0 0 0 0 0 ...
+ $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
+</div>
+</div>
 <section id="exercice-0" class="level4"><h4 class="anchored" data-anchor-id="exercice-0">Exercice 0 :</h4>
 <ol type="1">
-<li><p>Charger le fichier de données nommé <code>naissance_na.txt</code>.</p></li>
-<li><p>Consulter la structure de l’objet créé (par exemple nommé <code>naissance_na</code>). Que remarquez-vous pour la variable <code>LWT</code> ?</p></li>
-<li><p>Pour régler le problème, modifier le contenu de la case “NA.strings” lors du chargement du fichier de données avec “Import Dataset” (ou modifier le paramètre <code>na.strings</code> de la fonction <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code> ou de ses dérivées). Puis vérifier la nouvelle structure de l’objet.</p></li>
-<li><p>A l’aide de la fonction <code><a href="https://rdrr.io/r/base/transform.html">transform()</a></code>, transformer en facteur les variables <code>RACE</code> (1=blanche, 2=noire, 3=autres), <code>HT</code> (0=non, 1=oui) et <code>UI</code> (0=non, 1=oui) en une seule commande.</p></li>
+<li>Charger le fichier de données nommé <code>naissance_na.txt</code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">&quot;../Data/naissance_na.txt&quot;</span>, sep <span class="op">=</span> <span class="st">&quot;;&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Consulter la structure de l’objet créé (par exemple nommé <code>naissance_na</code>). Que remarquez-vous pour la variable <code>LWT</code> ?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance_na</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  10 variables:
+ $ ID   : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : chr  &quot;.&quot; &quot;155&quot; &quot;105&quot; &quot;108&quot; ...
+ $ RACE : int  2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  1 0 0 1 1 0 0 0 0 0 ...
+ $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Pour régler le problème, modifier le contenu de la case “NA.strings” lors du chargement du fichier de données avec “Import Dataset” (ou modifier le paramètre <code>na.strings</code> de la fonction <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code> ou de ses dérivées). Puis vérifier la nouvelle structure de l’objet.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">&quot;../Data/naissance_na.txt&quot;</span>, sep <span class="op">=</span> <span class="st">&quot;;&quot;</span>, na.strings <span class="op">=</span> <span class="st">&quot;.&quot;</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance_na</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  10 variables:
+ $ ID   : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : int  NA 155 105 108 107 124 118 103 123 113 ...
+ $ RACE : int  2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  1 0 0 1 1 0 0 0 0 0 ...
+ $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>A l’aide de la fonction <code><a href="https://rdrr.io/r/base/transform.html">transform()</a></code>, transformer en facteur les variables <code>RACE</code> (1=blanche, 2=noire, 3=autres), <code>HT</code> (0=non, 1=oui) et <code>UI</code> (0=non, 1=oui) en une seule commande.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/transform.html">transform</a></span><span class="op">(</span><span class="va">naissance_na</span>,</span>
+<span>    RACE <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">RACE</span>, labels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;blanche&quot;</span>, <span class="st">&quot;noire&quot;</span>, <span class="st">&quot;autres&quot;</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    HT <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">HT</span>, labels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;non&quot;</span>, <span class="st">&quot;oui&quot;</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    UI <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">UI</span>, labels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;non&quot;</span>, <span class="st">&quot;oui&quot;</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance_na</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  10 variables:
+ $ ID   : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : int  NA 155 105 108 107 124 118 103 123 113 ...
+ $ RACE : Factor w/ 3 levels &quot;blanche&quot;,&quot;noire&quot;,..: 2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ $ UI   : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 2 1 1 2 2 1 1 1 1 1 ...
+ $ FVT  : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...</code></pre>
+</div>
+</div>
+<ol start="5" type="1">
 <li>
 <p>Toujours à l’aide de la fonction <code><a href="https://rdrr.io/r/base/transform.html">transform()</a></code>, créer deux nouvelles variables (utiliser deux commandes différentes, puis essayer en une seule fois) :</p>
 <ul>
@@ -3103,11 +3201,59 @@ vertical-align: -.125em;
 <li><p><code>RAPPORT</code>, contenant le rapport entre le poids de l’enfant et celui de la mère (en grammes tous les deux).</p></li>
 </ul>
 </li>
-<li><p>Utiliser la fonction <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">dplyr::mutate()</a></code> (du package <code>dplyr</code>) pour répondre à la question précédente en une seule commande.</p></li>
-</ol></section></section><section id="exportation" class="level3"><h3 class="anchored" data-anchor-id="exportation">Exportation</h3>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/transform.html">transform</a></span><span class="op">(</span><span class="va">naissance_na</span>, POIDS <span class="op">=</span> <span class="va">LWT</span> <span class="op">*</span> <span class="fl">453</span>, RAPPORT <span class="op">=</span> <span class="va">BWT</span><span class="op">/</span><span class="va">POIDS</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in eval(substitute(list(...)), `_data`, parent.frame()): object &#39;POIDS&#39; not found</code></pre>
+</div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/transform.html">transform</a></span><span class="op">(</span><span class="va">naissance_na</span>, POIDS <span class="op">=</span> <span class="va">LWT</span> <span class="op">*</span> <span class="fl">453</span><span class="op">)</span></span>
+<span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/transform.html">transform</a></span><span class="op">(</span><span class="va">naissance_na</span>, RAPPORT <span class="op">=</span> <span class="va">BWT</span><span class="op">/</span><span class="va">POIDS</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance_na</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  12 variables:
+ $ ID     : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE    : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT    : int  NA 155 105 108 107 124 118 103 123 113 ...
+ $ RACE   : Factor w/ 3 levels &quot;blanche&quot;,&quot;noire&quot;,..: 2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE  : int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL    : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT     : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ $ UI     : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 2 1 1 2 2 1 1 1 1 1 ...
+ $ FVT    : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT    : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...
+ $ POIDS  : num  NA 70215 47565 48924 48471 ...
+ $ RAPPORT: num  NA 0.0363 0.0538 0.053 0.0536 ...</code></pre>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Utiliser la fonction <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">dplyr::mutate()</a></code> (du package <code>dplyr</code>) pour répondre à la question précédente en une seule commande.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_na</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="va">naissance_na</span>, POIDS2 <span class="op">=</span> <span class="va">LWT</span> <span class="op">*</span> <span class="fl">453</span>, RAPPORT2 <span class="op">=</span> <span class="va">BWT</span><span class="op">/</span><span class="va">POIDS2</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance_na</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  14 variables:
+ $ ID      : int  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE     : int  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT     : int  NA 155 105 108 107 124 118 103 123 113 ...
+ $ RACE    : Factor w/ 3 levels &quot;blanche&quot;,&quot;noire&quot;,..: 2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE   : int  0 0 1 1 1 0 0 0 1 1 ...
+ $ PTL     : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT      : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ $ UI      : Factor w/ 2 levels &quot;non&quot;,&quot;oui&quot;: 2 1 1 2 2 1 1 1 1 1 ...
+ $ FVT     : int  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT     : int  2523 2551 2557 2594 2600 2622 2637 2637 2663 2665 ...
+ $ POIDS   : num  NA 70215 47565 48924 48471 ...
+ $ RAPPORT : num  NA 0.0363 0.0538 0.053 0.0536 ...
+ $ POIDS2  : num  NA 70215 47565 48924 48471 ...
+ $ RAPPORT2: num  NA 0.0363 0.0538 0.053 0.0536 ...</code></pre>
+</div>
+</div>
+</section></section><section id="exportation" class="level3"><h3 class="anchored" data-anchor-id="exportation">Exportation</h3>
 <p>Pour écrire une table de données, on utilise la fonction <code><a href="https://rdrr.io/r/utils/write.table.html">write.table()</a></code> ou ses dérivées.</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mon_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>Partie <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;Intro&quot;</span>, <span class="st">&quot;Bases&quot;</span>, <span class="st">&quot;Manip&quot;</span><span class="op">)</span>, Temps <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="fl">1.5</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mon_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>Partie <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;Intro&quot;</span>, <span class="st">&quot;Bases&quot;</span>, <span class="st">&quot;Manip&quot;</span><span class="op">)</span>, Temps <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="fl">1.5</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">mon_df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Partie Temps
@@ -3115,16 +3261,16 @@ vertical-align: -.125em;
 2  Bases   1.5
 3  Manip   1.5</code></pre>
 </div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html">write.csv</a></span><span class="op">(</span><span class="va">mon_df</span>, file <span class="op">=</span> <span class="st">&quot;../Results/mon_df.csv&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html">write.csv</a></span><span class="op">(</span><span class="va">mon_df</span>, file <span class="op">=</span> <span class="st">&quot;../Results/mon_df.csv&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="sauvegarde" class="level3"><h3 class="anchored" data-anchor-id="sauvegarde">Sauvegarde</h3>
 <p>On peut aussi sauvegarder une table au format <code>Rdata</code> (qui est un format propre à R). Pour cela on utilise <code><a href="https://rdrr.io/r/base/save.html">save()</a></code> :</p>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">naissance</span>, file <span class="op">=</span> <span class="st">&quot;../Results/naissance.Rdata&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">naissance</span>, file <span class="op">=</span> <span class="st">&quot;../Results/naissance.Rdata&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>L’avantage est que lorsqu’on recharge le fichier avec la fonction <code><a href="https://rdrr.io/r/base/load.html">load()</a></code>, il garde la bonne structure :</p>
 <div class="cell">
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">&quot;../Results/naissance.Rdata&quot;</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -3143,13 +3289,13 @@ vertical-align: -.125em;
 </div>
 <p>On remarque qu’on a pas besoin d’affecter le résultat de <code><a href="https://rdrr.io/r/base/load.html">load()</a></code> à un objet. Ceci est dû au fait, qu’on peut sauvegarder plusieurs objets de la session dans un même fichier <code>.Rdata</code>. Et on pourra tous les recharger ensuite :</p>
 <div class="cell">
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">mon_df</span>, file <span class="op">=</span> <span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">mon_df</span>, file <span class="op">=</span> <span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">mon_df</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">mon_df</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in eval(expr, envir, enclos): object &#39;mon_df&#39; not found</code></pre>
 </div>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">mon_df</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;data.frame&quot;</code></pre>
@@ -3158,7 +3304,7 @@ vertical-align: -.125em;
 <p>Ce comportement est pratique, mais peut parfois s’avérer trompeur. Si on a beaucoup d’objets dans notre environnement, et qu’on charge un objet <code>.Rdata</code> avec plusieurs objets (dont on ne se souvient pas, ou dont on ne connaît pas le nom), il est difficile de s’y retrouver. De plus, lors du chargement, <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg> peut écraser des objets déjà présents avec le même nom.</p>
 <p><strong>Conseil</strong> : mettre tout ce qu’on veut sauver dans une liste, et sauver cette liste sous format <code>.Rdata</code> en gardant le même nom :</p>
 <div class="cell">
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_mon_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>naissance <span class="op">=</span> <span class="va">naissance</span>, mon_df <span class="op">=</span> <span class="va">mon_df</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_mon_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>naissance <span class="op">=</span> <span class="va">naissance</span>, mon_df <span class="op">=</span> <span class="va">mon_df</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/save.html">save</a></span><span class="op">(</span><span class="va">naissance_mon_df</span>, file <span class="op">=</span> <span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">naissance_mon_df</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">&quot;../Results/naissance_mon_df.Rdata&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3167,32 +3313,582 @@ vertical-align: -.125em;
 <section id="sélection-suppression-ajout" class="level3"><h3 class="anchored" data-anchor-id="sélection-suppression-ajout">Sélection, suppression, ajout</h3>
 <section id="exercice-1-sélection-de-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-1-sélection-de-colonnes">Exercice 1 : Sélection de colonnes</h4>
 <ol type="1">
-<li><p>J’ai dénombré 11 façons de sélectionner la variable <code>AGE</code>. En gardant en tête qu’un <code>data.frame</code> est une liste de colonnes, essayer d’en trouver un maximum.</p></li>
-<li><p>Utiliser la fonction <code>select</code> du package <code>dplyr</code> pour sélectionner la variable <code>AGE</code> et regarder comment elle se comporte.</p></li>
-</ol></section><section id="exercice-2-sélection-de-plusieurs-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-2-sélection-de-plusieurs-colonnes">Exercice 2 : Sélection de plusieurs colonnes</h4>
+<li>J’ai dénombré 11 façons de sélectionner la variable <code>AGE</code>. En gardant en tête qu’un <code>data.frame</code> est une liste de colonnes, essayer d’en trouver un maximum.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Pour sélectionner une colonne, on peut utiliser l&#39;aspect &#39;liste&#39; du</span></span>
+<span><span class="co"># `data.frame`, avec le `$`</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/typeof.html">typeof</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span><span class="op">)</span></span>
+<span><span class="co"># le `$` extrait la composante de la liste `naissance` nommée `AGE`</span></span>
+<span></span>
+<span><span class="co"># Toujours côté &#39;liste&#39;, on peut également utiliser le `[[]]`, qui exécute la</span></span>
+<span><span class="co"># même opération, et qui peut s&#39;utiliser avec le numéro de la variable à la</span></span>
+<span><span class="co"># place du nom :</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[[</span><span class="st">&quot;AGE&quot;</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Dernière façon &#39;liste&#39;, utiliser le `[]`, car une liste est un vecteur :</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/typeof.html">typeof</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span><span class="st">&quot;AGE&quot;</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Nous voyons, que contrairement à avant où nous avions extrait un vecteur,</span></span>
+<span><span class="co"># nous avons ici extrait un sous-dataframe (ou encore une sous-liste). Ce</span></span>
+<span><span class="co"># dernier point est important à garder en tête, car il peut être source de</span></span>
+<span><span class="co"># nombreux bugs...</span></span>
+<span></span>
+<span><span class="co"># On peut aussi utiliser le côté &#39;matrice&#39; du dataframe, avec le `[,]` :</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fl">2</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="st">&quot;AGE&quot;</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="co"># Ici nous avons extrait la colonne numéro 2 de la &#39;matrice&#39;. Par contre, **ce</span></span>
+<span><span class="co"># n&#39;est plus un dataframe !**</span></span>
+<span></span>
+<span><span class="co"># Si on souhaite garder la structure de dataframe, il faut rajouter l&#39;option</span></span>
+<span><span class="co"># `drop = FALSE` :</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fl">2</span>, drop <span class="op">=</span> <span class="cn">FALSE</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="co">#!!! ATTENTION : Ce comportement est connu comme étant une source d&#39;erreurs fréquente dans `R` quand on programme ses propres fonctions !!!**</span></span>
+<span></span>
+<span><span class="co"># Sinon, on peut utiliser la fonction `subset()` :</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="st">&quot;AGE&quot;</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="va">AGE</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> int [1:189] 19 33 20 21 18 21 22 17 29 26 ...
+[1] &quot;integer&quot;
+ int [1:189] 19 33 20 21 18 21 22 17 29 26 ...
+ int [1:189] 19 33 20 21 18 21 22 17 29 26 ...
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...
+[1] &quot;list&quot;
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...
+ int [1:189] 19 33 20 21 18 21 22 17 29 26 ...
+ int [1:189] 19 33 20 21 18 21 22 17 29 26 ...
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...
+&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Utiliser la fonction <code>select</code> du package <code>dplyr</code> pour sélectionner la variable <code>AGE</code> et regarder comment elle se comporte.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...</code></pre>
+</div>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">AGE</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   189 obs. of  1 variable:
+ $ AGE: int  19 33 20 21 18 21 22 17 29 26 ...</code></pre>
+</div>
+</div>
+</section><section id="exercice-2-sélection-de-plusieurs-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-2-sélection-de-plusieurs-colonnes">Exercice 2 : Sélection de plusieurs colonnes</h4>
 <p>Essayer tous les commandes précédentes pour extraire, en même temps, les 4 colonnes <code>ID</code>, <code>AGE</code>, <code>LWT</code> et <code>SMOKE</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="fu">c</span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;AGE&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;SMOKE&quot;</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in head(naissance$c(&quot;ID&quot;, &quot;AGE&quot;, &quot;LWT&quot;, &quot;SMOKE&quot;)): attempt to apply non-function</code></pre>
+</div>
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in .subset2(x, i, exact = exact): recursive indexing failed at level 2</code></pre>
+</div>
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;AGE&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;SMOKE&quot;</span><span class="op">)</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in .subset2(x, i, exact = exact): recursive indexing failed at level 2</code></pre>
+</div>
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;AGE&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;SMOKE&quot;</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;AGE&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;SMOKE&quot;</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">5</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;AGE&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;SMOKE&quot;</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">ID</span>, <span class="va">AGE</span>, <span class="va">LWT</span>, <span class="va">SMOKE</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">ID</span>, <span class="va">AGE</span>, <span class="va">LWT</span>, <span class="va">SMOKE</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section><section id="exercice-3-sélection-de-lignes" class="level4"><h4 class="anchored" data-anchor-id="exercice-3-sélection-de-lignes">Exercice 3 : Sélection de lignes</h4>
 <p>Sélectionner les 5 premières lignes, puis les 5 dernières lignes (en 2 commandes) en utilisant une commande de base puis la fonction <code><a href="https://dplyr.tidyverse.org/reference/slice.html">dplyr::slice()</a></code>. Afficher le résultat dans une <em>jolie</em> table grâce à la fonction <code>kable()</code>du package <code>knitr</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># En ce qui concerne les lignes, nous sommes obligés de considérer l&#39;aspect</span></span>
+<span><span class="co"># &#39;matrice&#39; du dataframe :</span></span>
+<span><span class="va">premiers</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="op">]</span></span>
+<span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span>
+<span><span class="va">derniers</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="op">(</span><span class="va">n</span> <span class="op">-</span> <span class="fl">5</span><span class="op">)</span><span class="op">:</span><span class="va">n</span>, <span class="op">]</span></span>
+<span></span>
+<span><span class="co"># Avec la fonction `dplyr::slice()` :</span></span>
+<span><span class="va">prems</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html">slice</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span></span>
+<span><span class="va">derns</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html">slice</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="op">(</span><span class="va">n</span> <span class="op">-</span> <span class="fl">5</span><span class="op">)</span><span class="op">:</span><span class="va">n</span><span class="op">)</span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html">slice</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span> <span class="op">-</span> <span class="fl">4</span><span class="op">:</span><span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">AGE</th>
+<th style="text-align: right;">LWT</th>
+<th style="text-align: right;">RACE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">PTL</th>
+<th style="text-align: right;">HT</th>
+<th style="text-align: right;">UI</th>
+<th style="text-align: right;">FVT</th>
+<th style="text-align: right;">BWT</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2523</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2551</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2557</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2594</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2600</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2466</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2495</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2495</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2495</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2495</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section><section id="exercice-4-filtre" class="level4"><h4 class="anchored" data-anchor-id="exercice-4-filtre">Exercice 4 : Filtre</h4>
 <ol type="1">
-<li><p>Construire un sous-dataframe ne contenant que les individus fumeurs, en utilisant <code>[,]</code>, puis <code><a href="https://rdrr.io/r/base/subset.html">subset()</a></code>, et enfin <code><a href="https://dplyr.tidyverse.org/reference/filter.html">dplyr::filter()</a></code>.</p></li>
-<li><p>Donner les identifiants (colonne <code>ID</code>) des individus des individus présentant de l’hypertension (variable <code>HT</code> valant 1).</p></li>
-<li><p>Sélectionner le sous-dataframe ne contenant que les individus fumeurs et âgés de moins de 20 ans.</p></li>
-<li><p>Donner les indices des individus ayant un poids inférieur à 110 (le poids de la mère est en livres) ou ayant un bébé de poids inférieur à 2,5 kg.</p></li>
-</ol></section><section id="exercice-5-suppression-de-lignes-ou-de-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-5-suppression-de-lignes-ou-de-colonnes">Exercice 5 : Suppression de lignes ou de colonnes</h4>
+<li>Construire un sous-dataframe ne contenant que les individus fumeurs, en utilisant <code>[,]</code>, puis <code><a href="https://rdrr.io/r/base/subset.html">subset()</a></code>, et enfin <code><a href="https://dplyr.tidyverse.org/reference/filter.html">dplyr::filter()</a></code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fum</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span> <span class="op">==</span> <span class="st">&quot;Fumeur&quot;</span>, <span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">fum</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   74 obs. of  10 variables:
+ $ ID   : int  87 88 89 94 95 100 101 103 105 113 ...
+ $ AGE  : int  20 21 18 29 26 18 18 25 28 17 ...
+ $ LWT  : int  105 108 107 123 113 100 100 118 120 122 ...
+ $ RACE : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ SMOKE: Factor w/ 2 levels &quot;Non-Fumeur&quot;,&quot;Fumeur&quot;: 2 2 2 2 2 2 2 2 2 2 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  0 1 1 0 0 0 0 0 0 0 ...
+ $ FVT  : int  1 2 0 1 0 0 0 3 1 0 ...
+ $ BWT  : int  2557 2594 2600 2663 2665 2769 2769 2782 2821 2906 ...</code></pre>
+</div>
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fum</span><span class="op">$</span><span class="va">SMOKE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Non-Fumeur     Fumeur 
+         0         74 </code></pre>
+</div>
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># La table `fum` ne contient que les individus fumeurs. On peut aussi utiliser</span></span>
+<span><span class="co"># la fonction `which()`, qui renvoie les indices des individus qui vérifient la</span></span>
+<span><span class="co"># condition :</span></span>
+<span><span class="va">ind_fum</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span> <span class="op">==</span> <span class="st">&quot;Fumeur&quot;</span><span class="op">)</span></span>
+<span><span class="va">ind_fum</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]   3   4   5   9  10  15  16  18  20  27  29  32  33  36  37  38  39  40  41
+[20]  45  46  50  53  54  57  65  68  71  72  73  75  78  79  86  93  94  95  98
+[39]  99 102 109 113 115 128 131 133 140 141 142 145 146 148 153 154 156 157 158
+[58] 160 161 165 166 169 171 172 173 176 177 178 179 183 184 185 187 189</code></pre>
+</div>
+<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fum2</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="va">ind_fum</span>, <span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">fum2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   74 obs. of  10 variables:
+ $ ID   : int  87 88 89 94 95 100 101 103 105 113 ...
+ $ AGE  : int  20 21 18 29 26 18 18 25 28 17 ...
+ $ LWT  : int  105 108 107 123 113 100 100 118 120 122 ...
+ $ RACE : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ SMOKE: Factor w/ 2 levels &quot;Non-Fumeur&quot;,&quot;Fumeur&quot;: 2 2 2 2 2 2 2 2 2 2 ...
+ $ PTL  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : int  0 1 1 0 0 0 0 0 0 0 ...
+ $ FVT  : int  1 2 0 1 0 0 0 3 1 0 ...
+ $ BWT  : int  2557 2594 2600 2663 2665 2769 2769 2782 2821 2906 ...</code></pre>
+</div>
+<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Avec `subset()`</span></span>
+<span><span class="va">fum_sub</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">SMOKE</span> <span class="op">==</span> <span class="st">&quot;Fumeur&quot;</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Avec `dplyr::filter()` :</span></span>
+<span><span class="va">fum_fil</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">SMOKE</span> <span class="op">==</span> <span class="st">&quot;Fumeur&quot;</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Les deux syntaxes ici sont identiques. La différence est que dans dplyr il y</span></span>
+<span><span class="co"># a deux fonctions (`select()` et `filter()`) avec une syntaxe très simple.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Donner les identifiants (colonne <code>ID</code>) des individus des individus présentant de l’hypertension (variable <code>HT</code> valant 1).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">HT</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span>, <span class="st">&quot;ID&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID
+1   98
+2  138
+3  187
+4  197
+5  202
+6   11
+7   13
+8   19
+9   20
+10  75
+11  83
+12  84</code></pre>
+</div>
+<div class="sourceCode" id="cb55"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># avec le pipe :</span></span>
+<span><span class="va">naissance</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">HT</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID
+1   98
+2  138
+3  187
+4  197
+5  202
+6   11
+7   13
+8   19
+9   20
+10  75
+11  83
+12  84</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Sélectionner le sous-dataframe ne contenant que les individus fumeurs et âgés de moins de 20 ans.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">SMOKE</span> <span class="op">==</span> <span class="st">&quot;Fumeur&quot;</span>, <span class="va">AGE</span> <span class="op">&lt;</span> <span class="fl">20</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID AGE LWT RACE  SMOKE PTL HT UI FVT  BWT
+1   89  18 107    1 Fumeur   0  0  1   0 2600
+2  100  18 100    1 Fumeur   0  0  0   0 2769
+3  101  18 100    1 Fumeur   0  0  0   0 2769
+4  113  17 122    1 Fumeur   0  0  0   0 2906
+5  124  19 138    1 Fumeur   0  0  0   2 2977
+6  132  18  90    1 Fumeur   0  0  1   0 3076
+7  133  18  90    1 Fumeur   0  0  1   0 3076
+8  167  16 135    1 Fumeur   0  0  0   0 3374
+9  180  17 120    3 Fumeur   0  0  0   0 3572
+10 187  19 235    1 Fumeur   0  1  0   0 3629
+11 189  16 135    1 Fumeur   0  0  0   0 3643
+12 192  19 147    1 Fumeur   0  0  0   0 3651
+13 193  19 147    1 Fumeur   0  0  0   0 3651
+14 197  19 184    1 Fumeur   0  1  0   0 3756
+15 205  18 120    1 Fumeur   0  0  0   2 3856
+16 224  19 120    1 Fumeur   0  0  0   0 4238
+17  23  19  91    1 Fumeur   2  0  1   0 1885
+18  34  19 112    1 Fumeur   0  0  1   0 2084
+19  37  17 130    3 Fumeur   1  0  1   0 2125
+20  45  17 110    1 Fumeur   0  0  0   0 2225
+21  50  18 110    2 Fumeur   1  0  0   0 2296
+22  68  17 120    1 Fumeur   0  0  0   3 2414
+23  78  14 101    3 Fumeur   1  0  0   0 2466</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Donner les indices des individus ayant un poids inférieur à 110 (le poids de la mère est en livres) ou ayant un bébé de poids inférieur à 2,5 kg.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">LWT</span> <span class="op">&lt;</span> <span class="fl">110</span> <span class="op">|</span> <span class="va">BWT</span> <span class="op">&lt;</span> <span class="fl">2500</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="st">&quot;ID&quot;</span>, <span class="st">&quot;LWT&quot;</span>, <span class="st">&quot;BWT&quot;</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID LWT  BWT
+1   87 105 2557
+2   88 108 2594
+3   89 107 2600
+4   93 103 2637
+5   96  95 2722
+6   98  95 2750
+7   99 107 2750
+8  100 100 2769
+9  101 100 2769
+10 102  98 2778
+11 107 100 2835
+12 118  90 2948
+13 127 109 3033
+14 132  90 3076
+15 133  90 3076
+16 137  85 3090
+17 141  95 3147
+18 146 103 3203
+19 181 105 3572
+20 188  95 3637
+21 216  95 3997
+22   4 120  709
+23  10 130 1021
+24  11 187 1135
+25  13 105 1330
+26  15  85 1474
+27  16 150 1588
+28  17  97 1588
+29  18 128 1701
+30  19 132 1729
+31  20 165 1790
+32  22 105 1818
+33  23  91 1885
+34  24 115 1893
+35  25 130 1899
+36  26  92 1928
+37  27 150 1928
+38  28 200 1928
+39  29 155 1936
+40  30 103 1970
+41  31 125 2055
+42  32  89 2055
+43  33 102 2082
+44  34 112 2084
+45  35 117 2084
+46  36 138 2100
+47  37 130 2125
+48  40 120 2126
+49  42 130 2187
+50  43 130 2187
+51  44  80 2211
+52  45 110 2225
+53  46 105 2240
+54  47 109 2240
+55  49 148 2282
+56  50 110 2296
+57  51 121 2296
+58  52 100 2301
+59  54  96 2325
+60  56 102 2353
+61  57 110 2353
+62  59 187 2367
+63  60 122 2381
+64  61 105 2381
+65  62 115 2381
+66  63 120 2395
+67  65 142 2410
+68  67 130 2410
+69  68 120 2414
+70  69 110 2424
+71  71 120 2438
+72  75 154 2442
+73  76 105 2450
+74  77 190 2466
+75  78 101 2466
+76  79  95 2466
+77  81 100 2495
+78  82  94 2495
+79  83 142 2495
+80  84 130 2495</code></pre>
+</div>
+</div>
+</section><section id="exercice-5-suppression-de-lignes-ou-de-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-5-suppression-de-lignes-ou-de-colonnes">Exercice 5 : Suppression de lignes ou de colonnes</h4>
 <p>En essayant avec <code>[,]</code>, <code><a href="https://rdrr.io/r/base/subset.html">subset()</a></code> et les fonctions de <code>dplyr</code> :</p>
 <ol type="1">
 <li><p>Supprimer la première ligne du jeu de données.</p></li>
 <li><p>Supprimer les colonnes “AGE”, “LWT”, “RACE”, “BWT”.</p></li>
 </ol>
 <p><em>Indice : utiliser la même syntaxe que pour la sélection mais avec le signe <code>-</code> pour indiquer les éléments à supprimer…</em></p>
+<div class="cell">
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Pour supprimer des lignes ou des colonnes, on peut utiliser `[,]` :</span></span>
+<span><span class="va">naissance_sans_ind1</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span>, <span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance_sans_ind1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 188</code></pre>
+</div>
+<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_suppr_cro</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span><span class="op">:</span><span class="fl">4</span>, <span class="fl">10</span><span class="op">)</span><span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance_suppr_cro</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  ID      SMOKE PTL HT UI FVT
+1 85 Non-Fumeur   0  0  1   0
+2 86 Non-Fumeur   0  0  0   3
+3 87     Fumeur   0  0  0   1
+4 88     Fumeur   0  0  1   2
+5 89     Fumeur   0  0  1   0
+6 91 Non-Fumeur   0  0  0   0</code></pre>
+</div>
+<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># naissance_sans_AGE &lt;- naissance[, -c(&#39;AGE&#39;, &#39;LWT&#39;, &#39;RACE&#39;, &#39;BWT&#39;)] Cette</span></span>
+<span><span class="co"># dernière opération n&#39;est pas possible.</span></span>
+<span></span>
+<span><span class="co"># Là encore, les fonctions `subset()` et `select()` permettent plus</span></span>
+<span><span class="co"># d&#39;opérations avec une syntaxe très simple :</span></span>
+<span><span class="va">naissance_suprr_sub</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">naissance</span>, select <span class="op">=</span> <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">AGE</span><span class="op">:</span><span class="va">RACE</span>, <span class="va">BWT</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">naissance_suprr_sel</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">AGE</span><span class="op">:</span><span class="va">RACE</span>, <span class="va">BWT</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section><section id="exercice-6-ajout-de-lignes-ou-de-colonnes" class="level4"><h4 class="anchored" data-anchor-id="exercice-6-ajout-de-lignes-ou-de-colonnes">Exercice 6 : Ajout de lignes ou de colonnes</h4>
 <p>Ajouter un une ligne (un individu) possédant les valeurs suivantes : <code>1, 20, 143, 2, &quot;Non-Fumeur&quot;, 0, 0, 0, 0, 2500</code></p>
+<div class="cell">
+<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span> <span class="op">+</span> <span class="fl">1</span>, <span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">20</span>, <span class="fl">143</span>, <span class="fl">2</span>, <span class="st">&quot;Non-Fumeur&quot;</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">2500</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
+185 79  28  95    1     Fumeur   0  0  0   2 2466
+186 81  14 100    3 Non-Fumeur   0  0  0   2 2495
+187 82  23  94    3     Fumeur   0  0  0   0 2495
+188 83  17 142    2 Non-Fumeur   0  1  0   0 2495
+189 84  21 130    1     Fumeur   0  1  0   3 2495
+190  1  20 143    2 Non-Fumeur   0  0  0   0 2500</code></pre>
+</div>
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Apparemment tout va bien...</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   190 obs. of  10 variables:
+ $ ID   : chr  &quot;85&quot; &quot;86&quot; &quot;87&quot; &quot;88&quot; ...
+ $ AGE  : chr  &quot;19&quot; &quot;33&quot; &quot;20&quot; &quot;21&quot; ...
+ $ LWT  : chr  &quot;182&quot; &quot;155&quot; &quot;105&quot; &quot;108&quot; ...
+ $ RACE : chr  &quot;2&quot; &quot;3&quot; &quot;1&quot; &quot;1&quot; ...
+ $ SMOKE: Factor w/ 2 levels &quot;Non-Fumeur&quot;,&quot;Fumeur&quot;: 1 1 2 2 2 1 1 1 2 2 ...
+ $ PTL  : chr  &quot;0&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
+ $ HT   : chr  &quot;0&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
+ $ UI   : chr  &quot;1&quot; &quot;0&quot; &quot;0&quot; &quot;1&quot; ...
+ $ FVT  : chr  &quot;0&quot; &quot;3&quot; &quot;1&quot; &quot;2&quot; ...
+ $ BWT  : chr  &quot;2523&quot; &quot;2551&quot; &quot;2557&quot; &quot;2594&quot; ...</code></pre>
+</div>
+<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Mais on vient en fait de casser notre jeu de données...</span></span>
+<span></span>
+<span><span class="va">naissance</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.delim</a></span><span class="op">(</span><span class="st">&quot;../Data/naissance.txt&quot;</span><span class="op">)</span></span>
+<span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">SMOKE</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">&quot;Non-Fumeur&quot;</span>, <span class="st">&quot;Fumeur&quot;</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span> <span class="op">+</span> <span class="fl">1</span>, <span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">20</span>, <span class="fl">143</span>, <span class="fl">2</span>, <span class="st">&quot;Non-Fumeur&quot;</span>, <span class="fl">0</span>, <span class="fl">0</span>,</span>
+<span>    <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">2500</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
+185 79  28  95    1     Fumeur   0  0  0   2 2466
+186 81  14 100    3 Non-Fumeur   0  0  0   2 2495
+187 82  23  94    3     Fumeur   0  0  0   0 2495
+188 83  17 142    2 Non-Fumeur   0  1  0   0 2495
+189 84  21 130    1     Fumeur   0  1  0   3 2495
+190  1  20 143    2 Non-Fumeur   0  0  0   0 2500</code></pre>
+</div>
+<div class="sourceCode" id="cb72"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&#39;data.frame&#39;:   190 obs. of  10 variables:
+ $ ID   : num  85 86 87 88 89 91 92 93 94 95 ...
+ $ AGE  : num  19 33 20 21 18 21 22 17 29 26 ...
+ $ LWT  : num  182 155 105 108 107 124 118 103 123 113 ...
+ $ RACE : num  2 3 1 1 1 3 1 3 1 1 ...
+ $ SMOKE: Factor w/ 2 levels &quot;Non-Fumeur&quot;,&quot;Fumeur&quot;: 1 1 2 2 2 1 1 1 2 2 ...
+ $ PTL  : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ HT   : num  0 0 0 0 0 0 0 0 0 0 ...
+ $ UI   : num  1 0 0 1 1 0 0 0 0 0 ...
+ $ FVT  : num  0 3 1 2 0 0 1 1 1 0 ...
+ $ BWT  : num  2523 2551 2557 2594 2600 ...</code></pre>
+</div>
+</div>
 <p><strong>NB</strong>: On peut rajouter une colonne (une variable), à l’aide de <code>$</code>, <code><a href="https://rdrr.io/r/base/transform.html">transform()</a></code> ou <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate()</a></code> (comme vu précédemment).</p>
 </section></section><section id="fusion" class="level3"><h3 class="anchored" data-anchor-id="fusion">Fusion</h3>
 <p>La fonction <code><a href="https://rdrr.io/r/base/merge.html">merge()</a></code> permet de fusionner deux tableaux de données :</p>
 <div class="cell">
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb74"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
 1 85  19 182    2 Non-Fumeur   0  0  1   0 2523
@@ -3202,7 +3898,7 @@ vertical-align: -.125em;
 5 89  18 107    1     Fumeur   0  0  1   0 2600
 6 91  21 124    3 Non-Fumeur   0  0  0   0 2622</code></pre>
 </div>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais1</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb76"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais1</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  ID AGE LWT RACE      SMOKE PTL
@@ -3213,7 +3909,7 @@ vertical-align: -.125em;
 5 89  18 107    1     Fumeur   0
 6 91  21 124    3 Non-Fumeur   0</code></pre>
 </div>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais2</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">7</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb78"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais2</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">7</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  ID HT UI FVT  BWT
@@ -3224,7 +3920,7 @@ vertical-align: -.125em;
 5 89  0  1   0 2600
 6 91  0  0   0 2622</code></pre>
 </div>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_fus1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html">merge</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais2</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb80"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_fus1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html">merge</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais2</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais_fus1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -3235,7 +3931,7 @@ vertical-align: -.125em;
 5 13  25 105    3 Non-Fumeur   1  1  0   0 1330
 6 15  25  85    3 Non-Fumeur   0  0  1   0 1474</code></pre>
 </div>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Ici, vu que les individus sont dans le même ordre on aurait pu utiliser la</span></span>
+<div class="sourceCode" id="cb82"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Ici, vu que les individus sont dans le même ordre on aurait pu utiliser la</span></span>
 <span><span class="co"># fonction cbind(), et la colonne ID n&#39;est pas utile :</span></span>
 <span><span class="va">nais_fus2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais2</span><span class="op">[</span>, <span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais_fus2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3248,29 +3944,29 @@ vertical-align: -.125em;
 5 89  18 107    1     Fumeur   0  0  1   0 2600
 6 91  21 124    3 Non-Fumeur   0  0  0   0 2622</code></pre>
 </div>
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">nais_fus1</span>, <span class="va">nais_fus2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb84"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">nais_fus1</span>, <span class="va">nais_fus2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Les deux dataframes ne sont pas identitiques, car merge a classé par ordre</span></span>
+<div class="sourceCode" id="cb86"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Les deux dataframes ne sont pas identitiques, car merge a classé par ordre</span></span>
 <span><span class="co"># croissant suivant la variable de regroupement ID, mais les informations sont</span></span>
 <span><span class="co"># les mêmes.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>On peut également fusionner deux tableaux de données où les individus (qui doivent être les mêmes) ne sont pas dans le même ordre :</p>
 <div class="cell">
-<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">desordre</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb87"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">desordre</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">nais3</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="va">desordre</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">7</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     ID HT UI FVT  BWT
-158  42  0  1   1 2187
-162  46  0  0   1 2240
-27  113  0  0   0 2906
-99  193  0  0   0 3651
-10   95  0  0   0 2665
-32  118  0  0   1 2948</code></pre>
+172  60  0  0   0 2381
+152  33  0  0   2 2082
+94  188  0  1   0 3637
+73  164  0  0   1 3331
+60  147  0  0   0 3225
+24  109  0  0   0 2863</code></pre>
 </div>
-<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_fus3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html">merge</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais3</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb89"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_fus3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html">merge</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais3</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais_fus3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
@@ -3281,19 +3977,301 @@ vertical-align: -.125em;
 5 13  25 105    3 Non-Fumeur   1  1  0   0 1330
 6 15  25  85    3 Non-Fumeur   0  0  1   0 1474</code></pre>
 </div>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">nais_fus1</span>, <span class="va">nais_fus3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb91"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">nais_fus1</span>, <span class="va">nais_fus3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
 </div>
 <section id="exercice-7-join" class="level4"><h4 class="anchored" data-anchor-id="exercice-7-join">Exercice 7 : join</h4>
 <ol type="1">
-<li><p>Consulter l’aide de <code><a href="https://dplyr.tidyverse.org/reference/sample_n.html">dplyr::sample_n</a></code> et trouver un moyens simple de permuter les lignes du jeu de données.</p></li>
-<li><p>Consulter l’aide de <code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">dplyr::join()</a></code> (pour plus d’informations sur les fusions avec <code>dplyr</code> consulter cette <a href="https://cran.rstudio.com/web/packages/dplyr/vignettes/two-table.html">page</a>), puis utiliser la fonction <code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">dplyr::left_join()</a></code> pour fusionner les tables <code>nais1</code> et <code>nais3</code>.</p></li>
-</ol></section></section><section id="trier-un-tableau-de-données-le-long-dune-colonne" class="level3"><h3 class="anchored" data-anchor-id="trier-un-tableau-de-données-le-long-dune-colonne">Trier un tableau de données le long d’une colonne</h3>
+<li>Consulter l’aide de <code><a href="https://dplyr.tidyverse.org/reference/sample_n.html">dplyr::sample_n</a></code> et trouver un moyens simple de permuter les lignes du jeu de données.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb93"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_perm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/sample_n.html">sample_n</a></span><span class="op">(</span><span class="va">naissance</span>, size <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance_perm</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">AGE</th>
+<th style="text-align: right;">LWT</th>
+<th style="text-align: right;">RACE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">PTL</th>
+<th style="text-align: right;">HT</th>
+<th style="text-align: right;">UI</th>
+<th style="text-align: right;">FVT</th>
+<th style="text-align: right;">BWT</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1893</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">128</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">185</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3042</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">164</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3331</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">202</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2836</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">170</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3430</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">146</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3203</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode" id="cb94"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">AGE</th>
+<th style="text-align: right;">LWT</th>
+<th style="text-align: right;">RACE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">PTL</th>
+<th style="text-align: right;">HT</th>
+<th style="text-align: right;">UI</th>
+<th style="text-align: right;">FVT</th>
+<th style="text-align: right;">BWT</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2523</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2551</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2557</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2594</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2600</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">124</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2622</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Consulter l’aide de <code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">dplyr::join()</a></code> (pour plus d’informations sur les fusions avec <code>dplyr</code> consulter cette <a href="https://cran.rstudio.com/web/packages/dplyr/vignettes/two-table.html">page</a>), puis utiliser la fonction <code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">dplyr::left_join()</a></code> pour fusionner les tables <code>nais1</code> et <code>nais3</code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb95"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_joined</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join</a></span><span class="op">(</span><span class="va">nais1</span>, <span class="va">nais3</span>, by <span class="op">=</span> <span class="st">&quot;ID&quot;</span><span class="op">)</span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais_joined</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">AGE</th>
+<th style="text-align: right;">LWT</th>
+<th style="text-align: right;">RACE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">PTL</th>
+<th style="text-align: right;">HT</th>
+<th style="text-align: right;">UI</th>
+<th style="text-align: right;">FVT</th>
+<th style="text-align: right;">BWT</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2523</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2551</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2557</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2594</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2600</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">124</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2622</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section></section><section id="trier-un-tableau-de-données-le-long-dune-colonne" class="level3"><h3 class="anchored" data-anchor-id="trier-un-tableau-de-données-le-long-dune-colonne">Trier un tableau de données le long d’une colonne</h3>
 <p>Pour trier le tableau suivant la variable <code>ID</code> par ordre croissant, on utilise la fonction <code><a href="https://rdrr.io/r/base/order.html">order()</a></code> :</p>
 <div class="cell">
-<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_orderID</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">ID</span><span class="op">)</span>, <span class="op">]</span></span>
+<div class="sourceCode" id="cb96"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_orderID</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">ID</span><span class="op">)</span>, <span class="op">]</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">nais_orderID</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -3395,7 +4373,7 @@ vertical-align: -.125em;
 </div>
 <p>Maintenant, si on veut trier le tableau suivant l’âge par ordre décroissant :</p>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>, <span class="op">]</span></span>
+<div class="sourceCode" id="cb97"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>, <span class="op">]</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="va">nais_decAGE</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -3549,7 +4527,7 @@ vertical-align: -.125em;
 </div>
 <p>On remarque qu’il y a des ex-aequo. On peut rajouter une variable sur laquelle trier les ex-aequo, en deuxième argument de <code><a href="https://rdrr.io/r/base/order.html">order()</a></code> :</p>
 <div class="cell">
-<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE_decLWT</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, <span class="va">naissance</span><span class="op">$</span><span class="va">LWT</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
+<div class="sourceCode" id="cb98"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE_decLWT</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, <span class="va">naissance</span><span class="op">$</span><span class="va">LWT</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
 <span>    <span class="op">]</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="va">nais_decAGE_decLWT</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -3704,7 +4682,7 @@ vertical-align: -.125em;
 </div>
 <p>Enfin, si on veut que le classement soit fait de façon croissante sur <code>LWT</code>, on peut procéder de la façon suivante :</p>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE_LWT</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, <span class="op">-</span><span class="va">naissance</span><span class="op">$</span><span class="va">LWT</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
+<div class="sourceCode" id="cb99"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais_decAGE_LWT</span> <span class="op">&lt;-</span> <span class="va">naissance</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html">order</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">$</span><span class="va">AGE</span>, <span class="op">-</span><span class="va">naissance</span><span class="op">$</span><span class="va">LWT</span>, decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
 <span>    <span class="op">]</span></span>
 <span><span class="va">nais_decAGE_LWT</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -3732,7 +4710,7 @@ vertical-align: -.125em;
 </h3>
 <p>Le package s’appuie sur une nouvelle classe d’objets : <code>tbl</code>. Le résultat affiché lorsqu’on tape le nom du tableau est tronqué pour cette nouvelle classe :</p>
 <div class="cell">
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb101"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nais</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">)</span></span>
 <span><span class="va">nais</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 190 × 10
@@ -3750,18 +4728,18 @@ vertical-align: -.125em;
 10    95    26   113     1 Fumeur         0     0     0     0  2665
 # ℹ 180 more rows</code></pre>
 </div>
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">nais</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb103"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">nais</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</code></pre>
 </div>
 </div>
 <p>De plus, le comportement de la sélection de colonne est changé : on garde la structure de tableau de données même lorsqu’on sélectionne une seule colonne :</p>
 <div class="cell">
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fl">2</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb105"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">naissance</span><span class="op">[</span>, <span class="fl">2</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> num [1:190] 19 33 20 21 18 21 22 17 29 26 ...</code></pre>
 </div>
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">nais</span><span class="op">[</span>, <span class="fl">2</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb107"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">nais</span><span class="op">[</span>, <span class="fl">2</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>tibble [190 × 1] (S3: tbl_df/tbl/data.frame)
  $ AGE: num [1:190] 19 33 20 21 18 21 22 17 29 26 ...</code></pre>
@@ -3771,13 +4749,314 @@ vertical-align: -.125em;
 </h4>
 <ol type="1">
 <li>Utiliser la fonction<code><a href="https://dplyr.tidyverse.org/reference/arrange.html">dplyr::arrange()</a></code> pour ordonner le tableau de données naissance par age, avec les poids de naissance par ordre décroissant pour les égalités.</li>
-</ol></section></section></section></section><section id="introduction-au-pipe" class="level1"><h1>Introduction au pipe <code>%&gt;%</code>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb109"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">AGE</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">BWT</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     ID AGE LWT RACE      SMOKE PTL HT UI FVT  BWT
+1   213  14 135    1 Non-Fumeur   0  0  0   0 3941
+2    81  14 100    3 Non-Fumeur   0  0  0   2 2495
+3    78  14 101    3     Fumeur   1  0  0   0 2466
+4   102  15  98    2 Non-Fumeur   0  0  0   0 2778
+5    62  15 115    3 Non-Fumeur   0  0  1   0 2381
+6    57  15 110    1 Non-Fumeur   0  0  0   0 2353
+7   216  16  95    3 Non-Fumeur   0  0  0   1 3997
+8   206  16 170    2 Non-Fumeur   0  0  0   4 3860
+9   189  16 135    1     Fumeur   0  0  0   0 3643
+10  166  16 112    2 Non-Fumeur   0  0  0   0 3374
+11  167  16 135    1     Fumeur   0  0  0   0 3374
+12  143  16 110    3 Non-Fumeur   0  0  0   0 3175
+13   25  16 130    3 Non-Fumeur   0  0  0   1 1899
+14  180  17 120    3     Fumeur   0  0  0   0 3572
+15  147  17 119    3 Non-Fumeur   0  0  0   0 3225
+16  148  17 119    3 Non-Fumeur   0  0  0   0 3225
+17  116  17 113    2 Non-Fumeur   0  0  0   1 2920
+18  117  17 113    2 Non-Fumeur   0  0  0   1 2920
+19  113  17 122    1     Fumeur   0  0  0   0 2906
+20   93  17 103    3 Non-Fumeur   0  0  0   1 2637
+21   83  17 142    2 Non-Fumeur   0  1  0   0 2495
+22   71  17 120    2 Non-Fumeur   0  0  0   2 2438
+23   68  17 120    1     Fumeur   0  0  0   3 2414
+24   45  17 110    1     Fumeur   0  0  0   0 2225
+25   37  17 130    3     Fumeur   1  0  1   0 2125
+26  208  18 120    3 Non-Fumeur   0  0  0   1 3884
+27  205  18 120    1     Fumeur   0  0  0   2 3856
+28  168  18 229    2 Non-Fumeur   0  0  0   0 3402
+29  132  18  90    1     Fumeur   0  0  1   0 3076
+30  133  18  90    1     Fumeur   0  0  1   0 3076
+31  100  18 100    1     Fumeur   0  0  0   0 2769
+32  101  18 100    1     Fumeur   0  0  0   0 2769
+33   89  18 107    1     Fumeur   0  0  1   0 2600
+34   50  18 110    2     Fumeur   1  0  0   0 2296
+35   49  18 148    3 Non-Fumeur   0  0  0   0 2282
+36  224  19 120    1     Fumeur   0  0  0   0 4238
+37  197  19 184    1     Fumeur   0  1  0   0 3756
+38  192  19 147    1     Fumeur   0  0  0   0 3651
+39  193  19 147    1     Fumeur   0  0  0   0 3651
+40  187  19 235    1     Fumeur   0  1  0   0 3629
+41  181  19 105    3 Non-Fumeur   0  0  0   0 3572
+42  142  19 115    3 Non-Fumeur   0  0  0   0 3175
+43  135  19 132    3 Non-Fumeur   0  0  0   0 3090
+44  129  19 189    1 Non-Fumeur   0  0  0   2 3062
+45  124  19 138    1     Fumeur   0  0  0   2 2977
+46   97  19 150    3 Non-Fumeur   0  0  0   1 2733
+47   96  19  95    3 Non-Fumeur   0  0  0   0 2722
+48   85  19 182    2 Non-Fumeur   0  0  1   0 2523
+49   34  19 112    1     Fumeur   0  0  1   0 2084
+50   33  19 102    1 Non-Fumeur   0  0  0   2 2082
+51   23  19  91    1     Fumeur   2  0  1   0 1885
+52  217  20 158    1 Non-Fumeur   0  0  0   1 3997
+53  211  20 170    1     Fumeur   0  0  0   0 3940
+54  201  20 120    3 Non-Fumeur   0  0  0   0 3770
+55  177  20 127    3 Non-Fumeur   0  0  0   0 3487
+56  172  20 121    2     Fumeur   0  0  0   0 3444
+57  160  20 141    1 Non-Fumeur   2  0  1   1 3317
+58  155  20 169    3 Non-Fumeur   1  0  1   1 3274
+59  146  20 103    3 Non-Fumeur   0  0  0   0 3203
+60  104  20 120    3 Non-Fumeur   0  0  1   0 2807
+61   87  20 105    1     Fumeur   0  0  0   1 2557
+62    1  20 143    2 Non-Fumeur   0  0  0   0 2500
+63   76  20 105    3 Non-Fumeur   0  0  0   3 2450
+64   60  20 122    2     Fumeur   0  0  0   0 2381
+65   51  20 121    1     Fumeur   1  0  1   0 2296
+66   47  20 109    3 Non-Fumeur   0  0  0   0 2240
+67   44  20  80    3     Fumeur   0  0  1   0 2211
+68   40  20 120    2     Fumeur   0  0  0   3 2126
+69   31  20 125    3 Non-Fumeur   0  0  1   0 2055
+70   27  20 150    1     Fumeur   0  0  0   2 1928
+71  219  21 115    1 Non-Fumeur   0  0  0   1 4054
+72  186  21 134    3 Non-Fumeur   0  0  0   2 3629
+73  144  21 110    3     Fumeur   0  0  1   0 3203
+74  131  21 160    1 Non-Fumeur   0  0  0   0 3062
+75  128  21 185    2     Fumeur   0  0  0   2 3042
+76   91  21 124    3 Non-Fumeur   0  0  0   0 2622
+77   88  21 108    1     Fumeur   0  0  1   2 2594
+78   84  21 130    1     Fumeur   0  1  0   3 2495
+79   52  21 100    3 Non-Fumeur   1  0  0   4 2301
+80   30  21 103    3 Non-Fumeur   0  0  0   0 1970
+81   28  21 200    2 Non-Fumeur   0  0  1   2 1928
+82   20  21 165    1     Fumeur   0  1  0   1 1790
+83  220  22 129    1 Non-Fumeur   0  0  0   0 4111
+84  204  22 169    1 Non-Fumeur   0  0  0   0 3827
+85  184  22 125    1 Non-Fumeur   0  0  0   1 3614
+86  174  22 131    1 Non-Fumeur   0  0  0   1 3460
+87  161  22 158    2 Non-Fumeur   1  0  0   2 3317
+88  162  22 112    1     Fumeur   2  0  0   0 3317
+89  140  22 130    1     Fumeur   0  0  0   0 3132
+90  138  22 120    1 Non-Fumeur   0  1  0   1 3100
+91  137  22  85    3     Fumeur   0  0  0   0 3090
+92   98  22  95    3 Non-Fumeur   0  1  0   0 2750
+93   92  22 118    1 Non-Fumeur   0  0  0   1 2637
+94   67  22 130    1     Fumeur   0  0  0   1 2410
+95   42  22 130    1     Fumeur   1  0  1   1 2187
+96  200  23 110    1 Non-Fumeur   0  0  0   1 3770
+97  182  23 130    1 Non-Fumeur   0  0  0   0 3586
+98  179  23 123    3 Non-Fumeur   0  0  0   0 3544
+99  173  23 190    1 Non-Fumeur   0  0  0   0 3459
+100 164  23 115    3     Fumeur   0  0  0   1 3331
+101 149  23 119    3 Non-Fumeur   0  0  0   2 3232
+102 139  23 128    3 Non-Fumeur   0  0  0   0 3104
+103 130  23 130    2 Non-Fumeur   0  0  0   1 3062
+104  82  23  94    3     Fumeur   0  0  0   0 2495
+105  69  23 110    1     Fumeur   1  0  0   0 2424
+106  63  23 120    3 Non-Fumeur   0  0  0   0 2395
+107  59  23 187    2     Fumeur   0  0  0   1 2367
+108  17  23  97    3 Non-Fumeur   0  0  1   1 1588
+109 225  24 116    1 Non-Fumeur   0  0  0   1 4593
+110 199  24 110    3 Non-Fumeur   1  0  0   0 3770
+111 196  24 110    1 Non-Fumeur   0  0  0   1 3728
+112 185  24 133    1 Non-Fumeur   0  0  0   0 3614
+113 156  24 115    3 Non-Fumeur   0  0  0   2 3274
+114 150  24 110    3 Non-Fumeur   0  0  0   0 3232
+115 136  24 115    1 Non-Fumeur   0  0  0   2 3090
+116 118  24  90    1     Fumeur   1  0  0   1 2948
+117  61  24 105    2     Fumeur   0  0  0   0 2381
+118  36  24 138    1 Non-Fumeur   0  0  0   0 2100
+119  29  24 155    1     Fumeur   1  0  0   0 1936
+120  19  24 132    3 Non-Fumeur   0  1  0   0 1729
+121  18  24 128    2 Non-Fumeur   1  0  0   1 1701
+122 221  25 130    1 Non-Fumeur   0  0  0   2 4153
+123 215  25 120    1 Non-Fumeur   0  0  0   2 3983
+124 202  25 241    2 Non-Fumeur   0  1  0   0 3790
+125 188  25  95    1     Fumeur   3  0  1   0 3637
+126 169  25 140    1 Non-Fumeur   0  0  0   1 3416
+127 120  25 155    1 Non-Fumeur   0  0  0   1 2977
+128 121  25 125    2 Non-Fumeur   0  0  0   0 2977
+129 111  25 120    3 Non-Fumeur   0  0  1   2 2877
+130 103  25 118    1     Fumeur   0  0  0   3 2782
+131  46  25 105    3 Non-Fumeur   1  0  0   1 2240
+132  32  25  89    3 Non-Fumeur   2  0  0   1 2055
+133  26  25  92    1     Fumeur   0  0  0   0 1928
+134  24  25 115    3 Non-Fumeur   0  0  0   0 1893
+135  15  25  85    3 Non-Fumeur   0  0  1   0 1474
+136  13  25 105    3 Non-Fumeur   1  1  0   0 1330
+137 218  26 160    3 Non-Fumeur   0  0  0   0 4054
+138 154  26 133    3     Fumeur   2  0  0   0 3260
+139 115  26 168    2     Fumeur   0  0  0   0 2920
+140  95  26 113    1     Fumeur   0  0  0   0 2665
+141  77  26 190    1     Fumeur   0  0  0   0 2466
+142  75  26 154    3 Non-Fumeur   1  1  0   1 2442
+143  54  26  96    3 Non-Fumeur   0  0  0   0 2325
+144  35  26 117    1     Fumeur   1  0  0   0 2084
+145 125  27 124    1     Fumeur   0  0  0   0 2992
+146  43  27 130    2 Non-Fumeur   0  0  1   0 2187
+147  16  27 150    3 Non-Fumeur   0  0  0   0 1588
+148 214  28 130    3 Non-Fumeur   0  0  0   0 3969
+149 212  28 134    3 Non-Fumeur   0  0  0   1 3941
+150 159  28 250    3     Fumeur   0  0  0   6 3303
+151 151  28 140    1 Non-Fumeur   0  0  0   0 3234
+152 112  28 167    1 Non-Fumeur   0  0  0   0 2877
+153 109  28 120    3 Non-Fumeur   0  0  0   0 2863
+154 105  28 120    1     Fumeur   0  0  0   1 2821
+155  79  28  95    1     Fumeur   0  0  0   2 2466
+156   4  28 120    3     Fumeur   1  0  1   0  709
+157 209  29 130    1     Fumeur   0  0  0   2 3884
+158 190  29 135    1 Non-Fumeur   0  0  0   1 3651
+159 191  29 154    1 Non-Fumeur   0  0  0   1 3651
+160 123  29 140    1     Fumeur   0  0  0   2 2977
+161 114  29 150    1 Non-Fumeur   0  0  0   2 2920
+162  94  29 123    1     Fumeur   0  0  0   1 2663
+163  10  29 130    1 Non-Fumeur   0  0  1   2 1021
+164 203  30 112    1 Non-Fumeur   0  0  0   1 3799
+165 195  30 137    1 Non-Fumeur   0  0  0   1 3699
+166 176  30 110    3 Non-Fumeur   0  0  0   0 3475
+167 145  30 153    3 Non-Fumeur   0  0  0   0 3203
+168 141  30  95    1     Fumeur   0  0  0   2 3147
+169  99  30 107    3 Non-Fumeur   1  0  1   2 2750
+170  65  30 142    1     Fumeur   1  0  0   0 2410
+171 222  31 120    1 Non-Fumeur   0  0  0   2 4167
+172 163  31 150    3     Fumeur   0  0  0   2 3321
+173 126  31 215    1     Fumeur   0  0  0   2 3005
+174 107  31 100    1 Non-Fumeur   0  0  1   3 2835
+175  56  31 102    1     Fumeur   1  0  0   1 2353
+176 207  32 186    1 Non-Fumeur   0  0  0   2 3860
+177 175  32 170    1 Non-Fumeur   0  0  0   0 3473
+178 170  32 134    1     Fumeur   1  0  0   4 3430
+179 134  32 132    1 Non-Fumeur   0  0  0   4 3080
+180 106  32 121    3 Non-Fumeur   0  0  0   2 2835
+181  22  32 105    1     Fumeur   0  0  0   0 1818
+182 210  33 117    1 Non-Fumeur   0  0  1   1 3912
+183 127  33 109    1     Fumeur   0  0  0   1 3033
+184  86  33 155    3 Non-Fumeur   0  0  0   3 2551
+185  11  34 187    2     Fumeur   0  1  0   0 1135
+186 223  35 170    1 Non-Fumeur   1  0  0   1 4174
+187 119  35 121    2     Fumeur   1  0  0   1 2948
+188 183  36 175    1 Non-Fumeur   0  0  0   0 3600
+189 108  36 202    1 Non-Fumeur   0  0  0   1 2836
+190 226  45 123    1 Non-Fumeur   0  0  0   1 4990</code></pre>
+</div>
+</div>
+</section></section></section></section><section id="introduction-au-pipe" class="level1"><h1>Introduction au pipe <code>%&gt;%</code>
 </h1>
 <section id="exercice-10" class="level4"><h4 class="anchored" data-anchor-id="exercice-10">Exercice 10</h4>
 <ol type="1">
-<li><p>À l’aide des fonctions <code><a href="https://dplyr.tidyverse.org/reference/group_by.html">dplyr::group_by()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">dplyr::summarize()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/context.html">dplyr::n()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/filter.html">dplyr::filter()</a></code> et <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">dplyr::arrange()</a></code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</p></li>
-<li><p>Réécrire le code de la réponse précédente à l’aide de l’opérateur <code>%&gt;%</code></p></li>
-</ol></section></section><section id="résumé" class="level1"><h1>Résumé</h1>
+<li>À l’aide des fonctions <code><a href="https://dplyr.tidyverse.org/reference/group_by.html">dplyr::group_by()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">dplyr::summarize()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/context.html">dplyr::n()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/filter.html">dplyr::filter()</a></code> et <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">dplyr::arrange()</a></code>, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d’observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb111"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_exo10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">naissance</span>, <span class="va">AGE</span>, <span class="va">SMOKE</span><span class="op">)</span></span>
+<span><span class="va">naissance_exo10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="va">naissance_exo10</span>, poids_moy <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">BWT</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
+<span>    n <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">naissance_exo10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">naissance_exo10</span>, <span class="va">poids_moy</span> <span class="op">&lt;</span> <span class="fl">2500</span><span class="op">)</span></span>
+<span><span class="va">naissance_exo10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">naissance_exo10</span>, <span class="va">poids_moy</span><span class="op">)</span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="va">naissance_exo10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">AGE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">poids_moy</th>
+<th style="text-align: right;">n</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">1135.000</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">1887.500</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2324.750</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2421.667</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2466.000</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Réécrire le code de la réponse précédente à l’aide de l’opérateur <code>%&gt;%</code>
+</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb112"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">naissance_exo10_pipe</span> <span class="op">&lt;-</span> <span class="va">naissance</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">AGE</span>, <span class="va">SMOKE</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>poids_moy <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">BWT</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>, n <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">poids_moy</span> <span class="op">&lt;</span> <span class="fl">2500</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">poids_moy</span><span class="op">)</span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="va">naissance_exo10_pipe</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: right;">AGE</th>
+<th style="text-align: left;">SMOKE</th>
+<th style="text-align: right;">poids_moy</th>
+<th style="text-align: right;">n</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">1135.000</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Non-Fumeur</td>
+<td style="text-align: right;">1887.500</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2324.750</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2421.667</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Fumeur</td>
+<td style="text-align: right;">2466.000</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section></section><section id="résumé" class="level1"><h1>Résumé</h1>
 <p>Le package <code>dplyr</code> propose un ensemble de fonctions très simples à utiliser et permettant de réaliser toutes les opérations classiques sur les tableaux de données, avec une syntaxe très claire et compréhensible.</p>
 <p>Pour aller plus loin, ou voir d’autres exemples, consulter cette <a href="https://cran.rstudio.com/web/packages/dplyr/vignettes/dplyr.html">page</a>. On renverra également vers cet <a href="https://www.rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf">aide-mémoire</a>.</p>
 <p>En dehors du changement de syntaxe, les gains en temps de calcul sont souvent significatifs avec <code>dplyr</code>. Il existe un autre package populaire pour faire des manipulations sur les (grands) jeux de données : <code>data.table</code>. La syntaxe est un peu moins intuitive que <code>dplyr</code>, mais l’efficacité est encore accrue.</p>
