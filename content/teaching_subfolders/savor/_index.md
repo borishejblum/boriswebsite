@@ -6,10 +6,10 @@ date: '2024-06-06'
 
 Voici le matériel pour le cours de *Science des données Avec R : Visualisation, Organisation et Reproductibilité (SAVOR)* à l'**École d'été de l'ISPED** 2024 :
 
- - Diaporamas : <a href="/html/badas/BADAS1_slides.html" target="_blank">Partie I</a> | <a href="/html/badas/BADAS2_slides.html" target="_blank">Partie II</a> | <a href="/html/badas/BADAS3_slides.html" target="_blank">Partie III</a> | <a href="/html/badas/BADAS4_slides.html" target="_blank">Partie IV</a>
+ - Diaporamas : <a href="/html/savor/SAVOR_slides_1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_slides_2.html" target="_blank">Partie II</a> | <a href="/html/savor/SAVOR_slides_3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_slides_4.html" target="_blank">Partie IV</a>
  
  
  - Travaux dirigés : 
-    * <a href="/html/badas/BADAS1_practical.html" target="_blank">Partie I</a> | <a href="/html/badas/BADAS3_practical.html" target="_blank">Partie III</a> | <a href="/html/badas/BADAS4_practical.html" target="_blank">Partie IV</a>
+    * <a href="/html/savor/SAVOR_practical1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_practical3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_practical4.html" target="_blank">Partie IV</a>
     * [Données des poids de naissances](/files/birth-weight-data/birthweights.zip)
-    <!--* solutions <a href="/html/badas/BADAS1_practical_solu.html" target="_blank">Part I</a> | <a href="/html/badas/BADAS2_practical_solu.Rmd" target="_blank">Part II</a> | <a href="/html/badas/BADAS3_practical_solu.html" target="_blank">Part III</a> | <a href="/html/badas/BADAS4_practical_solu.html" target="_blank">Part IV</a> -->
+    <!--* solutions <a href="/html/savor/SAVOR_practical1_solutions.html" target="_blank">Part I</a> | <a href="/html/savor/SAVOR_practical2_solutions.Rmd" target="_blank">Part II</a> | <a href="/html/savor/SAVOR_practical3_solutions.html" target="_blank">Part III</a> | <a href="/html/savor/SAVOR_practical4_solutions.html" target="_blank">Part IV</a> -->
