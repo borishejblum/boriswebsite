@@ -1,0 +1,573 @@
+---
+title: "SAVOR: Part III"
+subtitle: "`dplyr` and `%>%`"
+author: "Robin Genuer & Boris Hejblum"
+date: "06/06/2024"
+highlight-style: pygments
+format: 
+  html:
+    toc: true
+    code-link: true
+    tidy: true
+    embed-resources: true
+editor: source
+---
+
+```{r}
+#| include: false
+correction <- FALSE
+knitr::opts_chunk$set(tidy = TRUE, message = FALSE, include = correction)
+```
+
+# Objectifs
+
+Ce document donne tout d'abord quelques considérations sur l'importation de
+données et sur les strucutres de bases de R, avant de donner quelques éléments
+introductifs sur l'utilisation du package `dplyr`.
+
+
+# Introduction à `dplyr`
+
+Il existe un très grand nombre de packages additionnels dans `r fontawesome::fa('r-project')`. Certains
+apportent de nouvelles fonctionnalités (méthodes statistiques qui n'étaient pas
+disponible auparavant), et d'autres apportent des améliorations à des
+fonctionnalités déjà présentes dans `r fontawesome::fa('r-project')`.
+
+Le package `dplyr` rentre essentiellement dans la 2^ème^ catégorie. Il propose
+de re-définir la manipulation de données dans R, avec une syntaxe plus simple,
+tout en améliorant les performances lorsqu'on gère des grands tableaux de
+données.
+
+Installer le package `dplyr` puis le charger :
+
+```{r}
+#| include: true
+# install.packages("dplyr")
+library(dplyr)
+```
+
+
+## Gestion de fichiers de données
+
+Avant de se lancer dans l'utilisation de `dplyr`, nous allons revoir quelques
+principes dans la gestion des fichiers de données sous `r fontawesome::fa('r-project')`.
+
+### Importation
+
+Le plus simple pour importer des données est d'utiliser l'outil graphique de
+Rstudio "Import Dataset", présent dans l'onglet "Environnement" ou dans le
+menu "File".
+
+Sinon, on peut bien entendu utiliser la fonction `read.table()` et ses dérivées
+(`read.csv()`, `read.delim()`...).
+
+Importer le fichier `naissance.txt`, puis regarder la structure du tableau créé
+via la fonction `str()`.
+
+```{r}
+naissance <- read.delim("../Data/naissance.txt")
+str(naissance)
+```
+
+`r fontawesome::fa('r-project')` considère toutes les variables comme des suite de nombres
+entiers (car effectivement il n'y a pas de nombres à virgule), ce qui est
+correcte pour les variables quantitatives (comme l'âge ou encore le poids de
+l'enfant `BWT`). Par contre, certaines variables sont qualitatives (comme
+`SMOKE`), donc si on veut des facteurs, il faut le forcer.
+
+Transformer la variable `SMOKE` en facteur, et renommer les niveaux en "Non-Fumeur" (0 dans le fichier txt) et "Fumeur" (1 dans le fichier txt).
+
+```{r}
+naissance$SMOKE <- factor(naissance$SMOKE, labels = c("Non-Fumeur", "Fumeur"))
+str(naissance)
+```
+
+#### Exercice 0 :
+	
+1. Charger le fichier de données nommé `naissance_na.txt`.
+
+```{r}
+naissance_na <- read.table("../Data/naissance_na.txt", sep=";")
+```
+
+2. Consulter la structure de l'objet créé (par exemple nommé `naissance_na`).
+Que remarquez-vous pour la variable `LWT` ?
+
+```{r}
+#| label: strNA
+str(naissance_na)
+```
+
+3. Pour régler le problème, modifier le contenu de la case "NA.strings" lors
+du chargement du fichier de données avec "Import Dataset" (ou modifier le paramètre `na.strings` de la fonction `read.table()` ou de ses dérivées). Puis vérifier la nouvelle structure de l'objet.
+
+```{r}
+#| label: importNA
+naissance_na <- read.table("../Data/naissance_na.txt", sep=";", na.strings = ".")
+str(naissance_na)
+``` 
+
+4. A l'aide de la fonction `transform()`, transformer en facteur les variables `RACE` (1=blanche, 2=noire, 3=autres), `HT` (0=non, 1=oui) et `UI` (0=non, 1=oui) en une seule commande.
+
+```{r}
+#| label: transformNA
+#| tidy: false
+naissance_na <- transform(naissance_na,
+    RACE = factor(RACE, labels=c("blanche", "noire", "autres")),
+    HT = factor(HT, labels=c("non", "oui")),
+    UI = factor(UI, labels=c("non", "oui")))
+str(naissance_na)
+``` 
+
+5. Toujours à l'aide de la fonction `transform()`, créer deux nouvelles variables (utiliser deux commandes différentes, puis essayer en une seule fois) :
+
+    - `POIDS`, contenant le poids de la mère en g (1 livre = 453 g).
+    
+    - `RAPPORT`, contenant le rapport entre le poids de l'enfant et celui de la
+       mère (en grammes tous les deux).
+
+```{r, eval=correction, echo=correction, error=TRUE}
+#| label: transformNA2
+#| error: true
+naissance_na <- transform(naissance_na, POIDS = LWT * 453, RAPPORT = BWT/POIDS)
+naissance_na <- transform(naissance_na, POIDS = LWT * 453)
+naissance_na <- transform(naissance_na, RAPPORT = BWT/POIDS)
+str(naissance_na)
+```
+
+6. Utiliser la fonction `dplyr::mutate()` (du package `dplyr`) pour répondre à la question précédente en une seule commande.
+
+```{r}
+#| label: mutateNA
+naissance_na <- dplyr::mutate(naissance_na, POIDS2 = LWT * 453, RAPPORT2 = BWT/POIDS2)
+str(naissance_na)
+```
+
+
+### Exportation
+
+Pour écrire une table de données, on utilise la fonction `write.table()` ou ses dérivées.
+
+```{r}
+#| include: true
+mon_df <- data.frame("Partie" = c("Intro", "Bases", "Manip"), "Temps" = c(0.5, 1.5, 1.5))
+mon_df
+write.csv(mon_df, file = "../Results/mon_df.csv")
+```
+
+### Sauvegarde
+
+On peut aussi sauvegarder une table au format `Rdata` (qui est un format propre à R). Pour cela on utilise `save()` :
+
+```{r}
+#| include: true
+save(naissance, file = "../Results/naissance.Rdata")
+```
+
+L'avantage est que lorsqu'on recharge le fichier avec la fonction `load()`, il garde la bonne structure :
+
+```{r}
+#| include: true
+rm(naissance)
+load("../Results/naissance.Rdata")
+str(naissance)
+```
+
+On remarque qu'on a pas besoin d'affecter le résultat de `load()` à un objet.
+Ceci est dû au fait, qu'on peut sauvegarder plusieurs objets de la session
+dans un même fichier `.Rdata`. Et on pourra tous les recharger ensuite :
+
+```{r}
+#| include: true
+#| error: true
+save(naissance, mon_df, file = "../Results/naissance_mon_df.Rdata")
+rm(naissance, mon_df)
+class(mon_df)
+load("../Results/naissance_mon_df.Rdata")
+class(mon_df)
+```
+
+Ce comportement est pratique, mais peut parfois s'avérer trompeur. Si on a
+beaucoup d'objets dans notre environnement, et qu'on charge un objet
+`.Rdata` avec plusieurs objets (dont on ne se souvient pas, ou dont on ne connaît pas le nom), il est difficile de s'y retrouver. De plus, lors du chargement, `r fontawesome::fa('r-project')` peut écraser des objets déjà présents avec le même nom.  
+
+**Conseil** : mettre tout ce qu'on veut sauver dans une liste, et sauver cette
+liste sous format `.Rdata` en gardant le même nom :
+
+```{r}
+#| include: true
+naissance_mon_df <- list("naissance" = naissance, "mon_df" = mon_df)
+save(naissance_mon_df, file = "../Results/naissance_mon_df.Rdata")
+rm(naissance_mon_df)
+load("../Results/naissance_mon_df.Rdata")
+```
+
+
+## Opérations sur les tableaux de données
+
+### Sélection, suppression, ajout
+
+#### Exercice 1 : Sélection de colonnes
+
+1. J'ai dénombré 11 façons de sélectionner la variable `AGE`. En gardant en tête
+qu'un `data.frame` est une liste de colonnes, essayer d'en trouver un maximum.
+
+```{r}
+#| results: hold
+# Pour sélectionner une colonne, on peut utiliser l'aspect "liste" du `data.frame`, avec le `$`
+str(naissance$AGE)
+typeof(naissance$AGE)
+# le `$` extrait la composante de la liste `naissance` nommée `AGE`
+
+# Toujours côté "liste", on peut également utiliser le `[[]]`, qui exécute la même opération, et qui peut s'utiliser avec le numéro de la variable à la place du nom :
+str(naissance[[2]])
+str(naissance[["AGE"]])
+
+# Dernière façon "liste", utiliser le `[]`, car une liste est un vecteur :
+str(naissance[2])
+typeof(naissance[2])
+str(naissance["AGE"])
+
+# Nous voyons, que contrairement à avant où nous avions extrait un vecteur, nous avons ici extrait un sous-dataframe (ou encore une sous-liste). Ce dernier point est important à garder en tête, car il peut être source de nombreux bugs...
+
+# On peut aussi utiliser le côté "matrice" du dataframe, avec le `[,]` :
+str(naissance[, 2])
+str(naissance[, "AGE"])
+# Ici nous avons extrait la colonne numéro 2 de la "matrice". Par contre, **ce n'est plus un dataframe !**
+
+# Si on souhaite garder la structure de dataframe, il faut rajouter l'option `drop = FALSE` :
+str(naissance[, 2, drop = FALSE])
+#!!! ATTENTION : Ce comportement est connu comme étant une source d'erreurs fréquente dans `R` quand on programme ses propres fonctions !!!**
+
+# Sinon, on peut utiliser la fonction `subset()` :
+str(subset(naissance, select = 2))
+str(subset(naissance, select = "AGE"))
+str(subset(naissance, select = AGE))
+```
+
+2. Utiliser la fonction `select` du package `dplyr` pour sélectionner la
+variable `AGE` et regarder comment elle se comporte.
+
+```{r}
+str(dplyr::select(naissance, 2))
+str(dplyr::select(naissance, AGE))
+```
+
+
+#### Exercice 2 : Sélection de plusieurs colonnes
+
+Essayer tous les commandes précédentes pour extraire, en même temps, 
+les 4 colonnes `ID`, `AGE`, `LWT` et `SMOKE`.
+
+
+```{r, eval=correction, echo=correction, error=TRUE}
+#| error: true
+#| results: hide
+head(naissance$c("ID", "AGE", "LWT", "SMOKE"))
+head(naissance[[c(1:3, 5)]])
+head(naissance[[c("ID", "AGE", "LWT", "SMOKE")]])
+head(naissance[c(1:3, 5)])
+head(naissance[c("ID", "AGE", "LWT", "SMOKE")])
+head(naissance[,c(1:3, 5)])
+head(naissance[, c("ID", "AGE", "LWT", "SMOKE")])
+head(subset(naissance, select = c(1:3, 5)))
+head(subset(naissance, select = c("ID", "AGE", "LWT", "SMOKE")))
+head(subset(naissance, select = c(ID, AGE, LWT, SMOKE)))
+
+head(dplyr::select(naissance, ID, AGE, LWT, SMOKE))
+```
+
+#### Exercice 3 : Sélection de lignes
+
+Sélectionner les 5 premières lignes, puis les 5 dernières lignes (en 2
+commandes) en utilisant une commande de base puis la fonction `dplyr::slice()`. Afficher le résultat dans une *jolie* table grâce à la fonction `kable()`du package `knitr`.
+
+```{r}
+# En ce qui concerne les lignes, nous sommes obligés de considérer l'aspect "matrice" du dataframe :
+premiers <- naissance[1:5,]
+n <- nrow(naissance)
+derniers <- naissance[(n-5):n,]
+
+# Avec la fonction `dplyr::slice()` :
+prems <- dplyr::slice(naissance, 1:5)
+derns <- dplyr::slice(naissance, (n-5):n)
+knitr::kable(dplyr::slice(naissance, c(1:5, nrow(naissance)-4:0)))
+```
+
+
+#### Exercice 4 : Filtre
+
+1. Construire un sous-dataframe ne contenant que les individus fumeurs, en
+utilisant `[,]`, puis `subset()`, et enfin `dplyr::filter()`.
+
+```{r}
+fum <- naissance[naissance$SMOKE == "Fumeur", ]
+str(fum)
+summary(fum$SMOKE)
+
+#La table `fum` ne contient que les individus fumeurs. On peut aussi utiliser la fonction `which()`, qui renvoie les indices des individus qui vérifient la condition :
+ind_fum <- which(naissance$SMOKE == "Fumeur")
+ind_fum
+fum2 <- naissance[ind_fum,]
+str(fum2)
+
+# Avec `subset()`
+fum_sub <- subset(naissance, SMOKE == "Fumeur")
+
+# Avec `dplyr::filter()` :
+fum_fil <- dplyr::filter(naissance, SMOKE == "Fumeur")
+
+#Les deux syntaxes ici sont identiques. La différence est que dans dplyr il y a deux fonctions (`select()` et `filter()`) avec une syntaxe très simple.
+```
+
+2. Donner les identifiants (colonne `ID`) des individus des individus présentant de l'hypertension (variable `HT` valant 1).
+
+```{r}
+dplyr::select(dplyr::filter(naissance, HT == 1), "ID")
+
+# avec le pipe :
+naissance %>%
+  filter(HT ==1) %>%
+  select("ID")
+```
+
+3. Sélectionner le sous-dataframe ne contenant que les individus fumeurs et âgés de moins de 20 ans.
+
+```{r}
+dplyr::filter(naissance, SMOKE == "Fumeur", AGE < 20)
+```
+
+4. Donner les indices des individus ayant un poids inférieur à 110 (le poids de la mère est en livres) ou ayant un bébé de poids inférieur à 2,5 kg.
+
+```{r}
+naissance %>%
+  filter(LWT < 110 | BWT < 2500) %>%
+  select("ID", "LWT", "BWT")
+```
+
+
+#### Exercice 5 : Suppression de lignes ou de colonnes
+
+En essayant avec `[,]`, `subset()` et les fonctions de `dplyr` :
+
+1. Supprimer la première ligne du jeu de données.
+
+2. Supprimer les colonnes "AGE", "LWT", "RACE", "BWT".
+
+*Indice : utiliser la même syntaxe que pour la sélection mais avec le signe `-` pour indiquer les éléments à supprimer...*
+
+```{r}
+# Pour supprimer des lignes ou des colonnes, on peut utiliser `[,]` :
+naissance_sans_ind1 <- naissance[-1, ]
+nrow(naissance_sans_ind1)
+
+naissance_suppr_cro <- naissance[, -c(2:4, 10)]
+head(naissance_suppr_cro)
+
+#naissance_sans_AGE <- naissance[, -c("AGE", "LWT", "RACE", "BWT")]
+# Cette dernière opération n'est pas possible.
+
+# Là encore, les fonctions `subset()` et `select()` permettent plus d'opérations avec une syntaxe très simple :
+naissance_suprr_sub <- subset(naissance, select = -c(AGE:RACE, BWT))
+naissance_suprr_sel <- dplyr::select(naissance, -c(AGE:RACE, BWT))
+```
+
+#### Exercice 6 : Ajout de lignes ou de colonnes
+
+Ajouter un une ligne (un individu) possédant les valeurs suivantes :
+`1, 20, 143, 2, "Non-Fumeur", 0, 0, 0, 0, 2500`
+
+```{r}
+naissance[nrow(naissance) + 1, ] <- c(1, 20, 143, 2, "Non-Fumeur", 0, 0, 0, 0, 2500)
+tail(naissance)
+# Apparemment tout va bien...
+str(naissance)
+# Mais on vient en fait de casser notre jeu de données...
+
+naissance <- read.delim("../Data/naissance.txt")
+naissance$SMOKE <- factor(naissance$SMOKE, labels = c("Non-Fumeur", "Fumeur"))
+
+naissance[nrow(naissance) + 1, ] <- data.frame(1, 20, 143, 2, "Non-Fumeur", 0, 0, 0, 0, 2500)
+tail(naissance)
+str(naissance)
+```
+
+**NB**: On peut rajouter une colonne (une variable), à l'aide de `$`, `transform()` ou `mutate()` (comme vu précédemment).
+
+
+### Fusion
+
+La fonction `merge()` permet de fusionner deux tableaux de données :
+
+```{r}
+#| include: true
+head(naissance)
+nais1 <- naissance[,1:6]
+head(nais1)
+nais2 <- naissance[,c(1, 7:10)]
+head(nais2)
+nais_fus1 <- merge(nais1, nais2)
+head(nais_fus1)
+
+# Ici, vu que les individus sont dans le même ordre on aurait pu utiliser la fonction cbind(), et la colonne ID n'est pas utile :
+nais_fus2 <- cbind(nais1, nais2[, -1])
+head(nais_fus2)
+identical(nais_fus1, nais_fus2)
+
+# Les deux dataframes ne sont pas identitiques, car merge a classé par ordre croissant suivant la variable de regroupement ID, mais les informations sont les mêmes.
+```
+
+On peut également fusionner deux tableaux de données où les individus
+(qui doivent être les mêmes) ne sont pas dans le même ordre :
+
+```{r}
+#| include: true
+desordre <- sample(1:nrow(naissance), nrow(naissance))
+nais3 <- naissance[desordre, c(1, 7:10)]
+head(nais3)
+nais_fus3 <- merge(nais1, nais3)
+head(nais_fus3)
+identical(nais_fus1, nais_fus3)
+```
+
+
+#### Exercice 7 : join
+
+1. Consulter l'aide de `dplyr::sample_n` et trouver un moyens simple de permuter
+les lignes du jeu de données.
+
+```{r}
+naissance_perm <- sample_n(naissance, size = nrow(naissance))
+knitr::kable(head(naissance_perm))
+knitr::kable(head(naissance))
+```
+
+2. Consulter l'aide de `dplyr::join()` (pour plus d'informations sur les fusions
+avec `dplyr` consulter cette [page](https://cran.rstudio.com/web/packages/dplyr/vignettes/two-table.html)),
+puis utiliser la fonction `dplyr::left_join()` pour fusionner les tables `nais1`
+et `nais3`.
+
+```{r}
+nais_joined <- dplyr::left_join(nais1, nais3, by="ID")
+knitr::kable(head(nais_joined))
+```
+
+
+### Trier un tableau de données le long d'une colonne
+
+Pour trier le tableau suivant la variable `ID` par ordre croissant, on utilise la fonction `order()` :
+
+```{r}
+#| include: true
+nais_orderID <- naissance[order(naissance$ID), ]
+knitr::kable(head(nais_orderID))
+```
+
+Maintenant, si on veut trier le tableau suivant l'âge par ordre décroissant :
+
+```{r}
+#| include: true
+nais_decAGE <- naissance[order(naissance$AGE, decreasing = TRUE), ]
+knitr::kable(nais_decAGE[1:10, ])
+```
+
+On remarque qu'il y a des ex-aequo. On peut rajouter une variable sur laquelle trier les ex-aequo, en deuxième argument de `order()` :
+
+```{r}
+#| include: true
+nais_decAGE_decLWT <- naissance[order(naissance$AGE, naissance$LWT, decreasing = TRUE), ]
+knitr::kable(nais_decAGE_decLWT[1:10, ])
+```
+
+Enfin, si on veut que le classement soit fait de façon croissante sur `LWT`, on peut procéder de la façon suivante :
+
+```{r}
+#| include: true
+nais_decAGE_LWT <- naissance[order(naissance$AGE, -naissance$LWT, decreasing = TRUE), ]
+nais_decAGE_LWT[1:10, ]
+```
+
+#### Exercice 8 : `dplyr::arrange()`
+
+1. Utiliser la fonction `dplyr::arrange()` pour reproduire les tris précédents.
+
+2. Trier le dataframe suivant la variable `SMOKE` (qui est un facteur). Comment R choisit-il pour déterminer quelle modalité du facteur va apparaître en premier ?
+
+3. Rajouter une variable, nommée `lettre` au dataframe, contenant des lettres majuscules choisies alétoirement. On peut utiliser `sample(letters, nrow(naissance), replace = TRUE)` pour générer ce tirage aléatoire.
+
+4. Trier le dataframe suivant la nouvelle variable `lettre`.
+
+
+
+### La classe `tlb`
+
+Le package s'appuie sur une nouvelle classe d'objets : `tbl`. 
+Le résultat affiché lorsqu'on tape le nom du tableau est tronqué 
+pour cette nouvelle classe :
+
+```{r}
+#| include: true
+nais <- as_tibble(naissance)
+nais
+class(nais)
+```
+
+De plus, le comportement de la sélection de colonne est changé : on garde la
+structure de tableau de données même lorsqu'on sélectionne une seule colonne :
+
+```{r}
+#| include: true
+str(naissance[, 2])
+str(nais[, 2])
+```
+
+#### Exercice 9 : `dplyr::arrange()`
+
+ 1. Utiliser la fonction`dplyr::arrange()` pour ordonner le tableau de données naissance par age, avec les poids de naissance par ordre décroissant pour les égalités.
+
+```{r}
+arrange(naissance, AGE, desc(BWT))
+```
+
+# Introduction au pipe `%>%`
+
+#### Exercice 10
+
+1. À l'aide des fonctions `dplyr::group_by()`, `dplyr::summarize()`, `dplyr::n()`, `dplyr::filter()` et `dplyr::arrange()`, construire le tableau de données donnant le poids moyen à la naissance par âge stratifié sur le statut tabagique, ainsi que le nombre d'observations correpondantes, et ordonné le résultat par ordre de poids moyen croissant en ne sélectionnant que les catéories pour lesquelles le poids moyen est inférieur à 2,5kg.
+```{r}
+naissance_exo10 <- group_by(naissance, AGE, SMOKE)
+naissance_exo10 <- summarise(naissance_exo10,
+  poids_moy = mean(BWT, na.rm = TRUE), n = n())
+naissance_exo10 <- filter(naissance_exo10, poids_moy < 2500)
+naissance_exo10 <- arrange(naissance_exo10, poids_moy)
+knitr::kable(naissance_exo10)
+```
+
+2. Réécrire le code de la réponse précédente à l'aide de l'opérateur `%>%`
+```{r}
+naissance_exo10_pipe <- naissance %>% 
+  group_by(AGE, SMOKE) %>% 
+  summarise(poids_moy = mean(BWT, na.rm = TRUE), 
+            n = n()) %>% 
+  filter(poids_moy < 2500) %>% 
+  arrange(poids_moy)
+knitr::kable(naissance_exo10_pipe)
+```
+
+
+# Résumé
+
+Le package `dplyr` propose un ensemble de fonctions très simples à utiliser
+et permettant de réaliser toutes les opérations classiques sur les tableaux
+de données, avec une syntaxe très claire et compréhensible.
+
+Pour aller plus loin, ou voir d'autres exemples, consulter cette
+[page](https://cran.rstudio.com/web/packages/dplyr/vignettes/dplyr.html).
+On renverra également vers cet 
+[aide-mémoire](https://www.rstudio.com/wp-content/uploads/2016/01/data-wrangling-french.pdf).
+
+En dehors du changement de syntaxe, les gains en temps de calcul sont souvent significatifs avec `dplyr`.
+Il existe un autre package populaire pour faire des manipulations sur les
+(grands) jeux de données : `data.table`. La syntaxe est un peu moins intuitive
+que `dplyr`, mais l'efficacité est encore accrue.
+
