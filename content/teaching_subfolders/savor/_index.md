@@ -8,7 +8,6 @@ Voici le matériel pour le cours de *Science des données Avec R : Visualisation
 
  - Diaporamas : <a href="/html/savor/SAVOR_slides_1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_slides_2.html" target="_blank">Partie II</a> | <a href="/html/savor/SAVOR_slides_3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_slides_4.html" target="_blank">Partie IV</a>
  
- 
  - Travaux dirigés : 
     * <a href="/html/savor/SAVOR_practical1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_practical3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_practical4.html" target="_blank">Partie IV</a>
     * [Données des poids de naissances](/files/birth-weight-data/birthweights.zip)
