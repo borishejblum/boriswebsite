@@ -7,9 +7,10 @@ slug: alumni
 
 ## Current PhD students
 
- - Benjamin Hivert
- - Kalidou Ba
- - Arthur Hughes
+ - Benjamin Hivert (since 2020)
+ - Kalidou Ba  ([since 2022](https://theses.fr/s349491))
+ - Arthur Hughes  (since 2023)
+ - Annesh Pal ([since 2024](https://theses.fr/s371051))
 
 ## Former students
 
@@ -35,6 +36,7 @@ slug: alumni
  - Marine Gauthier [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/marine-gauthier-epoch/)
  - Benjamin Hivert [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/benjamin-hivert-55a532187/)
  - Arthur Hughes [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/arthur-hughes-4a63a6243/)
+ 
 
 #### First year Masters
  
@@ -43,4 +45,6 @@ slug: alumni
  - Lise Cahuzac [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/lise-cahuzac-32236590/)
  - Anthony Devaux [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/anthony-devaux-44540b153/)
  - Victor Gasque [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/victor-gasque/)
+ - Mathéo LeFloch [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/mathéo-le-floch-42a515227/)
  - Maud Perpere [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/maud-perpere-a77a18168/)
+ - Alarig Vigneras [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/alarig-vigneras-b944b0283/)
