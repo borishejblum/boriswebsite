@@ -1,6 +1,7 @@
 *.sty
 *.log
 *.cls
+*.tex
 pubs.bib
 CV.bib
 CV_HEJBLUM.html
