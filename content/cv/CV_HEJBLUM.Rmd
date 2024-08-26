@@ -24,7 +24,7 @@ lang: "english"
 geometry: "scale=0.875"
 classoption: "sans"
 fontfamilyoptions: "DejaVuSansMono"
-header-includes: "\\usepackage{soul} \\usepackage{hyperref} \\usepackage{breakurl}"
+header-includes: "\\usepackage{soul} \\usepackage{breakurl}"
 output: 
   vitae::moderncv:
     theme: classic
