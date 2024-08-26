@@ -83,7 +83,7 @@ jobs:
 
       - name: dependencies
         run: |
-          install.packages(c("curl", "pkgdepends")
+          install.packages(c("pkgdepends"))
           pak::pkg_install(c("any::curl", "any::knitr", "any::rmarkdown", "github::borishejblum/vitae", "any::tibble", "any::dplyr", "any::lubridate", "any::readxl", "any::httr", "any::stringr"))
         shell: Rscript {0}
 
