@@ -48,18 +48,17 @@ jobs:
           cache-version: 2
           extra-packages: |
             github::borishejblum/vitae
-          needs: |
-            cli
-            curl
-            dplyr
-            httr
-            lubridate
-            pkgdepends
-            readxl
-            rmarkdown
-            sessioninfo
-            stringr
-            tibble
+            any::cli
+            any::curl
+            any::dplyr
+            any::httr
+            any::lubridate
+            any::pkgdepends
+            any::readxl
+            any::rmarkdown
+            any::sessioninfo
+            any::stringr
+            any::tibble
 
       - name: dependencies
         run: |
