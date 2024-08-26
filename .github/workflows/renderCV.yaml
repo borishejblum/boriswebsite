@@ -47,16 +47,17 @@ jobs:
           cache-version: 2
           extra-packages: |
             any::curl
-            any::rmarkdown
             github::borishejblum/vitae
-            any::httr
-            any::stringr
           needs: |
             dplyr
+            httr
             lubridate
             pkgdepends
             rcmdcheck
             readxl
+            rmarkdown
+            sessioninfo
+            stringr
             tibble
 
       - name: dependencies
