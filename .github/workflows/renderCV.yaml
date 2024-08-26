@@ -39,7 +39,7 @@ jobs:
       - name: dependencies
         run: |
           install.packages(c("curl", "pkgdepends", "pak"))
-          pak::pkg_install(c("any::knitr", "any::rmarkdown", "any::vitae", "any::tibble", "any::dplyr", "any::lubridate", "any::readxl", "any::httr", "any::stringr"))
+          pak::pkg_install(c("any::knitr", "any::rmarkdown", "github::borishejblum/vitae", "any::tibble", "any::dplyr", "any::lubridate", "any::readxl", "any::httr", "any::stringr"))
         shell: Rscript {0}
 
       - name: Build CV
