@@ -35,7 +35,7 @@ jobs:
       - name: Install additional LaTeX packages
         run: |
           tlmgr update --self
-          tlmgr install academicons arydshln colortbl dejavu DejaVuSansMono fancyhdr fontawesome5 fp geometry microtype moderncv multirow pgf soul
+          tlmgr install academicons arydshln colortbl dejavu fancyhdr fontawesome5 fp geometry microtype moderncv multirow pgf soul
           tlmgr list --only-installed
 
       - uses: r-lib/actions/setup-r@v2
