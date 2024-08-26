@@ -48,6 +48,7 @@ jobs:
           extra-packages: |
             github::borishejblum/vitae
           needs: |
+            cli
             curl
             dplyr
             httr
@@ -56,6 +57,7 @@ jobs:
             rcmdcheck
             readxl
             rmarkdown
+            sessioninfo
             stringr
             tibble
 
