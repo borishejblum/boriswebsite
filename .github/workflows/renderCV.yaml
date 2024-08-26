@@ -35,7 +35,7 @@ jobs:
       - name: Install additional LaTeX packages
         run: |
           tlmgr update --self
-          tlmgr install colortbl fancyhdr microtype fontawesome5 academicons fp pgf multirow arydshln dejavu soul hyperref breakurl
+          tlmgr install colortbl fancyhdr microtype fontawesome5 academicons fp pgf multirow arydshln dejavu soul breakurl
           tlmgr list --only-installed
 
       - uses: r-lib/actions/setup-r@v2
