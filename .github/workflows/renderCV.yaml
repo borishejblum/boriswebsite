@@ -46,9 +46,9 @@ jobs:
         with:
           cache-version: 2
           extra-packages: |
-            any::curl
             github::borishejblum/vitae
           needs: |
+            curl
             dplyr
             httr
             lubridate
