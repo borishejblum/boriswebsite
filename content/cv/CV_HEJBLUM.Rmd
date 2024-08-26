@@ -24,7 +24,7 @@ lang: "english"
 geometry: "scale=0.875"
 classoption: "sans"
 fontfamilyoptions: "DejaVuSansMono"
-header-includes: "\\usepackage{soul} \\usepackage{breakurl}"
+header-includes: "\\\\usepackage{soul} \\\\usepackage{breakurl} \\newcommand{\\mastodonsocialsymbol}{\\faMastodon} \\newcommand{\\discordsocialsymbol}{\\faDiscord} \\newcommand{\\twitchsocialsymbol}{\\faTwich} \\newcommand{\\youtubesocialsymbol}{\\faYoutube} \\newcommand{\\tiktoksocialsymbol}{\\faTiktoksocialsymbol} \\newcommand{\\instagramsocialsymbol}{\\faInstagramsocialsymbol} \\newcommand{\\soundcloudsocialsymbol}{\\faSoundcloudsocialsymbol} \\newcommand{\\steamsocialsymbol}{\\faSteamsocialsymbol} \\newcommand{\\xboxsocialsymbol}{\\faxboxsocialsymbol} \\newcommand{\\playstationsocialsymbol}{\\faPlaystationsocialsymbol} \\newcommand{\\battlenetsocialsymbol}{\\faBattlenesocialsymbol}"
 output: 
   vitae::moderncv:
     theme: classic
