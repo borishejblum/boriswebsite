@@ -132,15 +132,21 @@ $\hspace{2.46cm}\circ$ Hung Van Tran (2019: 50%)\medskip
 ## Ph.D. students 
 
 \small
+$\hspace{2.46cm}\circ$ Sara Fallet (2024 -- ...: 50%)
+
+$\hspace{2.46cm}\circ$ Annesh Pal (2023 -- ...: 100%)
+
+$\hspace{2.46cm}\circ$ Arthur Hughes (2023 -- ...: 50%)
+
 $\hspace{2.46cm}\circ$ Kalidou Ba (2022 -- ...: 50%)
 
-$\hspace{2.46cm}\circ$ Benjamin Hivert (2020 -- ...: 50%)
+$\hspace{2.46cm}\circ$ Benjamin Hivert (2020 -- 2024: 50%) \href{https://theses.fr/s345878}{\textit{thesis}}
 
-$\hspace{2.46cm}\circ$ Paul Freulon (2019 -- 2022: 50%)
+$\hspace{2.46cm}\circ$ Paul Freulon (2019 -- 2022: 50%) \href{https://theses.fr/2023BORD0082}{\textit{thesis}}
 
-$\hspace{2.46cm}\circ$ Marine Gauthier (2018 -- 2021: 50%)
+$\hspace{2.46cm}\circ$ Marine Gauthier (2018 -- 2021: 50%) \href{https://theses.fr/2021BORD0304}{\textit{thesis}}
 
-$\hspace{2.46cm}\circ$ Soufiane Ajana (2017 -- 2019: 15%)
+$\hspace{2.46cm}\circ$ Soufiane Ajana (2017 -- 2019: 15%) \href{https://theses.fr/2019BORD0205}{\textit{thesis}}
 
 $\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
 \medskip
@@ -149,6 +155,10 @@ $\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
 ## Interns
 
   \small
+  $\hspace{2.46cm}\circ$ Alarig Vigneras (M1 internship 2024: 50%)
+  
+  $\hspace{2.46cm}\circ$ Mathéo Le Floch (M1 internship 2024: 50%)
+  
   $\hspace{2.46cm}\circ$ Arthur Hughes (M2 internship 2023: 100%)
   
   $\hspace{2.46cm}\circ$ Maud Perpere (M1 internship 2023: 100%)
