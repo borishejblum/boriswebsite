@@ -28,7 +28,7 @@ DOI: [10.1186/s13059-024-03231-9](https://doi.org/10.1186/s13059-024-03231-9)
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: Is practical application feasible for data fission and data thinning in post-clustering differential analysis?. *arXiv* 2405.13591, 2024.   
 DOI: [10.48550/arXiv.2405.13591](https://doi.org/10.48550/arXiv.2405.13591)  
 
-   * White E, Papagno L, Samri A, Sugata K, <u>**Hejblum B**</u>, Henry AR, Rogan DC, Darko S, Recordon-Pinson P, Dudoit Y, Llewellyn-Lacey LA, Buseyne F, Migueles SA, Price DA, Andreola M, Satou Y, Thiébaut R, Katlama C, Autran B, C DD & Appay V. Clonal succession after prolonged antiretroviral therapy rejuvenates CD8+ t cell responses against HIV-1. *Nature Immunology*, 2024.   
+   * White E, Papagno L, Samri A, Sugata K, <u>**Hejblum B**</u>, Henry AR, Rogan DC, Darko S, Recordon-Pinson P, Dudoit Y, Llewellyn-Lacey LA, Buseyne F, Migueles SA, Price DA, Andreola M, Satou Y, Thiébaut R, Katlama C, Autran B, C DD & Appay V. Clonal succession after prolonged antiretroviral therapy rejuvenates CD8+ t cell responses against HIV-1. *Nature Immunology* 25:1555-1564, 2024.   
 DOI: [10.1038/s41590-024-01931-9](https://doi.org/10.1038/s41590-024-01931-9)
 
 # **2023**
