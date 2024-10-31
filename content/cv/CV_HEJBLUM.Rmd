@@ -140,13 +140,13 @@ $\hspace{2.46cm}\circ$ Arthur Hughes (2023 -- ...: 50%)
 
 $\hspace{2.46cm}\circ$ Kalidou Ba (2022 -- ...: 50%)
 
-$\hspace{2.46cm}\circ$ Benjamin Hivert (2020 -- 2024: 50%) \href{https://theses.fr/s345878}{\textit{thesis}}
+$\hspace{2.46cm}\circ$ Benjamin Hivert (2020 -- 2024: 50%) \href{https://theses.fr/s345878}{\textit{https://theses.fr/s345878}}
 
-$\hspace{2.46cm}\circ$ Paul Freulon (2019 -- 2022: 50%) \href{https://theses.fr/2023BORD0082}{\textit{thesis}}
+$\hspace{2.46cm}\circ$ Paul Freulon (2019 -- 2022: 50%) \href{https://theses.fr/2023BORD0082}{\textit{https://theses.fr/2023BORD0082}}
 
-$\hspace{2.46cm}\circ$ Marine Gauthier (2018 -- 2021: 50%) \href{https://theses.fr/2021BORD0304}{\textit{thesis}}
+$\hspace{2.46cm}\circ$ Marine Gauthier (2018 -- 2021: 50%) \href{https://theses.fr/2021BORD0304}{\textit{https://theses.fr/2021BORD0304}}
 
-$\hspace{2.46cm}\circ$ Soufiane Ajana (2017 -- 2019: 15%) \href{https://theses.fr/2019BORD0205}{\textit{thesis}}
+$\hspace{2.46cm}\circ$ Soufiane Ajana (2017 -- 2019: 15%) \href{https://theses.fr/2019BORD0205}{\textit{https://theses.fr/2019BORD0205}}
 
 $\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
 \medskip
