@@ -20,6 +20,9 @@ slug: publications
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Post-clustering difference testing: Valid inference and practical considerations with applications to ecological and biological data. *Computational Statistics & Data Analysis* 107916, 2024.   
 DOI: [10.1016/j.csda.2023.107916](https://doi.org/10.1016/j.csda.2023.107916)  
 
+   * <u>**Hejblum BP**</u>, Ba K, Thiébaut R & Agniel D. Neglecting normalization impact in semi-synthetic RNA-Seq data simulation generates artificial false positives. *Genome Biology* 25:281, 2024.   
+DOI: [10.1186/s13059-024-03231-9](https://doi.org/10.1186/s13059-024-03231-9)  
+
    * Ferté T, Dutartre D, <u>**Hejblum BP**</u>, Griffier R, Jouhet V, Thiébaut R, Legrand P & Hinaut X. Reservoir computing for short high-dimensional time series: An application to SARS-CoV-2 hospitalization forecast. *Proceedings of the 41st international conference on machine learning* 235:13570-13591, 2024.   
 
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: Is practical application feasible for data fission and data thinning in post-clustering differential analysis?. *arXiv* 2405.13591, 2024.   
@@ -51,9 +54,6 @@ DOI: [10.1016/j.jbspin.2023.105607](https://doi.org/10.1016/j.jbspin.2023.105607
 
    * Bigot J, Freulon P, <u>**Hejblum BP**</u> & Leclaire A. On the potential benefits of entropic regularization for smoothing wasserstein estimators. *arXiv* 2210.06934, 2022.   
 DOI: [10.48550/arXiv.2210.06934](https://doi.org/10.48550/arXiv.2210.06934)  
-
-   * <u>**Hejblum BP**</u>, Ba K, Thiébaut R & Agniel D. Neglecting normalization impact in semi-synthetic RNA-Seq data simulation generates artificial false positives. *bioRxiv* 2022.05.10.490529, 2022.   
-DOI: [10.1101/2022.05.10.490529](https://doi.org/10.1101/2022.05.10.490529)  
 
    * Ferté T, Jouhet V, Greffier R, <u>**Hejblum BP**</u> & Thiébaut R. The benefit of augmenting open data with clinical data-warehouse EHR for forecasting SARS-CoV-2 hospitalizations in Bordeaux area, France. *JAMIA open* ooac086, 2022.   
 DOI: [10.1093/jamiaopen/ooac086](https://doi.org/10.1093/jamiaopen/ooac086)  
