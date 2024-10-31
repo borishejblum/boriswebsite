@@ -13,25 +13,23 @@ weight = 65
 
 # Outdated links
 # Thiago G. Martins blog](https://tgmstat.wordpress.com/)
+# Serial Mentor](http://serialmentor.com/blog/)
+
 +++
 
 - [Simply Statistics](http://simplystatistics.org/)
 
-- [SWAGR Inria associate team](https://team.inria.fr/swagr/)
+- [DESTRIER Inria associate team](https://team.inria.fr/destrier/)
 
-- [Statisfaction](https://statisfaction.wordpress.com/)
+- [Statisfaction](https://statisfaction-blog.github.io/)
  
 - [xkcd](https://xkcd.com/)
 
-- [The stupidest thing...](http://kbroman.org/blog/)
-
-- [Serial Mentor](http://serialmentor.com/blog/)
- 
 - [Flowing Data](http://flowingdata.com/)
 
-- [Citizen Statistician](http://citizen-statistician.org/)
+- [The stupidest thing...](http://kbroman.org/blog/)
 
-- [R-bloggers](https://www.r-bloggers.com/)
+- [Citizen Statistician](http://citizen-statistician.org/)
 
 - [Teach Data Science - ASA blog](https://teachdatascience.com/)
 
@@ -40,6 +38,8 @@ weight = 65
  - [Not so standard deviation](http://nssdeviations.com/)
  
  - [The Effort Report](http://theeffortreport.com/)
+ 
+ - [Casual Inference](https://casualinfer.libsyn.com/)
  
     
     

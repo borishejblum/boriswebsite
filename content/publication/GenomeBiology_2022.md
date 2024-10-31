@@ -52,7 +52,7 @@ url_custom = [{name = "Article", url = "https://doi.org/10.1186/s13059‑024‑0
 math = true
 
 # Does the content use source code highlighting?
-highlight = false
+highlight = true
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
