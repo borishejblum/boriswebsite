@@ -16,8 +16,8 @@ authors = ["E White", "L Papagno", "A Samri", "K Sugata", "<u>**B Hejblum**</u>"
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Nature Immunology*"
-publication_short = "*Nat Immunol*"
+publication = "*Nature Immunology*, 25:1555–1564"
+publication_short = "*Nat Immunol*, 25:1555–1564"
 
 doi = "10.1038/s41590-024-01931-9"
 
