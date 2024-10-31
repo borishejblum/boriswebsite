@@ -1,5 +1,6 @@
 +++
 title = "Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives"
+date = "2024-10-30"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["<u>**Hejblum BP**</u>", "Ba K", "Thiébaut R", "Agniel D"]
