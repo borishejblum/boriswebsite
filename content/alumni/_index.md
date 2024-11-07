@@ -7,10 +7,10 @@ slug: alumni
 
 ## Current PhD students
 
- - Benjamin Hivert (since 2020)
  - Kalidou Ba  ([since 2022](https://theses.fr/s349491))
- - Arthur Hughes  (since 2023)
+ - Arthur Hughes  ([since 2023](https://theses.fr/s370773))
  - Annesh Pal ([since 2024](https://theses.fr/s371051))
+ - Sara Fallet ([since 2024](https://theses.fr/s398058))
 
 ## Former students
 
@@ -22,6 +22,7 @@ slug: alumni
 
 #### PhD
 
+ - Benjamin Hivert ([graduated in 2024](https://theses.fr/2024BORD0171)) [<i class="fa fa-globe" aria-hidden="true"></i>](https://fr.linkedin.com/in/benjamin-hivert-55a532187) 
  - Paul Freulon ([graduated in 2022](https://www.theses.fr/2023BORD0082)) [<i class="fa fa-globe" aria-hidden="true"></i>](https://pfreulon.perso.math.cnrs.fr/) 
  - Marine Gauthier ([graduated in 2021](https://www.theses.fr/2021BORD0304)) [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/marine-gauthier-epoch/)
  - Soufiane Ajana ([graduated in 2019](https://www.theses.fr/241144191)) [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/soufiane-ajana/) 
