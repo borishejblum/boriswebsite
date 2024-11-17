@@ -25,6 +25,9 @@ DOI: [10.1186/s13059-024-03231-9](https://doi.org/10.1186/s13059-024-03231-9)
 
    * Ferté T, Dutartre D, <u>**Hejblum BP**</u>, Griffier R, Jouhet V, Thiébaut R, Legrand P & Hinaut X. Reservoir computing for short high-dimensional time series: An application to SARS-CoV-2 hospitalization forecast. *Proceedings of the 41st international conference on machine learning* 235:13570-13591, 2024.   
 
+   * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P & Prague M. Using population based kalman estimator to model COVID-19 epidemic in france: Estimating the effects of non-pharmaceutical interventions on the dynamics of epidemic. *International Journal of Biostatistics* 20(1):13-41, 2024.   
+DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087)  
+
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: Is practical application feasible for data fission and data thinning in post-clustering differential analysis?. *arXiv* 2405.13591, 2024.   
 DOI: [10.48550/arXiv.2405.13591](https://doi.org/10.48550/arXiv.2405.13591)  
 
@@ -41,9 +44,6 @@ DOI: [10.1093/biostatistics/kxac020](https://doi.org/10.1093/biostatistics/kxac0
 
    * Blengio F, Hocini H, Richert L, Lefebvre C, Durand M, <u>**Hejblum B**</u>, Tisserand P, McLean C, Luhn K, Thiebaut R & Lévy Y. Identification of early gene expression profiles associated with long-lasting antibody responses to the Ebola vaccine Ad26. ZEBOV/MVA-BN-Filo. *Cell Reports* 42(9):113101, 2023.   
 DOI: [10.1016/j.celrep.2023.113101](https://doi.org/10.1016/j.celrep.2023.113101)  
-
-   * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P & Prague M. Using population based kalman estimator to model COVID-19 epidemic in france: Estimating the effects of non-pharmaceutical interventions on the dynamics of epidemic. *International Journal of Biostatistics* in press, 2023.   
-DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087)  
 
    * Vignals C, <u>**Hejblum BP**</u> & Prague M. Modéliser la COVID-19: De la population à l’individu. *Interstices*, 2023.   
 
