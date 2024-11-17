@@ -33,7 +33,7 @@ slug: alumni
  - Damien Chimits [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/damien-chimits-5085b586/)
  - Roxane Coueron [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/roxane-coueron-350709114/)
  - Anthony Devaux [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/anthony-devaux-44540b153/)
- - Thomas Ferte [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/thomas-ferte-bb632b256/)
+ - Thomas Ferté [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/thomas-ferte-bb632b256/)
  - Marine Gauthier [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/marine-gauthier-epoch/)
  - Benjamin Hivert [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/benjamin-hivert-55a532187/)
  - Arthur Hughes [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/arthur-hughes-4a63a6243/)

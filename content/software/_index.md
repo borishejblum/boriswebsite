@@ -134,7 +134,10 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 
 * * *
 
-An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* that can be used for either chronic or acute conditions, developed with Thomas Ferte. Available on [CRAN](https://CRAN.R-project.org/package=PheVis), development version on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
+An **R package** to perform *automatic instant phenotype prediction at the visit level from EHR data* 
+that can be used for either chronic or acute conditions, developed with Thomas Ferté. 
+Available on [CRAN](https://CRAN.R-project.org/package=PheVis), development 
+version on [gitlab](https://plmlab.math.cnrs.fr/fthomas/phevis2).
 
 
 <br />
@@ -146,7 +149,10 @@ An **R package** to perform *automatic instant phenotype prediction at the visit
 
 * * *
 
-An **R package** to perform Gene Set Analysis for time-to-event outcomes using a *Survival Extension of the Generalized Berk-Jones Test*. Available on [CRAN](https://CRAN.R-project.org/package=sGBJ), development version available on [GitHub](https://github.com/lauravillain/sGBJ).
+An **R package** to perform Gene Set Analysis for time-to-event outcomes using 
+a *Survival Extension of the Generalized Berk-Jones Test*. Available on 
+[CRAN](https://CRAN.R-project.org/package=sGBJ), development version available 
+on [GitHub](https://github.com/lauravillain/sGBJ).
 
 
 <br />

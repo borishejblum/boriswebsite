@@ -1,6 +1,6 @@
 +++
 title = "Using population based Kalman estimator to model COVID-19 epidemics in France: estimating the burden of SARS-CoV-2 and the effects of NPI"
-date = "2023-01-06"
+date = "2024-01-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["A Collin", "<u>**BP Hejblum**</u>", "C Vignals", "L Lehot", "R Thiébaut", "P Moireau", "M Prague"]
@@ -17,8 +17,8 @@ authors = ["A Collin", "<u>**BP Hejblum**</u>", "C Vignals", "L Lehot", "R Thié
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*International of Biostatistics*, in press"
-publication_short = "*International of Biostatistics*, in press"
+publication = "*International of Biostatistics*, 20(1):13-41"
+publication_short = "*International of Biostatistics*, 20(1):13-41"
 
 doi ="10.1515/ijb-2022-0087"
 

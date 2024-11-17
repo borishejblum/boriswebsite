@@ -84,7 +84,7 @@ DOI: [10.1613/jair.1.12588](https://doi.org/10.1613/jair.1.12588)
    * Zhang HG&#42;, <u>**Hejblum BP**</u>&#42;, Weber G, Palmer N, Churchill S, Szolovits P, Murphy S, Liao K, Kohane I & Cai T. ATLAS: An automated association test using probabilistically linked health records with application to genetic studies. *Journal of the American Medical Informatics Association* 28(12):2582-2592, 2021.   
 DOI: [10.1093/jamia/ocab187](https://doi.org/10.1093/jamia/ocab187)  
 
-   * Ferte T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V & <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *Journal of Biomedical Informatics* 117:103746, 2021.   
+   * Ferté T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V & <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *Journal of Biomedical Informatics* 117:103746, 2021.   
 DOI: [10.1016/j.jbi.2021.103746](https://doi.org/10.1016/j.jbi.2021.103746)  
 
    * Ajana S, Cougnard-Grégoire A, Colijn J, Merle BM, Verzijden T, Jong P, Hofman A, EYE-RISK Consortium, Vingerling J, <u>**Hejblum BP**</u>, Korobelnik J, Meester-Smoor M, Jacqmin-Gadda H, Klaver C, Delcourt C. Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning. *Ophthalmology* 128(4):587-597, 2021.   
