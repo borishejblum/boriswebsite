@@ -28,7 +28,7 @@ DOI: [10.1186/s13059-024-03231-9](https://doi.org/10.1186/s13059-024-03231-9)
    * Collin A, <u>**Hejblum BP**</u>, Vignals C, Lehot L, Thiébaut R, Moireau P & Prague M. Using population based kalman estimator to model COVID-19 epidemic in france: Estimating the effects of non-pharmaceutical interventions on the dynamics of epidemic. *International Journal of Biostatistics* 20(1):13-41, 2024.   
 DOI: [10.1515/ijb-2022-0087](https://doi.org/10.1515/ijb-2022-0087)  
 
-   * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: practical limitations for real-life application of data fission and data thinning in post-clustering differential analysis. *arXiv* 2405.13591, 2024.   
+   * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Running in circles: Practical limitations for real-life application of data fission and data thinning in post-clustering differential analysis. *arXiv* 2405.13591, 2024.   
 DOI: [10.48550/arXiv.2405.13591](https://doi.org/10.48550/arXiv.2405.13591)  
 
    * White E, Papagno L, Samri A, Sugata K, <u>**Hejblum B**</u>, Henry AR, Rogan DC, Darko S, Recordon-Pinson P, Dudoit Y, Llewellyn-Lacey LA, Buseyne F, Migueles SA, Price DA, Andreola M, Satou Y, Thiébaut R, Katlama C, Autran B, C DD & Appay V. Clonal succession after prolonged antiretroviral therapy rejuvenates CD8+ t cell responses against HIV-1. *Nature Immunology* 25:1555-1564, 2024.   
