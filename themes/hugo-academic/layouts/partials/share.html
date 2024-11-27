@@ -2,10 +2,10 @@
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text={{ .Title | html }}&amp;url={{ .Permalink | html }}"
+      <a class="bluesky"
+         href="https://bsky.app/intent/compose?text={{ .Title | html }}&amp;url={{ .Permalink | html }}"
          target="_blank" rel="noopener">
-        <i class="fa fa-twitter"></i>
+        <i class="fa fa-bluesky"></i>
       </a>
     </li>
     <li>
@@ -20,13 +20,6 @@
          href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | html }}&amp;title={{ .Title | html }}"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url={{ .Permalink | html }}&amp;title={{ .Title | html }}"
-         target="_blank" rel="noopener">
-        <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>

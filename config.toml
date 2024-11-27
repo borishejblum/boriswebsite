@@ -66,6 +66,7 @@ defaultContentLanguageInSubdir = false
   skype = ""
   telegram = ""
   #twitter = "borishej"
+  bluesky = "borishej"
   googlescholar = "xU72YmYAAAAJ"
   googlescholarname = "Boris P. Hejblum"
   github = "borishejblum"
@@ -225,10 +226,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "mailto:boris.hejblum@u-bordeaux.fr"
 
-  #[[params.social]]
-  #  icon = "twitter"
-  #  icon_pack = "fa"
-  #  link = "//twitter.com/borishej"
+  [[params.social]]
+    icon = "bluesky"
+    icon_pack = "fa"
+    link = "https://bsky.app/profile/borishej"
 
   [[params.social]]
     icon = "google-scholar"
