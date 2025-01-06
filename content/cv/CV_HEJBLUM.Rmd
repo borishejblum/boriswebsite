@@ -336,6 +336,8 @@ rbind.data.frame(
 
 \cvline{2022-present}{\textit{Chiche ! 1 Scientifique, 1 Classe} Program by Inria \small \newline 1h presentation \& open discussion about scientific research with high-school students.}
 
+\cvline{2024}{\textit{Nuit des chercheurs 2024} with the Inserm exhibition ``Des virus émergents et des épidémies''.}
+
 \cvline{2018}{Outreach stand "\textit{Is there more data in a drop of blood than in my smartphone?}" at the 10 year anniversary of Inria Bordeaux Sud-Ouest}
 
 \cvline{2012}{Poster presentation at the Summer University of Sidaction on longitudinal analysis applied to HIV vaccine research}
@@ -351,8 +353,8 @@ rbind.data.frame(
 
 
 # Scientific evaluation
-
-\cventry{2023}{Reviewer for the 2023 MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
+\cventry{2024}{Member of the ANRS CSS13 call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
+\cventry{2023-2024}{Reviewer for the MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
 \cventry{2023}{Member of the Scientific Committee for the CNC23 9\textsuperscript{th} Channel Netwok Conference of the International Biometric Society 2023}{}{}{}{}
 \cventry{2021}{Member of the PhD defense committee of Shaima Belhechmi, \textit{Université Paris-Saclay}}{}{}{}{}
 \cventry{2021}{Reviewer for the \textit{ANRT}}{(\textit{Association Nationale de la Recherche Technologique})}{}{}{}
