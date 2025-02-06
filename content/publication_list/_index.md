@@ -15,6 +15,11 @@ slug: publications
 
 
 
+# **2025**
+
+   * Hughes A, Parast L, Thiébaut R & <u>**Hejblum BP**</u>. Rank-based identification of high-dimensional surrogate markers: Application to vaccinology. *arXiv* 2502.03030, 2025.   
+DOI: [10.48550/arXiv.2502.03030](https://doi.org/10.48550/arXiv.2502.03030)
+
 # **2024**
 
    * Hivert B, Agniel D, Thiébaut R & <u>**Hejblum BP**</u>. Post-clustering difference testing: Valid inference and practical considerations with applications to ecological and biological data. *Computational Statistics & Data Analysis* 107916, 2024.   
