@@ -77,10 +77,10 @@
   <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
   {{ end }}
 
-  {{ if .Site.GoogleAnalytics }}
+  {{ if .Site.Config.Services.GoogleAnalytics.ID }}
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
+      ga('create', '{{ .Site.Config.Services.GoogleAnalytics.ID }}', 'auto');
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
