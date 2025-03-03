@@ -362,8 +362,6 @@ rbind.data.frame(
 \cventry{2021}{Member of the Pharm. D. defense committee of Blandine Malbos, \textit{Université d'Angers}}{}{}{}{}
 \cventry{2019}{Invited member of the PhD defense committee of Soufiane Ajana, \textit{Université de Bordeaux}}{}{}{}{}
 
-\newpage
-
 # Reviewer for international peer-reviewed scientific journals
 
 \cvline{ }{\emph{Annals of Applied Statistics}, 
@@ -388,11 +386,11 @@ rbind.data.frame(
 
 # Academic responsibilities
 
-\cventry{2023--present}{Member of the Organizing Comittee for the next annual conference \textit{``Journées de Statistique''} of the French Statistical Society (SFdS)}{}{}{}{}
+\cventry{2023--2024}{Member of the \href{https://jds2024.sciencesconf.org/resource/page/id/7}{Organizing Comittee for the 55\textsuperscript{th} annual conference \textit{``Journées de Statistique''} of the French Statistical Society (SFdS)} in 2024}{}{}{}{}
 \cventry{2021--present}{French Biometric Society correspondant to the Channel Network region of the International Biometrics Society}{}{}{}{}
 \cventry{2019--present}{Member of the Bureau of the French Biometric Society \textnormal{\textsf{\textit{(Société Française de Biométrie)}}} \--- webmaster}{}{}{}{}
+\cventry{2017--present}{Organizer of the Biostatistics Seminar series from the Public Health Department of Bordeaux University \textnormal{\textsf{(biweekly)}}}{}{}{}{}
 \cventry{2019}{Co-organizer of the Bordeaux Statistics Seminar series \textnormal{\textsf{(quarterly)}}}{}{}{}{}
-\cventry{2017--present}{Organizer of the Public Health Department Biostatistics Seminar series \textnormal{\textsf{(biweekly)}}}{}{}{}{}
 \cventry{2018}{Co-organizer of the workshop in honor of Daniel Commenges' 70$^\textbf{\footnotesize th}$ birthday}{}{}{}{}
 \cventry{2012--2014}{Founder of the ISPED Ph.D. students \textnormal{\textsf{(weekly)}} seminar}{}{}{}{}
 \cventry{2009--2010}{President \textnormal{\textsf{(formerly Secretary General)}} of the ENSAI Business Networking Forum}{}{}{}{Responsible for organizing the yearly networking event between companies and ENSAI students}
