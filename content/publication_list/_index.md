@@ -17,6 +17,9 @@ slug: publications
 
 # **2025**
 
+   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data. *arXiv* 2502.08547, 2025.   
+DOI: [10.48550/arXiv.2502.08547](https://doi.org/10.48550/arXiv.2502.08547)  
+
    * Hughes A, Parast L, Thiébaut R & <u>**Hejblum BP**</u>. Rank-based identification of high-dimensional surrogate markers: Application to vaccinology. *arXiv* 2502.03030, 2025.   
 DOI: [10.48550/arXiv.2502.03030](https://doi.org/10.48550/arXiv.2502.03030)
 
