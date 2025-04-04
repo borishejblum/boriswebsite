@@ -6,9 +6,9 @@ slug: software
 ---
 
 
-<img width="120" src='/files/shinyhex_small.png'>
+<img width="95" src='/files/shinyhex_small.png'>
 
-## `VICI` <img src='/files/hexstickers/VICI.svg' align="right" width="150" /> 
+## `VICI`<img src='/files/hexstickers/VICI.svg' align="right" width="90" /> 
   
 * * *
 
@@ -21,9 +21,9 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 <br />
 
 
-  <img width="120" src='/files/Rlogo.png'>
+  <img width="95" src='/files/Rlogo.png'>
 
-## `citcdf`<img src='/files/hexstickers/citcdf.svg' align="right" width="150" />
+## `citcdf`<img src='/files/hexstickers/citcdf.svg' align="right" width="90" />
 
 * * *
 
@@ -34,7 +34,7 @@ An **R package** to perform *conditional independence testing using empirical co
 <br />
 <br />
 
-## `CytOpT`<img src='/files/hexstickers/CytOpT.png' align="right" width="150" />
+## `CytOpT`<img src='/files/hexstickers/CytOpT.png' align="right" width="80" />
 
 * * *
 
@@ -46,7 +46,7 @@ An **R package** to perform *Optimal transport for gating transfer in cytometry 
 <br />
 <br />
 
-## `cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="150" />
+## `cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="90" />
 
 * * *
 
@@ -58,7 +58,7 @@ An **R package** to perform *Automatic gating and annotation of cytometry data*.
 <br />
 <br />
 
-## `dearseq` <img src='/files/hexstickers/dearseq.svg' align="right" width="150" />
+## `dearseq`<img src='/files/hexstickers/dearseq.svg' align="right" width="90" />
 
 * * *
   
@@ -70,20 +70,19 @@ An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **
 <br />
 <br />
 
-## `kernscr`
+## `crossurr`<img src='/files/hexstickers/crossurr.png' align="right" width="82" />
 
 * * *
 
-An **R package** to perform *KERNel machine score test for pathway analysis in the presence of Semi-Competing Risks*. Available on [CRAN](https://CRAN.R-project.org/package=kernscr), development version available on [GitHub](https://github.com/borishejblum/kernscr).
+An **R package** that implements *cross-fitting for doubly robust evaluation of high-dimensional surrogate markers*. Available on [CRAN](https://CRAN.R-project.org/package=crossurr), development version available on [GitHub](https://github.com/denisagniel/crossurr).
 
-
 <br />
 <br />
 <br />
 <br />
 
-## `foodingraph`<img src='/files/hexstickers/Foodingraph.svg' align="right" width="150" />
- 
+## `foodingraph`<img src='/files/hexstickers/foodingraph.svg' align="right" width="90" />
+
 * * *
 
 An **R package** to perform *Food Network Inference and Visualization* developed with Victor Gasque. Available on [CRAN](https://CRAN.R-project.org/package=foodingraph), development version on [GitHub](https://github.com/vgasque/foodingraph).
@@ -94,7 +93,7 @@ An **R package** to perform *Food Network Inference and Visualization* developed
 <br />
 <br />
 
-## `ludic` <a><img src='/files/hexstickers/ludic.svg' align="right" width="150" /></a> 
+## `ludic`<img src='/files/hexstickers/ludic.svg' align="right" width="90" />
 
 * * *
  
@@ -106,7 +105,7 @@ An **R package** to perform *probabilistic record Linkage Using only DIagnosis C
 <br />
 <br />
 
-## `marqLevAlg` 
+## `marqLevAlg` <a><img src='/files/hexstickers/marqLevAlg.png' align="right" width="82" />
 
 * * *
 
@@ -118,7 +117,7 @@ An **R package** to perform *(parallelized) optimization of convex multiparametr
 <br />
 <br />
 
-## `NPflow` <a><img src='/files/hexstickers/NPflow.svg' align="right" width="150" /></a> 
+## `NPflow`<img src='/files/hexstickers/NPflow.svg' align="right" width="90" />
 
 * * *
 
@@ -130,7 +129,7 @@ An **R package** to perform *Dirichlet process mixture of multivariate normal, s
 <br />
 <br />
 
-## `PheVis`<img src='/files/hexstickers/PheVis.svg' align="right" width="150" />
+## `PheVis`<img src='/files/hexstickers/PheVis.svg' align="right" width="90" />
 
 * * *
 
@@ -153,6 +152,18 @@ An **R package** to perform Gene Set Analysis for time-to-event outcomes using
 a *Survival Extension of the Generalized Berk-Jones Test*. Available on 
 [CRAN](https://CRAN.R-project.org/package=sGBJ), development version available 
 on [GitHub](https://github.com/lauravillain/sGBJ).
+
+
+<br />
+<br />
+<br />
+<br />
+
+## `kernscr`
+
+* * *
+
+An **R package** to perform *KERNel machine score test for pathway analysis in the presence of Semi-Competing Risks*. Available on [CRAN](https://CRAN.R-project.org/package=kernscr), development version available on [GitHub](https://github.com/borishejblum/kernscr).
 
 
 <br />
