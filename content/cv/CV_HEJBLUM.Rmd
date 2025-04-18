@@ -27,6 +27,8 @@ fontfamilyoptions: "DejaVuSansMono"
 header-includes: 
   - \usepackage{hyperref} 
   - \usepackage{soul}
+  - \definecolor{linkscolor}{HTML}{026dbb}
+  - \hypersetup{colorlinks=true, linkcolor=linkscolor, filecolor=linkscolor, urlcolor=linkscolor, urlbordercolor=linkscolor}
 output: 
   vitae::moderncv:
     theme: classic
@@ -43,13 +45,6 @@ library(lubridate)
 library(readxl)
 library(httr)
 ```
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=blue,      
-    urlcolor=blue
-    }
 
 # Research experience
 
