@@ -17,6 +17,9 @@ slug: publications
 
 # **2025**
 
+   * Chouleur T&#42;, Etchegaray C&#42;, Villain L&#42;, Lesur A, Ferté T, Rossi M, Andrique L, Simoncini C, Giacobbi A, Gambaretti M, Lopci E, Fernades B, Dittmar G, Bjerkvig R, <u>**Hejblum B**</u>, Thiébaut R, Saut O, Bello L & Bikfalvi A. A strategy for multimodal integration of transcriptomics, proteomics, and radiomics data for the prediction of recurrence in patients with IDH-mutant gliomas. *International Journal of Cancer*, 2025.   
+DOI: [10.1002/ijc.35441](https://doi.org/10.1002/ijc.35441)  
+
    * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data. *arXiv* 2502.08547, 2025.   
 DOI: [10.48550/arXiv.2502.08547](https://doi.org/10.48550/arXiv.2502.08547)  
 
