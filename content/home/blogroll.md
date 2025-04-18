@@ -19,8 +19,6 @@ weight = 65
 
 - [Simply Statistics](http://simplystatistics.org/)
 
-- [DESTRIER Inria associate team](https://team.inria.fr/destrier/)
-
 - [Statisfaction](https://statisfaction-blog.github.io/)
  
 - [xkcd](https://xkcd.com/)
