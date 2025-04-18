@@ -392,9 +392,9 @@ rbind.data.frame(
 
 # Academic responsibilities
 
-\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscipt{th} Channel Network Conference in Wageningen}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Wageningen}}{}{}{}{}
 \cventry{2023--2024}{Member of the \href{https://jds2024.sciencesconf.org/resource/page/id/7}{Organizing Comittee for the 55\textsuperscript{th} annual conference \textit{``Journées de Statistique''} of the French Statistical Society (SFdS)} in 2024}{}{}{}{}
-\cventry{2023}{Member of the Scientific Comittee for the \href{https://cnc23.sciencesconf.org/}{9\textsuperscipt{th} Channel Network Conference in Wageningen}}{}{}{}{}
+\cventry{2023}{Member of the Scientific Comittee for the \href{https://cnc23.sciencesconf.org/}{9\textsuperscript{th} Channel Network Conference in Wageningen}}{}{}{}{}
 \cventry{2021--present}{French Biometric Society correspondant to the Channel Network region of the International Biometrics Society}{}{}{}{}
 \cventry{2019--present}{Member of the Bureau of the French Biometric Society \textnormal{\textsf{\textit{(Société Française de Biométrie)}}} \--- webmaster}{}{}{}{}
 \cventry{2017--present}{Organizer of the Biostatistics Seminar series from the Public Health Department of Bordeaux University \textnormal{\textsf{(biweekly)}}}{}{}{}{}
