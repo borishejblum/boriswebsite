@@ -15,15 +15,15 @@ slug: teach
 
 ### Doctoral training
 
- * [Bayesian methods in biomedical research](https://bayesbiomed.borishejblum.science) --- *University of Copenhagen* (2019 -- 2024)
- * [endeav`r fontawesome::fa("r-project")`: *code efficiency and software development with* `r fontawesome::fa("r-project")`](https://endeavr.borishejblum.science) -- *Université de Bordeaux* (2018, 2022, 2023)  
+ * [Bayesian methods in biomedical research](https://bayesbiomed.borishejblum.science) --- *University of Copenhagen* (2019 -- 2025)
+ * [endeav`r fontawesome::fa("r-project")`: *code efficiency and software development with* `r fontawesome::fa("r-project")`](https://endeavr.borishejblum.science) -- *Université de Bordeaux* (2018, 2022, 2023,2025)  
     + [`r fontawesome::fa("r-project")` codes](https://github.com/borishejblum/mypkgr/archive/refs/tags/v2022.tar.gz)
     + French version: [`r fontawesome::fa("r-project")` **avancé :** *outils de développement et de performance*](https://r-dev-perf.borishejblum.science)
 
 ### International Summer School -- [ISPED](http://www.isped.u-bordeaux.fr/Formation/Ecoled%C3%A9t%C3%A9.aspx)/[Bordeaux School of Public Health](http://bss-publichealth.u-bordeaux.fr/en/Program/Course-n-1-Statistical-analysis-of-big-data-linked-to-immunology-systems/r742.html)
   
-  * [Science des Données avec R : Visualisation, Organisation et Reproductibilité (SAVOR)](/teaching_subfolders/savor) (2024)
-  * [Bayesian Methods](https://bayesee.borishejblum.science) (2018, 2024)
+  * [Science des Données avec R : Visualisation, Organisation et Reproductibilité (SAVOR)](/teaching_subfolders/savor) (2024 -- 2025)
+  * [Bayesian Methods](https://bayesee.borishejblum.science) (2018, 2024, 2025)
   * [BAsics for DAta Science with R](/teaching_subfolders/badas) (2019)
   * Statistical analysis of big data linked to immunology systems (2017, 2019)
 
