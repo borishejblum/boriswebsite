@@ -7,7 +7,7 @@ active = true
 date = 2016-04-20
 
 title = "Selected Publications"
-subtitle = ""
+subtitle = "more publications [here 👉🌐](https://borishejblum.science/publication/)"
 
 # Order that this section will appear in.
 weight = 10
@@ -29,5 +29,7 @@ list_format = 2
 #  5: Book
 #  6: Book chapter
 publication_type = "-1"
+
+
 +++
 

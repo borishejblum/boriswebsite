@@ -30,7 +30,7 @@ abstract_short = "In vaccine trials with long-term participant follow-up, it is 
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = "https://arxiv.org/pdf/2502.08547"

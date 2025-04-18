@@ -30,7 +30,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = "https://onlinelibrary.wiley.com/share/author/I5MVU2BFUERMWHBGJWQG?target=10.1002/wics.1535"

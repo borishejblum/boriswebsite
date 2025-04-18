@@ -30,7 +30,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional).
 url_pdf = "https://www.medrxiv.org/content/10.1101/2021.07.09.21260259v3.full.pdf"
