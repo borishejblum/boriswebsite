@@ -44,6 +44,13 @@ library(readxl)
 library(httr)
 ```
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue
+    }
+
 # Research experience
 
 ```{r research xp}
