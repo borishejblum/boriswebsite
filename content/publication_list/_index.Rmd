@@ -14,7 +14,7 @@ library(dplyr)
 ```
 
 ```{r pubs.bib, eval=TRUE}
-bibfiles <-list.files("../../static/files/citations/")
+bibfiles <- list.files("../../static/files/citations/")
 bibfiles <- grep("*.bib$", bibfiles, value = TRUE)
 
 biblist <- list()
@@ -110,6 +110,8 @@ for(y in years){
       ce <- c(1,2)
     }else if(ref$DOI %in% c("10.1016/j.isci.2021.102711")){
       ce <- c(2,3)
+    }else if(ref$DOI %in% c("10.1002/ijc.35441")){
+      ce <- c(1,2,3)
     }
     biblio[i] <- bibitem_print(ref, contribeq = ce)
     

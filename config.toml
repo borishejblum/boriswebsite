@@ -6,7 +6,7 @@
 baseurl = "/"
 
 # Title of your site
-title = "Research Side Effects"
+title = "Boris Hejblum"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -50,8 +50,8 @@ defaultContentLanguageInSubdir = false
   font = "perso"
 
   # Your details.
-  name = "Research Side Effects"
-  role = "Statistics, Life, Science and Data as come across by Boris Hejblum"
+  name = "Boris Hejblum personal website"
+  role = "Statistics, Life, Science and Data"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -295,11 +295,6 @@ defaultContentLanguageInSubdir = false
   name = "CV"
   url = "/cv"
   weight = 7
-
-[[menu.main]]
-  name = "Blog"
-  url = "/post"
-  weight = 8
 
 [[menu.main]]
   name = "Alumni"

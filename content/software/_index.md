@@ -211,4 +211,4 @@ An **R package** to perform *accurate estimation of vaccine induced cellular imm
 <br />
 <br />
 
-*All illustrations (except `CytOpt`) by Jérôme Dubois.*
+*All illustrations (except `CytOpt` and `crossurr`) by Jérôme Dubois.*
