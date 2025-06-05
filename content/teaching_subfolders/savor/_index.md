@@ -6,7 +6,7 @@ date: '2024-06-06'
 
 Voici le matériel pour le cours de *Science des données Avec R : Visualisation, Organisation et Reproductibilité (SAVOR)* à l'**École d'été de l'ISPED** 2024 :
 
- - Diaporamas : <a href="/html/savor/SAVOR_slides_1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_slides_2.html" target="_blank">Partie II</a> | <a href="/html/savor/SAVOR_slides_3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_slides_4.html" target="_blank">Partie IV</a>
+ - Diaporamas : <a href="/html/savor/SAVOR_slides1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_slides2.html" target="_blank">Partie II</a> | <a href="/html/savor/SAVOR_slides3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_slidess4.html" target="_blank">Partie IV</a>
  
  - Travaux dirigés : 
     * <a href="/html/savor/SAVOR_practical1.html" target="_blank">Partie I</a> | <a href="/html/savor/SAVOR_practical3.html" target="_blank">Partie III</a> | <a href="/html/savor/SAVOR_practical4.html" target="_blank">Partie IV</a>
