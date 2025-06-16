@@ -326,12 +326,14 @@ rbind.data.frame(
 ```
 
 
-
+```{r, echo=FALSE, eval=FALSE}
 # Active international research collaborations 
 
 \cvline{}{\textbf{Denis Agniel}, \textit{Rand Corporation, Statistics group}, Santa Monica (CA, USA), Associate Statistician.}
 \cvline{}{\textbf{Tianxi Cai}, \textit{Harvard TH Chan School of Public Health, Department of Biostatistics}, Boston (MA, USA),  Professor.}
 \cvline{}{\textbf{Layla Parast}, \textit{University of Texas at Austin}, Austin (TX, USA), Associate Professor.}
+```
+
 
 
 # Outreach activities
