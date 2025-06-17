@@ -439,21 +439,6 @@ cat(biblio, sep = "\n\n")
 
 \bigskip
 
-\textcolor{sectiontitlecolor}{\large{$\triangleright$ Preprints:}}\medskip
-
-
-```{r preprints, eval=TRUE, , results='asis'}
-temp <- bibliography_entries("CV.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) %>% 
-  filter(type == "article-journal" & `container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints"))
-o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
-biblio <- character(nrow(temp))
-for(i in 1:nrow(temp)){biblio[i] <- bibitem_print(temp[o[i], ])}
-cat(biblio, sep = "\n\n")
-```
-
-\bigskip
-
 \textcolor{sectiontitlecolor}{\large{$\triangleright$ Published or in press:}} \textsf{\textcolor{black}{\small (* indicates equal contibution)}}\medskip
 
 
