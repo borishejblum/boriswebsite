@@ -240,6 +240,7 @@ $\hspace{2.46cm}\circ$ Solène Delhaye (2017 -- 2019: 100%)
 
 \cvline{2011}{\textbf{Recipient} of a Ph.D. grant from the \href{http://www.ehesp.fr/en/}{EHESP} (\textit{\'Ecole des Hautes \'Etudes en Sant\'e Publique}, Rennes, France) \--- ranked 1$^{\textsf{st}}$.}
 
+\newpage
 
 # Patents
 
@@ -247,9 +248,6 @@ $\hspace{2.46cm}\circ$ Solène Delhaye (2017 -- 2019: 100%)
 
 \cvline{2020}{Invention patent WO2021058914A1/FR1910515 (inventor 1/7\textsuperscript{th})\newline \small Prediction of the content of omega-3 polyunsaturated fatty acids in the retina by measuring 7 cholesterol ester molecules}
 
-
-
-\newpage
 
 # Research expertise
 
