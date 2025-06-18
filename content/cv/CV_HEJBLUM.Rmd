@@ -375,6 +375,7 @@ rbind.data.frame(
 # Scientific evaluation
 \cventry{2024-2025}{Member of the ANRS-MIE CSS13 (``\textit{Recherches cliniques}'')}{}{}{}{}
 \cventry{2024-2025}{Expert reviewer for the ANR in CE45 (``\textit{Interfaces : mathématiques, sciences du numérique \--- biologie, santé}'') and CE23 (``\textit{Intelligence artificielle et science des données}'')}{}{}{}{}
+\cventry{2024}{Reviewer of the \href{https://theses.fr/2024TLSES199}{PhD thesis of Nicolas Enjalbert-Courrech}, \textit{Université de Toulouse}}{}{}{}{}
 \cventry{2023-2024}{Reviewer for the MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
 \cventry{2023}{Member of the Scientific Committee for the CNC23 9\textsuperscript{th} Channel Netwok Conference of the International Biometric Society 2023}{}{}{}{}
 \cventry{2021}{Member of the PhD defense committee of Shaima Belhechmi, \textit{Université Paris-Saclay}}{}{}{}{}
@@ -456,9 +457,8 @@ cat(biblio, sep = "\n\n")
 
 \bigskip
 
+
 \textcolor{sectiontitlecolor}{\large{$\triangleright$ Published or in press:}} \textsf{\textcolor{black}{\small (* indicates equal contibution)}}\medskip
-
-
 
 ```{r pubs, eval=TRUE, results='asis'}
 temp <- bibliography_entries("CV.bib") %>%
