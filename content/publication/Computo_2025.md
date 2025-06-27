@@ -45,7 +45,8 @@ url_source = "https://github.com/computorg/published-202505-ferte-reservoirnet"
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Code", url = "https://github.com/computorg/published-202505-ferte-reservoirnet"}, {name = "Article", url = "https://computo-journal.org/published-202505-ferte-reservoirnet/"}]
+url_custom = [{name = "Code", url = "https://github.com/computorg/published-202505-ferte-reservoirnet"}, 
+{name = "Article", url = "https://computo-journal.org/published-202505-ferte-reservoirnet/"}]
 
 
 # Does the content use math formatting?
