@@ -17,8 +17,8 @@ authors = ["T Ferté", "K Ba", "D Dutartre", "P Legrand", "V Jouhet", "R Thiéba
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Computo*, June 2025"
-publication_short = "*Computo*, June 2025"
+publication = "*Computo*"
+publication_short = "*Computo*"
 
 doi ="10.57750/arxn-6z34"
 
