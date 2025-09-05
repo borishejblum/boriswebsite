@@ -20,6 +20,9 @@ slug: publications
    * Ferté T, Ba K, Dutartre D, Legrand P, Jouhet V, Thiébaut R, Hinaut X & <u>**Hejblum BP**</u>. Reservoir Computing in R: A Tutorial for Using reservoirnet to Predict Complex Time-Series. *Computo*, 2025.   
 DOI: [10.57750/arxn-6z34](https://doi.org/10.57750/arxn-6z34)  
 
+   * Bigot J, Freulon P, <u>**Hejblum BP**</u> & Leclaire A. On the potential benefits of entropic regularization for smoothing wasserstein estimators. *Electronic Journal of Statistics* in press, 2025.   
+DOI: [10.48550/arXiv.2210.06934](https://doi.org/10.48550/arXiv.2210.06934)  
+
    * Chouleur T&#42;, Etchegaray C&#42;, Villain L&#42;, Lesur A, Ferté T, Rossi M, Andrique L, Simoncini C, Giacobbi A, Gambaretti M, Lopci E, Fernades B, Dittmar G, Bjerkvig R, <u>**Hejblum B**</u>, Thiébaut R, Saut O, Bello L & Bikfalvi A. A strategy for multimodal integration of transcriptomics, proteomics, and radiomics data for the prediction of recurrence in patients with IDH-mutant gliomas. *International Journal of Cancer* 157(3):573-587, 2025.   
 DOI: [10.1002/ijc.35441](https://doi.org/10.1002/ijc.35441)  
 
@@ -65,9 +68,6 @@ DOI: [10.1016/j.celrep.2023.113101](https://doi.org/10.1016/j.celrep.2023.113101
 DOI: [10.1016/j.jbspin.2023.105607](https://doi.org/10.1016/j.jbspin.2023.105607)
 
 # **2022**
-
-   * Bigot J, Freulon P, <u>**Hejblum BP**</u> & Leclaire A. On the potential benefits of entropic regularization for smoothing wasserstein estimators. *arXiv* 2210.06934, 2022.   
-DOI: [10.48550/arXiv.2210.06934](https://doi.org/10.48550/arXiv.2210.06934)  
 
    * Ferté T, Jouhet V, Greffier R, <u>**Hejblum BP**</u> & Thiébaut R. The benefit of augmenting open data with clinical data-warehouse EHR for forecasting SARS-CoV-2 hospitalizations in Bordeaux area, France. *JAMIA open* ooac086, 2022.   
 DOI: [10.1093/jamiaopen/ooac086](https://doi.org/10.1093/jamiaopen/ooac086)  
