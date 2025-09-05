@@ -20,8 +20,8 @@ slug: publications
    * Ferté T, Ba K, Dutartre D, Legrand P, Jouhet V, Thiébaut R, Hinaut X & <u>**Hejblum BP**</u>. Reservoir Computing in R: A Tutorial for Using reservoirnet to Predict Complex Time-Series. *Computo*, 2025.   
 DOI: [10.57750/arxn-6z34](https://doi.org/10.57750/arxn-6z34)  
 
-   * Bigot J, Freulon P, <u>**Hejblum BP**</u> & Leclaire A. On the potential benefits of entropic regularization for smoothing wasserstein estimators. *Electronic Journal of Statistics* in press, 2025.   
-DOI: [10.48550/arXiv.2210.06934](https://doi.org/10.48550/arXiv.2210.06934)  
+   * Bigot J, Freulon P, <u>**Hejblum BP**</u> & Leclaire A. On the potential benefits of entropic regularization for smoothing wasserstein estimators. *Electronic Journal of Statistics* 19(2):3867-3894, 2025.   
+DOI: [10.1214/25-EJS2430](https://doi.org/10.1214/25-EJS2430)  
 
    * Chouleur T&#42;, Etchegaray C&#42;, Villain L&#42;, Lesur A, Ferté T, Rossi M, Andrique L, Simoncini C, Giacobbi A, Gambaretti M, Lopci E, Fernades B, Dittmar G, Bjerkvig R, <u>**Hejblum B**</u>, Thiébaut R, Saut O, Bello L & Bikfalvi A. A strategy for multimodal integration of transcriptomics, proteomics, and radiomics data for the prediction of recurrence in patients with IDH-mutant gliomas. *International Journal of Cancer* 157(3):573-587, 2025.   
 DOI: [10.1002/ijc.35441](https://doi.org/10.1002/ijc.35441)  
