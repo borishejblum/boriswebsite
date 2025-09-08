@@ -29,8 +29,8 @@ DOI: [10.1002/ijc.35441](https://doi.org/10.1002/ijc.35441)
    * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data. *arXiv* 2502.08547, 2025.   
 DOI: [10.48550/arXiv.2502.08547](https://doi.org/10.48550/arXiv.2502.08547)  
 
-   * Hughes A, Parast L, Thiébaut R & <u>**Hejblum BP**</u>. Rank-based identification of high-dimensional surrogate markers: Application to vaccinology. *arXiv* 2502.03030, 2025.   
-DOI: [10.48550/arXiv.2502.03030](https://doi.org/10.48550/arXiv.2502.03030)
+   * Hughes A, Parast L, Thiébaut R & <u>**Hejblum BP**</u>. RISE: Two-stage rank-based identification of high-dimensional surrogate markers applied to vaccinology. *Statistics in Medicine* 44(20-22):e70241, 2025.   
+DOI: [10.1002/sim.70241](https://doi.org/10.1002/sim.70241)
 
 # **2024**
 
@@ -107,7 +107,7 @@ DOI: [10.1016/j.ophtha.2020.08.031](https://doi.org/10.1016/j.ophtha.2020.08.031
    * Philipps V, <u>**Hejblum BP**</u>, Prague M, Commenges D & Proust-Lima C. Robust and efficient optimization using a marquardt- levenberg algorithm with r package marqLevAlg. *The R Journal* 13(2):365-379, 2021.   
 DOI: [10.32614/RJ-2021-089](https://doi.org/10.32614/RJ-2021-089)  
 
-   * Villain L, Ferté T, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome with the generalized berk-jones statistic. *bioRxiv* 2021.09.07.459329, 2021.   
+   * Villain L, Ferté T, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome with the generalized berk­-jones statistic. *bioRxiv* 2021.09.07.459329, 2021.   
 DOI: [10.1101/2021.09.07.459329](https://doi.org/10.1101/2021.09.07.459329)  
 
    * Lin L & <u>**Hejblum BP**</u>. Bayesian mixture models for cytometry data analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* 13:e1535, 2021.   
