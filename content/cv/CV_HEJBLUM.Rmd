@@ -214,7 +214,7 @@ $\hspace{2.46cm}\circ$ Solène Delhaye (2017 -- 2019: 100%)
 
 \cvline{2022-2026}{\textbf{Work-Package leader} \textit{Réseau de Recherche Impulsion} "Public Health Data Science", \textit{Université de Bordeaux}.}
 
-\cvline{2016-2024}{\textbf{Participant} ANRS LabEx Programme ``Vaccine Research Institite''~(VRI).}
+\cvline{2016-2026}{\textbf{Participant} ANRS LabEx Programme ``Vaccine Research Institite''~(VRI).}
 
 \cvline{2023-2027}{\textbf{Task leader} PEPR \textit{Santé Numérique}, axis ``Statistical and AI based Methods for Advanced clinical Trials Challenges in digital Health'' (funding 1 PhD student).}
 
@@ -374,8 +374,12 @@ rbind.data.frame(
 
 # Scientific evaluation
 \cventry{2024-2025}{Member of the ANRS-MIE CSS13 (``\textit{Recherches cliniques}'')}{}{}{}{}
-\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}Statistique, exposome et santé environnementale
+\cventry{2025}{Member of the Strategic Comittee for the Inserm Cloud \textit{Comité d’orientation stratégique et de suivi de la trajectoire}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Comittee for the \href{https://conferences.cirm-math.fr/3344.html}{``Mathematics of Single-Cell Data-Analysis'' reserch school at C.I.R.M.}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Comittee for the conference on ``Statistics, exposome and environmental health'' in Rennes}{}{}{}{}
 \cventry{2024-2025}{Expert reviewer for the ANR in CE45 (``\textit{Interfaces : mathématiques, sciences du numérique \--- biologie, santé}'') and CE23 (``\textit{Intelligence artificielle et science des données}'')}{}{}{}{}
+\cventry{2025}{Expert reviewer for the ``DIM1HEALTH 2.0'' call}{}{}{}{}
 \cventry{2024}{Reviewer of the \href{https://theses.fr/2024TLSES199}{PhD thesis of Nicolas Enjalbert-Courrech}, \textit{Université de Toulouse}}{}{}{}{}
 \cventry{2023-2024}{Reviewer for the MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
 \cventry{2023}{Member of the Scientific Comittee for the \href{https://cnc23.sciencesconf.org/}{9\textsuperscript{th} Channel Network Conference in Wageningen (Netherland)}}{}{}{}{}
@@ -386,8 +390,8 @@ rbind.data.frame(
 \cventry{2019}{Invited member of the \href{https://theses.hal.science/tel-03415718}{PhD defense committee of Soufiane Ajana}, \textit{Université de Bordeaux}}{}{}{}{}
 
 # Editorial activities
-\cventry{2025}{Reproducible Research Editor for the \emph{Biometrical Journal}}{}{}{}{}
-\cventry{2025}{Associate Editor for \emph{Biometrics}}{}{}{}{}
+\cventry{2025 \-- present}{Reproducible Research Editor for the \emph{Biometrical Journal}}{}{}{}{}
+\cventry{2025 \-- present}{Associate Editor for \emph{Biometrics}}{}{}{}{}
 
 
 # Reviewer for international peer-reviewed scientific journals
@@ -414,6 +418,7 @@ rbind.data.frame(
 
 # Academic responsibilities
 
+\cventry{2022--2024}{Organizer of the yearly datathon for the \href{https://rri-phds-ub.github.io/}{``Public Health Data Science'' reserach network from the University of Bordeaux}}{}{}{}{}
 \cventry{2023--2024}{Member of the \href{https://jds2024.sciencesconf.org/resource/page/id/7}{Organizing Comittee for the 55\textsuperscript{th} annual conference \textit{``Journées de Statistique''} of the French Statistical Society (SFdS)} in 2024}{}{}{}{}
 \cventry{2021--present}{French Biometric Society correspondant to the Channel Network region of the International Biometrics Society}{}{}{}{}
 \cventry{2019--present}{Member of the Bureau of the French Biometric Society \textnormal{\textsf{\textit{(Société Française de Biométrie)}}} \--- webmaster}{}{}{}{}
@@ -453,6 +458,20 @@ for(i in 1:nrow(temp)){biblio[i] <- bookitem_print(temp[o[i], ])}
 cat(biblio, sep = "\n\n")
 ```
 
+\bigskip
+
+
+\textcolor{sectiontitlecolor}{\large{$\triangleright$ Preprints:}}\medskip
+
+```{r preprints, eval=TRUE, , results='asis'}
+temp <- bibliography_entries("CV.bib") %>%
+  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) %>% 
+  filter(type == "article-journal" & `container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints"))
+o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
+biblio <- character(nrow(temp))
+for(i in 1:nrow(temp)){biblio[i] <- bibitem_print(temp[o[i], ])}
+cat(biblio, sep = "\n\n")
+```
 
 \bigskip
 
