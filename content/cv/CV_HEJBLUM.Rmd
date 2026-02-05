@@ -373,8 +373,9 @@ rbind.data.frame(
 
 
 # Scientific evaluation
+\cventry{2026}{Member of the Scientific Comittee for the \href{https://www.lebesgue.fr/fr/StatExpoHealth26}{\textit{Statistique, exposome et santé environnementale} conférence in Rennes (France)}}{}{}{}{}
 \cventry{2024-2025}{Member of the ANRS-MIE CSS13 (``\textit{Recherches cliniques}'')}{}{}{}{}
-\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}Statistique, exposome et santé environnementale
+\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}
 \cventry{2025}{Member of the Strategic Comittee for the Inserm Cloud \textit{Comité d’orientation stratégique et de suivi de la trajectoire}}{}{}{}{}
 \cventry{2025}{Member of the Scientific Comittee for the \href{https://conferences.cirm-math.fr/3344.html}{``Mathematics of Single-Cell Data-Analysis'' reserch school at C.I.R.M.}}{}{}{}{}
 \cventry{2025}{Member of the Scientific Comittee for the conference on ``Statistics, exposome and environmental health'' in Rennes}{}{}{}{}
