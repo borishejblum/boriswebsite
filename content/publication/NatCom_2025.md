@@ -1,6 +1,6 @@
 +++
-title = "Representation Learning to Advance Multi-institutional Studies with Electronic Health Record Data"
-date = "2025-02-12"
+title = "GAME: Self-supervised Graph Alignment for Multi-institutional Electronic Health Records Data"
+date = "2026-01-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffier", "<u>**B Hejblum**</u>", "Y-C Liu", "C Hong", "C-L Bonzel", "T Cai", "K Pan", "Y-L Ho", "L Costa", "VA Panickan", "JM Gaziano", "K Mandl", "V Jouhet", "R Thiebaut", "Z Xia", "K Cho", "K Liao", "T Cai"]
@@ -17,8 +17,8 @@ authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffie
 publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
-publication = "*arXiv* 2502.08547"
-publication_short = "*arXiv* 2502.08547"
+publication = "*Nature Communications*, *in press*"
+publication_short = "*Nature Communications*, *in press*"
 
 doi ="10.48550/arXiv.2502.08547"
 
