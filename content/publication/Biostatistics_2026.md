@@ -3,7 +3,7 @@ title = "Adaptive Dirichlet Process mixture model with unknown concentration par
 date = "2026-01-30"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["A Pal", "A Mimoun, "R Thiébaut", "<u>**BP Hejblum**</u>"]
+authors = ["A Pal", "A Mimoun", "R Thiébaut", "<u>**BP Hejblum**</u>"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized
