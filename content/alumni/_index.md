@@ -7,10 +7,11 @@ slug: alumni
 
 ## Current PhD students
 
- - Kalidou Ba  ([since 2022](https://theses.fr/s349491))
- - Arthur Hughes  ([since 2023](https://theses.fr/s370773))
- - Annesh Pal ([since 2024](https://theses.fr/s371051))
+ - Kalidou Ba ([since 2022](https://theses.fr/s349491))
+ - [Arthur Hughes](https://arthurhughes27.github.io/)  ([since 2023](https://theses.fr/s370773))
+ - [Annesh Pal](https://annesh07.github.io/anneshpal/) ([since 2024](https://theses.fr/s371051))
  - Sara Fallet ([since 2024](https://theses.fr/s398058))
+ - Alice Simon ([since 2025](https://theses.fr/s420039))
 
 ## Former students
 
@@ -37,7 +38,7 @@ slug: alumni
  - Marine Gauthier [<i class="fa fa-linkedin-square" aria-hidden="true"></i>](https://www.linkedin.com/in/marine-gauthier-epoch/)
  - Benjamin Hivert [<i class="fa fa-linkedin-square" aria-hidden="true"></i>](https://www.linkedin.com/in/benjamin-hivert-55a532187/)
  - Arthur Hughes [<i class="fa fa-linkedin-square" aria-hidden="true"></i>](https://www.linkedin.com/in/arthur-hughes-4a63a6243/)
- 
+ - Theodora Georgakopoulou [<i class="fa fa-linkedin-square" aria-hidden="true"></i>](https://www.linkedin.com/in/theodora-georgakopoulou-a331ba25b)
 
 #### First year Masters
  
