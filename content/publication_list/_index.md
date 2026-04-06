@@ -20,11 +20,11 @@ slug: publications
    * Pal A, Mimoun A, Thiebaut R & <u>**Hejblum BP**</u>. Adaptive dirichlet process mixture model with unknown concentration parameter and variance: Scaling high dimensional clustering via collapsed variational inference. *arXiv* 2601.21106, 2026.   
 DOI: [10.48550/2601.21106](https://doi.org/10.48550/2601.21106)  
 
-   * Thiébaut R, Lhomme E, Hocini H, Pellegrin I, Boizard-Moracchini A, Duvignaud A, Perpère M, Huchon M, Prague M, Lacabaratz C, Surenaud M, Anglaret X, Malvy D, <u>**Hejblum B**</u>, group C & Levy Y. Self-collected finger-prick blood for gene expression profiling: Unveiling early immune responses in mild COVID-19. *iScience* 29(2):114593, 2026.   
+   * Thiébaut R, Lhomme E, Hocini H, Pellegrin I, Boizard-Moracchini A, Duvignaud A, Perpère M, Huchon M, Prague M, Lacabaratz C, Surenaud M, Anglaret X, Malvy D, <u>**Hejblum BP**</u>, Lévy Y, COVERAGE study group. Self-collected finger-prick blood for gene expression profiling: Unveiling early immune responses in mild COVID-19. *iScience* 29(2):114593, 2026.   
 DOI: [10.1016/j.isci.2025.114593](https://doi.org/10.1016/j.isci.2025.114593)  
 
-   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. GAME: Self-supervised graph alignment for multi-institutional electronic health records data. *Nature Communications* in press, 2026.   
-DOI: [10.48550/arXiv.2502.08547](https://doi.org/10.48550/arXiv.2502.08547)
+   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data from US and france. *Nature Communications* in press, 2026.   
+DOI: [10.1038/s41467-026-71152-1](https://doi.org/10.1038/s41467-026-71152-1)
 
 # **2025**
 
