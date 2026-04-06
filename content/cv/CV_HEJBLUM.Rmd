@@ -512,13 +512,13 @@ all_conf <- readxl::read_xlsx("AllConferences_Seminar_Presentation_Summary.xlsx"
 
 all_conf$`author list` <- sapply(all_conf$`author list`, function(x){gsub("Hejblum B", "\\ul{Hejblum B}", x, fixed=TRUE)})
 
-all_conf <- all_conf %>% mutate(when = paste(Country, Year),
+all_conf <- all_conf |> mutate(when = paste(Country, Year),
          what = paste0(`author list`, ", ", `talk title`, ", \\textit{", `Conf full title`, "}, ", Location)) 
 
 all_conf[all_conf$Invited==1, "when"] <- sapply(all_conf[all_conf$Invited==1, "when"], function(x){paste0(x, "*")})
 all_conf$when <- sapply(all_conf$when, function(x){paste0("\\mbox{", x, "}")})
 
-all_conf %>% filter(Selected==1 & Poster==0) %>% 
+all_conf |> filter(Selected==1 & Poster==0) |> 
 vitae::brief_entries(what = what,
                      when = when,
                      .protect=FALSE)
