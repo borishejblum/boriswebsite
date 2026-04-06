@@ -59,7 +59,7 @@ tibble::tribble(
   "\\textbf{Research Assistant} (Masters intern), Inserm U897 \\textit{Biostatistics team}, Bordeaux (France).\\newline \\small{Development of dynamic statistical models applied to the epidemiology of myocardial infarction}", "Apr.--Sept. 2011", "",
  "\\textbf{Statistician Assistant} (Masters intern), \\textit{AltraBio} (start-up in biotechnologies), Lyon (France).\\newline \\small{Analysis of transcriptomics data of preclinical trials}", "May--Jul. 2011", "",
  
-) %>% 
+) |> 
   vitae::brief_entries(what = Degree, when = Year, with = Institution, .protect = FALSE)
 ```
 
@@ -76,7 +76,7 @@ tibble::tribble(
  "\\textbf{Bachelor of Science (B.Sc.) in Mathematics} (\\textit{licence de mathématiques}), Pierre and Marie Curie University -- Paris 6 (UPMC), Paris (France)", "2009", "\\small{In conjunction with studies at ENSAI (dual curriculum, remote learning).}",
   "\\textbf{Post-Secondary Preparatory Classes} (\\textit{Classes Préparatoires aux Grandes Écoles -- CPGE}), Lycée Hoche, Versailles (France)", "2006--2008", "\\small{University-level courses required in preparation for competitive exams into top universities, engineering, and graduate schools (France's \\textit{Grandes Écoles}). Major in Mathematics and Physics.}",
    "\\textbf{High school diploma}, Lycée Richelieu, Rueil-Malmaison (France)", "2006", "\\small{With high honors.}"
-) %>% 
+) |> 
   vitae::brief_entries(what = Degree, when = Year, with = Institution, .protect = FALSE)
 ```
 
@@ -337,7 +337,7 @@ rbind.data.frame(
                         desc = "longitudinal gene-expression data from microarrays at the gene set level", 
                         GH_rep = "borishejblum/TcGSA",
                         year=2014, role="Creator \\& maintainer")
-) %>% 
+) |> 
   vitae::brief_entries(what = Package, when = Year, .protect = FALSE)
 ```
 
@@ -451,8 +451,8 @@ writeLines(unlist(biblist), con="CV.bib")
 \textcolor{sectiontitlecolor}{\large{$\triangleright$ Books:}}\medskip
 
 ```{r books, eval=TRUE, results='asis'}
-temp <- bibliography_entries("CV.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -`title-short`) %>% 
+temp <- bibliography_entries("CV.bib") |>
+  select(-ISSN, -PMCID, -PMID, -`title-short`) |> 
   filter(type == "book")
 o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
 biblio <- character(nrow(temp))
@@ -466,8 +466,8 @@ cat(biblio, sep = "\n\n")
 \textcolor{sectiontitlecolor}{\large{$\triangleright$ Preprints:}}\medskip
 
 ```{r preprints, eval=TRUE, , results='asis'}
-temp <- bibliography_entries("CV.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) %>% 
+temp <- bibliography_entries("CV.bib") |>
+  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) |> 
   filter(type == "article-journal" & `container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints"))
 o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
 biblio <- character(nrow(temp))
@@ -481,8 +481,8 @@ cat(biblio, sep = "\n\n")
 \textcolor{sectiontitlecolor}{\large{$\triangleright$ Published or in press:}} \textsf{\textcolor{black}{\small (* indicates equal contibution)}}\medskip
 
 ```{r pubs, eval=TRUE, results='asis'}
-temp <- bibliography_entries("CV.bib") %>%
-  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) %>% 
+temp <- bibliography_entries("CV.bib") |>
+  select(-ISSN, -PMCID, -PMID, -ISBN, -`title-short`, -publisher) |> 
   filter(type == "article-journal" & !(`container-title` %in% c("arXiv", "bioRxiv", "medRxiv", "Preprints")))
 o <- order(as.numeric(format(as.Date(temp$issued), "%Y")), decreasing = TRUE)
 biblio <- character(nrow(temp))
@@ -529,7 +529,7 @@ vitae::brief_entries(what = what,
 ## $\triangleright$ Written communications
 
 ```{r posters}
-all_conf %>% filter(Selected==1 & Poster==1) %>% 
+all_conf |> filter(Selected==1 & Poster==1) |> 
 vitae::brief_entries(what = what,
                      when = when,
                      .protect=FALSE)
