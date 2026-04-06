@@ -1,6 +1,6 @@
 +++
-title = "GAME: Self-supervised Graph Alignment for Multi-institutional Electronic Health Records Data"
-date = "2026-01-01"
+title = "Representation learning to advance multi-institutional studies with electronic health record data from US and France"
+date = "2026-04-03"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffier", "<u>**B Hejblum**</u>", "Y-C Liu", "C Hong", "C-L Bonzel", "T Cai", "K Pan", "Y-L Ho", "L Costa", "VA Panickan", "JM Gaziano", "K Mandl", "V Jouhet", "R Thiebaut", "Z Xia", "K Cho", "K Liao", "T Cai"]
@@ -14,17 +14,17 @@ authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffie
 # 5 = Book
 # 6 = Book chapter
 # 7 = Preprint
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Nature Communications*, *in press*"
 publication_short = "*Nature Communications*, *in press*"
 
-doi ="10.48550/arXiv.2502.08547"
+doi ="10.1038/s41467-026-71152-1"
 
 # Abstract and optional shortened version.
-abstract = "In vaccine trials with long-term participant follow-up, it is of great importance to identify surrogate markers that accurately infer long-term immune responses. These markers offer practical advantages such as providing early, indirect evidence of vaccine efficacy, and can accelerate vaccine development while identifying potential biomarkers. High-throughput technologies like RNA-sequencing have emerged as promising tools for understanding complex biological systems and informing new treatment strategies. However, these data are high-dimensional, presenting unique statistical challenges for existing surrogate marker identification methods. We introduce Rank-based Identification of high-dimensional SurrogatE Markers (RISE), a novel approach designed for small sample, high-dimensional settings typical in modern vaccine experiments. RISE employs a non-parametric univariate test to screen variables for promising candidates, followed by surrogate evaluation on independent data. Our simulation studies demonstrate RISE's desirable properties, including type one error rate control and empirical power under various conditions. Applying RISE to a clinical trial for inactivated influenza vaccination, we sought to identify genes whose post-vaccination expression could serve as a surrogate for the induced immune response. This analysis revealed a signature of genes whose combined expression at 1 day post-injection appears to be a reasonable surrogate for the neutralising antibody titres at 28 days after vaccination. Pathways related to innate antiviral signalling and interferon stimulation were strongly represented in this derived surrogate, providing a clear immunological interpretation."
-abstract_short = "In vaccine trials with long-term participant follow-up, it is of great importance to identify surrogate markers that accurately infer long-term immune responses. These markers offer practical advantages such as providing early, indirect evidence of vaccine efficacy, and can accelerate vaccine development while identifying potential biomarkers. High-throughput technologies like RNA-sequencing have emerged as promising tools for understanding complex biological systems and informing new treatment strategies. However, these data are high-dimensional, presenting unique statistical challenges for existing surrogate marker identification methods. We introduce Rank-based Identification of high-dimensional SurrogatE Markers (RISE), a novel approach designed for small sample, high-dimensional settings typical in modern vaccine experiments. RISE employs a non-parametric univariate test to screen variables for promising candidates, followed by surrogate evaluation on independent data. Our simulation studies demonstrate RISE's desirable properties, including type one error rate control and empirical power under various conditions. Applying RISE to a clinical trial for inactivated influenza vaccination, we sought to identify genes whose post-vaccination expression could serve as a surrogate for the induced immune response. This analysis revealed a signature of genes whose combined expression at 1 day post-injection appears to be a reasonable surrogate for the neutralising antibody titres at 28 days after vaccination. Pathways related to innate antiviral signalling and interferon stimulation were strongly represented in this derived surrogate, providing a clear immunological interpretation."
+abstract = "The widespread adoption of electronic health records has created new opportunities for translational clinical research, yet this promise remains constrained by fragmented data across privacy-siloed institutions and substantial heterogeneity in local coding practices. While privacy-preserving collaborative learning allows institutions to work together without sharing patient-level data, it does not address inconsistencies in how clinical concepts are represented across sites. We introduce a graph-based framework that addresses this gap by treating data harmonization as a scalable representation learning problem. Rather than relying on fixed standards or manual mappings, the framework integrates institution-specific summary statistics from health records, curated biomedical knowledge graphs, and semantic information derived from large language models to learn a shared semantic space. This joint learning approach aligns diverse, site-specific vocabularies while preserving patient privacy. Evaluated across seven institutions and two languages, the framework provides a robust, data-centric foundation for training and deploying clinical models across heterogeneous healthcare systems."
+abstract_short = "The widespread adoption of electronic health records has created new opportunities for translational clinical research, yet this promise remains constrained by fragmented data across privacy-siloed institutions and substantial heterogeneity in local coding practices. While privacy-preserving collaborative learning allows institutions to work together without sharing patient-level data, it does not address inconsistencies in how clinical concepts are represented across sites. We introduce a graph-based framework that addresses this gap by treating data harmonization as a scalable representation learning problem. Rather than relying on fixed standards or manual mappings, the framework integrates institution-specific summary statistics from health records, curated biomedical knowledge graphs, and semantic information derived from large language models to learn a shared semantic space. This joint learning approach aligns diverse, site-specific vocabularies while preserving patient privacy. Evaluated across seven institutions and two languages, the framework provides a robust, data-centric foundation for training and deploying clinical models across heterogeneous healthcare systems."
 
 # Featured image thumbnail (optional)
 image_preview = ""
@@ -34,7 +34,7 @@ selected = false
 
 # Links (optional).
 url_pdf = "https://arxiv.org/pdf/2502.08547"
-url_preprint = "https://doi.org/10.48550/arXiv.2502.08547"
+url_preprint = "https://doi.org/10.1038/s41467-026-71152-1"
 url_code = ""
 url_dataset = ""
 url_project = ""
