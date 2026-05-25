@@ -71,5 +71,6 @@ slug: teach
   * STA101 Tests Statistiques (2016 -- 2018)
   
 ### DU *Public Health Data Science* -- ISPED, Université de Bordeaux
-  * [Tools for a Reproducible, Shareable & Communicable Science](/files/repro_DUphds.html) (2026 -- ...)
+  * [Tools for a Reproducible, Shareable & Communicable Science 🇬🇧](/files/repro_DUphds.html) [🇫🇷](/files/repro_DUphds_FR.html) (2026 -- ...)  
+
 
