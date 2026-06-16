@@ -1,6 +1,6 @@
 +++
 title = "Representation learning to advance multi-institutional studies with electronic health record data from US and France"
-date = "2026-04-03"
+date = "2026-05-29"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffier", "<u>**B Hejblum**</u>", "Y-C Liu", "C Hong", "C-L Bonzel", "T Cai", "K Pan", "Y-L Ho", "L Costa", "VA Panickan", "JM Gaziano", "K Mandl", "V Jouhet", "R Thiebaut", "Z Xia", "K Cho", "K Liao", "T Cai"]
@@ -17,8 +17,8 @@ authors = ["D Zhou", "H Tong", "L Wang", "S Liu", "X Xiong", "Z Gan", "R Griffie
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Nature Communications*, *in press*"
-publication_short = "*Nature Communications*, *in press*"
+publication = "*Nature Communications* 17:4800"
+publication_short = "*Nat Commun* 17:4800"
 
 doi ="10.1038/s41467-026-71152-1"
 
