@@ -17,14 +17,23 @@ slug: publications
 
 # **2026**
 
+   * Ferté T, Villain L, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome: Comparison of a new approach based on the generalized berk–jones statistic with existing methods in presence of intra gene-set correlation. *Briefings in Bioinformatics* 27(3):bbag262, 2026.   
+DOI: [10.1093/bib/bbag262](https://doi.org/10.1093/bib/bbag262)  
+
    * Pal A, Mimoun A, Thiebaut R & <u>**Hejblum BP**</u>. Adaptive dirichlet process mixture model with unknown concentration parameter and variance: Scaling high dimensional clustering via collapsed variational inference. *arXiv* 2601.21106, 2026.   
 DOI: [10.48550/2601.21106](https://doi.org/10.48550/2601.21106)  
 
    * Thiébaut R, Lhomme E, Hocini H, Pellegrin I, Boizard-Moracchini A, Duvignaud A, Perpère M, Huchon M, Prague M, Lacabaratz C, Surenaud M, Anglaret X, Malvy D, <u>**Hejblum BP**</u>, Lévy Y, COVERAGE study group. Self-collected finger-prick blood for gene expression profiling: Unveiling early immune responses in mild COVID-19. *iScience* 29(2):114593, 2026.   
 DOI: [10.1016/j.isci.2025.114593](https://doi.org/10.1016/j.isci.2025.114593)  
 
-   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data from US and france. *Nature Communications* in press, 2026.   
-DOI: [10.1038/s41467-026-71152-1](https://doi.org/10.1038/s41467-026-71152-1)
+   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data from US and france. *Nature Communications* 17:4800, 2026.   
+DOI: [10.1038/s41467-026-71152-1](https://doi.org/10.1038/s41467-026-71152-1)  
+
+   * Hornung R, Németh L, Zadorozhnyi O, Ullmann T, Kammer M, Killick R, Paciorek C, Chiquet J, Herrmann M, Batinović L, Carlsson R, Neuvial P, <u>**Hejblum B**</u>, Wrobel J, Boulesteix A & Tabelow K. Overcoming barriers to computational reproducibility. *Royal Society Open Science* 13(6):252489, 2026.   
+DOI: [10.1098/rsos.252489](https://doi.org/10.1098/rsos.252489)  
+
+   * Lévy Y, Moog C, Wiedemann A, Launay O, Candotti F, Hardel L, Durand M, <u>**Hejblum BP**</u>, Rieux V, Diallo A, Lacabaratz C, Cardinaud S, Zurawski S, Zurawski G, Tomaras GD, Ding S, Centlivre M, Thiebaut R, Pantaleo G, Lelièvre J, Richert L, ANRS VRI06 Study Group. CD40.HIVEnv, an antibody mediated vaccine, induces long-term and recall immunogenicity in non-HIV-1 infected volunteers. *Scientific Report*, 2026.   
+DOI: [10.1038/s41598-026-52363-4](https://doi.org/10.1038/s41598-026-52363-4)
 
 # **2025**
 
@@ -114,9 +123,6 @@ DOI: [10.1016/j.ophtha.2020.08.031](https://doi.org/10.1016/j.ophtha.2020.08.031
 
    * Philipps V, <u>**Hejblum BP**</u>, Prague M, Commenges D & Proust-Lima C. Robust and efficient optimization using a marquardt- levenberg algorithm with r package marqLevAlg. *The R Journal* 13(2):365-379, 2021.   
 DOI: [10.32614/RJ-2021-089](https://doi.org/10.32614/RJ-2021-089)  
-
-   * Villain L, Ferté T, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome with the generalized berk­-jones statistic. *bioRxiv* 2021.09.07.459329, 2021.   
-DOI: [10.1101/2021.09.07.459329](https://doi.org/10.1101/2021.09.07.459329)  
 
    * Lin L & <u>**Hejblum BP**</u>. Bayesian mixture models for cytometry data analysis. *Wiley Interdisciplinary Reviews: Computational Statistics* 13:e1535, 2021.   
 DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
