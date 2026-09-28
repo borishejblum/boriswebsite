@@ -17,6 +17,8 @@ slug: publications
 
 # **2026**
 
+   * Ferté T, Thevenet V, Hinaut X, Legrand P, Griffier R, Dutartre D, Jouhet V, <u>**Hejblum BP**</u> & Thiébaut R. Epidemic forecasting: Lessons learned from the SARS-CoV-2 pandemic to balance accuracy, feasibility, and impact. *NA* in press, 2026.   
+
    * Ferté T, Villain L, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome: Comparison of a new approach based on the generalized berk–jones statistic with existing methods in presence of intra gene-set correlation. *Briefings in Bioinformatics* 27(3):bbag262, 2026.   
 DOI: [10.1093/bib/bbag262](https://doi.org/10.1093/bib/bbag262)  
 
@@ -32,7 +34,7 @@ DOI: [10.1038/s41467-026-71152-1](https://doi.org/10.1038/s41467-026-71152-1)
    * Hornung R, Németh L, Zadorozhnyi O, Ullmann T, Kammer M, Killick R, Paciorek C, Chiquet J, Herrmann M, Batinović L, Carlsson R, Neuvial P, <u>**Hejblum B**</u>, Wrobel J, Boulesteix A & Tabelow K. Overcoming barriers to computational reproducibility. *Royal Society Open Science* 13(6):252489, 2026.   
 DOI: [10.1098/rsos.252489](https://doi.org/10.1098/rsos.252489)  
 
-   * Lévy Y, Moog C, Wiedemann A, Launay O, Candotti F, Hardel L, Durand M, <u>**Hejblum BP**</u>, Rieux V, Diallo A, Lacabaratz C, Cardinaud S, Zurawski S, Zurawski G, Tomaras GD, Ding S, Centlivre M, Thiebaut R, Pantaleo G, Lelièvre J, Richert L, ANRS VRI06 Study Group. CD40.HIVEnv, an antibody mediated vaccine, induces long-term and recall immunogenicity in non-HIV-1 infected volunteers. *Scientific Report*, 2026.   
+   * Lévy Y, Moog C, Wiedemann A, Launay O, Candotti F, Hardel L, Durand M, <u>**Hejblum BP**</u>, Rieux V, Diallo A, Lacabaratz C, Cardinaud S, Zurawski S, Zurawski G, Tomaras GD, Ding S, Centlivre M, Thiebaut R, Pantaleo G, Lelièvre J, Richert L, ANRS VRI06 Study Group. CD40.HIVEnv, an antibody mediated vaccine, induces long-term and recall immunogenicity in non-HIV-1 infected volunteers. *Scientific Report* 16:24659, 2026.   
 DOI: [10.1038/s41598-026-52363-4](https://doi.org/10.1038/s41598-026-52363-4)
 
 # **2025**
