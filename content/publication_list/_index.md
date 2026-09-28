@@ -22,8 +22,14 @@ slug: publications
    * Ferté T, Villain L, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome: Comparison of a new approach based on the generalized berk–jones statistic with existing methods in presence of intra gene-set correlation. *Briefings in Bioinformatics* 27(3):bbag262, 2026.   
 DOI: [10.1093/bib/bbag262](https://doi.org/10.1093/bib/bbag262)  
 
-   * Pal A, Mimoun A, Thiebaut R & <u>**Hejblum BP**</u>. Adaptive dirichlet process mixture model with unknown concentration parameter and variance: Scaling high dimensional clustering via collapsed variational inference. *arXiv* 2601.21106, 2026.   
+   * Ba K, Thiébaut R, Hinaut X & <u>**Hejblum BP**</u>. When less is not more: DICEPro mitigates the impact of incomplete reference matrices on cellular frequency deconvolution. *bioRxiv* 2026.06.17.732876, 2026.   
+DOI: [10.64898/2026.06.17.732876](https://doi.org/10.64898/2026.06.17.732876)  
+
+   * Pal A, Mimoun A, Thiébaut R & <u>**Hejblum BP**</u>. Adaptive dirichlet process mixture model with unknown concentration parameter and variance: Scaling high dimensional clustering via collapsed variational inference. *arXiv* 2601.21106, 2026.   
 DOI: [10.48550/2601.21106](https://doi.org/10.48550/2601.21106)  
+
+   * Hughes A, Parast L, Thiébaut R & <u>**Hejblum BP**</u>. Meta-analysis of high-dimensional surrogate markers. *arXiv* 2605.03819, 2026.   
+DOI: [10.48550/2605.03819](https://doi.org/10.48550/2605.03819)  
 
    * Thiébaut R, Lhomme E, Hocini H, Pellegrin I, Boizard-Moracchini A, Duvignaud A, Perpère M, Huchon M, Prague M, Lacabaratz C, Surenaud M, Anglaret X, Malvy D, <u>**Hejblum BP**</u>, Lévy Y, COVERAGE study group. Self-collected finger-prick blood for gene expression profiling: Unveiling early immune responses in mild COVID-19. *iScience* 29(2):114593, 2026.   
 DOI: [10.1016/j.isci.2025.114593](https://doi.org/10.1016/j.isci.2025.114593)  
