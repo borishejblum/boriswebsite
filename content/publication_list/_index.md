@@ -17,7 +17,7 @@ slug: publications
 
 # **2026**
 
-   * Ferté T, Thevenet V, Hinaut X, Legrand P, Griffier R, Dutartre D, Jouhet V, <u>**Hejblum BP**</u> & Thiébaut R. Epidemic forecasting: Lessons learned from the SARS-CoV-2 pandemic to balance accuracy, feasibility, and impact. *NA* in press, 2026.   
+   * Ferté T, Thevenet V, Hinaut X, Legrand P, Griffier R, Dutartre D, Jouhet V, <u>**Hejblum BP**</u> & Thiébaut R. Epidemic forecasting: Lessons learned from the SARS-CoV-2 pandemic to balance accuracy, feasibility, and impact. *American Journal of Epidemiology* in press, 2026.   
 
    * Ferté T, Villain L, Thiébaut R & <u>**Hejblum BP**</u>. Gene set analysis for time-to-event outcome: Comparison of a new approach based on the generalized berk–jones statistic with existing methods in presence of intra gene-set correlation. *Briefings in Bioinformatics* 27(3):bbag262, 2026.   
 DOI: [10.1093/bib/bbag262](https://doi.org/10.1093/bib/bbag262)  
