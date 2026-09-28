@@ -27,7 +27,7 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
 * * *
 
-An **R package** to perform *conditional independence testing using empirical conditional cumulative distribution function estimations for single-cell RNA-seq differential expression analysis*. Available on [GitHub](https://github.com/sistm/citcdf).
+An **R package** to perform *conditional independence testing using empirical conditional cumulative distribution function estimations for single-cell RNA-seq differential expression analysis*. Available on [CRAN](https://CRAN.R-project.org/package=citcdf), development version available on [GitHub](https://github.com/sistm/citcdf).
 
 <br />
 <br />
@@ -58,6 +58,18 @@ An **R package** to perform *Automatic gating and annotation of cytometry data*.
 <br />
 <br />
 
+
+## `crossurr`<img src='/files/hexstickers/crossurr.png' align="right" width="82" />
+
+* * *
+
+An **R package** that implements *cross-fitting for doubly robust evaluation of high-dimensional surrogate markers*. Available on [CRAN](https://CRAN.R-project.org/package=crossurr), development version available on [GitHub](https://github.com/denisagniel/crossurr).
+
+<br />
+<br />
+<br />
+<br />
+
 ## `dearseq`<img src='/files/hexstickers/dearseq.svg' align="right" width="90" />
 
 * * *
@@ -70,11 +82,12 @@ An **R package** to perform ***D**ifferential **E**xpression **A**nalysis for **
 <br />
 <br />
 
-## `crossurr`<img src='/files/hexstickers/crossurr.png' align="right" width="82" />
+## `dicepro` 
 
 * * *
+  
+An **R package** to perform *Semi-Supervised Deconvolution of Bulk RNA-Seq Data with Hyperparameter Optimization*. Available on  [CRAN](https://CRAN.R-project.org/package=dicepro), development version on [GitHub](https://github.com/kalidouBA/dicepro).
 
-An **R package** that implements *cross-fitting for doubly robust evaluation of high-dimensional surrogate markers*. Available on [CRAN](https://CRAN.R-project.org/package=crossurr), development version available on [GitHub](https://github.com/denisagniel/crossurr).
 
 <br />
 <br />
@@ -200,7 +213,17 @@ An **R package** to perform *gene set analysis of longitudinal RNA-seq data with
 * * *
 
 An **R package** to perform *accurate estimation of vaccine induced cellular immunogenicity with bivariate linear modeling*. Available on [CRAN](https://CRAN.R-project.org/package=vici), development version on [GitHub](https://github.com/borishejblum/vici).
+  
+<br />
+<br />
+<br />
+<br />
 
+## `vimixr` 
+
+* * *
+
+An **R package** to perform *collapsed Variational Inference for DPMM using adaptive inference on the DP concentration parameter as well as covariance hyper-parameter of DP base distribution*. Available on [CRAN](https://CRAN.R-project.org/package=vimixr), development version on [GitHub](https://github.com/annesh07/vimixr).
   
 <br />
 <br />
