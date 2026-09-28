@@ -383,17 +383,20 @@ rbind.data.frame(
 
 
 # Scientific evaluation
-\cventry{2026}{Member of the Scientific Comittee for the \href{https://www.lebesgue.fr/fr/StatExpoHealth26}{\textit{Statistique, exposome et santé environnementale} conférence in Rennes (France)}}{}{}{}{}
-\cventry{2024-2025}{Member of the ANRS-MIE CSS13 (``\textit{Recherches cliniques}'')}{}{}{}{}
-\cventry{2025}{Member of the Scientific Comittee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}
-\cventry{2025}{Member of the Strategic Comittee for the Inserm Cloud \textit{Comité d’orientation stratégique et de suivi de la trajectoire}}{}{}{}{}
-\cventry{2025}{Member of the Scientific Comittee for the \href{https://conferences.cirm-math.fr/3344.html}{``Mathematics of Single-Cell Data-Analysis'' reserch school at C.I.R.M.}}{}{}{}{}
-\cventry{2025}{Member of the Scientific Comittee for the conference on ``Statistics, exposome and environmental health'' in Rennes}{}{}{}{}
+NWO, the 
+
+\cventry{2026}{Expert reviewer for the Dutch Research Council NWO, Open Competition Domain Science - M call}{}{}{}{}
+\cventry{2026}{Member of the Scientific Committee for the \href{https://www.lebesgue.fr/fr/StatExpoHealth26}{\textit{Statistique, exposome et santé environnementale} conférence in Rennes (France)}}{}{}{}{}
+\cventry{2024-2026}{Member of the ANRS-MIE CSS13 (``\textit{Recherches cliniques}'')}{}{}{}{}
+\cventry{2025}{Member of the Scientific Committee for the \href{https://cnc25.sciencesconf.org/}{10\textsuperscript{th} Channel Network Conference in Liège (Belgium)}}{}{}{}{}
+\cventry{2025}{Member of the Strategic Committee for the Inserm Cloud \textit{Comité d’orientation stratégique et de suivi de la trajectoire}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Committee for the \href{https://conferences.cirm-math.fr/3344.html}{``Mathematics of Single-Cell Data-Analysis'' reserch school at C.I.R.M.}}{}{}{}{}
+\cventry{2025}{Member of the Scientific Committee for the conference on ``Statistics, exposome and environmental health'' in Rennes}{}{}{}{}
 \cventry{2024-2025}{Expert reviewer for the ANR in CE45 (``\textit{Interfaces : mathématiques, sciences du numérique \--- biologie, santé}'') and CE23 (``\textit{Intelligence artificielle et science des données}'')}{}{}{}{}
 \cventry{2025}{Expert reviewer for the ``DIM1HEALTH 2.0'' call}{}{}{}{}
 \cventry{2024}{Reviewer of the \href{https://theses.fr/2024TLSES199}{PhD thesis of Nicolas Enjalbert-Courrech}, \textit{Université de Toulouse}}{}{}{}{}
 \cventry{2023-2024}{Reviewer for the MESSIDORE project call from Inserm IReSP ``Méthodologie des ESSais cliniques Innovants, Dispositifs, Outils et Recherches Exploitant les données de santé et biobanques''}{}{}{}{}
-\cventry{2023}{Member of the Scientific Comittee for the \href{https://cnc23.sciencesconf.org/}{9\textsuperscript{th} Channel Network Conference in Wageningen (Netherland)}}{}{}{}{}
+\cventry{2023}{Member of the Scientific Committee for the \href{https://cnc23.sciencesconf.org/}{9\textsuperscript{th} Channel Network Conference in Wageningen (Netherland)}}{}{}{}{}
 \cventry{2021}{Member of the \href{https://theses.fr/2021UPASR010}{PhD defense committee of Shaima Belhechmi}, \textit{Université Paris-Saclay}}{}{}{}{}
 \cventry{2021}{Reviewer for the \textit{ANRT}}{(\textit{Association Nationale de la Recherche Technologique})}{}{}{}
 \cventry{2021}{Member of the Scientific Committee for the 42\textsuperscript{nd} ISCB conference}{}{}{}{}
