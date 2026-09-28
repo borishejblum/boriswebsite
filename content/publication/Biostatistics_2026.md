@@ -1,9 +1,9 @@
 +++
-title = "Adaptive Dirichlet Process mixture model with unknown concentration parameter and variance: Scaling high dimensional clustering via collapsed variational inference"
-date = "2026-01-30"
+title = "Meta-Analysis of High-Dimensional Surrogate Markers"
+date = "2026-05-05"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["A Pal", "A Mimoun", "R Thiébaut", "<u>**BP Hejblum**</u>"]
+authors = ["A Hughes", "R Thiébaut", "L Parast", "<u>**BP Hejblum**</u>"]
 # Publication type.
 # Legend:
 # 0 = Uncategorized
@@ -17,24 +17,24 @@ authors = ["A Pal", "A Mimoun", "R Thiébaut", "<u>**BP Hejblum**</u>"]
 publication_types = ["7"]
 
 # Publication name and optional abbreviated version.
-publication = "*arXiv* 2601.21106"
-publication_short = "*arXiv* 2601.21106"
+publication = "*arXiv* 2605.03819"
+publication_short = "*arXiv* 2605.03819"
 
 doi ="arXiv.2601.21106"
 
 # Abstract and optional shortened version.
-abstract = "We propose a novel method that performs adaptive clustering with DPMM using collapsed VI, while incorporating weakly-informative priors for DP concentration parameter alpha and base distribution G0. We illustrate the importance of G0 covariance structure and prior choice by considering different parameterisations of the data covariance matrix. On high-dimensional Gaussian simulations, our model demonstrates substantially faster convergence than a state-of-the-art MCMC splice sampler. We further evaluate performances on Negative Binomial simulations and conduct sensitivity analyses to assess robustness on realistic data conditions. Application to a publicly available leukemia transcriptomic data set comprising 72 samples and 2,194 gene expression successfully recovers every known sub-type, all while identifying additional gene expression-based sub-clusters with meaningful biological interpretation."
+abstract = "When direct measurement of a clinically relevant primary endpoint in a clinical trial is infeasible, a surrogate endpoint may be used instead to infer treatment effects. Trial-level surrogates predict the average treatment effect on the primary endpoint and may be evaluated within the meta-analytic framework. However, traditional methods are ill-suited to the complex high-dimensional data now increasingly collected in modern trials, such as omics data. Although methods for high-dimensional surrogate evaluation exist, they have largely been developed for single-trial settings and therefore cannot assess surrogate generalisability. Here, we propose RISE-Meta, an approach for evaluating trial-level surrogate markers in the multi-trial, high-dimensional setting. In the first stage, an existing nonparametric method is applied to individual participant data to derive study-level surrogacy metrics for each candidate marker. Next, random-effects meta-analysis combines these metrics across studies, and equivalence testing provides operational criteria for surrogate validity. Finally, a subset of candidates is combined into a composite signature through a weighting scheme to improve surrogacy relative to any individual candidate. We evaluate RISE-Meta in both simulation studies and real data applications. In an application to high-dimensional data, we analyse gene expression as trial-level surrogate markers for the antibody response to seasonal influenza vaccination, while in a low-dimensional application we compare RISE-Meta to a reference meta-analytic approach and observe strong agreement between the two."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Links (optional).
-url_pdf = "https://arxiv.org/pdf/2601.21106"
-url_preprint = "https://doi.org/10.48550/arXiv.2601.21106"
+url_pdf = "https://arxiv.org/pdf/2605.03819"
+url_preprint = "https://doi.org/10.48550/arXiv.2605.03819"
 url_code = ""
 url_dataset = ""
 url_project = ""
@@ -45,7 +45,7 @@ url_source = ""
 
 # Custom links (optional).
 # Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-#url_custom = [{name = "Article", url = ""}, {name = "R package", url = "https://CRAN.R-project.org/package=vimixr"}]
+#url_custom = [{name = "Article", url = ""}, {name = "R package", url = "https://CRAN.R-project.org/package=SurrogateRank"}]
 
 
 # Does the content use math formatting?
