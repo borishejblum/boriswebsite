@@ -10,7 +10,7 @@ title = "Boris Hejblum"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2024"
+copyright = "&copy; 2026"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -60,13 +60,13 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "bh.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "boris.hejblum@u-bordeaux.fr"
-  address = "Bureau 29 NB, ISPED - Université de Bordeaux, 146 rue Léo Saignat, 33076 Bordeaux"
+  address = "Bureau S320, Bordeaux Population Health, Université de Bordeaux, 146 rue Léo Saignat, 33076 Bordeaux"
   office_hours = ""
   phone = ""
   skype = ""
   telegram = ""
   #twitter = "borishej"
-  bluesky = "borishej"
+  bluesky = "borishejblum.science"
   googlescholar = "xU72YmYAAAAJ"
   googlescholarname = "Boris P. Hejblum"
   github = "borishejblum"

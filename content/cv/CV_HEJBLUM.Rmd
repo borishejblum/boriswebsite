@@ -96,7 +96,7 @@ $\circ$~ omics data analysis (graduate class, 20h per year)\\
 $\circ$~ data visualization (undergraduate class, 4h)
 }
 
-\cventry{\mbox{2021 \-- present}}{Master in numerical sciences \& bio-health}{}{École Centrale Nantes (France)}{}{
+\cventry{\mbox{2021 \-- 2026}}{Master in numerical sciences \& bio-health}{}{École Centrale Nantes (France)}{}{
 $\circ$~ Statistical learning in high-dimension (graduate class, 2h per year)
 }
 
@@ -126,6 +126,10 @@ $\circ$~ R software (undergraduate class 9h)\\
 ## Postdoctoral researchers
 
 \small
+$\hspace{2.46cm}\circ$ Gauthier Thurin (2026 -- ...: 100%)
+
+$\hspace{2.46cm}\circ$ Emily Hsiao (2026 -- ...: 100%)
+
 $\hspace{2.46cm}\circ$ Laura Villain (2019 -- 2021: 100%)
 
 $\hspace{2.46cm}\circ$ Hung Van Tran (2019: 50%)\medskip
@@ -134,13 +138,17 @@ $\hspace{2.46cm}\circ$ Hung Van Tran (2019: 50%)\medskip
 ## Ph.D. students 
 
 \small
-$\hspace{2.46cm}\circ$ Sara Fallet (2024 -- ...: 50%)
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s439133}{Quentin Laval-Vilvandre} (2026 -- ...: 50%)
 
-$\hspace{2.46cm}\circ$ Annesh Pal (2023 -- ...: 100%)
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s420039}{Alice Simon} (2025 -- ...: 50%)
 
-$\hspace{2.46cm}\circ$ Arthur Hughes (2023 -- ...: 50%)
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s398058}{Sara Fallet} (2024 -- ...: 50%)
 
-$\hspace{2.46cm}\circ$ Kalidou Ba (2022 -- ...: 50%)
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s371051}{Annesh Pal} (2023 -- ...: 100%)
+
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s370773}{Arthur Hughes} (2023 -- 2026 (scheduled): 50%)
+
+$\hspace{2.46cm}\circ$ \href{https://theses.fr/s349491}{Kalidou Ba} (2022 -- 2026 (scheduled): 50%)
 
 $\hspace{2.46cm}\circ$ \href{https://theses.fr/2024BORD0171}{Benjamin Hivert} (2020 -- 2024: 50%)
 
@@ -157,7 +165,7 @@ $\hspace{2.46cm}\circ$ Stephanie Chan (2016: 15%)
 ## Engineers
 
 \small
-$\hspace{2.46cm}\circ$ Quentin Laval (2024 -- ...: 100%)
+$\hspace{2.46cm}\circ$ Quentin Laval (2024 -- 2026: 100%)
 
 $\hspace{2.46cm}\circ$ Mélanie Huchon (2021 -- 2025: 100%)
 
@@ -165,15 +173,17 @@ $\hspace{2.46cm}\circ$ Clément Nerestan (2019 -- 2021: 100%)
 
 $\hspace{2.46cm}\circ$ Mélanie Durand (2019 -- 2022: 100%)
 
-$\hspace{2.46cm}\circ$ Solène Delhaye (2017 -- 2019: 100%)
+$\hspace{2.46cm}\circ$ Solène Delahaye (2017 -- 2019: 100%)
 \medskip
 
 \normalsize  
 ## Interns
 
   \small
+
+  $\hspace{2.46cm}\circ$ Roaya Jannatipour (M2 internship 2026: 100%)
   
-  $\hspace{2.46cm}\circ$ Theodora Georgakopoulou Vigneras (M2 internship 2025: 50%)
+  $\hspace{2.46cm}\circ$ Theodora Georgakopoulou (M2 internship 2025: 100%)
   
   $\hspace{2.46cm}\circ$ Alarig Vigneras (M1 internship 2024: 50%)
   
