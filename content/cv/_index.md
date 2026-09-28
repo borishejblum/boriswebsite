@@ -2,10 +2,9 @@
 title: Curriculum Vitae
 author: Boris Hejblum
 date: '2017-04-27'
-slug: cv
 ---
 
-My CV in <a href="CV_HEJBLUM.pdf" target="_blank"> pdf format `r emoji::emoji("save")`</a>  
+My CV in <a href="CV_HEJBLUM.pdf" target="_blank"> pdf format 💾</a>  
 
 <html>
 <body>
