@@ -222,33 +222,33 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
+    icon = "fa-envelope"
+    icon_pack = "fa-solid"
     link = "mailto:boris.hejblum@u-bordeaux.fr"
 
   [[params.social]]
-    icon = "bluesky"
-    icon_pack = "fa"
-    link = "https://bsky.app/profile/borishej"
+    icon = "fa-bluesky"
+    icon_pack = "fa-brands"
+    link = "https://bsky.app/profile/borishejblum.science"
 
   [[params.social]]
-    icon = "google-scholar"
+    icon = "ai-google-scholar"
     icon_pack = "ai"
     link = "https://scholar.google.com/citations?sortby=pubdate&hl=fr&user=xU72YmYAAAAJ&view_op=list_works"
 
   [[params.social]]
-    icon = "orcid"
+    icon = "ai-orcid"
     icon_pack = "ai"
     link = "https://orcid.org/0000-0003-0646-452X"
 
   [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
+    icon = "fa-github"
+    icon_pack = "fa-brands"
     link = "//github.com/borishejblum"
 
   [[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
+    icon = "fa-linkedin"
+    icon_pack = "fa-brands"
     link = "https://fr.linkedin.com/pub/boris-hejblum/38/34b/879/en"
 
 
