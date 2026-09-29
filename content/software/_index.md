@@ -8,7 +8,7 @@ slug: software
 
 <img width="95" src='/files/shinyhex_small.png'>
 
-## `VICI`<img src='/files/hexstickers/VICI.svg' align="right" width="90" /> 
+## [`VICI`<img src='/files/hexstickers/VICI.svg' align="right" width="90" /> ](https://shiny-vici.apps.math.cnrs.fr/)
   
 * * *
 
@@ -23,7 +23,7 @@ A **Shiny app** to perform *for accurate estimation of vaccine induced cellular 
 
   <img width="95" src='/files/Rlogo.png'>
 
-## `citcdf`<img src='/files/hexstickers/citcdf.svg' align="right" width="90" />
+## [`citcdf`<img src='/files/hexstickers/citcdf.svg' align="right" width="90" />](https://sistm.github.io/citcdf/)
 
 * * *
 
@@ -34,7 +34,7 @@ An **R package** to perform *conditional independence testing using empirical co
 <br />
 <br />
 
-## `CytOpT`<img src='/files/hexstickers/CytOpT.png' align="right" width="80" />
+## [`CytOpT`<img src='/files/hexstickers/CytOpT.png' align="right" width="80" />](https://sistm.github.io/CytOpT-R/)
 
 * * *
 
@@ -46,7 +46,7 @@ An **R package** to perform *Optimal transport for gating transfer in cytometry 
 <br />
 <br />
 
-## `cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="90" />
+## [`cytometree`<img src='/files/hexstickers/cytometree.svg' align="right" width="90" />](https://sistm.github.io/cytometree/)
 
 * * *
 
@@ -70,7 +70,7 @@ An **R package** that implements *cross-fitting for doubly robust evaluation of 
 <br />
 <br />
 
-## `dearseq`<img src='/files/hexstickers/dearseq.svg' align="right" width="90" />
+## [`dearseq`<img src='/files/hexstickers/dearseq.svg' align="right" width="90" />](https://borishejblum.github.io/dearseq/)
 
 * * *
   
@@ -106,7 +106,7 @@ An **R package** to perform *Food Network Inference and Visualization* developed
 <br />
 <br />
 
-## `ludic`<img src='/files/hexstickers/ludic.svg' align="right" width="90" />
+## [`ludic`<img src='/files/hexstickers/ludic.svg' align="right" width="90" />](https://borishejblum.github.io/ludic/)
 
 * * *
  
@@ -130,7 +130,7 @@ An **R package** to perform *(parallelized) optimization of convex multiparametr
 <br />
 <br />
 
-## `NPflow`<img src='/files/hexstickers/NPflow.svg' align="right" width="90" />
+## [`NPflow`<img src='/files/hexstickers/NPflow.svg' align="right" width="90" />](https://sistm.github.io/NPflow/)
 
 * * *
 
@@ -172,7 +172,7 @@ on [GitHub](https://github.com/lauravillain/sGBJ).
 <br />
 <br />
 
-## `kernscr`
+## [`kernscr`](https://borishejblum.github.io/kernscr/)
 
 * * *
 
@@ -184,7 +184,7 @@ An **R package** to perform *KERNel machine score test for pathway analysis in t
 <br />
 <br />
 
-## `TcGSA` 
+## [`TcGSA`](https://sistm.github.io/TcGSA/)
 
 * * *
 
@@ -200,7 +200,7 @@ An **R package** to *analyze longitudinal gene-expression data at the gene set l
 
 * * *
 
-An **R package** to perform *gene set analysis of longitudinal RNA-seq data with variance component score test, accounting for data heteroscedasticity through precision weights*. Available on [CRAN](https://CRAN.R-project.org/package=tcgsaseq), development version on [GitHub](https://github.com/denisagniel/tcgsaseq).
+An **R package** to perform *gene set analysis of longitudinal RNA-seq data with variance component score test, accounting for data heteroscedasticity through precision weights*. Superseded by [`dearseq`](software/#dearseq) and **no longer maintained**. Archive version available on [GitHub](https://github.com/denisagniel/tcgsaseq).
  
   
 <br />
@@ -219,7 +219,7 @@ An **R package** to perform *accurate estimation of vaccine induced cellular imm
 <br />
 <br />
 
-## `vimixr` 
+## [`vimixr`](https://annesh07.github.io/vimixr/) 
 
 * * *
 
