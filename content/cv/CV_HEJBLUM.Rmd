@@ -277,7 +277,27 @@ $\hspace{2.46cm}\circ$ Solène Delahaye (2017 -- 2019: 100%)
 ```{r softs}
 rbind.data.frame(
 
-  GH_Rpackage_display(name = "citcdf", 
+  CRAN_Rpackage_display(name = "clusteringRF", 
+                      desc = "implementing Random Forests of Divisive Monothetic (divclust) Trees for Unsupervised Clustering", 
+                      GH_rep = "sistm/clusteringRF",
+                      year=2026, role="Co-creator"),
+ 
+  CRAN_Rpackage_display(name = "dicepro", 
+                      desc = "performing Semi-Supervised Deconvolution of Bulk RNA-Seq Data with Hyperparameter Optimization", 
+                      GH_rep = "kalidouba/dicepro",
+                      year=2026, role="Co-creator \\& maintainer"),
+  
+  CRAN_Rpackage_display(name = "reservoir-net", 
+                      desc = "implementing Reservoir Computing and Echo State Networks in R", 
+                      GH_rep = "reservoirpy/reservoirR",
+                      year=2026, role="Co-creator"),
+   
+  CRAN_Rpackage_display(name = "vimixr", 
+                      desc = "implementing Collapsed Variational Inference for Dirichlet Process (DP) Mixture Model scalable in high-dimension", 
+                      GH_rep = "annesh07/vimixr",
+                      year=2026, role="Co-creator"),
+  
+  CRAN_Rpackage_display(name = "citcdf", 
                       desc = "performing Conditional Independence Testing Through Conditional Cumulative Distribution Function Estimation", 
                       GH_rep = "sistm/citcdf",
                       year=2023, role="Co-creator \\& maintainer"),
