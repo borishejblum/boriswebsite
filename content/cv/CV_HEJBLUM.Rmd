@@ -250,8 +250,6 @@ $\hspace{2.46cm}\circ$ Solène Delahaye (2017 -- 2019: 100%)
 
 \cvline{2011}{\textbf{Recipient} of a Ph.D. grant from the \href{http://www.ehesp.fr/en/}{EHESP} (\textit{\'Ecole des Hautes \'Etudes en Sant\'e Publique}, Rennes, France) \--- ranked 1$^{\textsf{st}}$.}
 
-\newpage
-
 # Patents
 
 \cvline{2021}{Invention patent EP20306527/WO2022122959A1 (inventor 1/5\textsuperscript{th})\newline \small Use of cd177 as biomarker of worsening in patients suffering from covid-19 }
@@ -401,6 +399,8 @@ rbind.data.frame(
 \cvline{2012 \mbox{(1 month)}}{\href{http://www.benaroyaresearch.org/what-is-bri/scientists-and-laboratories/principal-scientist-labs/chaussabel-laboratory}{\textbf{Benaroya Research Institute}, Chaussabel Laboratory}, Seattle (WA, USA) \small \newline invited by Damien Chaussabel, Director of Systems Immunology.}
 \cvline{2011 \mbox{(1 month)}}{\href{http://www.baylorhealth.edu/Research/InstitutesCenters/BIIR/Pages/default.aspx}{\textbf{Baylor Institute for Immunology Research}}, Dallas (TX, USA).}
 
+
+\newpage
 
 # Scientific evaluation
 
