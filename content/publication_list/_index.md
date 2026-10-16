@@ -126,7 +126,7 @@ DOI: [10.1093/jamia/ocab187](https://doi.org/10.1093/jamia/ocab187)
    * Ferté T, Cossin S, Schaeverbeke T, Barnetche T, Jouhet V & <u>**Hejblum BP**</u>. Automatic phenotyping of electronical health record: PheVis algorithm. *Journal of Biomedical Informatics* 117:103746, 2021.   
 DOI: [10.1016/j.jbi.2021.103746](https://doi.org/10.1016/j.jbi.2021.103746)  
 
-   * Ajana S, Cougnard-Grégoire A, Colijn J, Merle BM, Verzijden T, Jong P, Hofman A, EYE-RISK Consortium, Vingerling J, <u>**Hejblum BP**</u>, Korobelnik J, Meester-Smoor M, Jacqmin-Gadda H, Klaver C, Delcourt C. Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning. *Ophthalmology* 128(4):587-597, 2021.   
+   * Ajana S, Cougnard-Grégoire A, Colijn J, Merle BM, Verzijden T, de Jong P, Hofman A, EYE-RISK Consortium, Vingerling J, <u>**Hejblum BP**</u>, Korobelnik J, Meester-Smoor M, Jacqmin-Gadda H, Klaver C, Delcourt C. Predicting progression to advanced age-related macular degeneration from clinical, genetic and lifestyle factors using machine learning. *Ophthalmology* 128(4):587-597, 2021.   
 DOI: [10.1016/j.ophtha.2020.08.031](https://doi.org/10.1016/j.ophtha.2020.08.031)  
 
    * Philipps V, <u>**Hejblum BP**</u>, Prague M, Commenges D & Proust-Lima C. Robust and efficient optimization using a marquardt- levenberg algorithm with r package marqLevAlg. *The R Journal* 13(2):365-379, 2021.   
@@ -140,7 +140,7 @@ DOI: [10.1002/wics.1535](https://doi.org/10.1002/wics.1535)
    * <u>**Hejblum BP**</u>, Kunzmann K, Lavagnini E, Hutchinson A, Robertson DS, Jones SC & Eckes-Shephard AH. Realistic and robust reproducible research for biostatistics. *Preprints* 2020060002, 2020.   
 DOI: [10.20944/preprints202006.0002.v1](https://doi.org/10.20944/preprints202006.0002.v1)  
 
-   * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky P, Foucat E, Diehl J, <u>**Hejblum BP**</u>, Sinnah F, Montmollin E, Lacabaratz C, Thiébaut R, Timsit J & Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Immunology* 40:1082-1092, 2020.   
+   * Bouadma L, Wiedemann A, Patrier J, Surenaud M, Wicky P, Foucat E, Diehl J, <u>**Hejblum BP**</u>, Sinnah F, de Montmollin E, Lacabaratz C, Thiébaut R, Timsit J & Lévy Y. Immune alterations during SARS-CoV-2-related acute respiratory distress syndrome. *Journal of Clinical Immunology* 40:1082-1092, 2020.   
 DOI: [10.1007/s10875-020-00839-x](https://doi.org/10.1007/s10875-020-00839-x)  
 
    * Lhomme E, <u>**Hejblum BP**</u>, Lacabaratz C, Wiedemann A, Lelièvre J, Lévy Y, Thiébaut R & Richert L. Analyzing cellular immunogenicity in vaccine clinical trials: A new statistical method including non-specific responses for accurate estimation of vaccine effect. *Journal of Immunological Methods* 477:112711, 2020.   
