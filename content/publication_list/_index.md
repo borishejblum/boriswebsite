@@ -34,7 +34,7 @@ DOI: [10.48550/2605.03819](https://doi.org/10.48550/arxiv.2605.03819)
    * Thiébaut R, Lhomme E, Hocini H, Pellegrin I, Boizard-Moracchini A, Duvignaud A, Perpère M, Huchon M, Prague M, Lacabaratz C, Surenaud M, Anglaret X, Malvy D, <u>**Hejblum BP**</u>, Lévy Y, COVERAGE study group. Self-collected finger-prick blood for gene expression profiling: Unveiling early immune responses in mild COVID-19. *iScience* 29(2):114593, 2026.   
 DOI: [10.1016/j.isci.2025.114593](https://doi.org/10.1016/j.isci.2025.114593)  
 
-   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data from US and france. *Nature Communications* 17:4800, 2026.   
+   * Zhou D, Tong H, Wang L, Liu S, Xiong X, Gan Z, Griffier R, <u>**Hejblum B**</u>, Liu Y, Hong C, Bonzel C, Cai T, Pan K, Ho Y, Costa L, Panickan VA, Gaziano JM, Mandl K, Jouhet V, Thiebaut R, Xia Z, Cho K, Liao K & Cai T. Representation learning to advance multi-institutional studies with electronic health record data from US and France. *Nature Communications* 17:4800, 2026.   
 DOI: [10.1038/s41467-026-71152-1](https://doi.org/10.1038/s41467-026-71152-1)  
 
    * Hornung R, Németh L, Zadorozhnyi O, Ullmann T, Kammer M, Killick R, Paciorek C, Chiquet J, Herrmann M, Batinović L, Carlsson R, Neuvial P, <u>**Hejblum B**</u>, Wrobel J, Boulesteix A & Tabelow K. Overcoming barriers to computational reproducibility. *Royal Society Open Science* 13(6):252489, 2026.   
