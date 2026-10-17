@@ -17,7 +17,7 @@ authors = ["Y Lévy", "C Moog", "Wiedmann A", "O Launay", "F Candotti", "L Harde
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Scientific Report*"
+publication = "*Scientific Reports*"
 publication_short = "*Sci Rep*"
 
 doi ="10.1038/s41598-026-52363-4"
